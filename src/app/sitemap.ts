@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services/qa-testing",
     "/services/software-dev",
     "/services/business-systems",
-    "/case-studies/momope",
+    "/case-studies/vijayas-yummy-food",
     "/case-studies/mana-tours",
     "/academy",
     "/hire-developers",

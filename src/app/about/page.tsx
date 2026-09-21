@@ -53,7 +53,7 @@ export default function AboutPage() {
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-1" />
               <span>
-                <strong>MOMOPE (www.momope.com):</strong> A digital payments and guaranteed merchant rewards ecosystem.
+                <strong>Vijaya&apos;s Yummy Food:</strong> An online food ordering web app and installable PWA with real-time checkout built for a Bengaluru cloud kitchen.
               </span>
             </li>
             <li className="flex items-start gap-2">

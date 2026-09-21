@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import {
-  CreditCard,
+  UtensilsCrossed,
   Car,
   GraduationCap,
   ShoppingBag,
@@ -13,18 +13,18 @@ import {
 export const metadata = {
   title: "Industries We Serve | MOMO IT Technologies",
   description:
-    "Discover how MOMO IT Technologies builds software for Fintech, Mobility, EdTech, and Local Commerce.",
+    "Discover how MOMO IT Technologies builds software for FoodTech, Mobility, EdTech, and Local Commerce.",
 };
 
 export default function IndustriesPage() {
   const industries = [
     {
-      title: "Fintech & Digital Payments",
-      desc: "High-security transaction engines, merchant billing portals, and automated rewards ecosystems (proven by our MOMOPE platform).",
-      icon: <CreditCard className="w-6 h-6 text-emerald-600" />,
+      title: "FoodTech & Cloud Kitchens",
+      desc: "Direct-to-consumer online food ordering portals, realtime cart & checkout pipelines, and mobile PWAs (proven by Vijaya's Yummy Food).",
+      icon: <UtensilsCrossed className="w-6 h-6 text-orange-600" />,
       caseStudy: {
-        title: "MOMOPE Platform",
-        href: "/case-studies/momope",
+        title: "Vijaya's Yummy Food",
+        href: "/case-studies/vijayas-yummy-food",
       },
     },
     {

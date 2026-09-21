@@ -143,7 +143,7 @@ export const coursesData: CourseItem[] = [
     tagline: "Become a complete full-stack engineer: build real-world backends with Spring Boot and modern frontends with React.",
     badge: "Career Booster",
     overview:
-      "Designed for students and developers who want to build end-to-end web applications like MomoPe and Mana Tours. You will learn modern frontend development (React, JavaScript, Tailwind), enterprise Java backend engineering (Spring Boot, Hibernate, JPA), and database management with PostgreSQL.",
+      "Designed for students and developers who want to build end-to-end web applications like Vijaya's Yummy Food and Mana Tours. You will learn modern frontend development (React, JavaScript, Tailwind), enterprise Java backend engineering (Spring Boot, Hibernate, JPA), and database management with PostgreSQL.",
     highlights: [
       "Modern Web Fundamentals: HTML5, CSS3, JavaScript ES6+",
       "React.js Component Architecture, Hooks & State Management",

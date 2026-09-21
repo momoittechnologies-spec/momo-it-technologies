@@ -219,18 +219,18 @@ export default function Navbar() {
               {caseStudiesDropdownOpen && (
                 <div className="absolute top-full left-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 space-y-1 transition-all duration-200">
                   <Link
-                    href="/case-studies/momope"
+                    href="/case-studies/vijayas-yummy-food"
                     className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold text-sm">
-                      ₹
+                    <div className="w-9 h-9 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center shrink-0 font-bold text-sm">
+                      🍲
                     </div>
                     <div>
                       <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                        MOMOPE Platform
+                        Vijaya&apos;s Yummy Food
                       </div>
                       <span className="text-xs text-gray-500 block">
-                        Payments + Guaranteed Rewards
+                        FoodTech &amp; Cloud Kitchen PWA
                       </span>
                     </div>
                   </Link>
@@ -370,10 +370,10 @@ export default function Navbar() {
               Case Studies
             </span>
             <Link
-              href="/case-studies/momope"
+              href="/case-studies/vijayas-yummy-food"
               className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
             >
-              MOMOPE (Fintech & Rewards)
+              Vijaya&apos;s Yummy Food (FoodTech PWA)
             </Link>
             <Link
               href="/case-studies/mana-tours"

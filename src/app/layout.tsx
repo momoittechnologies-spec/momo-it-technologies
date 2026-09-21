@@ -8,13 +8,13 @@ import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "MOMO IT TECHNOLOGIES — Software Training & Development Company | Kadapa",
   description:
-    "Kadapa's premier 4.8★ rated software training institute and software development company. Specializing in Automation Testing (Selenium/Playwright), Java Full-Stack, Custom Web Apps, and Dedicated Engineering Pods. Creators of MomoPe and Mana Tours & Travels.",
+    "Kadapa's premier 4.8★ rated software training institute and software development company. Specializing in Automation Testing (Selenium/Playwright), Java Full-Stack, Custom Web Apps, and Dedicated Engineering Pods. Builders of Vijaya's Yummy Food and Mana Tours & Travels.",
   keywords: [
     "MOMO IT Technologies",
     "Software training institute in Kadapa",
     "Automation testing course Kadapa",
     "Java training in Kadapa",
-    "MomoPe",
+    "Vijaya's Yummy Food",
     "Mana Tours and Travels Kadapa",
     "Software development company Kadapa",
     "QA automation services India",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MOMO IT TECHNOLOGIES — Software Training & IT Services",
     description:
-      "Kadapa's premier 4.8★ rated software institute and technology partner. Creators of MomoPe and Mana Tours & Travels.",
+      "Kadapa's premier 4.8★ rated software institute and technology partner. Engineering web apps and training job-ready software engineers.",
     url: "https://momoittechnologies.com",
     siteName: "MOMO IT TECHNOLOGIES",
     locale: "en_IN",

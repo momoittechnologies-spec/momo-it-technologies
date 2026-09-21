@@ -190,8 +190,8 @@ export default function Footer() {
             © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/case-studies/momope" className="hover:text-gray-400">
-              MomoPe
+            <Link href="/case-studies/vijayas-yummy-food" className="hover:text-gray-400">
+              Vijaya&apos;s Yummy Food
             </Link>
             <Link href="/case-studies/mana-tours" className="hover:text-gray-400">
               MANA Tours & Travels
