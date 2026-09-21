@@ -13,11 +13,12 @@ import {
 } from "lucide-react";
 
 export default function ContactPage() {
+  const [channel, setChannel] = useState<"whatsapp" | "email">("whatsapp");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    interest: "QA & Automation Testing",
+    interest: "Custom Web / SaaS App Development",
     message: "",
   });
 
@@ -25,9 +26,20 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello MOMO IT Technologies!\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterest: ${formData.interest}\nMessage: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/918639831132?text=${encodeURIComponent(text)}`;
-    window.open(whatsappUrl, "_blank");
+    const formattedPhone = formData.phone ? `+91 ${formData.phone}` : "Not provided";
+    const text = `Hello MOMO IT Technologies!\n\nName: ${formData.name}\nEmail: ${formData.email || "Not provided"}\nPhone: ${formattedPhone}\nInterest: ${formData.interest}\nPreferred Channel: ${channel.toUpperCase()}\nMessage: ${formData.message}`;
+
+    if (channel === "whatsapp") {
+      const whatsappUrl = `https://wa.me/918639831132?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, "_blank");
+    } else {
+      const subject = `New Inquiry: ${formData.interest} - ${formData.name}`;
+      const mailtoUrl = `mailto:momoit.technologies@gmail.com?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(text)}`;
+      window.location.href = mailtoUrl;
+    }
+
     setSubmitted(true);
   };
 
@@ -122,12 +134,44 @@ export default function ContactPage() {
 
           {/* Interactive Form Card */}
           <div className="lg:col-span-2 bg-white rounded-3xl p-8 sm:p-10 border border-gray-200/80 shadow-card">
-            <h2 className="text-2xl font-extrabold text-navy-950 mb-2">
-              Send an Inquiry
-            </h2>
-            <p className="text-xs sm:text-sm text-gray-500 mb-8">
-              Fill out this quick form and it will connect directly with our Kadapa desk via WhatsApp for fastest confirmation.
-            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+              <div>
+                <h2 className="text-2xl font-extrabold text-navy-950">
+                  Send an Inquiry
+                </h2>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                  Choose your preferred contact channel below:
+                </p>
+              </div>
+
+              {/* Channel Selector Toggle */}
+              <div className="flex items-center p-1 bg-gray-100 rounded-xl border border-gray-200 text-xs font-bold">
+                <button
+                  type="button"
+                  onClick={() => setChannel("whatsapp")}
+                  className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 cursor-pointer ${
+                    channel === "whatsapp"
+                      ? "bg-white text-emerald-800 shadow-xs"
+                      : "text-gray-600 hover:text-gray-900"
+                  }`}
+                >
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>WhatsApp Fast-Track</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setChannel("email")}
+                  className={`px-3.5 py-1.5 rounded-lg transition-all flex items-center gap-1.5 cursor-pointer ${
+                    channel === "email"
+                      ? "bg-white text-navy-950 shadow-xs"
+                      : "text-gray-600 hover:text-gray-900"
+                  }`}
+                >
+                  <Mail className="w-3.5 h-3.5 text-brand-600" />
+                  <span>Email &amp; Meet</span>
+                </button>
+              </div>
+            </div>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -147,7 +191,7 @@ export default function ContactPage() {
 
                 <div>
                   <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                    Phone / WhatsApp *
+                    Phone / WhatsApp {channel === "whatsapp" && "*"}
                   </label>
                   <div className="relative flex rounded-xl border border-gray-200 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100 bg-white overflow-hidden transition-all">
                     <span className="inline-flex items-center gap-1 px-3.5 bg-gray-50 border-r border-gray-200 text-gray-700 font-semibold text-xs select-none">
@@ -155,7 +199,7 @@ export default function ContactPage() {
                     </span>
                     <input
                       type="tel"
-                      required
+                      required={channel === "whatsapp"}
                       maxLength={10}
                       pattern="[0-9]{10}"
                       placeholder="98765 43210"
@@ -173,10 +217,11 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                    Email Address
+                    Email Address {channel === "email" && "*"}
                   </label>
                   <input
                     type="email"
+                    required={channel === "email"}
                     placeholder="name@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -193,38 +238,54 @@ export default function ContactPage() {
                     onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-white"
                   >
-                    <option value="QA & Automation Testing">
-                      QA &amp; Automation Testing Pods
-                    </option>
-                    <option value="Custom Web / SaaS App Development">
-                      Custom Web / SaaS App Development
-                    </option>
-                    <option value="Business Management ERP / Billing">
-                      Business Management ERP / Billing
-                    </option>
-                    <option value="Hire Dedicated Developers">
-                      Hire Dedicated Developers (Monthly)
-                    </option>
-                    <option value="MOMO Academy: Automation Testing Course">
-                      MOMO Academy: Automation Testing Course
-                    </option>
-                    <option value="MOMO Academy: Full-Stack Java Course">
-                      MOMO Academy: Full-Stack Java Course
-                    </option>
-                    <option value="General Consultation">
-                      General Consultation / Partnership
-                    </option>
+                    <optgroup label="Tech Engineering Services">
+                      <option value="Web & SaaS Product Engineering">
+                        Web &amp; SaaS Product Engineering (Core)
+                      </option>
+                      <option value="QA & Automation Testing Pods">
+                        QA &amp; Automation Testing Pods (Selenium/Playwright)
+                      </option>
+                      <option value="Mobile App Development">
+                        Cross-Platform Mobile App (Flutter / Android / iOS)
+                      </option>
+                      <option value="Business Management ERP / Billing">
+                        Business Management ERP / Billing System
+                      </option>
+                      <option value="Hire Dedicated Developers">
+                        Hire Dedicated Developers (Monthly Retainer)
+                      </option>
+                    </optgroup>
+                    <optgroup label="MOMO Academy Courses">
+                      <option value="MOMO Academy: Automation Testing with Java">
+                        Automation Testing with Java (Selenium WebDriver 4)
+                      </option>
+                      <option value="MOMO Academy: Full-Stack Software Development">
+                        Full-Stack Software Development (React 19 + Spring Boot)
+                      </option>
+                      <option value="MOMO Academy: Mobile App Development">
+                        Mobile App Development (Flutter Android &amp; iOS)
+                      </option>
+                      <option value="MOMO Academy: Digital Marketing & AI">
+                        Advanced Digital Marketing &amp; AI Growth
+                      </option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option value="General Consultation / Discovery Call">
+                        General Consultation / Schedule Google Meet
+                      </option>
+                    </optgroup>
                   </select>
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                  Brief Message or Requirements
+                  Brief Message or Requirements *
                 </label>
                 <textarea
+                  required
                   rows={4}
-                  placeholder="Tell us about your project timeline, requirements, or learning background..."
+                  placeholder="Tell us about your product idea, required features, timeline, or learning background..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all"
@@ -233,17 +294,32 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-md transition-all"
+                className={`w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl text-white font-bold text-sm shadow-md transition-all cursor-pointer ${
+                  channel === "whatsapp"
+                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 shadow-emerald-500/20"
+                    : "bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 shadow-brand-500/20"
+                }`}
               >
-                <Send className="w-4 h-4" />
-                <span>Submit &amp; Open WhatsApp Confirmation</span>
+                {channel === "whatsapp" ? (
+                  <>
+                    <MessageSquare className="w-4 h-4" />
+                    <span>Submit &amp; Open Instant WhatsApp Chat</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>Send Inquiry to Engineering Team via Email</span>
+                  </>
+                )}
               </button>
 
               {submitted && (
-                <div className="p-3 rounded-xl bg-brand-50 text-brand-800 text-xs font-semibold flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-brand-600" />
+                <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-semibold flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                   <span>
-                    Thank you! Your inquiry was transferred to our WhatsApp desk. We will connect with you shortly.
+                    {channel === "whatsapp"
+                      ? "Inquiry transferred to our Kadapa WhatsApp desk! We will connect with you shortly."
+                      : "Opening your email app to send directly to momoit.technologies@gmail.com. We respond within 2-4 hours!"}
                   </span>
                 </div>
               )}

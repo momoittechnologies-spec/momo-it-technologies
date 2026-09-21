@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <radialGradient id="ogBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0B1B3D" />
+      <stop offset="50%" stop-color="#050C1B" />
+      <stop offset="100%" stop-color="#02060F" />
+    </radialGradient>
+    <linearGradient id="neonEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22FFA1" />
+      <stop offset="100%" stop-color="#00BA66" />
+    </linearGradient>
+    <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60EFFF" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#ogBg)" />
+
+  <!-- Background Ambient Glows -->
+  <circle cx="1050" cy="150" r="300" fill="#00BA66" opacity="0.12" />
+  <circle cx="150" cy="500" r="280" fill="#0077B6" opacity="0.12" />
+
+  <!-- Border Accent -->
+  <rect x="24" y="24" width="1152" height="582" rx="28" fill="none" stroke="rgba(34, 255, 161, 0.2)" stroke-width="2" />
+
+  <!-- Logo Container -->
+  <g transform="translate(80, 80)">
+    <rect width="90" height="90" rx="22" fill="#08152E" stroke="rgba(0, 237, 135, 0.4)" stroke-width="2" />
+    <!-- Terminal Dots -->
+    <circle cx="24" cy="20" r="2.5" fill="#FF5F56" />
+    <circle cx="32" cy="20" r="2.5" fill="#FFBD2E" />
+    <circle cx="40" cy="20" r="2.5" fill="#27C93F" />
+    <!-- M Logo Monogram -->
+    <path d="M22 66 V36 L36 52 L50 36 V66" stroke="url(#neonEmerald)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M44 66 V42 L56 54 L68 42 V66" stroke="url(#cyberCyan)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+  </g>
+
+  <!-- Company Title Header -->
+  <text x="195" y="125" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="36" letter-spacing="-0.5">
+    MOMO <tspan fill="#22FFA1">IT TECHNOLOGIES</tspan>
+  </text>
+  <text x="195" y="155" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" letter-spacing="3">
+    SOFTWARE ENGINEERING &amp; PREMIER IT ACADEMY · KADAPA
+  </text>
+
+  <!-- Google Rating Badge Top Right -->
+  <g transform="translate(930, 82)">
+    <rect width="190" height="46" rx="23" fill="#0F172A" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+    <text x="35" y="28" fill="#FBBF24" font-size="18">★</text>
+    <text x="58" y="29" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">
+      4.8 Google Rated
+    </text>
+  </g>
+
+  <!-- Main Value Pitch Headline -->
+  <text x="80" y="265" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="52" letter-spacing="-1">
+    Building Scalable Web &amp; SaaS Products.
+  </text>
+  <text x="80" y="325" fill="#22FFA1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="50" letter-spacing="-1">
+    Training Tomorrow's Tech Leaders.
+  </text>
+
+  <!-- Subheadline -->
+  <text x="80" y="380" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="20">
+    Enterprise Next.js, Spring Boot &amp; Flutter development combined with Kadapa's premier job-ready academy.
+  </text>
+
+  <!-- Horizontal Divider -->
+  <line x1="80" y1="425" x2="1120" y2="425" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+
+  <!-- Feature Pillar 1: Web & SaaS -->
+  <g transform="translate(80, 460)">
+    <rect width="240" height="95" rx="16" fill="#0F172A" stroke="rgba(34, 255, 161, 0.3)" stroke-width="1.5" />
+    <text x="20" y="34" fill="#22FFA1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      CORE SERVICE
+    </text>
+    <text x="20" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">
+      Web &amp; SaaS Products
+    </text>
+    <text x="20" y="78" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">
+      Next.js 15 · Spring Boot · Supabase
+    </text>
+  </g>
+
+  <!-- Feature Pillar 2: Mobile Apps -->
+  <g transform="translate(345, 460)">
+    <rect width="240" height="95" rx="16" fill="#0F172A" stroke="rgba(96, 239, 255, 0.3)" stroke-width="1.5" />
+    <text x="20" y="34" fill="#60EFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      CROSS-PLATFORM
+    </text>
+    <text x="20" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">
+      Mobile Applications
+    </text>
+    <text x="20" y="78" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">
+      Flutter · iOS &amp; Android Delivery
+    </text>
+  </g>
+
+  <!-- Feature Pillar 3: QA Automation -->
+  <g transform="translate(610, 460)">
+    <rect width="240" height="95" rx="16" fill="#0F172A" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+    <text x="20" y="34" fill="#A78BFA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      ENTERPRISE TESTING
+    </text>
+    <text x="20" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">
+      QA &amp; Automation
+    </text>
+    <text x="20" y="78" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">
+      Selenium 4 · Playwright · CI/CD
+    </text>
+  </g>
+
+  <!-- Feature Pillar 4: MOMO Academy -->
+  <g transform="translate(875, 460)">
+    <rect width="245" height="95" rx="16" fill="#0F172A" stroke="rgba(251, 191, 36, 0.3)" stroke-width="1.5" />
+    <text x="20" y="34" fill="#FBBF24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      CAREER ACADEMY
+    </text>
+    <text x="20" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16">
+      Certificates &amp; Internships
+    </text>
+    <text x="20" y="78" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12">
+      100% Practical Lab in Kadapa
+    </text>
+  </g>
+</svg>

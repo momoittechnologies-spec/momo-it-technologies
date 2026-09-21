@@ -9,12 +9,15 @@ import {
   Database,
   Layers,
   Sparkles,
+  Zap,
 } from "lucide-react";
+import SaaSEstimator from "@/components/services/SaaSEstimator";
+import WhyChooseUsComparison from "@/components/services/WhyChooseUsComparison";
 
 export const metadata = {
-  title: "Web & Custom Software Development | MOMO IT Technologies",
+  title: "Web & SaaS Product Engineering | MOMO IT Technologies",
   description:
-    "Modern, scalable web applications, customer portals, and mobile apps built with Next.js, Spring Boot, and Flutter by MOMO IT Technologies Kadapa.",
+    "Our core service: production-grade Web Applications, scalable SaaS platforms, and mobile apps engineered with Next.js 15, React 19, Spring Boot 3, and Flutter by MOMO IT Technologies.",
 };
 
 export default function SoftwareDevPage() {
@@ -96,6 +99,14 @@ export default function SoftwareDevPage() {
             </div>
           ))}
         </div>
+
+        {/* Interactive Scope & Timeline Estimator */}
+        <div className="mb-16">
+          <SaaSEstimator />
+        </div>
+
+        {/* Why Choose Us Comparison */}
+        <WhyChooseUsComparison />
 
         {/* Cross-Link to Flagships */}
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-card flex flex-col md:flex-row items-center justify-between gap-6">

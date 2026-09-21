@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { servicesData } from "@/data/services";
+import SaaSEstimator from "@/components/services/SaaSEstimator";
 
 export const metadata = {
   title: "All IT & Engineering Services | MOMO IT Technologies",
   description:
-    "Explore our complete suite of software development, QA automation testing, custom business systems, and IT staffing services.",
+    "Explore our complete suite of software engineering services: Web & SaaS Product Engineering, QA Automation Testing, Flutter Mobile Apps, and Dedicated Engineering Pods.",
 };
 
 export default function ServicesIndexPage() {
@@ -71,6 +72,11 @@ export default function ServicesIndexPage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Interactive Scope & Timeline Estimator */}
+        <div className="mt-16">
+          <SaaSEstimator />
         </div>
       </div>
     </div>

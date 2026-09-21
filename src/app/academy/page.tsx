@@ -22,11 +22,12 @@ import {
 import { coursesData } from "@/data/courses";
 import MasterclassBanner from "@/components/home/MasterclassBanner";
 import FreeResourcesUnlock from "@/components/academy/FreeResourcesUnlock";
+import CourseCurriculumAccordion from "@/components/academy/CourseCurriculumAccordion";
 
 export const metadata = {
-  title: "MOMO Academy — Best Automation Testing & Java Training in Kadapa",
+  title: "MOMO Academy — Best IT Training & Live Project Internships in Kadapa",
   description:
-    "Master Selenium Automation Testing, Core Java, API Testing, and Full-Stack Development with MOMO Academy Kadapa. 4.8★ Google Rated. Hybrid online Google Meet & offline classroom batches.",
+    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Digital Marketing with MOMO Academy Kadapa. 4.8★ Google Rated. Verified certificates & guaranteed live internships.",
 };
 
 export default function AcademyPage() {
@@ -178,36 +179,8 @@ export default function AcademyPage() {
                   ))}
                 </div>
 
-                {/* Curriculum Modules */}
-                <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4 flex items-center gap-1.5">
-                    <BookOpen className="w-4 h-4 text-brand-600" />
-                    Curriculum Modules Breakdown:
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {course.curriculum.map((mod, mIdx) => (
-                      <div
-                        key={mIdx}
-                        className="bg-white p-4 rounded-xl border border-gray-200/70"
-                      >
-                        <div className="text-xs font-bold text-navy-950 mb-2">
-                          {mod.module}
-                        </div>
-                        <ul className="space-y-1">
-                          {mod.topics.map((t, tIdx) => (
-                            <li
-                              key={tIdx}
-                              className="text-[11px] text-gray-600 flex items-start gap-1.5"
-                            >
-                              <span className="w-1 h-1 rounded-full bg-brand-500 shrink-0 mt-1.5" />
-                              <span>{t}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                {/* Interactive Curriculum Modules Accordion */}
+                <CourseCurriculumAccordion curriculum={course.curriculum} />
               </div>
             ))}
           </div>
