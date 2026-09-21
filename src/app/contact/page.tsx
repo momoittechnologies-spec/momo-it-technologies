@@ -87,10 +87,10 @@ export default function ContactPage() {
                       Email Inquiries:
                     </span>
                     <a
-                      href="mailto:contact@momoittechnologies.com"
+                      href="mailto:momoit.technologies@gmail.com"
                       className="hover:text-brand-300"
                     >
-                      contact@momoittechnologies.com
+                      momoit.technologies@gmail.com
                     </a>
                   </div>
                 </div>

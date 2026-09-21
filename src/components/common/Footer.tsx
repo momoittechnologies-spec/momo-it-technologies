@@ -168,10 +168,10 @@ export default function Footer() {
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-400 shrink-0" />
                 <a
-                  href="mailto:contact@momoittechnologies.com"
+                  href="mailto:momoit.technologies@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  contact@momoittechnologies.com
+                  momoit.technologies@gmail.com
                 </a>
               </div>
               <div className="pt-2">
