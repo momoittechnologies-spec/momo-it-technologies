@@ -18,9 +18,9 @@ import {
 } from "lucide-react";
 
 const rotatingWords = [
-  "High-Performance Web Apps",
-  "Dedicated QA Automation",
-  "FoodTech & Mobility Portals",
+  "Scalable Web & SaaS Products",
+  "Cross-Platform Mobile Apps",
+  "Enterprise QA Automation",
   "Industry-Ready Software Engineers",
 ];
 
@@ -75,7 +75,7 @@ export default function HeroSection() {
 
         {/* Clear Value Proposition */}
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10">
-          Kadapa&apos;s trusted technology partner. We engineer mission-critical web applications and test automation pipelines for growing businesses, while grooming industry-ready engineers through <strong>MOMO Academy</strong>.
+          Kadapa&apos;s trusted technology partner. Our core expertise is architecting scalable <strong>Web &amp; SaaS products</strong> for founders and modern businesses, while grooming industry-ready engineers through <strong>MOMO Academy</strong>.
         </p>
 
         {/* Action Buttons */}
@@ -84,7 +84,7 @@ export default function HeroSection() {
             href="/services/software-dev"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/25 hover:shadow-xl hover:shadow-brand-500/35 hover:-translate-y-0.5 transition-all"
           >
-            <span>Explore Tech Services</span>
+            <span>Build Web / SaaS Product</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
 
@@ -139,9 +139,9 @@ export default function HeroSection() {
             <div className="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
               <Code2 className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-navy-950 mb-1">Web &amp; Custom Apps</h2>
+            <h2 className="text-base font-bold text-navy-950 mb-1">Web &amp; SaaS Products</h2>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Full-stack Next.js, React, Supabase, and enterprise Java applications built for real-world traffic.
+              Our core service: Next.js 15, React 19, Supabase &amp; Spring Boot apps built for speed and scale.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default function HeroSection() {
             </div>
             <h2 className="text-base font-bold text-navy-950 mb-1">MOMO Academy</h2>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Practical software testing and Java full-stack courses tailored for B.Tech pass-outs and freshers.
+              Software testing, mobile dev &amp; marketing courses with certificates &amp; real client internships.
             </p>
           </div>
 

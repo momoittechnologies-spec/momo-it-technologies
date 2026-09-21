@@ -58,10 +58,19 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link
-                  href="/services/qa-testing"
-                  className="text-gray-400 hover:text-brand-400 transition-colors flex items-center gap-1"
+                  href="/services/software-dev"
+                  className="text-gray-300 hover:text-brand-400 font-semibold transition-colors flex items-center gap-1"
                 >
-                  <span>QA Automation (Selenium/Playwright)</span>
+                  <span>Web &amp; SaaS Products</span>
+                  <span className="text-[9px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">Core</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/qa-testing"
+                  className="text-gray-400 hover:text-brand-400 transition-colors"
+                >
+                  QA Automation (Selenium &amp; Playwright)
                 </Link>
               </li>
               <li>
@@ -69,7 +78,7 @@ export default function Footer() {
                   href="/services/software-dev"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
-                  Web & SaaS Development
+                  Mobile Apps (Flutter &amp; React Native)
                 </Link>
               </li>
               <li>
@@ -77,15 +86,7 @@ export default function Footer() {
                   href="/services/business-systems"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
-                  Custom ERP & Billing Portals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/software-dev"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Flutter Mobile Applications
+                  Custom ERP &amp; Billing Systems
                 </Link>
               </li>
               <li>
@@ -119,7 +120,7 @@ export default function Footer() {
                   href="/academy#courses"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
-                  API Testing (Postman & RestAssured)
+                  Full-Stack Java (Spring Boot + React)
                 </Link>
               </li>
               <li>
@@ -127,15 +128,15 @@ export default function Footer() {
                   href="/academy#courses"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
-                  Full-Stack Java Development
+                  Mobile App Development (Flutter/iOS)
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/academy#hybrid"
+                  href="/academy#courses"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
-                  Hybrid Online & Offline Batches
+                  Digital Marketing &amp; AI Growth
                 </Link>
               </li>
               <li>
@@ -143,7 +144,7 @@ export default function Footer() {
                   href="/academy"
                   className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
                 >
-                  Explore Curriculum & Batches →
+                  Explore Curriculum &amp; Internships →
                 </Link>
               </li>
             </ul>
@@ -190,13 +191,13 @@ export default function Footer() {
             © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/case-studies/vijayas-yummy-food" className="hover:text-gray-400">
-              Vijaya&apos;s Yummy Food
+            <Link href="/services/software-dev" className="hover:text-gray-400 transition-colors">
+              Web &amp; SaaS Products
             </Link>
-            <Link href="/case-studies/mana-tours" className="hover:text-gray-400">
-              MANA Tours & Travels
+            <Link href="/academy" className="hover:text-gray-400 transition-colors">
+              MOMO Academy
             </Link>
-            <Link href="/contact" className="hover:text-gray-400">
+            <Link href="/contact" className="hover:text-gray-400 transition-colors">
               Contact Us
             </Link>
           </div>

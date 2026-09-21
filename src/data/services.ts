@@ -12,13 +12,31 @@ export interface ServiceItem {
 
 export const servicesData: ServiceItem[] = [
   {
+    id: "web-development",
+    title: "Web & SaaS Product Development",
+    shortDesc: "Scalable, secure, and blazing-fast web applications and SaaS platforms built on Next.js, React, and Spring Boot.",
+    description:
+      "Our primary engineering offering. From high-conversion SaaS products to complex multi-tenant business platforms. We architect cloud-native web applications with clean domain architecture, sub-second load times, and intuitive mobile-first UX.",
+    icon: "Globe",
+    badge: "Core Flagship Service",
+    features: [
+      "Custom SaaS Platforms & Multi-Tenant Architecture",
+      "Modern Frontends with Next.js 15 & React 19",
+      "Enterprise Backends with Spring Boot 3 & Node.js",
+      "Cloud Database Design (PostgreSQL / Supabase)",
+      "SEO Optimization & Sub-Second Core Web Vitals",
+    ],
+    techStack: ["Next.js", "React", "TypeScript", "Spring Boot", "Supabase", "PostgreSQL"],
+    href: "/services/software-dev",
+  },
+  {
     id: "qa-testing",
     title: "QA & Automation Testing",
     shortDesc: "End-to-end automation test suites, API verification, and manual QA pods.",
     description:
       "Eliminate critical production bugs and accelerate delivery cycles. We design resilient test automation frameworks using Playwright, Selenium, and RestAssured, integrated directly into your CI/CD pipelines.",
     icon: "CheckCircle2",
-    badge: "Core Heritage",
+    badge: "Enterprise Testing",
     features: [
       "Selenium & Playwright Web Automation",
       "API & Microservices Testing (RestAssured)",
@@ -28,24 +46,6 @@ export const servicesData: ServiceItem[] = [
     ],
     techStack: ["Playwright", "Selenium", "Java", "RestAssured", "Postman", "GitHub Actions"],
     href: "/services/qa-testing",
-  },
-  {
-    id: "web-development",
-    title: "Web & SaaS App Development",
-    shortDesc: "Blazing fast, secure, and modern web applications built on Next.js and Spring Boot.",
-    description:
-      "From high-conversion customer portals to complex enterprise SaaS products. We engineer scalable web applications with clean architecture, sub-second load times, and responsive mobile-first UX.",
-    icon: "Globe",
-    badge: "Popular",
-    features: [
-      "Modern Single Page & Server-Rendered Apps",
-      "Enterprise Backends with Spring Boot & Node.js",
-      "Interactive Customer & Business Portals",
-      "SEO Optimization & Core Web Vitals Mastery",
-      "Secure Role-Based Access Control & Payment Gateways",
-    ],
-    techStack: ["Next.js", "React", "TypeScript", "Spring Boot", "Node.js", "PostgreSQL"],
-    href: "/services/software-dev",
   },
   {
     id: "custom-business-systems",

@@ -35,47 +35,57 @@ export default function DualVerticals() {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold border border-brand-500/30 mb-6">
                 <Code2 className="w-3.5 h-3.5" />
-                For Startups &amp; Enterprises
+                Core Focus: Web &amp; SaaS Product Development
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2 text-white">
                 MOMO Tech Services
               </h3>
               <p className="text-sm text-brand-400 font-semibold mb-6">
-                Design → Develop → Test → Deploy → Support
+                Ideate → Architect → Build → Rigorously Test → Deploy &amp; Scale
               </p>
 
               <p className="text-sm text-gray-300 leading-relaxed mb-8">
-                We partner with business founders, startups, and enterprises to build reliable digital products and provide dedicated QA automation teams. From full-stack Next.js and Spring Boot applications to automated Playwright regression test pods.
+                Our primary core service is building <strong>scalable Web and SaaS products</strong> for founders, businesses, and enterprises worldwide. We architect modern web applications with sub-second performance using Next.js 15, React 19, Spring Boot, and cloud databases, backed by automated QA validation.
               </p>
 
               <div className="space-y-3 mb-10">
-                <div className="flex items-center gap-2.5 text-sm text-gray-200">
+                <div className="flex items-center gap-2.5 text-sm text-white font-medium">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span>Dedicated QA Automation &amp; SDET Pods</span>
+                  <span><strong>Web &amp; SaaS Products:</strong> Next.js, React, Spring Boot, Supabase</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-200">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span>Modern Web &amp; Portal Development (Next.js / Java)</span>
+                  <span><strong>Mobile Applications:</strong> Cross-platform Android &amp; iOS via Flutter</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-200">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span>Custom Business ERP, Billing &amp; CRM Systems</span>
+                  <span><strong>Custom Business ERPs:</strong> Automated billing, dispatch &amp; CRM portals</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-200">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span>Staff Augmentation (Dedicated Remote Developers)</span>
+                  <span><strong>QA Automation:</strong> Selenium 4 &amp; Playwright regression test suites</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-sm text-gray-200">
+                  <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
+                  <span><strong>Staff Augmentation:</strong> Pre-vetted dedicated developer pods</span>
                 </div>
               </div>
             </div>
 
-            <div className="relative z-10 pt-6 border-t border-navy-800">
+            <div className="relative z-10 pt-6 border-t border-navy-800 flex flex-wrap items-center gap-3">
               <Link
-                href="/services/qa-testing"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-navy-950 font-bold text-sm shadow-lg shadow-brand-500/25 transition-all w-full sm:w-auto"
+                href="/services/software-dev"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/25 transition-all w-full sm:w-auto"
               >
-                <span>Explore Services &amp; Solutions</span>
+                <span>Build Your Web / SaaS Product</span>
                 <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-gray-300 hover:text-white text-xs font-semibold border border-navy-700 transition-colors"
+              >
+                <span>All Services</span>
               </Link>
             </div>
           </div>
@@ -87,47 +97,56 @@ export default function DualVerticals() {
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold border border-brand-200 mb-6">
                 <GraduationCap className="w-3.5 h-3.5 text-brand-700" />
-                Practical IT Career Education
+                Industry-Led Practical Training &amp; Internships
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2 text-navy-950">
                 MOMO Academy
               </h3>
               <p className="text-sm text-brand-700 font-semibold mb-6">
-                Learn → Practice → Build → Become Industry Ready
+                Learn → Practice → Get Certified → Live Internship → Placed
               </p>
 
               <p className="text-sm text-gray-600 leading-relaxed mb-8">
-                Kadapa&apos;s leading software training institute with a proven 4.8★ Google rating. We teach students, freshers, and working professionals through code-first, real-project immersion across both live online Google Meet classes and offline Kadapa classrooms.
+                Kadapa&apos;s premier software training academy rated 4.8★ on Google. We deliver hands-on, live-project training led by working engineers. Every course includes an official <strong>Course Completion Certificate</strong> and <strong>hands-on internship</strong> on live agency client products.
               </p>
 
               <div className="space-y-3 mb-10">
-                <div className="flex items-center gap-2.5 text-sm text-gray-700">
+                <div className="flex items-center gap-2.5 text-sm text-navy-950 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
-                  <span>Master Automation Testing (Java, Selenium 4, TestNG)</span>
+                  <span><strong>Automation Testing:</strong> Selenium 4, Java, TestNG &amp; Cucumber BDD</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-700">
                   <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
-                  <span>REST API Automation (Postman &amp; RestAssured)</span>
+                  <span><strong>Full-Stack Software Dev:</strong> React 19, Next.js &amp; Spring Boot 3</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-700">
                   <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
-                  <span>Full-Stack Development (Java Spring Boot + React)</span>
+                  <span><strong>Mobile App Development:</strong> Flutter Android &amp; iOS Apps</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-700">
                   <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
-                  <span>Live Project Exposure with in-house Agency Case Studies</span>
+                  <span><strong>Digital Marketing &amp; AI:</strong> SEO, Meta Ads, Google Ads &amp; GenAI</span>
+                </div>
+                <div className="flex items-center gap-2.5 text-sm text-emerald-800 font-semibold bg-emerald-50/70 p-2 rounded-lg border border-emerald-200/60">
+                  <span className="text-emerald-700">🎓 Certificate + 💼 Guaranteed Real Client Project Internship</span>
                 </div>
               </div>
             </div>
 
-            <div className="relative z-10 pt-6 border-t border-gray-100">
+            <div className="relative z-10 pt-6 border-t border-gray-100 flex flex-wrap items-center gap-3">
               <Link
                 href="/academy"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-sm shadow-md transition-all w-full sm:w-auto"
               >
-                <span>View Courses &amp; Upcoming Batches</span>
+                <span>View Courses &amp; Internships</span>
                 <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/academy#courses"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gray-100 hover:bg-gray-200 text-navy-950 text-xs font-semibold transition-colors"
+              >
+                <span>Batch Timings</span>
               </Link>
             </div>
           </div>
