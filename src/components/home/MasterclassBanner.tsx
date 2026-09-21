@@ -13,18 +13,36 @@ import {
   FileText,
   Download,
   Check,
+  Lock,
+  Unlock,
 } from "lucide-react";
 
 export default function MasterclassBanner() {
   const [phone, setPhone] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (localStorage.getItem("momo_unlocked_resources") === "true") {
+        setSubmitted(true);
+      }
+    }
+  }, []);
+
   const handleQuickRegister = (e: React.FormEvent) => {
     e.preventDefault();
     const cleanDigits = phone.replace(/\D/g, "");
+    if (cleanDigits.length < 10) return;
+
     const formattedPhone = `+91 ${cleanDigits}`;
     const text = `Hi MOMO Academy! I want to register for the Free Saturday Masterclass (Automation Testing & Java). My WhatsApp Number is: ${formattedPhone}`;
     const url = `https://wa.me/918639831132?text=${encodeURIComponent(text)}`;
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem("momo_unlocked_resources", "true");
+      localStorage.setItem("momo_student_phone", formattedPhone);
+    }
+
     window.open(url, "_blank");
     setSubmitted(true);
   };
@@ -167,30 +185,15 @@ export default function MasterclassBanner() {
                     <ArrowRight className="w-4 h-4" />
                   </button>
 
-                  <div className="pt-2 border-t border-gray-100">
-                    <div className="text-[11px] text-gray-600 font-medium text-center mb-2 flex items-center justify-center gap-1">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0" />
-                      <span>Free Included Resources (Instant Access):</span>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <a
-                        href="/downloads/resume-template.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-1.5 px-2.5 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-[11px] font-bold text-navy-950 transition-colors text-center"
-                      >
-                        <FileText className="w-3 h-3 text-brand-600" />
-                        <span>ATS Resume</span>
-                      </a>
-                      <a
-                        href="/downloads/syllabus.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-1.5 px-2.5 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-[11px] font-bold text-navy-950 transition-colors text-center"
-                      >
-                        <Download className="w-3 h-3 text-brand-600" />
-                        <span>Syllabus (PDF)</span>
-                      </a>
+                  <div className="pt-3 border-t border-gray-100">
+                    <div className="p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-center space-y-1">
+                      <div className="text-[11px] text-amber-900 font-bold flex items-center justify-center gap-1.5">
+                        <Lock className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                        <span>Included Free Resources (Locked):</span>
+                      </div>
+                      <p className="text-[11px] text-amber-800 leading-tight">
+                        Enter your 10-digit WhatsApp number above to instantly unlock the <strong>ATS Resume Template</strong> &amp; <strong>Course Syllabus</strong>.
+                      </p>
                     </div>
                   </div>
                 </form>
