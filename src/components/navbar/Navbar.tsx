@@ -17,6 +17,12 @@ import {
   Sparkles,
   ArrowRight,
   ShieldCheck,
+  Award,
+  Briefcase,
+  FileText,
+  Calculator,
+  MessageSquare,
+  Star,
 } from "lucide-react";
 import AnnouncementBar from "./AnnouncementBar";
 
@@ -24,6 +30,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [academyDropdownOpen, setAcademyDropdownOpen] = useState(false);
   const [caseStudiesDropdownOpen, setCaseStudiesDropdownOpen] = useState(false);
   const pathname = usePathname();
 
@@ -38,6 +45,7 @@ export default function Navbar() {
   useEffect(() => {
     setMobileMenuOpen(false);
     setServicesDropdownOpen(false);
+    setAcademyDropdownOpen(false);
     setCaseStudiesDropdownOpen(false);
   }, [pathname]);
 
@@ -51,377 +59,608 @@ export default function Navbar() {
             : "bg-white/90 backdrop-blur-md border-b border-gray-100/80 py-3.5"
         }`}
       >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform flex items-center justify-center bg-navy-950 border border-brand-500/30">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.svg" alt="MOMO IT Technologies Logo" className="w-full h-full object-contain p-0.5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-navy-950 flex items-center gap-1.5">
-                MOMO <span className="text-brand-600">IT</span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-semibold border border-brand-200/60">
-                  Kadapa
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform flex items-center justify-center bg-navy-950 border border-brand-500/30 shrink-0">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.svg"
+                  alt="MOMO IT Technologies Logo"
+                  className="w-full h-full object-contain p-0.5"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-navy-950 flex items-center gap-1.5 leading-none">
+                  MOMO <span className="text-brand-600">IT</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-bold border border-brand-200/60">
+                    Kadapa
+                  </span>
                 </span>
-              </span>
-              <span className="text-[10px] font-medium text-gray-500 uppercase tracking-widest">
-                Software & Academy
-              </span>
-            </div>
-          </Link>
+                <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
+                  Web &amp; SaaS · IT Academy
+                </span>
+              </div>
+            </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+              <Link
+                href="/"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                Home
+              </Link>
+
+              {/* 1. Tech Services Mega-Menu Dropdown (Web & SaaS Focused) */}
+              <div
+                className="relative"
+                onMouseEnter={() => setServicesDropdownOpen(true)}
+                onMouseLeave={() => setServicesDropdownOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer ${
+                    pathname.startsWith("/services")
+                      ? "text-brand-700 bg-brand-50/80 font-semibold"
+                      : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                  }`}
+                >
+                  <span>Services</span>
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      servicesDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
+                    }`}
+                  />
+                </button>
+
+                {servicesDropdownOpen && (
+                  <div className="absolute top-full left-0 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
+                    <div className="pb-3 mb-3 border-b border-gray-100 flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                          Engineering &amp; Technology Services
+                        </span>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60">
+                          Core: Web &amp; SaaS
+                        </span>
+                      </div>
+                      <Link
+                        href="/services"
+                        className="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1"
+                      >
+                        <span>All Services</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      {/* Web & SaaS (Core) */}
+                      <Link
+                        href="/services/software-dev"
+                        className="flex items-start gap-3 p-3 rounded-xl bg-brand-50/40 hover:bg-brand-50/80 border border-brand-100/80 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+                          <Globe className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
+                            Web &amp; SaaS Products
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-600 text-white font-bold">
+                              Core
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Next.js 15, React 19, Spring Boot &amp; Supabase cloud apps.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* QA Automation */}
+                      <Link
+                        href="/services/qa-testing"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <CheckCircle2 className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            QA &amp; Automation
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Selenium 4, Playwright &amp; REST Assured automated test pods.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Mobile Apps */}
+                      <Link
+                        href="/services/software-dev"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Smartphone className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            Mobile Development
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Cross-platform Flutter iOS &amp; Android native apps.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Business ERP */}
+                      <Link
+                        href="/services/business-systems"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Layers className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            Business ERP &amp; Systems
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Custom billing, route dispatch &amp; operational CRM portals.
+                          </p>
+                        </div>
+                      </Link>
+                    </div>
+
+                    {/* Quick Estimator CTA banner */}
+                    <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between bg-gray-50/70 p-2.5 rounded-xl text-xs">
+                      <div className="flex items-center gap-1.5 text-gray-700 font-medium">
+                        <Calculator className="w-3.5 h-3.5 text-brand-600" />
+                        <span>Curious about your web app timeline &amp; cost?</span>
+                      </div>
+                      <Link
+                        href="/services/software-dev"
+                        className="font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1"
+                      >
+                        <span>Open SaaS Estimator</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 2. MOMO Academy Mega-Menu Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setAcademyDropdownOpen(true)}
+                onMouseLeave={() => setAcademyDropdownOpen(false)}
+              >
+                <Link
+                  href="/academy"
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-semibold rounded-lg transition-all cursor-pointer ${
+                    pathname.startsWith("/academy")
+                      ? "text-brand-700 bg-brand-50/90 font-bold"
+                      : "text-gray-800 hover:text-brand-700 hover:bg-brand-50/50"
+                  }`}
+                >
+                  <GraduationCap className="w-4 h-4 text-brand-600" />
+                  <span>Academy</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      academyDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
+                    }`}
+                  />
+                </Link>
+
+                {academyDropdownOpen && (
+                  <div className="absolute top-full left-0 w-[640px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
+                    <div className="pb-3 mb-3 border-b border-gray-100 flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                          MOMO Academy Curriculum
+                        </span>
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1">
+                          <Star className="w-3 h-3 fill-amber-400 text-amber-400" /> 4.8★ Google Rated
+                        </span>
+                      </div>
+                      <Link
+                        href="/academy"
+                        className="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1"
+                      >
+                        <span>Explore Batches</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      {/* Course 1 */}
+                      <Link
+                        href="/academy#courses"
+                        className="flex items-start gap-3 p-3 rounded-xl bg-brand-50/30 hover:bg-brand-50/70 border border-brand-100/70 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+                          <CheckCircle2 className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
+                            Automation Testing
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-100 text-brand-800 font-bold">
+                              Flagship
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
+                            Java, Selenium 4, TestNG &amp; Cucumber
+                          </p>
+                          <span className="text-[10px] font-semibold text-brand-700 mt-1 block">
+                            10–12 Weeks · Hybrid Batches
+                          </span>
+                        </div>
+                      </Link>
+
+                      {/* Course 2 */}
+                      <Link
+                        href="/academy#courses"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Globe className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            Full-Stack Software Dev
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
+                            React 19, Next.js &amp; Spring Boot 3
+                          </p>
+                          <span className="text-[10px] font-semibold text-blue-700 mt-1 block">
+                            14–16 Weeks · Enterprise Track
+                          </span>
+                        </div>
+                      </Link>
+
+                      {/* Course 3 */}
+                      <Link
+                        href="/academy#courses"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Smartphone className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            Mobile App Development
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
+                            Flutter, Dart &amp; Supabase (Android + iOS)
+                          </p>
+                          <span className="text-[10px] font-semibold text-purple-700 mt-1 block">
+                            10–12 Weeks · App Store Ready
+                          </span>
+                        </div>
+                      </Link>
+
+                      {/* Course 4 */}
+                      <Link
+                        href="/academy#courses"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Sparkles className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
+                            Digital Marketing &amp; AI
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
+                            Local SEO, Meta Ads &amp; GenAI Funnels
+                          </p>
+                          <span className="text-[10px] font-semibold text-amber-700 mt-1 block">
+                            8 Weeks · For Founders &amp; Freelancers
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+
+                    {/* Bottom Guarantees Strip */}
+                    <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-gradient-to-r from-emerald-50/70 via-white to-purple-50/70 p-2.5 rounded-xl text-xs">
+                      <div className="flex items-center gap-3">
+                        <span className="flex items-center gap-1 font-bold text-emerald-900">
+                          <Award className="w-3.5 h-3.5 text-emerald-600" />
+                          Verified Certificate
+                        </span>
+                        <span className="flex items-center gap-1 font-bold text-purple-900">
+                          <Briefcase className="w-3.5 h-3.5 text-purple-600" />
+                          Live Client Project Internship
+                        </span>
+                      </div>
+                      <Link
+                        href="/academy"
+                        className="font-bold text-brand-700 hover:text-brand-800 flex items-center gap-1"
+                      >
+                        <span>Free ATS Resume &amp; Syllabus</span>
+                        <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 3. Case Studies Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setCaseStudiesDropdownOpen(true)}
+                onMouseLeave={() => setCaseStudiesDropdownOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer ${
+                    pathname.startsWith("/case-studies")
+                      ? "text-brand-700 bg-brand-50/80 font-semibold"
+                      : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                  }`}
+                >
+                  <span>Case Studies</span>
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      caseStudiesDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
+                    }`}
+                  />
+                </button>
+
+                {caseStudiesDropdownOpen && (
+                  <div className="absolute top-full left-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 space-y-1 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
+                    <Link
+                      href="/case-studies/vijayas-yummy-food"
+                      className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center shrink-0 font-bold text-sm">
+                        🍲
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
+                          Vijaya&apos;s Yummy Food
+                        </div>
+                        <span className="text-xs text-gray-500 block">
+                          FoodTech &amp; Cloud Kitchen PWA
+                        </span>
+                      </div>
+                    </Link>
+
+                    <Link
+                      href="/case-studies/mana-tours"
+                      className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 font-bold text-sm">
+                        🚖
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700 flex items-center gap-1">
+                          MANA Tours &amp; Travels
+                          <span className="text-[10px] text-amber-600 font-bold">5.0★</span>
+                        </div>
+                        <span className="text-xs text-gray-500 block">
+                          Kadapa Travel &amp; AI Voice Booking
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="/hire-developers"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/hire-developers"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                Hire Developers
+              </Link>
+
+              <Link
+                href="/about"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/about"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                About
+              </Link>
+            </nav>
+
+            {/* Right Action Buttons */}
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href="https://wa.me/918639831132"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-xs font-semibold text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors"
+                title="Direct WhatsApp with Kadapa office"
+              >
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
+                <span>WhatsApp</span>
+              </a>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white text-xs font-bold shadow-md shadow-brand-500/25 hover:shadow-lg hover:shadow-brand-500/35 hover:-translate-y-0.5 transition-all"
+              >
+                <span>Get Free Quote</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="flex items-center gap-2 lg:hidden">
+              <Link
+                href="/academy"
+                className="px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-100 text-brand-800 border border-brand-200"
+              >
+                Academy
+              </Link>
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="p-2 rounded-lg text-gray-600 hover:text-navy-950 hover:bg-gray-100 focus:outline-none cursor-pointer"
+                aria-label="Toggle navigation menu"
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu Drawer */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 max-h-[85vh] overflow-y-auto">
             <Link
               href="/"
-              className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                pathname === "/"
-                  ? "text-brand-700 bg-brand-50/80 font-semibold"
-                  : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-              }`}
+              className="block px-3 py-2 text-base font-bold rounded-lg text-gray-900 hover:bg-gray-50"
             >
               Home
             </Link>
 
-            {/* Services Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setServicesDropdownOpen(true)}
-              onMouseLeave={() => setServicesDropdownOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  pathname.startsWith("/services")
-                    ? "text-brand-700 bg-brand-50/80 font-semibold"
-                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-                }`}
-              >
-                Services
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    servicesDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
-                  }`}
-                />
-              </button>
-
-              {/* Mega-menu panel */}
-              {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 w-[580px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 grid grid-cols-2 gap-3 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
-                  <div className="col-span-2 pb-2 mb-1 border-b border-gray-100 flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
-                      Engineering & Quality Services
-                    </span>
-                    <Link
-                      href="/services/qa-testing"
-                      className="text-xs font-semibold text-brand-600 hover:text-brand-700 flex items-center gap-1"
-                    >
-                      View All <ArrowRight className="w-3 h-3" />
-                    </Link>
-                  </div>
-
-                  <Link
-                    href="/services/qa-testing"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <CheckCircle2 className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700 flex items-center gap-1.5">
-                        QA & Automation
-                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-brand-100 text-brand-800 font-bold">
-                          Core
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                        Playwright, Selenium, and RestAssured API testing pods.
-                      </p>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href="/services/software-dev"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Globe className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                        Web & SaaS Apps
-                      </div>
-                      <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                        Next.js, React, Spring Boot, and modern cloud portals.
-                      </p>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href="/services/business-systems"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Layers className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                        Business ERP & CRM
-                      </div>
-                      <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                        Custom billing, fleet management, and inventory portals.
-                      </p>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href="/services/software-dev"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                      <Smartphone className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                        Mobile Apps (Flutter)
-                      </div>
-                      <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                        Native iOS & Android apps with a single Flutter codebase.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              )}
+            {/* Tech Services Accordion */}
+            <div className="p-3 bg-gray-50 rounded-2xl border border-gray-200/70 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-700 flex items-center gap-1.5">
+                  <Globe className="w-3.5 h-3.5" />
+                  Tech Services
+                </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800">
+                  Web &amp; SaaS Core
+                </span>
+              </div>
+              <div className="space-y-1.5 pt-1 text-sm">
+                <Link
+                  href="/services/software-dev"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 hover:text-brand-600 border border-gray-100"
+                >
+                  🌐 Web &amp; SaaS Product Development
+                </Link>
+                <Link
+                  href="/services/qa-testing"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
+                >
+                  🧪 QA Automation (Selenium &amp; Playwright)
+                </Link>
+                <Link
+                  href="/services/software-dev"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
+                >
+                  📱 Mobile Apps (Flutter Android &amp; iOS)
+                </Link>
+                <Link
+                  href="/services/business-systems"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
+                >
+                  💼 Business ERP &amp; Billing Systems
+                </Link>
+                <Link
+                  href="/services/software-dev"
+                  className="block px-2.5 py-1.5 rounded-lg bg-brand-50/80 font-bold text-brand-700 text-xs text-center border border-brand-200"
+                >
+                  🧮 Launch SaaS Scope &amp; Cost Estimator →
+                </Link>
+              </div>
             </div>
 
-            {/* Case Studies Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setCaseStudiesDropdownOpen(true)}
-              onMouseLeave={() => setCaseStudiesDropdownOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  pathname.startsWith("/case-studies")
-                    ? "text-brand-700 bg-brand-50/80 font-semibold"
-                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-                }`}
-              >
-                Case Studies
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    caseStudiesDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
-                  }`}
-                />
-              </button>
-
-              {caseStudiesDropdownOpen && (
-                <div className="absolute top-full left-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 space-y-1 transition-all duration-200">
-                  <Link
-                    href="/case-studies/vijayas-yummy-food"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center shrink-0 font-bold text-sm">
-                      🍲
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                        Vijaya&apos;s Yummy Food
-                      </div>
-                      <span className="text-xs text-gray-500 block">
-                        FoodTech &amp; Cloud Kitchen PWA
-                      </span>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href="/case-studies/mana-tours"
-                    className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 font-bold text-sm">
-                      🚖
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700 flex items-center gap-1">
-                        MANA Tours & Travels
-                        <span className="text-[10px] text-amber-600 font-bold">5.0★</span>
-                      </div>
-                      <span className="text-xs text-gray-500 block">
-                        Kadapa Travel & AI Voice Booking
-                      </span>
-                    </div>
-                  </Link>
+            {/* MOMO Academy Accordion */}
+            <div className="p-3 bg-brand-50/40 rounded-2xl border border-brand-200/80 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-brand-800 flex items-center gap-1.5">
+                  <GraduationCap className="w-3.5 h-3.5 text-brand-700" />
+                  MOMO Academy
+                </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+                  4.8★ Kadapa Lab
+                </span>
+              </div>
+              <div className="space-y-1.5 pt-1 text-sm">
+                <Link
+                  href="/academy#courses"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 border border-brand-100"
+                >
+                  Automation Testing with Java (Selenium 4)
+                </Link>
+                <Link
+                  href="/academy#courses"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
+                >
+                  Full-Stack Software Dev (React 19 &amp; Java)
+                </Link>
+                <Link
+                  href="/academy#courses"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
+                >
+                  Mobile App Dev (Flutter Android &amp; iOS)
+                </Link>
+                <Link
+                  href="/academy#courses"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
+                >
+                  Digital Marketing &amp; AI Growth Masterclass
+                </Link>
+                <div className="p-2 rounded-lg bg-white border border-emerald-200 text-[11px] text-emerald-800 font-semibold text-center">
+                  🎓 Certificate + 💼 Real Project Internship Included
                 </div>
-              )}
+              </div>
             </div>
 
-            <Link
-              href="/hire-developers"
-              className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                pathname === "/hire-developers"
-                  ? "text-brand-700 bg-brand-50/80 font-semibold"
-                  : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-              }`}
-            >
-              Hire Developers
-            </Link>
+            {/* Case Studies & Other links */}
+            <div className="space-y-1 pt-1">
+              <Link
+                href="/case-studies/vijayas-yummy-food"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                🍲 Vijaya&apos;s Yummy Food (Client PWA)
+              </Link>
+              <Link
+                href="/case-studies/mana-tours"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                🚖 MANA Tours &amp; Travels (Kadapa Mobility)
+              </Link>
+              <Link
+                href="/hire-developers"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                Hire Dedicated Developers
+              </Link>
+              <Link
+                href="/about"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                About MOMO IT
+              </Link>
+            </div>
 
-            {/* MOMO Academy Link */}
-            <Link
-              href="/academy"
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 text-sm font-semibold rounded-lg transition-all border ${
-                pathname === "/academy"
-                  ? "bg-brand-600 text-white border-brand-600 shadow-sm"
-                  : "bg-brand-50/80 text-brand-800 border-brand-200/80 hover:bg-brand-100"
-              }`}
-            >
-              <GraduationCap className="w-4 h-4" />
-              MOMO Academy
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
-            </Link>
-
-            <Link
-              href="/about"
-              className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                pathname === "/about"
-                  ? "text-brand-700 bg-brand-50/80 font-semibold"
-                  : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-              }`}
-            >
-              About
-            </Link>
-          </nav>
-
-          {/* Right Action Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href="tel:+918639831132"
-              className="flex items-center gap-2 text-xs font-semibold text-gray-600 hover:text-brand-600 px-3 py-2 transition-colors"
-            >
-              <PhoneCall className="w-3.5 h-3.5 text-brand-600" />
-              <span>086398 31132</span>
-            </a>
-
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white text-xs font-bold shadow-md shadow-brand-500/25 hover:shadow-lg hover:shadow-brand-500/35 hover:-translate-y-0.5 transition-all"
-            >
-              <span>Get Free Quote</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
+            {/* Mobile Action Buttons */}
+            <div className="pt-2 flex flex-col gap-2 border-t border-gray-100">
+              <a
+                href="https://wa.me/918639831132"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold shadow-xs transition-colors"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>Chat on WhatsApp (+91 86398 31132)</span>
+              </a>
+              <Link
+                href="/contact"
+                className="flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 text-white font-bold text-sm shadow-md"
+              >
+                <span>Request Free Proposal</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 lg:hidden">
-            <Link
-              href="/academy"
-              className="px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-100 text-brand-800 border border-brand-200"
-            >
-              Academy
-            </Link>
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-gray-600 hover:text-navy-950 hover:bg-gray-100 focus:outline-none"
-              aria-label="Toggle navigation menu"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu Drawer */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-2 max-h-[85vh] overflow-y-auto">
-          <Link
-            href="/"
-            className="block px-3 py-2 text-base font-medium rounded-lg text-gray-800 hover:bg-gray-50"
-          >
-            Home
-          </Link>
-
-          <div className="py-2 border-y border-gray-100 space-y-1">
-            <span className="text-xs font-bold text-gray-400 uppercase tracking-wider px-3">
-              Services
-            </span>
-            <Link
-              href="/services/qa-testing"
-              className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
-            >
-              QA & Automation Testing (Selenium / Playwright)
-            </Link>
-            <Link
-              href="/services/software-dev"
-              className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
-            >
-              Web & SaaS App Development
-            </Link>
-            <Link
-              href="/services/business-systems"
-              className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
-            >
-              Business Management Systems & ERP
-            </Link>
-          </div>
-
-          <div className="py-2 border-b border-gray-100 space-y-1">
-            <span className="text-xs font-bold text-gray-400 uppercase tracking-wider px-3">
-              Case Studies
-            </span>
-            <Link
-              href="/case-studies/vijayas-yummy-food"
-              className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
-            >
-              Vijaya&apos;s Yummy Food (FoodTech PWA)
-            </Link>
-            <Link
-              href="/case-studies/mana-tours"
-              className="block px-3 py-1.5 text-sm text-gray-700 hover:text-brand-600"
-            >
-              MANA Tours & Travels (Kadapa Mobility)
-            </Link>
-          </div>
-
-          <Link
-            href="/hire-developers"
-            className="block px-3 py-2 text-base font-medium rounded-lg text-gray-800 hover:bg-gray-50"
-          >
-            Hire Dedicated Developers
-          </Link>
-
-          <Link
-            href="/academy"
-            className="block px-3 py-2 text-base font-semibold rounded-lg bg-brand-50 text-brand-800 border border-brand-200"
-          >
-            MOMO Academy (Hybrid Training)
-          </Link>
-
-          <Link
-            href="/about"
-            className="block px-3 py-2 text-base font-medium rounded-lg text-gray-800 hover:bg-gray-50"
-          >
-            About MOMO IT
-          </Link>
-
-          <div className="pt-3 flex flex-col gap-2">
-            <a
-              href="tel:+918639831132"
-              className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-gray-200 text-sm font-bold text-gray-700"
-            >
-              <PhoneCall className="w-4 h-4 text-brand-600" />
-              <span>Call Kadapa Desk: 086398 31132</span>
-            </a>
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 text-white font-bold text-sm shadow-md"
-            >
-              <span>Request Free Consultation</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      )}
+        )}
       </header>
     </div>
   );
