@@ -149,14 +149,24 @@ export default function ContactPage() {
                   <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
                     Phone / WhatsApp *
                   </label>
-                  <input
-                    type="tel"
-                    required
-                    placeholder="+91 98765 43210"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all"
-                  />
+                  <div className="relative flex rounded-xl border border-gray-200 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100 bg-white overflow-hidden transition-all">
+                    <span className="inline-flex items-center gap-1 px-3.5 bg-gray-50 border-r border-gray-200 text-gray-700 font-semibold text-xs select-none">
+                      <span className="text-sm">🇮🇳</span> +91
+                    </span>
+                    <input
+                      type="tel"
+                      required
+                      maxLength={10}
+                      pattern="[0-9]{10}"
+                      placeholder="98765 43210"
+                      value={formData.phone}
+                      onChange={(e) => {
+                        const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
+                        setFormData({ ...formData, phone: digits });
+                      }}
+                      className="w-full px-3.5 py-3 outline-none text-sm bg-transparent font-medium text-navy-950 placeholder:text-gray-400"
+                    />
+                  </div>
                 </div>
               </div>
 
