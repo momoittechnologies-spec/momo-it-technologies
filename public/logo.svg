@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0F2856" />
+      <stop offset="60%" stop-color="#08152E" />
+      <stop offset="100%" stop-color="#030814" />
+    </radialGradient>
+
+    <!-- Electric Emerald Gradient -->
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22FFA1" />
+      <stop offset="60%" stop-color="#00ED87" />
+      <stop offset="100%" stop-color="#00BA66" />
+    </linearGradient>
+
+    <!-- Cyber Cyan Gradient -->
+    <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60EFFF" />
+      <stop offset="50%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#0077B6" />
+    </linearGradient>
+
+    <!-- Subtle Golden Yellow Accent for Terminal Prompt -->
+    <linearGradient id="goldDot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDE59" />
+      <stop offset="100%" stop-color="#FF914D" />
+    </linearGradient>
+
+    <!-- High-Impact Neon Glow Filter -->
+    <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D Layering -->
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Outer Isometric / Hex-Rounded Container -->
+  <rect x="6" y="6" width="148" height="148" rx="38" fill="url(#bgGlow)" stroke="rgba(0, 237, 135, 0.3)" stroke-width="2" filter="url(#drop)" />
+
+  <!-- Code Editor Window Header Dots (Mac/Linux Terminal Style) -->
+  <g opacity="0.65">
+    <circle cx="34" cy="28" r="3.2" fill="#FF5F56" />
+    <circle cx="45" cy="28" r="3.2" fill="#FFBD2E" />
+    <circle cx="56" cy="28" r="3.2" fill="#27C93F" />
+  </g>
+
+  <!-- Terminal prompt line hint top right -->
+  <path d="M102 28 H126" stroke="#22FFA1" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+
+  <!-- THE EMBLEM: Continuous Geometric Coding Architecture -->
+  <g filter="url(#ultraGlow)">
+    <!-- LEFT PILLAR: Code Opening Tag '<' that rises into Left Arch of 'M' -->
+    <path
+      d="M52 50
+         L28 78
+         L52 106
+         M32 78
+         L56 50
+         L78 84"
+      stroke="url(#neonGreen)"
+      stroke-width="9"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- RIGHT PILLAR: Code Closing Tag '>' that descends from Right Arch of 'M' -->
+    <path
+      d="M108 50
+         L132 78
+         L108 106
+         M128 78
+         L104 50
+         L82 84"
+      stroke="url(#neonGreen)"
+      stroke-width="9"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- THE CENTRAL SYNTAX SLASH '/' (Electric Cyan Beam Connecting Core) -->
+    <path
+      d="M93 42
+         L67 114"
+      stroke="url(#cyberCyan)"
+      stroke-width="9.5"
+      stroke-linecap="round"
+    />
+
+    <!-- CENTER APEX CONNECTOR (Unifying the M Structure with Precision) -->
+    <path
+      d="M60 50
+         L80 78
+         L100 50"
+      stroke="url(#neonGreen)"
+      stroke-width="8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Glowing Execution Sparks (QA Automation & Passing Test Points) -->
+  <circle cx="80" cy="78" r="5" fill="#FFFFFF" />
+  <circle cx="80" cy="78" r="2.5" fill="#00ED87" />
+
+  <!-- Code Cursor / Blinking Prompt Pulse at base -->
+  <rect x="74" y="124" width="12" height="3" rx="1.5" fill="url(#neonGreen)" opacity="0.85" />
+</svg>
