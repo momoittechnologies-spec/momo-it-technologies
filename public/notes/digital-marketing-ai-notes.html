@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing, Local SEO & AI Growth Masterclass Handbook — MOMO Academy</title>
+  <meta name="description" content="Official Advanced Digital Marketing Handbook by MOMO IT Technologies. Google Maps 3-Pack, Meta Ads, WhatsApp Funnels, Generative AI Marketing, and Monthly Retainer Agency Blueprint.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #1e293b;
+      --code-text: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 60px;
+    }
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .top-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .top-brand span { color: #38bdf8; }
+    .nav-buttons { display: flex; gap: 10px; }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: #0284c7; color: #fff; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-secondary { background: #334155; color: #f8fafc; }
+    .btn-secondary:hover { background: #475569; }
+    .btn-whatsapp { background: #16a34a; color: #fff; }
+    .btn-whatsapp:hover { background: #15803d; }
+
+    .container {
+      max-width: 960px;
+      margin: 32px auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01);
+      border: 1px solid var(--border);
+    }
+    .doc-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 2.2rem; color: var(--dark); line-height: 1.25; margin-bottom: 12px; font-weight: 800; }
+    .meta-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .callout {
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border: 2px solid #86efac;
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+    .callout h3 { color: #166534; font-size: 1.15rem; margin-bottom: 8px; }
+    .callout p { color: #14532d; font-size: 0.95rem; }
+
+    h2 { font-size: 1.5rem; color: var(--dark); margin-top: 40px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1.18rem; color: #0369a1; margin-top: 24px; margin-bottom: 10px; }
+    p, li { font-size: 1rem; color: #334155; margin-bottom: 12px; }
+    ul, ol { padding-left: 24px; margin-bottom: 16px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th { background: #f1f5f9; color: var(--dark); font-weight: 700; }
+    tr:nth-child(even) { background: #f8fafc; }
+
+    .qa-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border-radius: 0 8px 8px 0;
+    }
+    .qa-box .question { font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .qa-box .answer { color: #334155; }
+
+    .services-promo {
+      background: #0f172a;
+      color: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      margin-top: 48px;
+    }
+    .services-promo h2 { color: #38bdf8; border-bottom: 1px solid #334155; margin-top: 0; }
+    .services-promo p { color: #cbd5e1; }
+    .services-promo .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .top-bar { display: none !important; }
+      .container { max-width: 100%; margin: 0; padding: 20px; border: none; box-shadow: none; }
+      .services-promo { background: #f8fafc; color: #000; border: 2px solid #0284c7; }
+      .services-promo h2 { color: #0284c7; }
+      .services-promo p { color: #334155; }
+      .callout { background: #f8fafc; border: 1px solid #16a34a; }
+      a { text-decoration: none; color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <div class="top-bar">
+    <div class="top-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/></svg>
+      <span>MOMO</span> Academy Growth Marketing Handbook
+    </div>
+    <div class="nav-buttons">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Save as PDF / Print
+      </button>
+      <a href="https://wa.me/918639831132?text=Hi%20MOMO%20Academy%2C%20I%20have%20a%20question%20regarding%20Digital%20Marketing%20Notes" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        WhatsApp Helpdesk
+      </a>
+      <a href="/academy" class="btn btn-secondary">← Back to Academy</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="doc-header">
+      <span class="badge">Growth Marketing & AI 2026</span>
+      <h1>Advanced Digital Marketing, Local SEO & AI Growth Masterclass</h1>
+      <p style="font-size: 1.1rem; color: #475569;">Google Maps 3-Pack SEO, High-ROI Meta Ads, WhatsApp Automation Funnels, Generative AI, and Freelancing Agency Blueprint</p>
+      
+      <div class="meta-info">
+        <div><strong>Publisher:</strong> MOMO IT Technologies</div>
+        <div><strong>Headquarters:</strong> Krishnapuram, Kadapa, AP</div>
+        <div><strong>Website:</strong> momoittechnologies.com</div>
+        <div><strong>Admissions & Referral:</strong> +91 86398 31132</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <h3>🚀 MOMO Student Ambassador & Client Referral Program</h3>
+      <p>
+        Every business owner in Kadapa, Andhra Pradesh, and across India needs more paying customers. When you introduce a business or brand to <strong>MOMO Tech Services</strong> for Digital Marketing, Local SEO, or Custom Web App development, <strong>you earn 10% direct cash commission</strong> on all monthly retainers and project setup fees!
+      </p>
+    </div>
+
+    <h2>Module 1: Google Maps 3-Pack & Local SEO Mastery</h2>
+    <p>Ranking in the top 3 on Google Maps when customers search for local services drives more than 40% of high-intent phone calls.</p>
+    <ul>
+      <li><strong>NAP Consistency:</strong> Name, Address, and Phone must match 100% across GBP, JustDial, IndiaMART, and website.</li>
+      <li><strong>Review Velocity:</strong> Systematically request customer reviews mentioning the city name and specific services.</li>
+      <li><strong>Geo-Tagged Media:</strong> Upload weekly photos with GPS EXIF metadata of the business premises.</li>
+    </ul>
+
+    <h2>Module 2: Meta Ads & Conversion Optimization</h2>
+    <ul>
+      <li><strong>Creative-Led Targeting:</strong> Meta's algorithms prioritize strong creative messaging over granular audience interests. The creative filter attracts the ideal buyer.</li>
+      <li><strong>Meta Conversions API (CAPI):</strong> Server-to-server tracking that bypasses iOS ad-blockers and browser cookie restrictions.</li>
+    </ul>
+
+    <h2>Module 3: Agency Retainer Blueprint</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Services Included</th>
+          <th>Ideal Client</th>
+          <th>Monthly Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Local Boost</strong></td>
+          <td>GBP setup, review management, 8 monthly graphics</td>
+          <td>Local clinic, salon, bakery</td>
+          <td>₹12,000 – ₹18,000/mo</td>
+        </tr>
+        <tr>
+          <td><strong>Lead Engine</strong></td>
+          <td>Meta Ads + Google Ads + WhatsApp Chatbot funnel</td>
+          <td>Real estate, hospitals, coaching centers</td>
+          <td>₹25,000 – ₹45,000/mo</td>
+        </tr>
+        <tr>
+          <td><strong>Full Domination</strong></td>
+          <td>Omnichannel SEO + High-spend Ads + Web optimization</td>
+          <td>High-ticket retail, B2B companies</td>
+          <td>₹50,000 – ₹1,00,000/mo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Module 4: Top 5 MNC Digital Marketing Interview Questions</h2>
+    <div class="qa-box">
+      <div class="question">Q1: What is ROAS and how do you calculate it?</div>
+      <div class="answer">Return on Ad Spend = (Revenue generated from advertising) / (Total ad spend). A 5x ROAS means ₹5 earned for every ₹1 spent on ads.</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q2: What is the difference between CPM, CPC, and CPA?</div>
+      <div class="answer">CPM is cost per 1,000 impressions. CPC is cost per single click. CPA is cost per acquisition (paying customer or verified lead).</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q3: How do you prevent ad fatigue in Meta campaigns?</div>
+      <div class="answer">When frequency exceeds 2.5–3.0 and CPA starts rising, introduce new creative hooks, test user-generated video (UGC), or switch up the core offer.</div>
+    </div>
+
+    <div class="services-promo">
+      <h2>MOMO Tech Services — Growth Marketing & Web Engineering</h2>
+      <p>MOMO IT Technologies powers end-to-end digital growth for businesses through high-converting web applications, performance ad campaigns, and local SEO domination.</p>
+      <p style="margin-top: 10px; font-weight: 600; color: #38bdf8;">Earn 10% direct cash commission on every marketing retainer or software project referred to MOMO Tech Services.</p>
+      <div class="btn-group">
+        <a href="/contact" class="btn btn-primary">Grow With Us</a>
+        <a href="https://wa.me/918639831132?text=I%20have%20a%20digital%20marketing%20client%20referral" class="btn btn-whatsapp" target="_blank">Submit Client Referral (+91 86398 31132)</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

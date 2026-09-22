@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Platform Mobile App Engineering Handbook (Flutter & Dart) — MOMO Academy</title>
+  <meta name="description" content="Cross-Platform Mobile App Development Handbook for Android & iOS by MOMO IT Technologies. Flutter, Dart, Riverpod, Firebase, Play Store and App Store publishing.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #1e293b;
+      --code-text: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 60px;
+    }
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .top-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .top-brand span { color: #38bdf8; }
+    .nav-buttons { display: flex; gap: 10px; }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: #0284c7; color: #fff; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-secondary { background: #334155; color: #f8fafc; }
+    .btn-secondary:hover { background: #475569; }
+    .btn-whatsapp { background: #16a34a; color: #fff; }
+    .btn-whatsapp:hover { background: #15803d; }
+
+    .container {
+      max-width: 960px;
+      margin: 32px auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01);
+      border: 1px solid var(--border);
+    }
+    .doc-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 2.2rem; color: var(--dark); line-height: 1.25; margin-bottom: 12px; font-weight: 800; }
+    .meta-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .callout {
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border: 2px solid #86efac;
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+    .callout h3 { color: #166534; font-size: 1.15rem; margin-bottom: 8px; }
+    .callout p { color: #14532d; font-size: 0.95rem; }
+
+    h2 { font-size: 1.5rem; color: var(--dark); margin-top: 40px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1.18rem; color: #0369a1; margin-top: 24px; margin-bottom: 10px; }
+    p, li { font-size: 1rem; color: #334155; margin-bottom: 12px; }
+    ul, ol { padding-left: 24px; margin-bottom: 16px; }
+
+    pre {
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 18px 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 16px 0;
+      border: 1px solid #334155;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre code { background: transparent; color: inherit; padding: 0; }
+
+    .qa-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border-radius: 0 8px 8px 0;
+    }
+    .qa-box .question { font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .qa-box .answer { color: #334155; }
+
+    .services-promo {
+      background: #0f172a;
+      color: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      margin-top: 48px;
+    }
+    .services-promo h2 { color: #38bdf8; border-bottom: 1px solid #334155; margin-top: 0; }
+    .services-promo p { color: #cbd5e1; }
+    .services-promo .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .top-bar { display: none !important; }
+      .container { max-width: 100%; margin: 0; padding: 20px; border: none; box-shadow: none; }
+      pre { background: #f1f5f9; color: #000; border: 1px solid #cbd5e1; white-space: pre-wrap; }
+      .services-promo { background: #f8fafc; color: #000; border: 2px solid #0284c7; }
+      .services-promo h2 { color: #0284c7; }
+      .services-promo p { color: #334155; }
+      .callout { background: #f8fafc; border: 1px solid #16a34a; }
+      a { text-decoration: none; color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <div class="top-bar">
+    <div class="top-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      <span>MOMO</span> Academy Mobile Engineering Handbook
+    </div>
+    <div class="nav-buttons">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Save as PDF / Print
+      </button>
+      <a href="https://wa.me/918639831132?text=Hi%20MOMO%20Academy%2C%20I%20have%20a%20question%20regarding%20Flutter%20Mobile%20App%20Notes" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        WhatsApp Helpdesk
+      </a>
+      <a href="/academy" class="btn btn-secondary">← Back to Academy</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="doc-header">
+      <span class="badge">Mobile App Development 2026</span>
+      <h1>Cross-Platform Mobile App Development (Flutter & Dart for Android & iOS)</h1>
+      <p style="font-size: 1.1rem; color: #475569;">Dart 3, Reactive Widgets, Riverpod State Architecture, Supabase Realtime, Play Store & App Store Deployment</p>
+      
+      <div class="meta-info">
+        <div><strong>Publisher:</strong> MOMO IT Technologies</div>
+        <div><strong>Headquarters:</strong> Krishnapuram, Kadapa, AP</div>
+        <div><strong>Website:</strong> momoittechnologies.com</div>
+        <div><strong>Admissions & Referral:</strong> +91 86398 31132</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <h3>🚀 MOMO Student Ambassador & Client Referral Program</h3>
+      <p>
+        Nearly every commercial business — retail shops, clinics, schools, logistics companies, travel operators — needs an Android and iOS mobile app. When you refer a business to <strong>MOMO Tech Services</strong> for Mobile App Development, <strong>you receive 10% direct cash commission</strong> on the total contract value!
+      </p>
+    </div>
+
+    <h2>Module 1: Flutter Architecture & Impeller GPU Rendering</h2>
+    <p>Flutter compiles Dart code directly to native ARM machine code, utilizing the modern Impeller engine on iOS/Android for fluid 60/120 FPS animations without any bridge delay.</p>
+
+    <h2>Module 2: Reactive State Management with Riverpod</h2>
+    <pre><code>@riverpod
+class CartNotifier extends _$CartNotifier {
+  @override
+  List&lt;CartItem&gt; build() => [];
+
+  void addItem(CartItem item) {
+    state = [...state, item];
+  }
+
+  void removeItem(String id) {
+    state = state.where((item) => item.id != id).toList();
+  }
+}</code></pre>
+
+    <h2>Module 3: Cloud Backends & Native Features</h2>
+    <ul>
+      <li><strong>Supabase / Firebase Auth:</strong> Phone OTP login, Google Sign-In, Apple Sign-In.</li>
+      <li><strong>FCM Push Notifications:</strong> Real-time alerts for delivery dispatch and order status changes.</li>
+      <li><strong>Hardware Access:</strong> GPS location, camera scanner, secure offline storage using Hive or SQLite.</li>
+    </ul>
+
+    <h2>Module 4: Top 5 MNC Flutter Interview Questions</h2>
+    <div class="qa-box">
+      <div class="question">Q1: What is the difference between Hot Reload and Hot Restart?</div>
+      <div class="answer">Hot Reload injects code changes into the running Dart VM without resetting the widget state (~1 sec). Hot Restart resets the app state and restarts execution from <code>main()</code> (~3-5 sec).</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q2: How do you prevent memory leaks in Flutter?</div>
+      <div class="answer">Always call <code>dispose()</code> on controllers, animations, text controllers, and cancel active <code>StreamSubscription</code> objects in the State object's lifecycle.</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q3: Why is Flutter often faster than React Native?</div>
+      <div class="answer">Flutter compiles to native ARM code and renders directly to GPU pixels via Impeller, avoiding the JavaScript-to-Native bridge serialization overhead.</div>
+    </div>
+
+    <h2>Module 5: Mobile App Freelancing Blueprint</h2>
+    <ul>
+      <li><strong>Local Retail & Grocery Ordering Apps:</strong> Simple catalog + WhatsApp cart submission (Charge: ₹35,000 – ₹70,000).</li>
+      <li><strong>Doctor Appointment & Telemedicine Apps:</strong> Slot booking + push reminders (Charge: ₹45,000 – ₹90,000).</li>
+      <li><strong>Travel & Logistics Apps:</strong> GPS vehicle tracking and booking system (Charge: ₹60,000 – ₹1,50,000).</li>
+    </ul>
+
+    <div class="services-promo">
+      <h2>MOMO Tech Services — Mobile App Development</h2>
+      <p>MOMO IT Technologies designs, develops, and deploys high-performance mobile applications for Android and iOS.</p>
+      <p style="margin-top: 10px; font-weight: 600; color: #38bdf8;">Earn 10% direct cash commission on every mobile app project referred to MOMO Tech Services.</p>
+      <div class="btn-group">
+        <a href="/contact" class="btn btn-primary">Start a Mobile Project</a>
+        <a href="https://wa.me/918639831132?text=I%20have%20a%20mobile%20app%20client%20referral" class="btn btn-whatsapp" target="_blank">Submit Client Referral (+91 86398 31132)</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -10,6 +10,8 @@ export interface CourseItem {
   overview: string;
   certificateIncluded: boolean;
   internshipAvailable: boolean;
+  notesHtml?: string;
+  notesMd?: string;
   highlights: string[];
   curriculum: {
     module: string;
@@ -31,6 +33,8 @@ export const coursesData: CourseItem[] = [
     badge: "Flagship QA / Highest Placements",
     certificateIncluded: true,
     internshipAvailable: true,
+    notesHtml: "/notes/automation-testing-notes.html",
+    notesMd: "/notes/automation-testing-notes.md",
     overview:
       "Kadapa's #1 premier test automation program designed by senior SDET architects. Master Core Java, Selenium WebDriver 4, TestNG, Cucumber BDD, REST Assured API validation, and Jenkins CI/CD. 100% practical, framework-building code delivered inside our Kadapa lab and interactive online batches.",
     highlights: [
@@ -101,6 +105,8 @@ export const coursesData: CourseItem[] = [
     badge: "High ROI / Business & Freelancing",
     certificateIncluded: true,
     internshipAvailable: true,
+    notesHtml: "/notes/digital-marketing-ai-notes.html",
+    notesMd: "/notes/digital-marketing-ai-notes.md",
     overview:
       "A comprehensive, ROI-first digital marketing program tailored for business owners, entrepreneurs, freelancers, and aspiring performance marketers across Kadapa and India. Learn how to launch high-converting Meta and Google Ads, dominate Local Google Search & Maps rankings, automate customer WhatsApp funnels, and scale revenue with AI-powered marketing tools.",
     highlights: [
@@ -171,6 +177,8 @@ export const coursesData: CourseItem[] = [
     badge: "High Salary / Android & iOS",
     certificateIncluded: true,
     internshipAvailable: true,
+    notesHtml: "/notes/mobile-app-flutter-notes.html",
+    notesMd: "/notes/mobile-app-flutter-notes.md",
     overview:
       "Learn to design, develop, and publish cross-platform mobile apps for both Android and iOS devices. This program combines Flutter (Dart) and React Native fundamentals with real-world cloud backends (Supabase & Firebase), offline storage, payment gateways, and direct deployment to the Google Play Store and Apple App Store.",
     highlights: [
@@ -241,6 +249,8 @@ export const coursesData: CourseItem[] = [
     badge: "Enterprise Career Track",
     certificateIncluded: true,
     internshipAvailable: true,
+    notesHtml: "/notes/fullstack-java-notes.html",
+    notesMd: "/notes/fullstack-java-notes.md",
     overview:
       "Designed for students and developers who want to build end-to-end commercial web applications. You will learn modern frontend development (React 19, JavaScript ES6+, Tailwind), enterprise Java backend engineering (Spring Boot 3, Hibernate, JPA), database management with PostgreSQL/Supabase, and cloud deployment.",
     highlights: [

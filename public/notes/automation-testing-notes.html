@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Testing & SDET Engineering Handbook — MOMO Academy</title>
+  <meta name="description" content="Comprehensive Automation Testing with Java & Selenium WebDriver 4 Study Handbook from MOMO Academy. Includes interview Q&As, freelancing blueprint, and code samples.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #1e293b;
+      --code-text: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 60px;
+    }
+    /* Top sticky navigation bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .top-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+    }
+    .top-brand span { color: #38bdf8; }
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: #0284c7; color: #fff; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-secondary { background: #334155; color: #f8fafc; }
+    .btn-secondary:hover { background: #475569; }
+    .btn-whatsapp { background: #16a34a; color: #fff; }
+    .btn-whatsapp:hover { background: #15803d; }
+
+    /* Main Container */
+    .container {
+      max-width: 960px;
+      margin: 32px auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.01);
+      border: 1px solid var(--border);
+    }
+
+    /* Header Banner */
+    .doc-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--dark);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+    .meta-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .meta-info strong { color: var(--text-main); }
+
+    /* Ambassador Alert */
+    .callout {
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border: 2px solid #86efac;
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 28px 0;
+    }
+    .callout h3 {
+      color: #166534;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .callout p { color: #14532d; font-size: 0.95rem; }
+
+    /* Headings & Content */
+    h2 {
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1.18rem;
+      color: #0369a1;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 1rem;
+      color: #334155;
+      margin-bottom: 12px;
+    }
+    ul, ol { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+
+    /* Code Blocks */
+    pre {
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 18px 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 16px 0;
+      border: 1px solid #334155;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre code { background: transparent; color: inherit; padding: 0; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: var(--dark);
+      font-weight: 700;
+    }
+    tr:nth-child(even) { background: #f8fafc; }
+
+    /* Q&A section */
+    .qa-box {
+      background: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border-radius: 0 8px 8px 0;
+    }
+    .qa-box .question { font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .qa-box .answer { color: #334155; }
+
+    /* Services Box */
+    .services-promo {
+      background: #0f172a;
+      color: #fff;
+      padding: 32px;
+      border-radius: 14px;
+      margin-top: 48px;
+    }
+    .services-promo h2 { color: #38bdf8; border-bottom: 1px solid #334155; margin-top: 0; }
+    .services-promo p { color: #cbd5e1; }
+    .services-promo .btn-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+
+    /* Print Styles */
+    @media print {
+      body { background: #fff; color: #000; padding: 0; }
+      .top-bar { display: none !important; }
+      .container { max-width: 100%; margin: 0; padding: 20px; border: none; box-shadow: none; }
+      pre { background: #f1f5f9; color: #000; border: 1px solid #cbd5e1; white-space: pre-wrap; }
+      .services-promo { background: #f8fafc; color: #000; border: 2px solid #0284c7; }
+      .services-promo h2 { color: #0284c7; }
+      .services-promo p { color: #334155; }
+      .callout { background: #f8fafc; border: 1px solid #16a34a; }
+      a { text-decoration: none; color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <div class="top-bar">
+    <div class="top-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>MOMO</span> Academy Study Handbook
+    </div>
+    <div class="nav-buttons">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Save as PDF / Print
+      </button>
+      <a href="https://wa.me/918639831132?text=Hi%20MOMO%20Academy%2C%20I%20have%20a%20question%20regarding%20Automation%20Testing%20Notes" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        WhatsApp Helpdesk
+      </a>
+      <a href="/academy" class="btn btn-secondary">← Back to Academy</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Document Header -->
+    <div class="doc-header">
+      <span class="badge">SDET & QA Automation 2026 Edition</span>
+      <h1>Automation Testing with Java & Selenium WebDriver 4</h1>
+      <p style="font-size: 1.1rem; color: #475569;">Enterprise Test Architecture, Page Object Model, Cucumber BDD, REST Assured, and CI/CD Pipelines</p>
+      
+      <div class="meta-info">
+        <div><strong>Publisher:</strong> MOMO IT Technologies</div>
+        <div><strong>Headquarters:</strong> Krishnapuram, Kadapa, AP</div>
+        <div><strong>Website:</strong> momoittechnologies.com</div>
+        <div><strong>Admissions & Referral:</strong> +91 86398 31132</div>
+      </div>
+    </div>
+
+    <!-- Ambassador Alert Box -->
+    <div class="callout">
+      <h3>🚀 MOMO Student Ambassador & Client Referral Program</h3>
+      <p>
+        As a student or graduate of MOMO Academy, you are our frontline brand ambassador. Know a local business owner, startup founder, school, hospital, or enterprise needing custom software, a mobile app, or QA testing? Connect them with <strong>MOMO Tech Services</strong>. When your referral signs a contract, <strong>you earn 10% direct cash commission</strong> and get live shadowing experience on the project!
+      </p>
+    </div>
+
+    <!-- Module 1 -->
+    <h2>Module 1: Software QA & Testing Fundamentals</h2>
+    <h3>1.1 SDLC vs STLC</h3>
+    <p><strong>SDLC (Software Development Life Cycle):</strong> The overall process of planning, designing, coding, testing, and deploying software.</p>
+    <p><strong>STLC (Software Testing Life Cycle):</strong> The focused phase dedicated exclusively to quality assurance:</p>
+    <ol>
+      <li><strong>Requirement Analysis:</strong> Identify testable user stories and acceptance criteria.</li>
+      <li><strong>Test Planning:</strong> Scope, resources, timelines, and testing tools.</li>
+      <li><strong>Test Case Development:</strong> Step-by-step test scripts with preconditions and expected results.</li>
+      <li><strong>Test Environment Setup:</strong> Web browsers, OS matrices, database fixtures.</li>
+      <li><strong>Test Execution:</strong> Running automated regression suites and logging defect logs.</li>
+      <li><strong>Defect Closure & Sign-Off:</strong> Retesting resolved bugs in Jira and certifying release readiness.</li>
+    </ol>
+
+    <h3>1.2 Black-Box Test Design Techniques</h3>
+    <ul>
+      <li><strong>Boundary Value Analysis (BVA):</strong> Testing edges (Min-1, Min, Min+1, Max-1, Max, Max+1). Defect density is historically highest at numerical thresholds.</li>
+      <li><strong>Equivalence Class Partitioning (ECP):</strong> Splitting input data into valid and invalid sets to test one representative sample per partition.</li>
+    </ul>
+
+    <!-- Module 2 -->
+    <h2>Module 2: Core Java for Automation Architects</h2>
+    <h3>2.1 The 4 OOP Pillars in Real Automation</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Pillar</th>
+          <th>Definition</th>
+          <th>Practical Application in Selenium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Encapsulation</strong></td>
+          <td>Wrapping variables and methods together; keeping locators private.</td>
+          <td>Page Object Model: Web elements (<code>By</code>) are private; exposed via public action methods.</td>
+        </tr>
+        <tr>
+          <td><strong>Inheritance</strong></td>
+          <td>Child class inheriting fields and behavior from parent class.</td>
+          <td><code>TestBase</code> manages WebDriver lifecycle; all test classes extend <code>TestBase</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>Polymorphism</strong></td>
+          <td>One interface, multiple implementations.</td>
+          <td><code>WebDriver driver = new ChromeDriver();</code> (Overriding). <code>frame(int)</code> vs <code>frame(String)</code> (Overloading).</td>
+        </tr>
+        <tr>
+          <td><strong>Abstraction</strong></td>
+          <td>Hiding internal driver complexity behind clean APIs.</td>
+          <td>Using <code>WebDriver</code> interface instead of binding to concrete browser classes.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Module 3 -->
+    <h2>Module 3: Selenium WebDriver 4 Architecture & Strategies</h2>
+    <p>Selenium 4 completely eliminated the legacy JSON Wire Protocol. WebDriver now communicates natively with browser drivers using the <strong>W3C Standard Protocol</strong>, resulting in faster and flakeless test execution.</p>
+
+    <h3>3.1 Resilient XPath Strategies</h3>
+    <pre><code>// 1. Text-based locator
+//button[text()='Submit Order']
+
+// 2. Contains attribute for partial matching
+//input[contains(@placeholder, 'Enter mobile number')]
+
+// 3. Normalized whitespace
+//button[normalize-space()='Login']
+
+// 4. Following-sibling axis
+//label[text()='Email']/following-sibling::input</code></pre>
+
+    <!-- Module 4 -->
+    <h2>Module 4: Page Object Model (POM) Design Pattern</h2>
+    <pre><code>public class LoginPage {
+    private WebDriver driver;
+    private WebDriverWait wait;
+
+    // 1. Private Locators
+    private By phoneInput = By.xpath("//input[@placeholder='Enter phone']");
+    private By submitBtn = By.xpath("//button[contains(., 'Continue')]");
+
+    // 2. Constructor
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    // 3. Public Business Methods
+    public void enterPhoneNumber(String phone) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(phoneInput)).sendKeys(phone);
+    }
+
+    public void clickContinue() {
+        wait.until(ExpectedConditions.elementToBeClickable(submitBtn)).click();
+    }
+}</code></pre>
+
+    <!-- Module 5 -->
+    <h2>Module 5: Top 5 MNC Interview Questions & Answers</h2>
+    <div class="qa-box">
+      <div class="question">Q1: What is the difference between driver.close() and driver.quit()?</div>
+      <div class="answer"><code>driver.close()</code> terminates the currently focused browser tab. <code>driver.quit()</code> destroys all browser windows and shuts down the background WebDriver process.</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q2: How do you fix StaleElementReferenceException?</div>
+      <div class="answer">It happens when an element is destroyed and re-rendered in the DOM. Solution: Relocate the element dynamically inside an explicit wait retry mechanism using <code>ExpectedConditions.refreshed(...)</code>.</div>
+    </div>
+    <div class="qa-box">
+      <div class="question">Q3: Why should you never mix Implicit Wait and Explicit Wait?</div>
+      <div class="answer">Mixing them causes indeterminate timeout behavior in W3C WebDriver, causing unpredictable hangs and inflated test execution times.</div>
+    </div>
+
+    <!-- Freelancing Blueprint -->
+    <h2>Module 6: Freelancing QA Blueprint</h2>
+    <ul>
+      <li><strong>Automated Test Framework Setup:</strong> Offer to set up Page Object Model + GitHub Actions CI/CD for US/UK/Indian startups on Upwork ($300 – $800 per project).</li>
+      <li><strong>API Test Coverage with REST Assured:</strong> Validate JSON schema, status codes, and latency for backend APIs ($250 – $600).</li>
+      <li><strong>Deliver Executive Reports:</strong> Always send Allure or ExtentReports with embedded failure screenshots to impress founders!</li>
+    </ul>
+
+    <!-- Services Banner -->
+    <div class="services-promo">
+      <h2>MOMO Tech Services — Enterprise Software Engineering</h2>
+      <p>MOMO IT Technologies builds custom SaaS platforms, enterprise ERPs, Flutter mobile apps, and automated test frameworks for businesses worldwide.</p>
+      <p style="margin-top: 10px; font-weight: 600; color: #38bdf8;">Students & Partners earn 10% cash commission on every client contract referred to MOMO Tech Services.</p>
+      <div class="btn-group">
+        <a href="/contact" class="btn btn-primary">Partner With Us</a>
+        <a href="https://wa.me/918639831132?text=I%20have%20a%20client%20referral%20for%20MOMO%20Tech%20Services" class="btn btn-whatsapp" target="_blank">Submit a Client Referral (+91 86398 31132)</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
