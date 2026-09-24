@@ -25,6 +25,7 @@ import {
   Star,
   Bot,
   RefreshCw,
+  MapPin,
 } from "lucide-react";
 import AnnouncementBar from "./AnnouncementBar";
 
@@ -276,17 +277,6 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-
-              <Link
-                href="/industries"
-                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  pathname === "/industries"
-                    ? "text-brand-700 bg-brand-50/80 font-semibold"
-                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-                }`}
-              >
-                Industries
-              </Link>
 
               {/* 2. MOMO Academy Mega-Menu Dropdown */}
               <div
@@ -543,24 +533,14 @@ export default function Navbar() {
 
               <Link
                 href="/kadapa"
-                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                className={`inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                   pathname === "/kadapa"
                     ? "text-brand-700 bg-brand-50/80 font-semibold"
                     : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
                 }`}
               >
-                Kadapa Office
-              </Link>
-
-              <Link
-                href="/about"
-                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  pathname === "/about"
-                    ? "text-brand-700 bg-brand-50/80 font-semibold"
-                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-                }`}
-              >
-                About
+                <MapPin className="w-3.5 h-3.5 text-brand-600" />
+                <span>Kadapa Office</span>
               </Link>
 
               <Link
@@ -572,6 +552,17 @@ export default function Navbar() {
                 }`}
               >
                 Blog
+              </Link>
+
+              <Link
+                href="/about"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/about"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                About
               </Link>
             </nav>
 
@@ -740,13 +731,6 @@ export default function Navbar() {
             {/* Case Studies & Other links */}
             <div className="space-y-1 pt-1">
               <Link
-                href="/industries"
-                className="block px-3 py-2 text-sm font-bold text-navy-950 hover:text-brand-600 rounded-lg hover:bg-gray-50 flex items-center justify-between"
-              >
-                <span>🏢 Software Across 8 Industries</span>
-                <span className="text-[10px] bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full font-bold">New</span>
-              </Link>
-              <Link
                 href="/case-studies/vijayas-yummy-food"
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
               >
@@ -757,6 +741,13 @@ export default function Navbar() {
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
               >
                 🚖 MANA Tours &amp; Travels (Kadapa Mobility)
+              </Link>
+              <Link
+                href="/kadapa"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50 flex items-center justify-between"
+              >
+                <span>📍 Kadapa Office &amp; Lab</span>
+                <span className="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">Krishnapuram</span>
               </Link>
               <Link
                 href="/about"
