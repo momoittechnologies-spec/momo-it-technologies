@@ -10,12 +10,18 @@ import {
   ArrowRight,
   Sparkles,
   Zap,
+  Bot,
+  RefreshCw,
 } from "lucide-react";
 import { servicesData } from "@/data/services";
 
 export default function ServicesGrid() {
   const getIcon = (iconName: string) => {
     switch (iconName) {
+      case "Bot":
+        return <Bot className="w-6 h-6 text-emerald-600" />;
+      case "RefreshCw":
+        return <RefreshCw className="w-6 h-6 text-indigo-600" />;
       case "CheckCircle2":
         return <CheckCircle2 className="w-6 h-6 text-teal-600" />;
       case "Globe":

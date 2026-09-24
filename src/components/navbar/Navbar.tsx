@@ -23,6 +23,8 @@ import {
   Calculator,
   MessageSquare,
   Star,
+  Bot,
+  RefreshCw,
 } from "lucide-react";
 import AnnouncementBar from "./AnnouncementBar";
 
@@ -79,7 +81,7 @@ export default function Navbar() {
                   </span>
                 </span>
                 <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
-                  Web &amp; SaaS · IT Academy
+                  Technologies - IT Academy
                 </span>
               </div>
             </Link>
@@ -119,14 +121,14 @@ export default function Navbar() {
                 </button>
 
                 {servicesDropdownOpen && (
-                  <div className="absolute top-full left-0 w-[600px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
+                  <div className="absolute top-full left-0 w-[660px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
                     <div className="pb-3 mb-3 border-b border-gray-100 flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
                           Engineering &amp; Technology Services
                         </span>
                         <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60">
-                          Core: Web &amp; SaaS
+                          AI &amp; Web SaaS
                         </span>
                       </div>
                       <Link
@@ -139,6 +141,48 @@ export default function Navbar() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
+                      {/* Custom AI Development */}
+                      <Link
+                        href="/services#custom-ai-development"
+                        className="flex items-start gap-3 p-3 rounded-xl bg-emerald-50/40 hover:bg-emerald-50/80 border border-emerald-100/80 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+                          <Bot className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-emerald-700 flex items-center gap-1.5">
+                            Custom AI Development
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-emerald-600 text-white font-bold">
+                              AI
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Autonomous agents, RAG systems &amp; LLM workflows.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Legacy Modernisation */}
+                      <Link
+                        href="/services#legacy-modernisation"
+                        className="flex items-start gap-3 p-3 rounded-xl bg-indigo-50/40 hover:bg-indigo-50/80 border border-indigo-100/80 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-indigo-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+                          <RefreshCw className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-indigo-700 flex items-center gap-1.5">
+                            Legacy Modernisation
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-indigo-600 text-white font-bold">
+                              Cloud
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Monolith migration guide &amp; cloud microservices.
+                          </p>
+                        </div>
+                      </Link>
+
                       {/* Web & SaaS (Core) */}
                       <Link
                         href="/services/software-dev"
@@ -155,7 +199,7 @@ export default function Navbar() {
                             </span>
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Next.js 15, React 19, Spring Boot &amp; Supabase cloud apps.
+                            Next.js 15, React 19, Spring Boot &amp; Supabase apps.
                           </p>
                         </div>
                       </Link>
@@ -173,7 +217,7 @@ export default function Navbar() {
                             QA &amp; Automation
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Selenium 4, Playwright &amp; REST Assured automated test pods.
+                            Selenium 4, Playwright &amp; REST Assured automated pods.
                           </p>
                         </div>
                       </Link>
@@ -233,6 +277,17 @@ export default function Navbar() {
                 )}
               </div>
 
+              <Link
+                href="/industries"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/industries"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                Industries
+              </Link>
+
               {/* 2. MOMO Academy Mega-Menu Dropdown */}
               <div
                 className="relative"
@@ -258,7 +313,7 @@ export default function Navbar() {
                 </Link>
 
                 {academyDropdownOpen && (
-                  <div className="absolute top-full left-0 w-[640px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
+                  <div className="absolute top-full left-0 w-[660px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
                     <div className="pb-3 mb-3 border-b border-gray-100 flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
@@ -278,6 +333,32 @@ export default function Navbar() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-3">
+                      {/* Flagship Course: Agentic AI */}
+                      <Link
+                        href="/academy#courses"
+                        className="col-span-2 flex items-start gap-3 p-3 rounded-xl bg-gradient-to-r from-brand-50/80 via-emerald-50/50 to-teal-50/60 hover:from-brand-50 hover:to-emerald-50 border border-brand-200/80 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-600 to-emerald-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+                          <Bot className="w-5 h-5" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center justify-between">
+                            <span className="flex items-center gap-1.5">
+                              Agentic AI, RAG &amp; Enterprise AI (2026)
+                              <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-600 text-white font-bold">
+                                2026 Flagship
+                              </span>
+                            </span>
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100/70 px-2 py-0.5 rounded-full">
+                              New Batch
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-600 mt-0.5">
+                            Autonomous agents, LangGraph, CrewAI, Production RAG &amp; Vector DBs.
+                          </p>
+                        </div>
+                      </Link>
+
                       {/* Course 1 */}
                       <Link
                         href="/academy#courses"
@@ -290,7 +371,7 @@ export default function Navbar() {
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
                             Automation Testing
                             <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-100 text-brand-800 font-bold">
-                              Flagship
+                              QA Flagship
                             </span>
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
@@ -452,17 +533,6 @@ export default function Navbar() {
               </div>
 
               <Link
-                href="/hire-developers"
-                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                  pathname === "/hire-developers"
-                    ? "text-brand-700 bg-brand-50/80 font-semibold"
-                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
-                }`}
-              >
-                Hire Developers
-              </Link>
-
-              <Link
                 href="/about"
                 className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                   pathname === "/about"
@@ -538,6 +608,18 @@ export default function Navbar() {
               </div>
               <div className="space-y-1.5 pt-1 text-sm">
                 <Link
+                  href="/services#custom-ai-development"
+                  className="block px-2.5 py-1.5 rounded-lg bg-emerald-50/70 font-semibold text-emerald-950 hover:text-emerald-700 border border-emerald-200/80"
+                >
+                  🤖 Custom AI Software Development (Enterprise AI &amp; RAG)
+                </Link>
+                <Link
+                  href="/services#legacy-modernisation"
+                  className="block px-2.5 py-1.5 rounded-lg bg-indigo-50/70 font-semibold text-indigo-950 hover:text-indigo-700 border border-indigo-200/80"
+                >
+                  🔄 Legacy Application Modernisation (Migration Guide)
+                </Link>
+                <Link
                   href="/services/software-dev"
                   className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 hover:text-brand-600 border border-gray-100"
                 >
@@ -584,6 +666,12 @@ export default function Navbar() {
               <div className="space-y-1.5 pt-1 text-sm">
                 <Link
                   href="/academy#courses"
+                  className="block px-2.5 py-1.5 rounded-lg bg-brand-100/70 font-bold text-brand-950 border border-brand-300"
+                >
+                  ⚡ Agentic AI, RAG &amp; Enterprise AI (2026 Flagship)
+                </Link>
+                <Link
+                  href="/academy#courses"
                   className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 border border-brand-100"
                 >
                   Automation Testing with Java (Selenium 4)
@@ -615,6 +703,13 @@ export default function Navbar() {
             {/* Case Studies & Other links */}
             <div className="space-y-1 pt-1">
               <Link
+                href="/industries"
+                className="block px-3 py-2 text-sm font-bold text-navy-950 hover:text-brand-600 rounded-lg hover:bg-gray-50 flex items-center justify-between"
+              >
+                <span>🏢 Software Across 8 Industries</span>
+                <span className="text-[10px] bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full font-bold">New</span>
+              </Link>
+              <Link
                 href="/case-studies/vijayas-yummy-food"
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
               >
@@ -625,12 +720,6 @@ export default function Navbar() {
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
               >
                 🚖 MANA Tours &amp; Travels (Kadapa Mobility)
-              </Link>
-              <Link
-                href="/hire-developers"
-                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
-              >
-                Hire Dedicated Developers
               </Link>
               <Link
                 href="/about"

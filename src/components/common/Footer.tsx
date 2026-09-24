@@ -58,6 +58,23 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link
+                  href="/services#custom-ai-development"
+                  className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
+                >
+                  <span>Custom AI Software Dev</span>
+                  <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-bold">AI</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services#legacy-modernisation"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  Legacy Modernisation (Guide)
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/services/software-dev"
                   className="text-gray-300 hover:text-brand-400 font-semibold transition-colors flex items-center gap-1"
                 >
@@ -75,26 +92,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/software-dev"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Mobile Apps (Flutter &amp; React Native)
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/services/business-systems"
                   className="text-gray-400 hover:text-brand-400 transition-colors"
                 >
                   Custom ERP &amp; Billing Systems
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hire-developers"
-                  className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
-                >
-                  Hire Dedicated Engineers →
                 </Link>
               </li>
             </ul>
@@ -107,6 +108,15 @@ export default function Footer() {
               MOMO Academy
             </h4>
             <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  href="/academy#courses"
+                  className="text-brand-400 hover:text-brand-300 font-bold transition-colors flex items-center gap-1"
+                >
+                  <span>Agentic AI &amp; RAG (2026)</span>
+                  <span className="text-[9px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">New</span>
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/academy#courses"
@@ -190,15 +200,22 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6">
             <Link href="/services/software-dev" className="hover:text-gray-400 transition-colors">
               Web &amp; SaaS Products
+            </Link>
+            <Link href="/industries" className="hover:text-gray-400 transition-colors">
+              Industries
             </Link>
             <Link href="/academy" className="hover:text-gray-400 transition-colors">
               MOMO Academy
             </Link>
             <Link href="/contact" className="hover:text-gray-400 transition-colors">
               Contact Us
+            </Link>
+            <Link href="/pay" className="text-brand-400 hover:text-brand-300 font-semibold transition-colors flex items-center gap-1">
+              <span>Client Pay &amp; Billing</span>
+              <span className="text-[10px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">UPI / SBI</span>
             </Link>
           </div>
         </div>

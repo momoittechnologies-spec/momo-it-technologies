@@ -1,6 +1,7 @@
 export interface ServiceItem {
   id: string;
   title: string;
+  category?: string;
   shortDesc: string;
   description: string;
   icon: string;
@@ -11,6 +12,46 @@ export interface ServiceItem {
 }
 
 export const servicesData: ServiceItem[] = [
+  {
+    id: "custom-ai-development",
+    title: "Custom AI Software Development",
+    category: "AI & AUTOMATION",
+    shortDesc: "Bespoke autonomous AI agents, enterprise RAG systems, predictive analytics, and LLM-powered business software.",
+    description:
+      "We architect and deploy custom enterprise AI solutions tailored to your operational bottlenecks. From conversational WhatsApp booking bots and automated document extraction to multi-agent workflow systems and private local LLM deployments, we bring frontier AI directly into your business software.",
+    icon: "Bot",
+    badge: "AI & AUTOMATION / Enterprise Grade",
+    features: [
+      "Autonomous Multi-Agent Systems & Workflow Automation (CrewAI / LangGraph)",
+      "Enterprise Retrieval-Augmented Generation (RAG) over Private Data",
+      "Custom Fine-Tuned LLMs & Local Privacy-Preserving Deployments (Ollama / vLLM)",
+      "WhatsApp & Voice AI Chatbots with Real-Time Database Sync",
+      "Computer Vision, OCR & Intelligent Document Processing",
+      "AI Safety Guardrails, Token Cost Optimization & Low-Latency Caching",
+    ],
+    techStack: ["Python", "LangChain", "LangGraph", "Gemini 2.0", "OpenAI", "pgvector", "FastAPI"],
+    href: "/services/software-dev",
+  },
+  {
+    id: "legacy-modernisation",
+    title: "Legacy Application Modernisation: Complete Migration Guide",
+    category: "DIGITAL TRANSFORMATION",
+    shortDesc: "Transform monolithic, outdated systems into agile cloud-native microservices, modern React/Next.js frontends, and automated CI/CD pipelines.",
+    description:
+      "Future-proof your enterprise with zero-downtime modernization. We audit, decouple, and migrate legacy PHP, ASP.NET, Java EE, and monolithic stacks to modern Next.js 15, Spring Boot 3 microservices, and managed cloud databases (PostgreSQL/Supabase). Complete migration guide and execution roadmap with continuous data integrity, security hardening, and sub-second performance.",
+    icon: "RefreshCw",
+    badge: "DIGITAL TRANSFORMATION / Migration Guide",
+    features: [
+      "Complete End-to-End Migration Guide & Architecture Audit",
+      "Monolith-to-Microservices Decomposition (Strangler Fig Pattern)",
+      "Frontend Overhaul to Next.js 15, React 19 & Tailwind CSS",
+      "Database Modernization: Legacy SQL/Access to PostgreSQL & Supabase",
+      "Cloud Migration (AWS / GCP / Cloudflare / Azure) with Zero-Downtime Cutover",
+      "Automated CI/CD Pipelines & High-Reliability Regression Testing",
+    ],
+    techStack: ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "AWS / GCP", "Playwright"],
+    href: "/services/software-dev",
+  },
   {
     id: "web-development",
     title: "Web & SaaS Product Development",
@@ -81,24 +122,6 @@ export const servicesData: ServiceItem[] = [
     ],
     techStack: ["Flutter", "Dart", "Firebase", "REST APIs"],
     href: "/services/software-dev",
-  },
-  {
-    id: "staff-augmentation",
-    title: "Dedicated IT Staff Augmentation",
-    shortDesc: "Scale your team with dedicated QA engineers and developers on monthly retainers.",
-    description:
-      "Need immediate engineering power without the overhead of hiring full-time employees? Onboard vetted developers and QA engineers from MOMO IT Technologies who integrate seamlessly into your team.",
-    icon: "Users",
-    badge: "Predictable Cost",
-    features: [
-      "Dedicated Full-Time QA Automation Engineers",
-      "Full-Stack Java & React Developers",
-      "Flexible Monthly Retainer Models",
-      "Zero Overhead, Direct Slack/Meet Integration",
-      "1-Week Risk-Free Trial Period",
-    ],
-    techStack: ["Java", "React", "Next.js", "Playwright", "Spring Boot"],
-    href: "/hire-developers",
   },
   {
     id: "ui-ux-design",

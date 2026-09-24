@@ -23,6 +23,78 @@ export interface CourseItem {
 
 export const coursesData: CourseItem[] = [
   {
+    id: "agentic-ai-rag-automation",
+    title: "Agentic AI, RAG & Enterprise AI Solutions: The Future of Business Automation in 2026",
+    slug: "agentic-ai-rag-enterprise-automation-2026",
+    level: "All Levels",
+    duration: "10 - 12 Weeks",
+    mode: "Hybrid (Online Google Meet + Offline Kadapa Classroom)",
+    tagline: "Architect autonomous AI agents, multi-agent systems, Production RAG with Vector DBs, and private LLM automations for enterprise workflows.",
+    badge: "AI & AUTOMATION / 2026 Flagship",
+    certificateIncluded: true,
+    internshipAvailable: true,
+    notesHtml: "/notes/agentic-ai-notes.html",
+    notesMd: "/notes/agentic-ai-notes.md",
+    overview:
+      "MOMO IT Academy's flagship 2026 AI masterclass designed for developers, architects, and forward-thinking enterprises. Master autonomous Agentic AI workflows, LangChain, LlamaIndex, CrewAI, LangGraph, Vector Databases (Pinecone/Chroma/pgvector), Hybrid Retrieval-Augmented Generation (RAG), and enterprise tool-calling models. Build and deploy real-world multi-agent systems that autonomously execute business operations, document intelligence, and customer automation.",
+    highlights: [
+      "🎓 Verified Course Completion Certificate with Credential ID",
+      "💼 Guaranteed Live AI Internship Building Production Enterprise Agents",
+      "Autonomous Agent Frameworks: LangGraph, CrewAI, AutoGen & Google Antigravity SDK",
+      "Production RAG: Chunking, Dense & Sparse Retrieval, Re-ranking & Vector DBs (pgvector, Pinecone)",
+      "Function Calling, Tool Use & Structured Output (OpenAI, Gemini 2.0, Claude 3.5, Ollama)",
+      "Enterprise Workflow Automation: Zapier/n8n AI webhooks, WhatsApp Bot agents, and CRM sync",
+      "Local LLM Deployment: Running private open-source models with Ollama, vLLM & quantization",
+      "Capstone: Build an Autonomous Multi-Agent B2B Operations Engine for FoodTech & Logistics",
+    ],
+    curriculum: [
+      {
+        module: "Module 1: Foundations of Generative AI, LLMs & Prompt Engineering",
+        topics: [
+          "LLM Architectures, Tokens, Context Windows, Temperature & Hallucination Mitigation",
+          "Advanced Prompt Engineering: Few-shot, Chain-of-Thought (CoT), ReAct & System Steering",
+          "Structured JSON Outputs, Function Calling & Schema Validation with Pydantic",
+          "API Integration: OpenAI, Google Gemini 2.0, Anthropic Claude & Open-Source HuggingFace models",
+        ],
+      },
+      {
+        module: "Module 2: Production-Grade RAG (Retrieval-Augmented Generation)",
+        topics: [
+          "Beyond Basic RAG: Document Parsing, Semantic Chunking & Metadata Enrichment",
+          "Embedding Models, Vector Spaces & Cosine Similarity",
+          "Vector Databases: pgvector (PostgreSQL), Pinecone, Weaviate & ChromaDB",
+          "Hybrid Search (BM25 + Dense Vectors), Cross-Encoder Re-ranking & Contextual Compression",
+          "Evaluation Frameworks: Ragas, TruLens, Groundedness & Faithfulness Scoring",
+        ],
+      },
+      {
+        module: "Module 3: Autonomous Agentic AI & Multi-Agent Orchestration",
+        topics: [
+          "What is Agentic AI? Autonomy, Planning, Memory (Short-term, Long-term, Episodic)",
+          "LangChain vs LlamaIndex vs LangGraph vs CrewAI: Choosing the right stack",
+          "Building Stateful Multi-Agent Teams: Planner, Researcher, Coder, Critic & Reviewer agents",
+          "Tool Calling & Sandboxed Execution: Code Interpreters, Web Search & Database queries",
+          "Human-in-the-Loop (HITL) checkpoints & guardrails for enterprise safety",
+        ],
+      },
+      {
+        module: "Module 4: Enterprise AI Deployment & Business Automation in 2026",
+        topics: [
+          "Private & On-Premise LLM Inference with Ollama, vLLM, and Llama 3 / Mistral",
+          "Connecting AI Agents to Business Systems: ERP, CRM, WhatsApp API, and Billing Ledgers",
+          "Observability & Monitoring: LangSmith, Phoenix & Token Cost Optimization",
+          "Live Capstone: Building and shipping an Autonomous Operations & Support Agent for Enterprises",
+        ],
+      },
+    ],
+    prerequisites: "Basic programming familiarity in Python or JavaScript/TypeScript. AI and agentic concepts taught from Day 1.",
+    targetAudience: [
+      "Software engineers & architects wanting to transition to High-Demand AI / Agentic Engineer roles",
+      "Technology leaders, founders & CTOs automating internal business operations in 2026",
+      "Freshers & graduates wanting to bypass saturated legacy skills and master frontier AI directly",
+    ],
+  },
+  {
     id: "automation-testing",
     title: "Mastering Automation Testing with Java & Selenium",
     slug: "automation-testing-selenium-java",

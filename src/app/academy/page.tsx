@@ -44,7 +44,7 @@ export default function AcademyPage() {
   };
 
   return (
-    <div className="pt-28 pb-20 bg-surface-light min-h-screen">
+    <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Academy Hero Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
@@ -86,7 +86,7 @@ export default function AcademyPage() {
         <FreeResourcesUnlock />
 
         {/* The Course Catalog */}
-        <div id="courses" className="space-y-12 my-20">
+        <div id="courses" className="space-y-12 my-20 scroll-mt-36">
           <div className="text-center max-w-xl mx-auto">
             <h2 className="text-2xl sm:text-4xl font-extrabold text-navy-950 tracking-tight">
               Featured Course Curriculum
@@ -94,6 +94,13 @@ export default function AcademyPage() {
             <p className="text-sm sm:text-base text-gray-500 mt-2">
               Designed by senior developers and test automation leads to match current MNC hiring standards.
             </p>
+            <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-xs sm:text-sm font-semibold text-emerald-900 shadow-sm">
+              <Award className="w-4 h-4 text-emerald-600" />
+              <span>Graduates receive Verified Course Certificates &amp; Live Project Experience Letters</span>
+              <Link href="/certificates" className="ml-1 text-brand-600 hover:text-brand-800 font-bold underline inline-flex items-center gap-0.5">
+                Preview Samples <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
 
           <div className="space-y-8">
@@ -171,19 +178,28 @@ export default function AcademyPage() {
                 </p>
 
                 {/* Guaranteed Certification & Real Internship Perks */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 mb-5 rounded-2xl bg-gradient-to-r from-emerald-50/80 via-white to-purple-50/80 border border-gray-200/80 text-xs">
-                  <div className="flex items-center gap-2 text-emerald-950 font-bold">
-                    <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
-                      <Award className="w-4 h-4" />
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-3.5 mb-5 rounded-2xl bg-gradient-to-r from-emerald-50/80 via-white to-purple-50/80 border border-gray-200/80 text-xs">
+                  <div className="flex flex-wrap items-center gap-4">
+                    <div className="flex items-center gap-2 text-emerald-950 font-bold">
+                      <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                        <Award className="w-4 h-4" />
+                      </div>
+                      <span>Course Completion Certificate with QR Credential ID</span>
                     </div>
-                    <span>Course Completion Certificate with Verified Credential ID</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-purple-950 font-bold">
-                    <div className="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center shrink-0">
-                      <Briefcase className="w-4 h-4" />
+                    <div className="flex items-center gap-2 text-purple-950 font-bold">
+                      <div className="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center shrink-0">
+                        <Briefcase className="w-4 h-4" />
+                      </div>
+                      <span>Live Client Project Internship &amp; Experience Letter</span>
                     </div>
-                    <span>Guaranteed Hands-on Internship on Live Client Projects</span>
                   </div>
+                  <Link
+                    href="/certificates"
+                    className="inline-flex items-center gap-1 font-bold text-brand-700 hover:text-brand-900 underline text-xs shrink-0 self-end sm:self-center"
+                  >
+                    <span>View Formats</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
                 </div>
 
                 {/* Digital Notes & Self-Study Option Callout */}
@@ -245,7 +261,7 @@ export default function AcademyPage() {
         {/* Hybrid Training Details */}
         <div
           id="hybrid"
-          className="bg-gradient-to-br from-navy-950 to-navy-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl mb-16"
+          className="bg-gradient-to-br from-navy-950 to-navy-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl mb-16 scroll-mt-36"
         >
           <div className="max-w-3xl mx-auto text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-400">

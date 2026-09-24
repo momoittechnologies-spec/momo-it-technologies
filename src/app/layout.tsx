@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Digital marketing masterclass Kadapa",
     "Software company Kadapa",
     "QA automation services India",
-    "Hire dedicated developers India",
+    "Enterprise AI Solutions Kadapa",
   ],
   authors: [{ name: "MOMO IT TECHNOLOGIES" }],
   openGraph: {

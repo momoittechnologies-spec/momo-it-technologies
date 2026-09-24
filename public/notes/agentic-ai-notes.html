@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic AI, RAG & Enterprise AI Solutions Handbook (2026) — MOMO Academy</title>
+  <meta name="description" content="Official 2026 Agentic AI and RAG Enterprise Handbook by MOMO IT Technologies. Master autonomous agents, CrewAI, LangGraph, pgvector, and enterprise business automation.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #10b981;
+      --dark: #0f172a;
+      --light-bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --code-bg: #1e293b;
+      --code-text: #f1f5f9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding-bottom: 60px;
+    }
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0f172a;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .top-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .top-brand span { color: #38bdf8; }
+    .nav-buttons { display: flex; gap: 10px; }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-primary { background: #0284c7; color: #fff; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-success { background: #10b981; color: #fff; }
+    .btn-success:hover { background: #059669; }
+    .btn-outline { background: transparent; color: #e2e8f0; border: 1px solid #475569; }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .header-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 30px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #ecfdf5;
+      color: #047857;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+    .meta-item strong { display: block; color: var(--dark); }
+    .referral-banner {
+      background: linear-gradient(135deg, #064e3b, #047857);
+      color: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 32px;
+    }
+    .referral-banner h3 { font-size: 1.15rem; margin-bottom: 8px; color: #a7f3d0; }
+    .section-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+    .section-card h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e0f2fe;
+    }
+    .section-card p { margin-bottom: 14px; font-size: 0.95rem; color: #334155; }
+    .section-card ul { margin-left: 20px; margin-bottom: 16px; font-size: 0.92rem; color: #334155; }
+    .section-card li { margin-bottom: 8px; }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      font-size: 0.85rem;
+      margin: 16px 0;
+    }
+    @media print {
+      .top-bar, .nav-buttons { display: none; }
+      body { background: #fff; color: #000; padding: 0; }
+      .container { margin: 0; max-width: 100%; }
+      .section-card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-brand">
+      MOMO <span>IT ACADEMY</span> &bull; Flagship 2026 Handbook
+    </div>
+    <div class="nav-buttons">
+      <button onclick="window.print()" class="btn btn-outline">🖨️ Print / Save PDF</button>
+      <a href="https://wa.me/918639831132?text=Hi%20MOMO%20Academy%2C%20I%20want%20to%20enroll%20in%20Agentic%20AI%20and%20RAG%20Batch" target="_blank" class="btn btn-success">📲 Enroll on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-card">
+      <span class="badge">AI &amp; AUTOMATION &bull; 2026 Flagship Masterclass</span>
+      <h1>Agentic AI, RAG &amp; Enterprise AI Solutions: The Future of Business Automation in 2026</h1>
+      <p style="color: #64748b; font-size: 1rem;">Complete student reference guide covering autonomous multi-agent systems, Production RAG with Vector DBs, structured tool calling, and enterprise business automation pipelines.</p>
+      
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Course Duration</strong>
+          10–12 Weeks (Hybrid)
+        </div>
+        <div class="meta-item">
+          <strong>Placements &amp; Certification</strong>
+          Verified Certificate + Live Internship
+        </div>
+        <div class="meta-item">
+          <strong>Lab Location</strong>
+          4/106, Krishnapuram, Kadapa
+        </div>
+        <div class="meta-item">
+          <strong>Admissions Desk</strong>
+          +91 86398 31132
+        </div>
+      </div>
+    </div>
+
+    <div class="referral-banner">
+      <h3>🚀 MOMO Student Brand Ambassador Program (Earn 10% Cash Referral)</h3>
+      <p>Every business in your network needs custom software, AI automation, or high-ROI digital marketing in 2026. Refer them to MOMO Tech Services and earn 10% direct cash commission on every signed client retainer and development contract!</p>
+    </div>
+
+    <div class="section-card">
+      <h2>Module 1: Foundations of Generative AI, LLMs &amp; Prompt Engineering</h2>
+      <p>Modern enterprise AI development starts with mastering token economics, deterministic outputs, and model orchestration:</p>
+      <ul>
+        <li><strong>LLM Architectures &amp; Inference:</strong> Context windows, temperature controls, frequency penalties, and low-latency streaming.</li>
+        <li><strong>Structured Outputs:</strong> Enforcing strict Pydantic schemas and JSON validation for zero-hallucination downstream database insertions.</li>
+        <li><strong>Unified API Orchestration:</strong> Building provider-agnostic pipelines across OpenAI GPT-4o, Google Gemini 2.0, Anthropic Claude 3.5, and local open-source models.</li>
+      </ul>
+      <pre><code>from pydantic import BaseModel, Field
+
+class EnterpriseAction(BaseModel):
+    intent: str = Field(description="User classification: booking, complaint, or quote")
+    urgency: str = Field(description="high, medium, low")
+    action_required: str = Field(description="Exact tool or department to dispatch")</code></pre>
+    </div>
+
+    <div class="section-card">
+      <h2>Module 2: Production-Grade RAG (Retrieval-Augmented Generation)</h2>
+      <p>Go beyond naive vector search with enterprise-grade retrieval pipelines:</p>
+      <ul>
+        <li><strong>Semantic Chunking &amp; Metadata:</strong> Preserving tables, code snippets, and hierarchical document headers.</li>
+        <li><strong>Vector Databases:</strong> Production PostgreSQL <code>pgvector</code>, Pinecone, and Weaviate index tuning (HNSW &amp; IVFFlat).</li>
+        <li><strong>Hybrid Search &amp; Re-ranking:</strong> Combining sparse BM25 text match with dense semantic embeddings and cross-encoder re-ranking for ultra-precise grounding.</li>
+        <li><strong>RAG Evaluation:</strong> Ragas &amp; TruLens metrics (Context Precision, Recall, Faithfulness, Answer Relevance).</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>Module 3: Autonomous Agentic AI &amp; Multi-Agent Orchestration</h2>
+      <p>How to design autonomous agents that take action rather than just chat:</p>
+      <ul>
+        <li><strong>Stateful Graphs:</strong> Building cyclical agent workflows with LangGraph and CrewAI.</li>
+        <li><strong>Multi-Agent Pods:</strong> Specialized Planner, Researcher, Coder, Critic, and Formatter agents working as a synchronized engineering team.</li>
+        <li><strong>Tool Execution &amp; Sandboxing:</strong> Code interpreter execution, automated SQL generation, and live API querying.</li>
+        <li><strong>Human-in-the-Loop (HITL):</strong> Requiring human approvals before critical database mutations or financial payouts.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>Module 4: Enterprise AI Deployment &amp; Business Automation</h2>
+      <p>Deploying production AI solutions inside enterprise IT ecosystems:</p>
+      <ul>
+        <li><strong>Private Local LLMs:</strong> Zero-cloud-leakage inference using Ollama and vLLM with quantized Llama 3.3 and Mistral models.</li>
+        <li><strong>Real-World Integrations:</strong> WhatsApp Business API automation bots, ERP dispatch sync, and automated billing triggers.</li>
+        <li><strong>Observability &amp; Cost Control:</strong> LangSmith traces, token budgeting, prompt caching, and SLA uptime monitoring.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

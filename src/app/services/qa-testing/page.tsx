@@ -44,7 +44,7 @@ export default function QaTestingServicePage() {
   ];
 
   return (
-    <div className="pt-28 pb-20 bg-surface-light min-h-screen">
+    <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb / Category */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -67,10 +67,10 @@ export default function QaTestingServicePage() {
               Request Free QA Audit
             </Link>
             <Link
-              href="/hire-developers"
+              href="/contact"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-gray-50 text-navy-950 font-bold text-sm border border-gray-200 shadow-sm transition-all"
             >
-              Hire Dedicated QA Testers
+              Consult QA Architect
             </Link>
           </div>
         </div>

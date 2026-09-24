@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/case-studies/vijayas-yummy-food",
     "/case-studies/mana-tours",
     "/academy",
-    "/hire-developers",
+    "/certificates",
     "/industries",
     "/about",
     "/contact",

@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-28 pb-20 bg-surface-light min-h-screen">
+    <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

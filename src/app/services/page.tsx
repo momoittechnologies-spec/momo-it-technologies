@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function ServicesIndexPage() {
   return (
-    <div className="pt-28 pb-20 bg-surface-light min-h-screen">
+    <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200/60">
@@ -30,7 +30,8 @@ export default function ServicesIndexPage() {
           {servicesData.map((s) => (
             <div
               key={s.id}
-              className="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-card hover:shadow-card-hover transition-all flex flex-col justify-between"
+              id={s.id}
+              className="bg-white rounded-3xl p-8 border border-gray-200/80 shadow-card hover:shadow-card-hover transition-all flex flex-col justify-between scroll-mt-36"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
