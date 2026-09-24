@@ -1,7 +1,7 @@
 # MOMO Academy — Cross-Platform Mobile App Engineering Handbook (2026 Edition)
 **Author:** MOMO IT Technologies Mobile Engineering Division  
 **Stack:** Flutter 3.x, Dart 3, Riverpod, Firebase & Supabase (Android & iOS)  
-**Headquarters:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005  
+**Headquarters:** 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003  
 **Official Website:** [https://momoittechnologies.com](https://momoittechnologies.com)  
 **Contact / Admissions Desk:** +91 86398 31132 | momoit.technologies@gmail.com  
 

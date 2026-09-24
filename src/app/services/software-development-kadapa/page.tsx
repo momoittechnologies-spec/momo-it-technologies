@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "Where is MOMO IT Technologies based, and can we meet in person in Kadapa?",
-    a: "Our permanent office is located at 4/106, Krishnapuram, Kadapa. Business owners are always welcome to schedule an in-person discovery consultation to review prototypes and discuss software requirements.",
+    a: "Our permanent office is located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa. Business owners are always welcome to schedule an in-person discovery consultation to review prototypes and discuss software requirements.",
   },
 ];
 
@@ -120,10 +120,10 @@ export default function SoftwareDevelopmentKadapaPage() {
       telephone: "+91-86398-31132",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "4/106, Krishnapuram",
+        streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
         addressLocality: "Kadapa",
         addressRegion: "Andhra Pradesh",
-        postalCode: "516005",
+        postalCode: "516003",
         addressCountry: "IN",
       },
     },

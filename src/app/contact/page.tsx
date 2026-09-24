@@ -76,7 +76,7 @@ export default function ContactPage() {
                     <span className="font-bold text-white block mb-0.5">
                       Campus Address:
                     </span>
-                    4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005
+                    4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003
                   </div>
                 </div>
 

@@ -90,12 +90,13 @@ export default function RootLayout({
         email: "momoit.technologies@gmail.com",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "4/106, Road, Krishnapuram",
+          streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
           addressLocality: "Kadapa",
           addressRegion: "Andhra Pradesh",
-          postalCode: "516005",
+          postalCode: "516003",
           addressCountry: "IN",
         },
+        foundingDate: "2025-06-01",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "14.4673",

@@ -113,7 +113,7 @@ const faqs = [
   },
   {
     q: "What local technical support is provided in Kadapa?",
-    a: "Unlike remote vendors who put you on hold for days, our engineering office is physically located at 4/106, Krishnapuram in Kadapa. We provide rapid phone, WhatsApp, and on-site support to keep your operations running smoothly.",
+    a: "Unlike remote vendors who put you on hold for days, our engineering office is physically located at 4/106, Chowdeswari Temple Lane, Krishnapuram in Kadapa. We provide rapid phone, WhatsApp, and on-site support to keep your operations running smoothly.",
   },
 ];
 
@@ -157,10 +157,10 @@ export default function BusinessSoftwareKadapaPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "geo": {

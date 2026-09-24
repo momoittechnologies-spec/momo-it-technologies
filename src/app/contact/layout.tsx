@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact MOMO IT Technologies | Software & IT Training in Kadapa",
   description:
-    "Get in touch with MOMO IT Technologies in Kadapa. Visit our campus at 4/106, Krishnapuram, Kadapa, AP — 516005 or connect via WhatsApp (+91 86398 31132) for software development and academy training.",
+    "Get in touch with MOMO IT Technologies in Kadapa. Visit our campus at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP — 516003 or connect via WhatsApp (+91 86398 31132) for software development and academy training.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/contact",
   },
@@ -37,10 +37,10 @@ export default function ContactLayout({
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "geo": {

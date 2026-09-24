@@ -1,7 +1,7 @@
 # MOMO ACADEMY — COMPLETE COURSE SYLLABUS (2026)
 ## Software QA Automation Testing & Full-Stack Java Master Programs
 **MOMO IT TECHNOLOGIES**  
-📍 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005  
+📍 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003  
 📞 Phone / WhatsApp: +91 86398 31132 | ✉️ Email: momoit.technologies@gmail.com  
 🌐 Website: https://momoittechnologies.com  
 ⭐ 4.8★ Google Rated Software Training & Engineering Lab  

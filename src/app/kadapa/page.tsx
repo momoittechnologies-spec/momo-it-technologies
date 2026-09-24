@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MOMO IT Technologies | Software & IT Services in Kadapa, Andhra Pradesh",
     description:
-      "Kadapa's registered software engineering company and training academy. Discover custom software, web apps, QA automation, and live training programs at 4/106, Krishnapuram, Kadapa.",
+      "Kadapa's registered software engineering company and training academy. Discover custom software, web apps, QA automation, and live training programs at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.",
     url: "https://www.momoittechnologies.com/kadapa",
   },
 };
@@ -108,7 +108,7 @@ const kadapaCourses = [
 const faqs = [
   {
     q: "Where is MOMO IT Technologies located in Kadapa?",
-    a: "Our office and learning campus is located at 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005. We are easily accessible from key areas in Kadapa including Seven Roads, RTC Bus Stand, and RIMS road.",
+    a: "Our office and learning campus is located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003. We are easily accessible from key areas in Kadapa including Seven Roads, RTC Bus Stand, and RIMS road.",
   },
   {
     q: "Does MOMO IT Technologies develop custom software for local Kadapa businesses?",
@@ -134,12 +134,13 @@ export default function KadapaLocationPage() {
     email: "momoit.technologies@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "4/106, Krishnapuram",
+      streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
       addressLocality: "Kadapa",
       addressRegion: "Andhra Pradesh",
-      postalCode: "516005",
+      postalCode: "516003",
       addressCountry: "IN",
     },
+    foundingDate: "2025-06-01",
     geo: {
       "@type": "GeoCoordinates",
       latitude: "14.4673",
@@ -201,8 +202,8 @@ export default function KadapaLocationPage() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Office Address</div>
-                  <div className="text-sm font-bold text-navy-950 mt-0.5">4/106, Krishnapuram</div>
-                  <div className="text-xs text-gray-600">Kadapa, Andhra Pradesh — 516005</div>
+                  <div className="text-sm font-bold text-navy-950 mt-0.5">4/106, Chowdeswari Temple Lane, Krishnapuram</div>
+                  <div className="text-xs text-gray-600">Kadapa, Andhra Pradesh — 516003</div>
                 </div>
               </div>
 

@@ -158,10 +158,10 @@ export default function SaasDevelopmentKadapaPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "geo": {

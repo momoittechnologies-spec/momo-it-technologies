@@ -1,7 +1,7 @@
 # MOMO Academy — Agentic AI, RAG & Enterprise AI Solutions Handbook (2026 Flagship)
 **Author:** MOMO IT Technologies AI & Enterprise Automation Division  
 **Focus:** Autonomous Agentic AI, LangGraph, CrewAI, Production RAG, Vector DBs, Enterprise Business Automation  
-**Headquarters:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005  
+**Headquarters:** 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003  
 **Official Website:** https://momoittechnologies.com  
 **Contact / Admissions Desk:** +91 86398 31132 | momoit.technologies@gmail.com  
 

@@ -66,12 +66,13 @@ export default function AboutPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
+          "foundingDate": "2025-06-01",
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": 14.4673,
@@ -178,7 +179,7 @@ export default function AboutPage() {
               </li>
             </ul>
             <p>
-              Operating from our dedicated facility at <strong>4/106, Krishnapuram, Kadapa</strong> gives our clients a unique competitive advantage: near-zero metro overhead, founder-led engineering transparency, and fierce, distraction-free technical execution.
+              Operating from our dedicated facility at <strong>4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa</strong> gives our clients a unique competitive advantage: near-zero metro overhead, founder-led engineering transparency, and fierce, distraction-free technical execution.
             </p>
           </div>
 
@@ -218,7 +219,7 @@ export default function AboutPage() {
               MOMO IT TECHNOLOGIES operates in full compliance with the Ministry of Micro, Small and Medium Enterprises (MSME), Government of India.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Official Registered Name</div>
                 <div className="text-sm font-bold text-white mt-1">MOMO IT TECHNOLOGIES</div>
@@ -229,7 +230,11 @@ export default function AboutPage() {
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Registered Office Address</div>
-                <div className="text-sm font-bold text-white mt-1">4/106, Krishnapuram, Kadapa - 516005</div>
+                <div className="text-sm font-bold text-white mt-1">4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa - 516003</div>
+              </div>
+              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div className="text-gray-400">Year of Establishment</div>
+                <div className="text-sm font-bold text-teal-300 mt-1">June 2025</div>
               </div>
             </div>
           </div>

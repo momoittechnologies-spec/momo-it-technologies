@@ -196,7 +196,7 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-400 shrink-0 mt-1" />
                 <Link href="/kadapa" className="hover:text-white transition-colors">
-                  4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005
+                  4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003
                 </Link>
               </div>
               <div className="flex items-center gap-2.5">

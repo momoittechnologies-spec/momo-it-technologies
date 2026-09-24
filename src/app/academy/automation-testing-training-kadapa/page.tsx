@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     q: "What is the training mode and classroom address in Kadapa?",
-    a: "We offer Hybrid training: In-person classroom training with dedicated high-speed lab workstations at our Kadapa campus (4/106, Krishnapuram, Kadapa, AP - 516005) as well as live interactive Google Meet sessions with full session recordings.",
+    a: "We offer Hybrid training: In-person classroom training with dedicated high-speed lab workstations at our Kadapa campus (4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP - 516003) as well as live interactive Google Meet sessions with full session recordings.",
   },
   {
     q: "Is an internship experience letter provided with the course?",
@@ -143,10 +143,10 @@ export default function AutomationTestingTrainingKadapaPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "url": "https://www.momoittechnologies.com"
@@ -160,10 +160,10 @@ export default function AutomationTestingTrainingKadapaPage() {
             "name": "MOMO Academy Kadapa Campus",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "4/106, Krishnapuram",
+              "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
               "addressLocality": "Kadapa",
               "addressRegion": "Andhra Pradesh",
-              "postalCode": "516005",
+              "postalCode": "516003",
               "addressCountry": "IN"
             }
           }

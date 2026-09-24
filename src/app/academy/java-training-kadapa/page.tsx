@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: "Where is the MOMO Academy training lab located in Kadapa?",
-    a: "Our lab and classroom facility is located at 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, easily accessible from all major colleges and RTC bus stand in Kadapa.",
+    a: "Our lab and classroom facility is located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003, easily accessible from all major colleges and RTC bus stand in Kadapa.",
   },
 ];
 
@@ -143,10 +143,10 @@ export default function JavaTrainingKadapaPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "url": "https://www.momoittechnologies.com"
@@ -160,10 +160,10 @@ export default function JavaTrainingKadapaPage() {
             "name": "MOMO Academy Kadapa Campus",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "4/106, Krishnapuram",
+              "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
               "addressLocality": "Kadapa",
               "addressRegion": "Andhra Pradesh",
-              "postalCode": "516005",
+              "postalCode": "516003",
               "addressCountry": "IN"
             }
           }

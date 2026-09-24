@@ -362,7 +362,7 @@ export default function AutomationTestingRoadmapPage() {
                   Join the Next Automation Testing Batch
                 </h4>
                 <p className="text-sm text-gray-600 mt-1 max-w-xl">
-                  Hybrid batches available: Offline lab training at 4/106 Krishnapuram, Kadapa + Live Google Meet interactive sessions.
+                  Hybrid batches available: Offline lab training at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa + Live Google Meet interactive sessions.
                 </p>
               </div>
 

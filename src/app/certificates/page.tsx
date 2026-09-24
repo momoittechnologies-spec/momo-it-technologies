@@ -88,7 +88,7 @@ export default function CertificatesPreviewPage() {
                   <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 inline-block">
                     ✓ MSME Govt. Registered Institution
                   </span>
-                  <div className="text-[11px] text-gray-500 mt-1">Reg: 4/106, Krishnapuram, Kadapa (AP)</div>
+                  <div className="text-[11px] text-gray-500 mt-1">Reg: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa (AP)</div>
                 </div>
               </div>
 
@@ -205,8 +205,8 @@ export default function CertificatesPreviewPage() {
               </div>
 
               <div className="text-left sm:text-right text-xs text-gray-500 space-y-0.5">
-                <div>4/106, Krishnapuram, Kadapa</div>
-                <div>Andhra Pradesh — 516005, India</div>
+                <div>4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa</div>
+                <div>Andhra Pradesh — 516003, India</div>
                 <div>Phone: +91 86398 31132</div>
                 <div>Email: momoit.technologies@gmail.com</div>
               </div>

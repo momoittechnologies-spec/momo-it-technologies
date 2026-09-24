@@ -4,7 +4,9 @@
 
 ## Company Overview
 - **Legal Entity Name:** MOMO IT TECHNOLOGIES
-- **Headquarters Address:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, India
+- **Headquarters Address:** 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003, India
+- **Primary Landmark:** Chowdeswari Temple Lane
+- **Year of Establishment:** June 2025
 - **Geo Coordinates:** Latitude 14.4713° N, Longitude 78.8237° E
 - **Official Contact Number:** +91 86398 31132
 - **Official Email:** momoit.technologies@gmail.com

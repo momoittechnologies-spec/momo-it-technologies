@@ -362,7 +362,7 @@ export default function WebsiteCostKadapaPage() {
                 <div className="p-4 rounded-2xl bg-surface-light border border-gray-100">
                   <div className="text-2xl font-black text-teal-600 mb-1">Local</div>
                   <div className="text-xs font-bold text-navy-950">On-Site Kadapa Support</div>
-                  <div className="text-[11px] text-gray-500 mt-1">Office at 4/106 Krishnapuram, Kadapa</div>
+                  <div className="text-[11px] text-gray-500 mt-1">Office at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa</div>
                 </div>
               </div>
             </div>

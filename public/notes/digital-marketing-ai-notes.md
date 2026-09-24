@@ -1,7 +1,7 @@
 # MOMO Academy — Advanced Digital Marketing, Local SEO & AI Growth Handbook (2026 Edition)
 **Author:** MOMO IT Technologies Growth & Digital Marketing Division  
 **Focus:** Local SEO, Google Ads, Meta Ads (FB/IG), WhatsApp Funnels, Generative AI Marketing  
-**Headquarters:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005  
+**Headquarters:** 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003  
 **Official Website:** [https://momoittechnologies.com](https://momoittechnologies.com)  
 **Contact / Admissions Desk:** +91 86398 31132 | momoit.technologies@gmail.com  
 
@@ -42,10 +42,10 @@ The 4 Ranking Pillars:
   "name": "MOMO IT Technologies",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "4/106, Krishnapuram",
+    "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
     "addressLocality": "Kadapa",
     "addressRegion": "Andhra Pradesh",
-    "postalCode": "516005",
+    "postalCode": "516003",
     "addressCountry": "IN"
   },
   "telephone": "+91-8639831132",

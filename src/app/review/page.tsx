@@ -115,7 +115,7 @@ export default function ReviewPage() {
 
           <div className="pt-8 text-xs text-gray-400 flex items-center justify-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>MOMO IT TECHNOLOGIES · 4/106 Krishnapuram, Kadapa, Andhra Pradesh</span>
+            <span>MOMO IT TECHNOLOGIES · 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh</span>
           </div>
 
         </div>

@@ -1,7 +1,7 @@
 # MOMO Academy — Full-Stack Software Engineering Handbook (2026 Edition)
 **Author:** MOMO IT Technologies Engineering Team  
 **Stack:** Java 21 LTS, Spring Boot 3, PostgreSQL, React 19 & Next.js 15  
-**Headquarters:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005  
+**Headquarters:** 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003  
 **Official Website:** [https://momoittechnologies.com](https://momoittechnologies.com)  
 **Contact / Admissions Desk:** +91 86398 31132 | momoit.technologies@gmail.com  
 

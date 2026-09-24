@@ -311,7 +311,7 @@ export default function AcademyPage() {
               <ul className="space-y-1.5 text-xs text-gray-300">
                 <li className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
-                  Address: 4/106, Krishnapuram, Kadapa, AP 516005
+                  Address: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP 516003
                 </li>
                 <li className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />

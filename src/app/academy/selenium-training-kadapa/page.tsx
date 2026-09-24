@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "Where is the classroom training conducted in Kadapa?",
-    a: "Classroom sessions and dedicated computer labs are held at our Kadapa engineering campus: 4/106, Krishnapuram, Kadapa, AP — 516005.",
+    a: "Classroom sessions and dedicated computer labs are held at our Kadapa engineering campus: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP — 516003.",
   },
 ];
 
@@ -144,10 +144,10 @@ export default function SeleniumTrainingKadapaPage() {
           "email": "momoit.technologies@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "4/106, Krishnapuram",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
             "addressLocality": "Kadapa",
             "addressRegion": "Andhra Pradesh",
-            "postalCode": "516005",
+            "postalCode": "516003",
             "addressCountry": "IN"
           },
           "url": "https://www.momoittechnologies.com"
@@ -161,10 +161,10 @@ export default function SeleniumTrainingKadapaPage() {
             "name": "MOMO Academy Kadapa Campus",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "4/106, Krishnapuram",
+              "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
               "addressLocality": "Kadapa",
               "addressRegion": "Andhra Pradesh",
-              "postalCode": "516005",
+              "postalCode": "516003",
               "addressCountry": "IN"
             }
           }

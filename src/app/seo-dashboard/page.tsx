@@ -357,7 +357,7 @@ const PREFLIGHT_CHECKLIST = [
   { id: "c8", title: "Service & Course Schema", status: "PASS", note: "All 7 service silos have Service JSON-LD; all 6 academy silos have Course JSON-LD." },
   { id: "c9", title: "FAQPage Structured Data", status: "PASS", note: "Search-snippet ready FAQs embedded on every key silo." },
   { id: "c10", title: "Article Schema on Knowledge Hub", status: "PASS", note: "All 4 local blog guides embed full Article JSON-LD." },
-  { id: "c11", title: "Exact NAP Consistency", status: "PASS", note: "MOMO IT TECHNOLOGIES, 4/106 Krishnapuram, Kadapa 516005 across 100% pages." },
+  { id: "c11", title: "Exact NAP Consistency", status: "PASS", note: "MOMO IT TECHNOLOGIES, 4/106 Krishnapuram, Kadapa 516003 across 100% pages." },
   { id: "c12", title: "MSME Official Credential", status: "PASS", note: "Govt Udyam ID UDYAM-AP-04-0013231 displayed on About & Certificates." },
   { id: "c13", title: "Static SSR Prerendering", status: "PASS", note: "33/33 routes pre-rendered at build time with raw static HTML." },
   { id: "c14", title: "Mobile Viewport & Touch Targets", status: "PASS", note: "Fluid responsive Tailwind layout, zero horizontal overflow." },
@@ -415,7 +415,7 @@ export default function SeoDashboardPage() {
       k.priority,
       `"${k.estimatedVolume}"`,
       "Monitored in GSC",
-      "Kadapa, AP (516005)",
+      "Kadapa, AP (516003)",
     ]);
 
     const csvContent =
@@ -497,7 +497,7 @@ export default function SeoDashboardPage() {
             <div className="bg-navy-950/60 p-4 rounded-xl border border-slate-800/80">
               <div className="text-xs text-slate-400 font-medium">Core Target Location</div>
               <div className="text-2xl font-bold text-white mt-1">Kadapa, AP</div>
-              <div className="text-xs text-slate-400 mt-0.5">PIN 516005 Anchored</div>
+              <div className="text-xs text-slate-400 mt-0.5">PIN 516003 Anchored</div>
             </div>
           </div>
         </div>
@@ -858,7 +858,7 @@ export default function SeoDashboardPage() {
                     <button
                       onClick={() =>
                         handleCopy(
-                          `MOMO IT TECHNOLOGIES\n4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, India\nPhone: +91 86398 31132\nEmail: momoit.technologies@gmail.com\nWebsite: https://www.momoittechnologies.com`,
+                          `MOMO IT TECHNOLOGIES\n4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003, India\nPhone: +91 86398 31132\nEmail: momoit.technologies@gmail.com\nWebsite: https://www.momoittechnologies.com`,
                           "nap"
                         )
                       }
@@ -870,7 +870,9 @@ export default function SeoDashboardPage() {
                   </div>
                   <pre className="text-xs text-slate-300 font-mono bg-navy-900/60 p-3 rounded-lg overflow-x-auto whitespace-pre-wrap leading-relaxed">
 {`Business Name: MOMO IT TECHNOLOGIES
-Address: 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, India
+Address: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003, India
+Landmark: Chowdeswari Temple Lane
+Established: June 2025
 Phone: +91 86398 31132
 Email: momoit.technologies@gmail.com
 Website: https://www.momoittechnologies.com
@@ -887,7 +889,7 @@ MSME Udyam: UDYAM-AP-04-0013231`}
                     <button
                       onClick={() =>
                         handleCopy(
-                          `MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates. Located at 4/106, Krishnapuram, Kadapa. Contact +91 86398 31132 or visit https://www.momoittechnologies.com.`,
+                          `MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates. Located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa. Contact +91 86398 31132 or visit https://www.momoittechnologies.com.`,
                           "desc"
                         )
                       }
