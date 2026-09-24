@@ -31,14 +31,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/academy/ai-training-kadapa", priority: 0.9, changeFrequency: "weekly" },
     { path: "/certificates", priority: 0.8, changeFrequency: "weekly" },
 
+    // Knowledge Hub & Local Guides
+    { path: "/blog", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/blog/how-much-does-a-website-cost-in-kadapa", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/blog/automation-testing-career-roadmap-kadapa", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/blog/how-kadapa-businesses-can-use-ai-automation", priority: 0.85, changeFrequency: "monthly" },
+    { path: "/blog/best-software-development-solutions-for-businesses-in-kadapa", priority: 0.85, changeFrequency: "monthly" },
+
     // Case Studies & Proof
     { path: "/case-studies", priority: 0.85, changeFrequency: "weekly" },
     { path: "/case-studies/vijayas-yummy-food", priority: 0.8, changeFrequency: "monthly" },
     { path: "/case-studies/mana-tours", priority: 0.8, changeFrequency: "monthly" },
 
-    // Company & Contact
+    // Company, Review & Contact
     { path: "/about", priority: 0.8, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/review", priority: 0.75, changeFrequency: "monthly" },
     { path: "/industries", priority: 0.75, changeFrequency: "monthly" },
   ];
 

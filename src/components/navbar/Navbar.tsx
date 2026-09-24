@@ -562,6 +562,17 @@ export default function Navbar() {
               >
                 About
               </Link>
+
+              <Link
+                href="/blog"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname.startsWith("/blog")
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                Blog
+              </Link>
             </nav>
 
             {/* Right Action Buttons */}
@@ -752,6 +763,13 @@ export default function Navbar() {
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
               >
                 About MOMO IT
+              </Link>
+              <Link
+                href="/blog"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50 flex items-center justify-between"
+              >
+                <span>📰 Blog &amp; Tech Guides</span>
+                <span className="text-[10px] bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full font-bold">New</span>
               </Link>
             </div>
 

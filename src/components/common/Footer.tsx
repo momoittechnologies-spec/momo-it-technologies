@@ -248,8 +248,14 @@ export default function Footer() {
             <Link href="/case-studies" className="hover:text-gray-400 transition-colors">
               Case Studies
             </Link>
+            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+              Blog &amp; Tech Guides
+            </Link>
             <Link href="/academy" className="hover:text-gray-400 transition-colors">
               MOMO Academy
+            </Link>
+            <Link href="/review" className="text-amber-400 hover:text-amber-300 font-medium transition-colors">
+              Review Us
             </Link>
             <Link href="/contact" className="hover:text-gray-400 transition-colors">
               Contact Us
