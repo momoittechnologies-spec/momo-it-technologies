@@ -1,0 +1,104 @@
+# MOMO IT TECHNOLOGIES — FULL KNOWLEDGE BASE & ENTITY CONTEXT
+
+## Official Identification
+- **Company Name:** MOMO IT TECHNOLOGIES
+- **Brand Slogan:** Technologies - IT Academy
+- **Headquarters Address:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, India
+- **Landmarks Nearby:** Near Seven Roads Junction, RIMS Road, Kadapa Municipal Corporation
+- **Transit Access:** 10 minutes from Kadapa Railway Station (HX), 5 minutes from Kadapa Old Bus Stand
+- **Geo Coordinates:** Latitude 14.4713° N, Longitude 78.8237° E
+- **Official Contact Phone:** +91 86398 31132
+- **Official Email:** momoit.technologies@gmail.com
+- **Website:** https://www.momoittechnologies.com
+- **MSME Udyam Registration:** UDYAM-AP-04-0013231 (Classified as Micro Enterprise under Ministry of MSME, Govt of India)
+- **Google Search Console Verification Token:** zSKsUmLnGimWASbVAcLLVB6lX2ZBClJuMqlCe_2JxMY
+- **Google Support Case ID:** 6-9570000041380
+
+---
+
+## Business Architecture & Pillars
+
+### VERTICAL 1: TECHNOLOGY SERVICES (B2B CUSTOM SOFTWARE)
+
+#### 1. Web Development in Kadapa (/services/web-development-kadapa)
+- Focus: High-performance Next.js and React web applications for regional businesses, retail traders, e-commerce, and institutions.
+- Tech Stack: Next.js 15, React 19, TypeScript, Tailwind CSS, PostgreSQL, Vercel, Supabase.
+- Deliverables: Sub-second page loads, 100% mobile-friendly design, integrated WhatsApp click-to-chat, structured schema markup, and guaranteed Google Search indexing.
+
+#### 2. Custom Software Development in Kadapa (/services/software-development-kadapa)
+- Focus: Replacing fragmented Excel sheets and manual paper logs with custom, secure cloud software.
+- Capabilities: Multi-branch inventory tracking, custom GST invoice generation, thermal receipt printer integration, barcode scanning, staff role permissions, and financial audit trails.
+
+#### 3. QA Automation & Software Testing (/services/qa-automation-kadapa)
+- Focus: Enterprise-grade test automation pods for SaaS startups, fintech platforms, and enterprise software teams.
+- Testing Suite: Selenium WebDriver 4, Playwright, Cypress, REST Assured API testing, TestNG, Cucumber BDD framework, JMeter load testing, GitHub Actions CI/CD.
+- Value Proposition: 80% regression testing time reduction, zero-defect release pipelines, and 100% test run repeatability.
+
+#### 4. AI Development & Automation (/services/ai-development-kadapa)
+- Focus: Pragmatic, high-ROI AI automation for local enterprises and modern startups.
+- Solutions: Automated WhatsApp order and lead qualification chatbots, OCR invoice and receipt parsing, internal business knowledge assistants (RAG over PDFs and manuals), and predictive inventory reorder alerts.
+
+#### 5. Mobile App Development (/services/mobile-app-development-kadapa)
+- Focus: High-performance cross-platform iOS and Android mobile apps.
+- Tech Stack: Google Flutter, Dart, Firebase Cloud Messaging, Razorpay/UPI gateway integration, Google Maps geolocation API.
+- Use Cases: Retail delivery apps, service booking apps, internal driver/agent tracking portals.
+
+#### 6. SaaS Product Engineering (/services/saas-development-kadapa)
+- Focus: Multi-tenant cloud SaaS products designed to scale from zero to tens of thousands of paying users.
+- Architecture: Tenant data isolation, Stripe/Razorpay automated subscription billing, user role permissions, audit logging, and global CDN delivery.
+
+#### 7. Business Software & POS Systems (/services/business-software-kadapa)
+- Focus: Dedicated on-premise and hybrid cloud billing, inventory, and ERP systems for Kadapa retailers, wholesalers, and healthcare providers.
+
+---
+
+### VERTICAL 2: MOMO ACADEMY (IT TRAINING & INTERNSHIP)
+
+#### Philosophy & Zero Placement Hype Policy
+MOMO Academy does NOT make deceptive "100% placement guarantees" or fake promises. Instead, the academy provides rigorous, hands-on, mentor-led engineering training where students write production code on real client projects. Every graduate receives a verified certificate with a permanent QR-verifiable background verification record at `https://www.momoittechnologies.com/certificates`.
+
+#### 1. Automation Testing & SDET Training (/academy/automation-testing-training-kadapa)
+- Duration: 12 Weeks (Daily live mentor sessions + hands-on coding labs)
+- Syllabus:
+  * Module 1: Java Programming Foundations (OOPs, Collections, Exception Handling, File I/O)
+  * Module 2: Selenium WebDriver 4 Deep Dive (Locators, Dynamic Elements, Waits, Window Handles, Actions class)
+  * Module 3: TestNG Framework (Assertions, DataProvider, Parallel Execution, Groups, Listeners)
+  * Module 4: Framework Architecture (Page Object Model, Hybrid Framework, Apache POI Excel Integration, Log4j)
+  * Module 5: Cucumber BDD & Gherkin (Feature Files, Step Definitions, Scenario Outlines, ExtentReports)
+  * Module 6: API Automation (REST Assured, HTTP Methods, JSONPath, Postman, Schema Validation)
+  * Module 7: DevOps CI/CD & Build Tools (Maven, Git, GitHub Actions, Jenkins test triggers)
+  * Module 8: Live Client Project Internship & Resume Portfolio Building
+
+#### 2. Core & Advanced Java Training (/academy/java-training-kadapa)
+- Syllabus: JDK 17+, JVM Architecture, OOP Design Patterns, Collections Framework (List, Set, Map), Multi-threading & Concurrency, Streams API, JDBC Database Connectivity, Spring Boot REST APIs.
+
+#### 3. Full-Stack Web Development (/academy/full-stack-development-training-kadapa)
+- Syllabus: HTML5, CSS3, Modern JavaScript (ES6+), React 19, Next.js App Router, Node.js, Express, PostgreSQL, Prisma ORM, JWT Authentication, and Cloud Deployment.
+
+#### 4. Flutter Mobile App Development (/academy/flutter-training-kadapa)
+- Syllabus: Dart syntax, Flutter widget trees, Provider and Bloc state management, REST API consumption, Firebase auth & notifications, Google Play Store publishing guidelines.
+
+#### 5. Agentic AI & Python Development (/academy/ai-training-kadapa)
+- Syllabus: Python for AI, OpenAI and Google Gemini APIs, Prompt Engineering, LangChain agents, Vector Databases (Pinecone/ChromaDB), Retrieval-Augmented Generation (RAG).
+
+---
+
+## Real Client Deployments & Case Studies
+
+1. **Vijaya's Yummy Food (Kadapa)**
+   - Challenge: Long dining table wait times during peak dinner rush, lost kitchen tickets, and manual billing errors.
+   - Solution: Deployed a custom cloud table-ordering and kitchen display system (KDS) with QR code ordering and unified thermal printer billing.
+   - Results: Table turnaround time reduced by 25 minutes, order accuracy reached 99.8%, revenue increased by 30%.
+
+2. **MANA Tours & Travels (Kadapa)**
+   - Challenge: Manual telephone dispatching for outstation taxi trips across Rayalaseema and Tirupati; lost bookings during off-hours.
+   - Solution: Built an automated responsive web portal with instant fare calculation, driver fleet management, and automated WhatsApp trip confirmations.
+   - Results: Direct online bookings grew by 300%, customer dispatch wait times reduced to under 5 minutes.
+
+---
+
+## Localized Knowledge Hub & Guides
+- **Website Costs in Kadapa:** Detailed breakdown of startup, SME, e-commerce, and enterprise web engineering costs in Rayalaseema, debunking cheap template traps.
+- **SDET Career Roadmap:** Step-by-step career path from fresher manual tester to 12 LPA Automation Test Engineer in Kadapa.
+- **AI Automation for Local Businesses:** Practical guide to WhatsApp bots, thermal billing OCR, and document automation.
+- **Enterprise Software Selection:** Comparative analysis of Excel spreadsheets vs tailored cloud ERPs for Rayalaseema businesses.

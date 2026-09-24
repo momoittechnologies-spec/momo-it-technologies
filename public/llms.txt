@@ -1,0 +1,71 @@
+# MOMO IT TECHNOLOGIES
+
+> MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software engineering company and premier IT training academy based in Kadapa, Andhra Pradesh, India.
+
+## Company Overview
+- **Legal Entity Name:** MOMO IT TECHNOLOGIES
+- **Headquarters Address:** 4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005, India
+- **Geo Coordinates:** Latitude 14.4713° N, Longitude 78.8237° E
+- **Official Contact Number:** +91 86398 31132
+- **Official Email:** momoit.technologies@gmail.com
+- **Website:** https://www.momoittechnologies.com
+- **MSME Udyam Registration:** UDYAM-AP-04-0013231
+- **Founding Location:** Kadapa, Andhra Pradesh, India
+
+---
+
+## Business Verticals
+
+### 1. Technology Services (B2B Custom Software Engineering)
+MOMO IT TECHNOLOGIES designs, builds, and maintains custom digital systems for startups, SMEs, and local enterprises across India and overseas:
+- **Web Development in Kadapa:** Modern Next.js, React, and TypeScript web applications engineered for speed, conversion, and local SEO.
+- **Custom Software Development:** Tailored ERPs, inventory management systems, and workflow automation.
+- **QA Automation & Testing Pods:** Dedicated SDET engineers deploying Selenium, Playwright, TestNG, and CI/CD pipelines for zero-defect software releases.
+- **AI Software Engineering:** Agentic AI, WhatsApp business automation bots, intelligent document processing, and RAG search systems.
+- **Mobile App Development:** Native performance iOS and Android applications built using Google Flutter.
+- **SaaS Product Engineering:** Multi-tenant cloud software with subscription billing and role-based access control.
+- **Business Software & Retail Systems:** POS billing software, GST invoicing, thermal printing integration, and barcode scanner support.
+
+### 2. MOMO Academy (Career Training & Practical Internships)
+MOMO Academy provides job-ready, mentor-led software engineering and test automation training for engineering students, fresh graduates, and career changers:
+- **Automation Testing Training in Kadapa:** Comprehensive Selenium 4, TestNG, Cucumber BDD framework, REST Assured API testing, Git, and Jenkins CI/CD.
+- **Core & Advanced Java Training:** OOP principles, Java Collections, Multi-threading, Exception Handling, JDBC, and Spring Boot basics.
+- **Selenium Training:** Hands-on automation framework design, Page Object Model (POM), data-driven testing with Apache POI, and test execution reporting.
+- **Full-Stack Development Training:** React, Next.js, Node.js, Express, PostgreSQL, Prisma ORM, and cloud deployment on Vercel/Render.
+- **Flutter Mobile App Training:** Dart programming, Flutter UI widgets, Provider/Bloc state management, REST API integration, and Firebase backend.
+- **Agentic AI & Python Training:** Python foundations, OpenAI/Gemini API integrations, LangChain, vector embeddings, and autonomous agent workflows.
+- **Verified Credentials & Internship Letters:** Every graduate works on real client codebases and receives an official, BGV-verifiable certificate with a permanent verification record at `https://www.momoittechnologies.com/certificates`.
+
+---
+
+## Client Proof & Live Case Studies
+- **Vijaya's Yummy Food (Kadapa):** Engineered a cloud-based restaurant POS and digital QR ordering system, reducing kitchen ticket delays by 40% and eliminating manual billing errors.
+- **MANA Tours & Travels (Kadapa):** Built an automated outstation taxi booking, fleet scheduling, and driver dispatch portal, increasing direct online ride reservations by 3x.
+- **MomoPe:** Proprietary fintech merchant payment and customer rewards platform designed for regional retail ecosystems.
+
+---
+
+## Canonical Site Navigation
+- [Homepage](https://www.momoittechnologies.com/)
+- [Kadapa Flagship Location Hub](https://www.momoittechnologies.com/kadapa)
+- [Services Index](https://www.momoittechnologies.com/services)
+- [Web Development Kadapa](https://www.momoittechnologies.com/services/web-development-kadapa)
+- [Software Development Kadapa](https://www.momoittechnologies.com/services/software-development-kadapa)
+- [QA Automation Kadapa](https://www.momoittechnologies.com/services/qa-automation-kadapa)
+- [AI Development Kadapa](https://www.momoittechnologies.com/services/ai-development-kadapa)
+- [Mobile App Development Kadapa](https://www.momoittechnologies.com/services/mobile-app-development-kadapa)
+- [SaaS Development Kadapa](https://www.momoittechnologies.com/services/saas-development-kadapa)
+- [Business Software Kadapa](https://www.momoittechnologies.com/services/business-software-kadapa)
+- [MOMO Academy Hub](https://www.momoittechnologies.com/academy)
+- [Automation Testing Training](https://www.momoittechnologies.com/academy/automation-testing-training-kadapa)
+- [Java Training Kadapa](https://www.momoittechnologies.com/academy/java-training-kadapa)
+- [Selenium Training Kadapa](https://www.momoittechnologies.com/academy/selenium-training-kadapa)
+- [Full-Stack Training Kadapa](https://www.momoittechnologies.com/academy/full-stack-development-training-kadapa)
+- [Flutter Training Kadapa](https://www.momoittechnologies.com/academy/flutter-training-kadapa)
+- [AI Training Kadapa](https://www.momoittechnologies.com/academy/ai-training-kadapa)
+- [Verified Certificate Registry](https://www.momoittechnologies.com/certificates)
+- [Knowledge Hub / Blog](https://www.momoittechnologies.com/blog)
+- [Client Case Studies](https://www.momoittechnologies.com/case-studies)
+- [About Company & MSME](https://www.momoittechnologies.com/about)
+- [Contact & Location Desk](https://www.momoittechnologies.com/contact)
+- [Google Review Portal](https://www.momoittechnologies.com/review)
