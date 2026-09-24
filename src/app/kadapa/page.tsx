@@ -35,24 +35,34 @@ export const metadata: Metadata = {
 
 const kadapaServices = [
   {
-    title: "Custom Web & SaaS Development",
-    desc: "Production-ready web applications built on Next.js, React, Node.js, and Java Spring Boot for local and global enterprises.",
-    href: "/services/software-dev",
+    title: "Web Development in Kadapa",
+    desc: "Production-ready, sub-second corporate websites and web applications built on Next.js 15, React 19, and Tailwind CSS.",
+    href: "/services/web-development-kadapa",
+  },
+  {
+    title: "Software & SaaS Development",
+    desc: "Custom backend architectures, multi-tenant cloud SaaS engines, and API microservices engineered in Kadapa.",
+    href: "/services/software-development-kadapa",
   },
   {
     title: "QA & Automation Testing Services",
-    desc: "Comprehensive manual and automated testing suites using Selenium WebDriver, TestNG, Cucumber BDD, and REST Assured.",
-    href: "/services/qa-testing",
+    desc: "Comprehensive manual and automated testing suites using Selenium 4, TestNG, Cucumber BDD, and CI/CD pipelines.",
+    href: "/services/qa-automation-kadapa",
   },
   {
-    title: "Business Systems & Cloud ERP",
-    desc: "Tailored billing, order management, and operations platforms like the multi-tenant engine developed for Vijaya's Yummy Food.",
-    href: "/services/business-systems",
+    title: "Agentic AI & LLM Systems",
+    desc: "Autonomous multi-agent workflows, enterprise RAG with Vector DBs, and private local LLM deployments.",
+    href: "/services/ai-development-kadapa",
   },
   {
     title: "Mobile App Development",
-    desc: "High-performance iOS and Android cross-platform mobile apps engineered with Flutter and modern cloud backends.",
-    href: "/services",
+    desc: "High-performance iOS and Android cross-platform mobile apps engineered with Flutter, Dart, and Firebase.",
+    href: "/services/mobile-app-development-kadapa",
+  },
+  {
+    title: "Custom Business & ERP Software",
+    desc: "Tailored POS billing, thermal receipt printing, inventory tracking, and GST invoicing for Kadapa enterprises.",
+    href: "/services/business-software-kadapa",
   },
 ];
 
@@ -61,25 +71,37 @@ const kadapaCourses = [
     title: "QA Automation & Selenium Testing",
     duration: "3 Months",
     highlights: "Java 17, Selenium 4, TestNG, Cucumber BDD, API Testing, Live Client Internship",
-    href: "/academy",
+    href: "/academy/automation-testing-training-kadapa",
+  },
+  {
+    title: "Core Java & Advanced Java",
+    duration: "2 Months",
+    highlights: "Java 17+, OOPs, Collections Framework, Stream API, JDBC Database Connectivity",
+    href: "/academy/java-training-kadapa",
+  },
+  {
+    title: "Selenium 4 WebDriver Lab",
+    duration: "2.5 Months",
+    highlights: "Page Object Model, Dynamic Locators, Synchronization, ExtentReports, CI/CD",
+    href: "/academy/selenium-training-kadapa",
   },
   {
     title: "Full-Stack Web Development",
     duration: "4 Months",
-    highlights: "React, Next.js, Tailwind CSS, PostgreSQL, Spring Boot / Express, Cloud Deployments",
-    href: "/academy",
+    highlights: "React 19, Next.js, Spring Boot 3 microservices, PostgreSQL, Cloud Deployment",
+    href: "/academy/full-stack-development-training-kadapa",
   },
   {
     title: "Flutter Mobile App Engineering",
     duration: "3 Months",
     highlights: "Dart, Flutter SDK, State Management, REST APIs, App Store & Play Store Deployment",
-    href: "/academy",
+    href: "/academy/flutter-training-kadapa",
   },
   {
     title: "Agentic AI & Enterprise Solutions",
-    duration: "2 Months",
-    highlights: "LangChain, LlamaIndex, Vector Databases, Retrieval-Augmented Generation (RAG)",
-    href: "/academy",
+    duration: "2.5 Months",
+    highlights: "LangGraph, CrewAI, Vector Databases, Production RAG, Private LLM Inference",
+    href: "/academy/ai-training-kadapa",
   },
 ];
 

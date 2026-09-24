@@ -143,7 +143,7 @@ export default function Navbar() {
                     <div className="grid grid-cols-2 gap-3">
                       {/* Custom AI Development */}
                       <Link
-                        href="/services#custom-ai-development"
+                        href="/services/ai-development-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl bg-emerald-50/40 hover:bg-emerald-50/80 border border-emerald-100/80 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
@@ -151,7 +151,7 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-emerald-700 flex items-center gap-1.5">
-                            Custom AI Development
+                            AI Development Kadapa
                             <span className="text-[9px] px-1.5 py-0.2 rounded bg-emerald-600 text-white font-bold">
                               AI
                             </span>
@@ -162,30 +162,9 @@ export default function Navbar() {
                         </div>
                       </Link>
 
-                      {/* Legacy Modernisation */}
+                      {/* Web Development Kadapa */}
                       <Link
-                        href="/services#legacy-modernisation"
-                        className="flex items-start gap-3 p-3 rounded-xl bg-indigo-50/40 hover:bg-indigo-50/80 border border-indigo-100/80 transition-all group"
-                      >
-                        <div className="w-9 h-9 rounded-lg bg-indigo-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
-                          <RefreshCw className="w-5 h-5" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-bold text-navy-950 group-hover:text-indigo-700 flex items-center gap-1.5">
-                            Legacy Modernisation
-                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-indigo-600 text-white font-bold">
-                              Cloud
-                            </span>
-                          </div>
-                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Monolith migration guide &amp; cloud microservices.
-                          </p>
-                        </div>
-                      </Link>
-
-                      {/* Web & SaaS (Core) */}
-                      <Link
-                        href="/services/software-dev"
+                        href="/services/web-development-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl bg-brand-50/40 hover:bg-brand-50/80 border border-brand-100/80 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
@@ -193,20 +172,41 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
-                            Web &amp; SaaS Products
+                            Web Development Kadapa
                             <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-600 text-white font-bold">
                               Core
                             </span>
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Next.js 15, React 19, Spring Boot &amp; Supabase apps.
+                            Next.js 15, React 19, high-speed corporate sites.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Software & SaaS Products */}
+                      <Link
+                        href="/services/software-development-kadapa"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <RefreshCw className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
+                            Software Development
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-indigo-100 text-indigo-800 font-bold">
+                              SaaS
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Custom software, APIs, and cloud-native systems.
                           </p>
                         </div>
                       </Link>
 
                       {/* QA Automation */}
                       <Link
-                        href="/services/qa-testing"
+                        href="/services/qa-automation-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -214,17 +214,17 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
-                            QA &amp; Automation
+                            QA Automation Testing
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Selenium 4, Playwright &amp; REST Assured automated pods.
+                            Selenium 4, TestNG, Cucumber BDD &amp; CI/CD pipelines.
                           </p>
                         </div>
                       </Link>
 
                       {/* Mobile Apps */}
                       <Link
-                        href="/services/software-dev"
+                        href="/services/mobile-app-development-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -232,7 +232,7 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
-                            Mobile Development
+                            Mobile App Development
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
                             Cross-platform Flutter iOS &amp; Android native apps.
@@ -242,7 +242,7 @@ export default function Navbar() {
 
                       {/* Business ERP */}
                       <Link
-                        href="/services/business-systems"
+                        href="/services/business-software-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -250,10 +250,10 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
-                            Business ERP &amp; Systems
+                            Business &amp; ERP Software
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
-                            Custom billing, route dispatch &amp; operational CRM portals.
+                            Custom billing, inventory, POS &amp; WhatsApp receipts.
                           </p>
                         </div>
                       </Link>
@@ -335,7 +335,7 @@ export default function Navbar() {
                     <div className="grid grid-cols-2 gap-3">
                       {/* Flagship Course: Agentic AI */}
                       <Link
-                        href="/academy#courses"
+                        href="/academy/ai-training-kadapa"
                         className="col-span-2 flex items-start gap-3 p-3 rounded-xl bg-gradient-to-r from-brand-50/80 via-emerald-50/50 to-teal-50/60 hover:from-brand-50 hover:to-emerald-50 border border-brand-200/80 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-600 to-emerald-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
@@ -361,7 +361,7 @@ export default function Navbar() {
 
                       {/* Course 1 */}
                       <Link
-                        href="/academy#courses"
+                        href="/academy/automation-testing-training-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl bg-brand-50/30 hover:bg-brand-50/70 border border-brand-100/70 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
@@ -369,7 +369,7 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
-                            Automation Testing
+                            Automation Testing Kadapa
                             <span className="text-[9px] px-1.5 py-0.2 rounded bg-brand-100 text-brand-800 font-bold">
                               QA Flagship
                             </span>
@@ -385,7 +385,7 @@ export default function Navbar() {
 
                       {/* Course 2 */}
                       <Link
-                        href="/academy#courses"
+                        href="/academy/full-stack-development-training-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -406,7 +406,7 @@ export default function Navbar() {
 
                       {/* Course 3 */}
                       <Link
-                        href="/academy#courses"
+                        href="/academy/flutter-training-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -427,7 +427,7 @@ export default function Navbar() {
 
                       {/* Course 4 */}
                       <Link
-                        href="/academy#courses"
+                        href="/academy/java-training-kadapa"
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
                       >
                         <div className="w-9 h-9 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -435,13 +435,13 @@ export default function Navbar() {
                         </div>
                         <div>
                           <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700">
-                            Digital Marketing &amp; AI
+                            Core &amp; Advanced Java
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">
-                            Local SEO, Meta Ads &amp; GenAI Funnels
+                            Java 17+, OOPs, Streams &amp; JDBC
                           </p>
                           <span className="text-[10px] font-semibold text-amber-700 mt-1 block">
-                            8 Weeks · For Founders &amp; Freelancers
+                            8–10 Weeks · Coding Lab
                           </span>
                         </div>
                       </Link>
@@ -628,46 +628,46 @@ export default function Navbar() {
               </div>
               <div className="space-y-1.5 pt-1 text-sm">
                 <Link
-                  href="/services#custom-ai-development"
+                  href="/services/ai-development-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-emerald-50/70 font-semibold text-emerald-950 hover:text-emerald-700 border border-emerald-200/80"
                 >
-                  🤖 Custom AI Software Development (Enterprise AI &amp; RAG)
+                  🤖 AI Software Development in Kadapa
                 </Link>
                 <Link
-                  href="/services#legacy-modernisation"
-                  className="block px-2.5 py-1.5 rounded-lg bg-indigo-50/70 font-semibold text-indigo-950 hover:text-indigo-700 border border-indigo-200/80"
-                >
-                  🔄 Legacy Application Modernisation (Migration Guide)
-                </Link>
-                <Link
-                  href="/services/software-dev"
+                  href="/services/web-development-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 hover:text-brand-600 border border-gray-100"
                 >
-                  🌐 Web &amp; SaaS Product Development
+                  🌐 Web Development Kadapa
                 </Link>
                 <Link
-                  href="/services/qa-testing"
+                  href="/services/software-development-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 hover:text-brand-600 border border-gray-100"
+                >
+                  💻 Custom Software &amp; SaaS Development
+                </Link>
+                <Link
+                  href="/services/qa-automation-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
                 >
-                  🧪 QA Automation (Selenium &amp; Playwright)
+                  🧪 QA Automation Testing (Selenium 4)
                 </Link>
                 <Link
-                  href="/services/software-dev"
+                  href="/services/mobile-app-development-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
                 >
-                  📱 Mobile Apps (Flutter Android &amp; iOS)
+                  📱 Mobile Apps (Flutter iOS &amp; Android)
                 </Link>
                 <Link
-                  href="/services/business-systems"
+                  href="/services/saas-development-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
                 >
-                  💼 Business ERP &amp; Billing Systems
+                  ☁️ SaaS Product Development Kadapa
                 </Link>
                 <Link
-                  href="/services/software-dev"
-                  className="block px-2.5 py-1.5 rounded-lg bg-brand-50/80 font-bold text-brand-700 text-xs text-center border border-brand-200"
+                  href="/services/business-software-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
                 >
-                  🧮 Launch SaaS Scope &amp; Cost Estimator →
+                  💼 Business ERP, POS &amp; Billing Systems
                 </Link>
               </div>
             </div>
@@ -685,34 +685,40 @@ export default function Navbar() {
               </div>
               <div className="space-y-1.5 pt-1 text-sm">
                 <Link
-                  href="/academy#courses"
+                  href="/academy/ai-training-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-brand-100/70 font-bold text-brand-950 border border-brand-300"
                 >
-                  ⚡ Agentic AI, RAG &amp; Enterprise AI (2026 Flagship)
+                  ⚡ Agentic AI, RAG &amp; Enterprise AI (2026)
                 </Link>
                 <Link
-                  href="/academy#courses"
+                  href="/academy/automation-testing-training-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white font-semibold text-navy-950 border border-brand-100"
                 >
                   Automation Testing with Java (Selenium 4)
                 </Link>
                 <Link
-                  href="/academy#courses"
+                  href="/academy/java-training-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
+                >
+                  Core &amp; Advanced Java Training
+                </Link>
+                <Link
+                  href="/academy/selenium-training-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
+                >
+                  Selenium WebDriver Testing Lab
+                </Link>
+                <Link
+                  href="/academy/full-stack-development-training-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
                 >
                   Full-Stack Software Dev (React 19 &amp; Java)
                 </Link>
                 <Link
-                  href="/academy#courses"
+                  href="/academy/flutter-training-kadapa"
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
                 >
                   Mobile App Dev (Flutter Android &amp; iOS)
-                </Link>
-                <Link
-                  href="/academy#courses"
-                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 border border-brand-100"
-                >
-                  Digital Marketing &amp; AI Growth Masterclass
                 </Link>
                 <div className="p-2 rounded-lg bg-white border border-emerald-200 text-[11px] text-emerald-800 font-semibold text-center">
                   🎓 Certificate + 💼 Real Project Internship Included

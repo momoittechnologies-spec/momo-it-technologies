@@ -10,6 +10,7 @@ import {
   ArrowUpRight,
   ShieldCheck,
   Star,
+  Building2,
 } from "lucide-react";
 
 export default function Footer() {
@@ -29,20 +30,23 @@ export default function Footer() {
                   MOMO <span className="text-brand-400">IT TECHNOLOGIES</span>
                 </span>
                 <span className="text-[10px] text-gray-400 uppercase tracking-widest">
-                  Software Engineering & Academy
+                  Software Engineering &amp; Academy — Kadapa
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-gray-400 leading-relaxed max-w-md">
-              From Kadapa, Andhra Pradesh to global businesses worldwide. We design, engineer, and rigorously test high-impact digital applications while grooming India&apos;s next generation of top-tier software and automation engineers.
+              From Kadapa, Andhra Pradesh to global businesses worldwide. We design, engineer, and rigorously test high-impact software, SaaS platforms, and mobile apps while grooming Andhra Pradesh&apos;s next generation of top-tier software and automation engineers.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
-              <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-brand-300 border border-brand-500/20">
+              <Link
+                href="/kadapa"
+                className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-brand-300 border border-brand-500/20 hover:border-brand-500/50 transition-colors"
+              >
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                 4.8★ Google Rated in Kadapa
-              </span>
+              </Link>
               <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-gray-300 border border-gray-700">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />
                 MSME Registered
@@ -50,125 +54,150 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Technology Services */}
+          {/* Technology Services in Kadapa */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Tech Services
+              Tech Services (Kadapa)
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link
-                  href="/services#custom-ai-development"
-                  className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
-                >
-                  <span>Custom AI Software Dev</span>
-                  <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-bold">AI</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services#legacy-modernisation"
+                  href="/services/web-development-kadapa"
                   className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
                 >
-                  Legacy Modernisation (Guide)
+                  Web Development Kadapa
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/software-dev"
-                  className="text-gray-300 hover:text-brand-400 font-semibold transition-colors flex items-center gap-1"
+                  href="/services/software-development-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
                 >
-                  <span>Web &amp; SaaS Products</span>
-                  <span className="text-[9px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">Core</span>
+                  Software Development Kadapa
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/qa-testing"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
+                  href="/services/qa-automation-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
                 >
-                  QA Automation (Selenium &amp; Playwright)
+                  QA Automation Testing Kadapa
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/business-systems"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
+                  href="/services/ai-development-kadapa"
+                  className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
                 >
-                  Custom ERP &amp; Billing Systems
+                  <span>AI &amp; Agentic Systems</span>
+                  <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1 py-0.5 rounded font-bold">2026</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/mobile-app-development-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  Mobile App Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/saas-development-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  SaaS Product Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/business-software-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  Custom ERP &amp; POS Systems
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* MOMO Academy */}
+          {/* MOMO Academy in Kadapa */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
               <GraduationCap className="w-4 h-4 text-brand-400" />
               MOMO Academy
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link
-                  href="/academy#courses"
-                  className="text-brand-400 hover:text-brand-300 font-bold transition-colors flex items-center gap-1"
+                  href="/academy/automation-testing-training-kadapa"
+                  className="text-brand-300 hover:text-brand-200 font-semibold transition-colors"
+                >
+                  Automation Testing Training
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/academy/java-training-kadapa"
+                  className="text-gray-300 hover:text-brand-400 transition-colors"
+                >
+                  Core &amp; Advanced Java
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/academy/selenium-training-kadapa"
+                  className="text-gray-300 hover:text-brand-400 transition-colors"
+                >
+                  Selenium 4 WebDriver Lab
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/academy/full-stack-development-training-kadapa"
+                  className="text-gray-300 hover:text-brand-400 transition-colors"
+                >
+                  Full-Stack Development (Java+React)
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/academy/flutter-training-kadapa"
+                  className="text-gray-300 hover:text-brand-400 transition-colors"
+                >
+                  Flutter App Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/academy/ai-training-kadapa"
+                  className="text-teal-300 hover:text-teal-200 font-semibold transition-colors flex items-center gap-1"
                 >
                   <span>Agentic AI &amp; RAG (2026)</span>
-                  <span className="text-[9px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">New</span>
+                  <span className="text-[9px] bg-teal-500/20 text-teal-300 px-1 py-0.5 rounded font-bold">New</span>
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/academy#courses"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Automation Testing with Java
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy#courses"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Full-Stack Java (Spring Boot + React)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy#courses"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Mobile App Development (Flutter/iOS)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy#courses"
-                  className="text-gray-400 hover:text-brand-400 transition-colors"
-                >
-                  Digital Marketing &amp; AI Growth
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy"
+                  href="/certificates"
                   className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
                 >
-                  Explore Curriculum &amp; Internships →
+                  Verify Certificates Online →
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact & Location */}
+          {/* Contact & Kadapa Office */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
               Kadapa Headquarters
             </h4>
-            <div className="space-y-3 text-sm text-gray-400">
+            <div className="space-y-3 text-xs sm:text-sm text-gray-400">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-400 shrink-0 mt-1" />
-                <span>4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005</span>
+                <Link href="/kadapa" className="hover:text-white transition-colors">
+                  4/106, Krishnapuram, Kadapa, Andhra Pradesh — 516005
+                </Link>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-brand-400 shrink-0" />
@@ -191,6 +220,15 @@ export default function Footer() {
                 </span>
                 <span className="text-xs text-gray-400">Mon - Sat: 8:00 AM - 8:00 PM IST</span>
               </div>
+              <div className="pt-2">
+                <Link
+                  href="/kadapa"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brand-600 hover:bg-brand-500 px-3 py-1.5 rounded-lg transition-colors shadow-sm"
+                >
+                  <Building2 className="w-3.5 h-3.5" />
+                  <span>Kadapa Office &amp; Lab Hub →</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -200,12 +238,15 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved.
           </p>
-          <div className="flex flex-wrap items-center gap-6">
-            <Link href="/services/software-dev" className="hover:text-gray-400 transition-colors">
-              Web &amp; SaaS Products
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <Link href="/kadapa" className="text-gray-400 hover:text-white transition-colors">
+              Kadapa Office
             </Link>
-            <Link href="/industries" className="hover:text-gray-400 transition-colors">
-              Industries
+            <Link href="/services" className="hover:text-gray-400 transition-colors">
+              All Services
+            </Link>
+            <Link href="/case-studies" className="hover:text-gray-400 transition-colors">
+              Case Studies
             </Link>
             <Link href="/academy" className="hover:text-gray-400 transition-colors">
               MOMO Academy
