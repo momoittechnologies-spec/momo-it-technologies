@@ -1,14 +1,16 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://momoittechnologies.com";
+  const baseUrl = "https://www.momoittechnologies.com";
 
   const routes = [
     "",
+    "/kadapa",
     "/services",
     "/services/qa-testing",
     "/services/software-dev",
     "/services/business-systems",
+    "/case-studies",
     "/case-studies/vijayas-yummy-food",
     "/case-studies/mana-tours",
     "/academy",

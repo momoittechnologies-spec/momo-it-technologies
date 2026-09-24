@@ -6,29 +6,38 @@ import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://momoittechnologies.com"),
-  title: "MOMO IT TECHNOLOGIES — Web & SaaS Product Engineering & Premier IT Academy | Kadapa",
+  metadataBase: new URL("https://www.momoittechnologies.com"),
+  title: {
+    default: "MOMO IT Technologies | IT Company & Software Development in Kadapa",
+    template: "%s | MOMO IT Technologies",
+  },
   description:
-    "Kadapa's leading 4.8★ rated software company and technical academy. Specialized in Web & SaaS Product Engineering (Next.js, Spring Boot, Supabase), Flutter Mobile Apps, QA Automation Testing, and career training with verified certificates & real-world client internships.",
+    "MOMO IT Technologies is a Kadapa-based IT company offering web & SaaS development, mobile apps, AI solutions, QA automation, software testing and industry-focused IT training.",
   keywords: [
-    "MOMO IT Technologies",
-    "Web development company Kadapa",
-    "SaaS product development company India",
-    "Software training institute in Kadapa",
-    "Automation testing course Kadapa",
-    "Java training in Kadapa",
-    "Mobile app development Flutter Kadapa",
-    "Digital marketing masterclass Kadapa",
-    "Software company Kadapa",
-    "QA automation services India",
-    "Enterprise AI Solutions Kadapa",
+    "IT company in Kadapa",
+    "Software company in Kadapa",
+    "Software development company in Kadapa",
+    "Web development company in Kadapa",
+    "SaaS development company in Kadapa",
+    "Custom software development in Kadapa",
+    "Mobile app development company in Kadapa",
+    "AI development company in Kadapa",
+    "QA automation company in Kadapa",
+    "Software testing company in Kadapa",
+    "IT training institute in Kadapa",
+    "Java training institute in Kadapa",
+    "Selenium training institute in Kadapa",
+    "Full stack development training in Kadapa",
   ],
   authors: [{ name: "MOMO IT TECHNOLOGIES" }],
+  alternates: {
+    canonical: "https://www.momoittechnologies.com",
+  },
   openGraph: {
-    title: "MOMO IT TECHNOLOGIES — Web & SaaS Products & Premier IT Academy",
+    title: "MOMO IT Technologies | IT Company & Software Development in Kadapa",
     description:
-      "Kadapa's premier 4.8★ rated software company and technology partner. Engineering scalable Web & SaaS products and training job-ready software engineers.",
-    url: "https://momoittechnologies.com",
+      "MOMO IT Technologies is a Kadapa-based IT company offering web & SaaS development, mobile apps, AI solutions, QA automation, software testing and industry-focused IT training.",
+    url: "https://www.momoittechnologies.com",
     siteName: "MOMO IT TECHNOLOGIES",
     locale: "en_IN",
     type: "website",
@@ -69,17 +78,12 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": ["LocalBusiness", "EducationalOrganization", "ProfessionalService"],
-        "@id": "https://momoittechnologies.com/#organization",
+        "@id": "https://www.momoittechnologies.com/#organization",
         name: "MOMO IT TECHNOLOGIES",
-        alternateName: [
-          "MOMO IT Technologies Kadapa",
-          "Momo Technologies",
-          "MOMO Academy",
-        ],
         description:
           "Leading software company in Kadapa, Andhra Pradesh specializing in Web & SaaS product engineering, Flutter mobile apps, QA automation, and IT career education with verified certificates and internships.",
         telephone: "+91-86398-31132",
-        url: "https://momoittechnologies.com",
+        url: "https://www.momoittechnologies.com",
         email: "momoit.technologies@gmail.com",
         address: {
           "@type": "PostalAddress",

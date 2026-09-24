@@ -528,9 +528,29 @@ export default function Navbar() {
                         </span>
                       </div>
                     </Link>
+                    <div className="pt-2 mt-1 border-t border-gray-100 px-3 py-1.5">
+                      <Link
+                        href="/case-studies"
+                        className="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center justify-between"
+                      >
+                        <span>View All Case Studies</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>
+
+              <Link
+                href="/kadapa"
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === "/kadapa"
+                    ? "text-brand-700 bg-brand-50/80 font-semibold"
+                    : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
+                }`}
+              >
+                Kadapa Office
+              </Link>
 
               <Link
                 href="/about"

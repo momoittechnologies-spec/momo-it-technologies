@@ -57,6 +57,9 @@ export default function HeroSection() {
 
         {/* Grand Headline */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-navy-950 tracking-tight leading-[1.12] max-w-4xl mx-auto mb-6">
+          <span className="block text-base sm:text-xl font-bold text-brand-700 tracking-normal mb-3">
+            IT Company &amp; Software Development in Kadapa
+          </span>
           Engineering Scalable Software &amp; Training{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-emerald-600 to-teal-700">
             Tomorrow&apos;s Tech Leaders.
