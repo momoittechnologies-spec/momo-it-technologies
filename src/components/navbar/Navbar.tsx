@@ -568,17 +568,6 @@ export default function Navbar() {
 
             {/* Right Action Buttons */}
             <div className="hidden lg:flex items-center gap-3">
-              <a
-                href="https://wa.me/918639831132"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-xs font-semibold text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-xl hover:bg-gray-50 transition-colors"
-                title="Direct WhatsApp with Kadapa office"
-              >
-                <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
-                <span>WhatsApp</span>
-              </a>
-
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white text-xs font-bold shadow-md shadow-brand-500/25 hover:shadow-lg hover:shadow-brand-500/35 hover:-translate-y-0.5 transition-all"
