@@ -133,6 +133,7 @@ export default function RootLayout({
         priceRange: "₹₹",
         sameAs: [
           "https://www.linkedin.com/company/momo-it-technologies",
+          "https://www.linkedin.com/jobs/view/4470198185/",
           "https://github.com/momoittechnologies-spec",
           "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
         ],

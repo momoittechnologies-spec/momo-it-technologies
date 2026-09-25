@@ -254,6 +254,10 @@ export default function Footer() {
             <Link href="/academy" className="hover:text-gray-400 transition-colors">
               MOMO Academy
             </Link>
+            <Link href="/about#careers" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span>Careers (Hiring)</span>
+            </Link>
             <Link href="/review" className="text-amber-400 hover:text-amber-300 font-medium transition-colors">
               Review Us
             </Link>

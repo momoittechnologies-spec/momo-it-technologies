@@ -14,19 +14,21 @@ import {
   Award,
   Code2,
   FileCheck,
+  Briefcase,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | MOMO IT Technologies — Kadapa Software & IT Academy",
+  title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
   description:
-    "Learn about MOMO IT Technologies: A registered software engineering company and premier IT Academy based in 4/106 Krishnapuram, Kadapa, Andhra Pradesh. MSME Registered UDYAM-AP-04-0013231.",
+    "Learn about MOMO IT Technologies: A registered software engineering company and premier IT Academy based in 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa — 516003. MSME Registered UDYAM-AP-04-0013231.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/about",
   },
   openGraph: {
-    title: "About Us | MOMO IT Technologies — Kadapa Software & IT Academy",
+    title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
     description:
-      "Kadapa's 4.8★ rated software engineering company and training academy. Discover our mission, MSME credentials, leadership, and commercial case studies in Rayalaseema.",
+      "Kadapa's 4.8★ rated software engineering company and training academy. Discover our mission, MSME credentials, active career openings, and commercial case studies in Rayalaseema.",
     url: "https://www.momoittechnologies.com/about",
   },
 };
@@ -75,10 +77,37 @@ export default function AboutPage() {
           "foundingDate": "2025-06-01",
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 14.4673,
-            "longitude": 78.8242
+            "latitude": 14.4713,
+            "longitude": 78.8237
           }
         }
+      },
+      {
+        "@type": "JobPosting",
+        "title": "Business Development & Marketing Executive",
+        "description": "MOMO IT TECHNOLOGIES (MSME Registered: UDYAM-AP-04-0013231) is hiring a target-driven Business Development & Marketing Executive at our Krishnapuram, Kadapa office to lead B2B software/website client acquisition and MOMO Academy campus outreach.",
+        "datePosted": "2026-09-25",
+        "validThrough": "2026-12-31T23:59:59Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "MOMO IT TECHNOLOGIES",
+          "sameAs": "https://www.momoittechnologies.com",
+          "logo": "https://www.momoittechnologies.com/logo.svg"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4/106, Chowdeswari Temple Lane, Krishnapuram",
+            "addressLocality": "Kadapa",
+            "addressRegion": "Andhra Pradesh",
+            "postalCode": "516003",
+            "addressCountry": "IN"
+          }
+        },
+        "directApply": true,
+        "url": "https://www.linkedin.com/jobs/view/4470198185/"
       }
     ]
   };
@@ -235,6 +264,58 @@ export default function AboutPage() {
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Year of Establishment</div>
                 <div className="text-sm font-bold text-teal-300 mt-1">June 2025</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Careers & Active Job Openings */}
+          <div id="careers" className="bg-white rounded-3xl p-8 sm:p-10 border-2 border-brand-500/30 shadow-card mb-12 scroll-mt-36">
+            <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                We Are Hiring in Kadapa
+              </div>
+              <span className="text-xs font-semibold text-gray-500">
+                Location: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa — 516003
+              </span>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 p-6 rounded-2xl bg-surface-light border border-gray-200/80">
+              <div className="space-y-2 max-w-2xl">
+                <div className="flex items-center gap-2">
+                  <Briefcase className="w-5 h-5 text-brand-600 shrink-0" />
+                  <h3 className="text-xl font-extrabold text-navy-950">
+                    Business Development &amp; Marketing Executive (Kadapa Office)
+                  </h3>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Drive B2B Website/Software client acquisition across Kadapa businesses and lead MOMO Academy campus outreach across engineering &amp; degree colleges. Fixed monthly salary + uncapped performance incentives.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white border border-gray-200 text-gray-700">Full-Time • On-site (Kadapa)</span>
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-white border border-gray-200 text-gray-700">Telugu &amp; English Fluency</span>
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-md bg-brand-50 border border-brand-200 text-brand-700">0–3 Yrs Experience</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row md:flex-col gap-3 shrink-0">
+                <a
+                  href="https://www.linkedin.com/jobs/view/4470198185/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0A66C2] hover:bg-[#004182] text-white font-bold text-xs shadow-sm transition-all"
+                >
+                  <span>Apply on LinkedIn</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href="https://wa.me/918639831132?text=Hello%20MOMO%20IT%20Technologies%2C%20I%20am%20interested%20in%20applying%20for%20the%20Marketing%20%26%20Business%20Development%20role%20in%20Kadapa."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-gray-50 text-navy-950 border border-gray-200 font-bold text-xs transition-all"
+                >
+                  <span>Apply via WhatsApp</span>
+                </a>
               </div>
             </div>
           </div>
