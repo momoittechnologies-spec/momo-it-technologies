@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   authors: [{ name: "MOMO IT TECHNOLOGIES" }],
   alternates: {
     canonical: "https://www.momoittechnologies.com",
+    types: {
+      "application/rss+xml": "https://www.momoittechnologies.com/feed.xml",
+    },
   },
   openGraph: {
     title: "MOMO IT Technologies | IT Company & Software Development in Kadapa",
@@ -99,8 +102,18 @@ export default function RootLayout({
         foundingDate: "2025-06-01",
         geo: {
           "@type": "GeoCoordinates",
-          latitude: "14.4673",
-          longitude: "78.8242",
+          latitude: "14.4713",
+          longitude: "78.8237",
+        },
+        hasMap: "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
+        currenciesAccepted: "INR",
+        paymentAccepted: "Cash, Credit Card, UPI, Net Banking",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+91-86398-31132",
+          contactType: "customer service",
+          areaServed: "IN",
+          availableLanguage: ["en", "te"],
         },
         aggregateRating: {
           "@type": "AggregateRating",
@@ -118,7 +131,11 @@ export default function RootLayout({
           },
         ],
         priceRange: "₹₹",
-        sameAs: ["https://maps.google.com"],
+        sameAs: [
+          "https://www.linkedin.com/company/momo-it-technologies",
+          "https://github.com/momoittechnologies-spec",
+          "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
+        ],
       },
       {
         "@type": "Course",

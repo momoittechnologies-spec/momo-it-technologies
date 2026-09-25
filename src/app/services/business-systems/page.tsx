@@ -15,6 +15,9 @@ export const metadata = {
   title: "Custom Business Management Systems & ERP | MOMO IT Technologies",
   description:
     "Tailored CRM, billing, inventory, and fleet management software built for small and medium businesses by MOMO IT Technologies Kadapa.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/services/business-systems",
+  },
 };
 
 export default function BusinessSystemsPage() {

@@ -17,6 +17,9 @@ export const metadata = {
   title: "QA & Automation Testing Services | MOMO IT Technologies",
   description:
     "Enterprise QA Automation, Selenium, Playwright, and RestAssured API testing pods delivered by MOMO IT Technologies Kadapa.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/services/qa-testing",
+  },
 };
 
 export default function QaTestingServicePage() {

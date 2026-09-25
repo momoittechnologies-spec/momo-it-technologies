@@ -5,14 +5,98 @@ import { servicesData } from "@/data/services";
 import SaaSEstimator from "@/components/services/SaaSEstimator";
 
 export const metadata = {
-  title: "All IT & Engineering Services | MOMO IT Technologies",
+  title: "IT & Software Engineering Services in Kadapa | MOMO IT Technologies",
   description:
-    "Explore our complete suite of software engineering services: Web & SaaS Product Engineering, QA Automation Testing, Flutter Mobile Apps, and Dedicated Engineering Pods.",
+    "Explore our complete suite of software engineering services in Kadapa: Web & SaaS Product Engineering, QA Automation Testing, Flutter Mobile Apps, and AI Solutions.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/services",
+  },
+  openGraph: {
+    title: "IT & Software Engineering Services in Kadapa | MOMO IT Technologies",
+    description:
+      "Web & SaaS development, QA automation pods, Flutter mobile apps, and AI software engineering in Kadapa, Andhra Pradesh.",
+    url: "https://www.momoittechnologies.com/services",
+  },
 };
 
 export default function ServicesIndexPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        name: "MOMO IT Technologies Software Engineering Services",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Web Development in Kadapa",
+            url: "https://www.momoittechnologies.com/services/web-development-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Custom Software Development in Kadapa",
+            url: "https://www.momoittechnologies.com/services/software-development-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "QA Automation & Software Testing in Kadapa",
+            url: "https://www.momoittechnologies.com/services/qa-automation-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: "AI Software Engineering in Kadapa",
+            url: "https://www.momoittechnologies.com/services/ai-development-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 5,
+            name: "Mobile App Development in Kadapa",
+            url: "https://www.momoittechnologies.com/services/mobile-app-development-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 6,
+            name: "SaaS Product Engineering in Kadapa",
+            url: "https://www.momoittechnologies.com/services/saas-development-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 7,
+            name: "Business Software & ERP Systems in Kadapa",
+            url: "https://www.momoittechnologies.com/services/business-software-kadapa",
+          },
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.momoittechnologies.com/services",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200/60">

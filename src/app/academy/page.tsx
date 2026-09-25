@@ -27,10 +27,84 @@ import CourseCurriculumAccordion from "@/components/academy/CourseCurriculumAcco
 export const metadata = {
   title: "MOMO Academy — Best IT Training & Live Project Internships in Kadapa",
   description:
-    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Digital Marketing with MOMO Academy Kadapa. 4.8★ Google Rated. Verified certificates & guaranteed live internships.",
+    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Agentic AI with MOMO Academy Kadapa. 4.8★ Google Rated. Verified certificates & guaranteed live internships.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/academy",
+  },
+  openGraph: {
+    title: "MOMO Academy — Best IT Training & Live Project Internships in Kadapa",
+    description:
+      "Kadapa's premier software training academy. Job-ready coaching in QA Automation, Full Stack Java, Flutter, and Agentic AI with verified certificates and live client project internships.",
+    url: "https://www.momoittechnologies.com/academy",
+  },
 };
 
 export default function AcademyPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        name: "MOMO Academy IT Training Courses in Kadapa",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Automation Testing Training in Kadapa (Selenium 4 & Java)",
+            url: "https://www.momoittechnologies.com/academy/automation-testing-training-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Core & Advanced Java Training in Kadapa",
+            url: "https://www.momoittechnologies.com/academy/java-training-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Selenium Testing Training in Kadapa",
+            url: "https://www.momoittechnologies.com/academy/selenium-training-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: "Full Stack Software Development Training in Kadapa",
+            url: "https://www.momoittechnologies.com/academy/full-stack-development-training-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 5,
+            name: "Flutter Mobile App Development Training in Kadapa",
+            url: "https://www.momoittechnologies.com/academy/flutter-training-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 6,
+            name: "Agentic AI & Python Training in Kadapa",
+            url: "https://www.momoittechnologies.com/academy/ai-training-kadapa",
+          },
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "MOMO Academy",
+            item: "https://www.momoittechnologies.com/academy",
+          },
+        ],
+      },
+    ],
+  };
+
   const whatsappEnroll = (courseName: string) => {
     return `https://wa.me/918639831132?text=${encodeURIComponent(
       `Hello MOMO Academy, I would like to enroll / inquire about the course: "${courseName}". Please share batch timings and early bird discount details.`
@@ -45,6 +119,10 @@ export default function AcademyPage() {
 
   return (
     <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Academy Hero Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">

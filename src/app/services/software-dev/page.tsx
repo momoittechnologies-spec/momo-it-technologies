@@ -18,6 +18,9 @@ export const metadata = {
   title: "Web & SaaS Product Engineering | MOMO IT Technologies",
   description:
     "Our core service: production-grade Web Applications, scalable SaaS platforms, and mobile apps engineered with Next.js 15, React 19, Spring Boot 3, and Flutter by MOMO IT Technologies.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/services/software-dev",
+  },
 };
 
 export default function SoftwareDevPage() {

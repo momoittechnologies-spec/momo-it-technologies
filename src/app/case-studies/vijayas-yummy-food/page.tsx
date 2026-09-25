@@ -18,13 +18,71 @@ export const metadata = {
   title: "Vijaya's Yummy Food Case Study — FoodTech & Cloud Kitchen | MOMO IT Technologies",
   description:
     "How MOMO IT Technologies engineered Vijaya's Yummy Food: a direct online ordering web app and installable PWA built with Next.js 15 and Supabase for a Bengaluru cloud kitchen.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/case-studies/vijayas-yummy-food",
+  },
+  openGraph: {
+    title: "Vijaya's Yummy Food Case Study — FoodTech & Cloud Kitchen | MOMO IT Technologies",
+    description:
+      "Enterprise FoodTech PWA engineered by MOMO IT Technologies featuring multi-terminal KDS, thermal printing, and commission-free ordering.",
+    url: "https://www.momoittechnologies.com/case-studies/vijayas-yummy-food",
+  },
 };
 
 export default function VijayasYummyFoodCaseStudy() {
   const project = caseStudiesData.find((c) => c.id === "vijayas-yummy-food")!;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: "Vijaya's Yummy Food Direct Ordering PWA",
+        operatingSystem: "Web / iOS / Android",
+        applicationCategory: "Food & Drink / BusinessApplication",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "INR",
+        },
+        author: {
+          "@type": "Organization",
+          name: "MOMO IT TECHNOLOGIES",
+          url: "https://www.momoittechnologies.com",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Case Studies",
+            item: "https://www.momoittechnologies.com/case-studies",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Vijaya's Yummy Food",
+            item: "https://www.momoittechnologies.com/case-studies/vijayas-yummy-food",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back navigation */}
         <div className="mb-8">

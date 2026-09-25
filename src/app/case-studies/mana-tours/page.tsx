@@ -16,13 +16,71 @@ export const metadata = {
   title: "MANA Tours & Travels Case Study — Mobility & AI Booking | MOMO IT Technologies",
   description:
     "How MOMO IT Technologies engineered Kadapa's premier travel & self-drive car booking platform for MANA Tours & Travels with 24/7 AI Voice Assistant.",
+  alternates: {
+    canonical: "https://www.momoittechnologies.com/case-studies/mana-tours",
+  },
+  openGraph: {
+    title: "MANA Tours & Travels Case Study — Mobility & AI Booking | MOMO IT Technologies",
+    description:
+      "Enterprise travel reservation portal engineered by MOMO IT Technologies Kadapa with automated fleet management, driver dispatch, and 5.0★ Google rating.",
+    url: "https://www.momoittechnologies.com/case-studies/mana-tours",
+  },
 };
 
 export default function ManaToursCaseStudy() {
   const manaTours = caseStudiesData.find((c) => c.id === "mana-tours")!;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: "MANA Tours & Travels Online Booking & Fleet ERP",
+        operatingSystem: "Web / Mobile",
+        applicationCategory: "TravelApplication / BusinessApplication",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "INR",
+        },
+        author: {
+          "@type": "Organization",
+          name: "MOMO IT TECHNOLOGIES",
+          url: "https://www.momoittechnologies.com",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Case Studies",
+            item: "https://www.momoittechnologies.com/case-studies",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "MANA Tours & Travels",
+            item: "https://www.momoittechnologies.com/case-studies/mana-tours",
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back navigation */}
         <div className="mb-8">
