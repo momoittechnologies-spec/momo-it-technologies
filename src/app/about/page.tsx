@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 import {
   MapPin,
   Star,
@@ -16,6 +17,10 @@ import {
   FileCheck,
   Briefcase,
   ExternalLink,
+  Linkedin,
+  GraduationCap,
+  BadgeCheck,
+  Cpu,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -75,6 +80,11 @@ export default function AboutPage() {
             "addressCountry": "IN"
           },
           "foundingDate": "2025-06-01",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://www.momoittechnologies.com/about#founder",
+            "name": "Mohan Damerla"
+          },
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": 14.4713,
@@ -108,6 +118,37 @@ export default function AboutPage() {
         },
         "directApply": true,
         "url": "https://www.linkedin.com/jobs/view/4470198185/"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.momoittechnologies.com/about#founder",
+        "name": "Mohan Damerla",
+        "jobTitle": "Founder & CEO",
+        "image": "https://www.momoittechnologies.com/mohan-damerla.png",
+        "url": "https://www.linkedin.com/in/mohan-damerla/",
+        "sameAs": [
+          "https://www.linkedin.com/in/mohan-damerla/"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "MOMO IT TECHNOLOGIES",
+          "url": "https://www.momoittechnologies.com"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "B.Tech in Information Technology (2012)"
+        },
+        "knowsAbout": [
+          "Software Development",
+          "Custom ERP Development",
+          "Automation Testing",
+          "Mobile Application Development",
+          "Selenium WebDriver",
+          "Java",
+          "AWS",
+          "Microsoft MCSE"
+        ],
+        "description": "Founder & CEO of MOMO IT Technologies with 10+ years of IT industry experience spanning software development, custom ERP systems, automation testing, and mobile application engineering."
       }
     ]
   };
@@ -210,6 +251,105 @@ export default function AboutPage() {
             <p>
               Operating from our dedicated facility at <strong>4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa</strong> gives our clients a unique competitive advantage: near-zero metro overhead, founder-led engineering transparency, and fierce, distraction-free technical execution.
             </p>
+          </div>
+
+          {/* Meet the Founder */}
+          <div id="founder" className="bg-white rounded-3xl border border-gray-200/80 shadow-card mb-12 overflow-hidden scroll-mt-36">
+            <div className="p-8 sm:p-10 md:p-12">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-navy-50 text-navy-800 text-xs font-bold uppercase tracking-wider mb-6 border border-navy-200/80">
+                <Award className="w-3.5 h-3.5" />
+                Leadership
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+                {/* Photo & Quick Identity */}
+                <div className="shrink-0 flex flex-col items-center text-center md:items-start md:text-left">
+                  <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-4 border-navy-100 shadow-lg mb-4">
+                    <Image
+                      src="/mohan-damerla.png"
+                      alt="Mohan Damerla — Founder & CEO, MOMO IT Technologies, Kadapa"
+                      width={192}
+                      height={192}
+                      className="w-full h-full object-cover object-top"
+                      priority
+                    />
+                  </div>
+                  <h3 className="text-xl font-extrabold text-navy-950">Mohan Damerla</h3>
+                  <p className="text-sm font-semibold text-brand-600 mt-0.5">Founder &amp; CEO</p>
+                  <a
+                    href="https://www.linkedin.com/in/mohan-damerla/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-lg bg-[#0A66C2] hover:bg-[#004182] text-white text-xs font-bold transition-colors shadow-sm"
+                  >
+                    <Linkedin className="w-3.5 h-3.5" />
+                    Connect on LinkedIn
+                  </a>
+                </div>
+
+                {/* Bio & Credentials */}
+                <div className="flex-1 space-y-5">
+                  <p className="text-gray-700 leading-relaxed">
+                    A proud son of <strong className="text-navy-950">Kadapa</strong>, Mohan Damerla brings <strong className="text-navy-950">10+ years of hands-on IT industry experience</strong> spanning enterprise software engineering, custom ERP implementation, test automation architecture, and mobile application development. After graduating with a <strong className="text-navy-950">B.Tech in Information Technology (2012)</strong> and building a career across multiple enterprise environments, Mohan returned to his hometown with a singular mission: prove that world-class software can be engineered right here in Rayalaseema.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    In <strong className="text-navy-950">June 2025</strong>, he founded <strong className="text-navy-950">MOMO IT TECHNOLOGIES</strong> — combining deep technical execution with a genuine passion for mentoring the next generation of software engineers from Kadapa and the surrounding Rayalaseema region. Under his leadership, MOMO IT has rapidly grown into a dual-vertical company delivering commercial software products for businesses across India while simultaneously training job-ready engineers through the MOMO IT Academy.
+                  </p>
+
+                  {/* Core Expertise */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <Cpu className="w-4 h-4 text-brand-600" />
+                      <span className="text-xs font-bold text-navy-950 uppercase tracking-wider">Core Technical Expertise</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "Software Development",
+                        "Custom ERP Systems",
+                        "Automation Testing",
+                        "Mobile App Development",
+                        "Selenium & Java",
+                        "Web Applications",
+                        "SaaS Products",
+                        "Cloud Architecture",
+                      ].map((skill) => (
+                        <span
+                          key={skill}
+                          className="text-[11px] font-bold px-3 py-1.5 rounded-lg bg-surface-light border border-gray-200 text-gray-700"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Credentials Grid */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                    <div className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-light border border-gray-100">
+                      <GraduationCap className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
+                      <div>
+                        <div className="text-xs font-bold text-navy-950">B.Tech — IT</div>
+                        <div className="text-[11px] text-gray-500 mt-0.5">Engineering Graduate, 2012</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-light border border-gray-100">
+                      <BadgeCheck className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                      <div>
+                        <div className="text-xs font-bold text-navy-950">AWS Certified</div>
+                        <div className="text-[11px] text-gray-500 mt-0.5">Amazon Web Services</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-light border border-gray-100">
+                      <BadgeCheck className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                      <div>
+                        <div className="text-xs font-bold text-navy-950">Microsoft MCSE</div>
+                        <div className="text-[11px] text-gray-500 mt-0.5">Microsoft Certified Solutions Expert</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Mission & Vision */}
