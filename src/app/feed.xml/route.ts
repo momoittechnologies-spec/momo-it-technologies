@@ -5,6 +5,13 @@ export async function GET() {
 
   const articles = [
     {
+      title: "Top 7 Software Companies in Kadapa (2026 Verified Directory & Guide)",
+      slug: "top-software-companies-in-kadapa",
+      description:
+        "Looking for the best software companies in Kadapa? Explore the 2026 verified directory of software development, web application engineering, and IT companies in Kadapa, Andhra Pradesh.",
+      pubDate: new Date("2026-09-26").toUTCString(),
+    },
+    {
       title: "How Much Does a Business Website Cost in Kadapa? (2026 Price Guide)",
       slug: "how-much-does-a-website-cost-in-kadapa",
       description:

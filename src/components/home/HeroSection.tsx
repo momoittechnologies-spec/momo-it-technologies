@@ -78,7 +78,7 @@ export default function HeroSection() {
 
         {/* Clear Value Proposition */}
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10">
-          Kadapa&apos;s trusted technology partner. Our core expertise is architecting scalable <strong>Web &amp; SaaS products</strong> for founders and modern businesses, while grooming industry-ready engineers through <strong>MOMO Academy</strong>.
+          Kadapa&apos;s premier 4.8★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, and Flutter mobile apps for growing businesses, while training job-ready software engineers through <strong>MOMO Academy</strong> at our Krishnapuram campus.
         </p>
 
         {/* Action Buttons */}

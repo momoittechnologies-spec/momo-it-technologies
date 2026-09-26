@@ -14,6 +14,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "top-software-companies-in-kadapa",
+    title: "Top 7 Software Companies in Kadapa (2026 Verified Directory & Guide)",
+    excerpt:
+      "Looking for the best software companies in Kadapa? Explore the 2026 verified directory of software development, web application engineering, and IT companies in Kadapa, Andhra Pradesh.",
+    category: "Local Business Tech",
+    readTime: "10 min read",
+    publishedAt: "September 2026",
+    author: {
+      name: "MOMO IT Research Team",
+      role: "Lead Software Analysts, MOMO IT Technologies",
+    },
+    keywords: [
+      "software companies in kadapa",
+      "best software company in kadapa",
+      "top it company in kadapa",
+      "list of software companies in kadapa",
+      "software development company in kadapa",
+    ],
+  },
+  {
     slug: "how-much-does-a-website-cost-in-kadapa",
     title: "How Much Does a Business Website Cost in Kadapa? (2026 Transparent Pricing Guide)",
     excerpt:

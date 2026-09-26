@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Knowledge Hub & Local Guides
     { path: "/blog", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/blog/top-software-companies-in-kadapa", priority: 0.9, changeFrequency: "weekly" },
     { path: "/blog/how-much-does-a-website-cost-in-kadapa", priority: 0.85, changeFrequency: "monthly" },
     { path: "/blog/automation-testing-career-roadmap-kadapa", priority: 0.85, changeFrequency: "monthly" },
     { path: "/blog/how-kadapa-businesses-can-use-ai-automation", priority: 0.85, changeFrequency: "monthly" },

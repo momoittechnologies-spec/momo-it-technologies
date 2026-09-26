@@ -127,31 +127,71 @@ const faqs = [
 export default function KadapaLocationPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "MOMO IT TECHNOLOGIES",
-    url: "https://www.momoittechnologies.com/kadapa",
-    telephone: "+91-86398-31132",
-    email: "momoit.technologies@gmail.com",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
-      addressLocality: "Kadapa",
-      addressRegion: "Andhra Pradesh",
-      postalCode: "516003",
-      addressCountry: "IN",
-    },
-    foundingDate: "2025-06-01",
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "14.4673",
-      longitude: "78.8242",
-    },
-    openingHoursSpecification: [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        opens: "09:00",
-        closes: "19:00",
+        "@type": ["LocalBusiness", "EducationalOrganization", "ProfessionalService"],
+        "@id": "https://www.momoittechnologies.com/kadapa#localbusiness",
+        name: "MOMO IT TECHNOLOGIES",
+        url: "https://www.momoittechnologies.com/kadapa",
+        telephone: "+91-86398-31132",
+        email: "momoit.technologies@gmail.com",
+        image: "https://www.momoittechnologies.com/logo.svg",
+        priceRange: "₹₹",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
+          addressLocality: "Kadapa",
+          addressRegion: "Andhra Pradesh",
+          postalCode: "516003",
+          addressCountry: "IN",
+        },
+        foundingDate: "2025-06-01",
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: "14.4713",
+          longitude: "78.8237",
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            opens: "08:00",
+            closes: "20:00",
+          },
+        ],
+        sameAs: [
+          "https://www.linkedin.com/company/momo-it-technologies",
+          "https://github.com/momoittechnologies-spec",
+          "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: f.a,
+          },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Kadapa Headquarters",
+            item: "https://www.momoittechnologies.com/kadapa",
+          },
+        ],
       },
     ],
   };

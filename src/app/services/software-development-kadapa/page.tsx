@@ -111,28 +111,75 @@ const faqs = [
 export default function SoftwareDevelopmentKadapaPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Custom Software Development in Kadapa",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "MOMO IT TECHNOLOGIES",
-      url: "https://www.momoittechnologies.com",
-      telephone: "+91-86398-31132",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
-        addressLocality: "Kadapa",
-        addressRegion: "Andhra Pradesh",
-        postalCode: "516003",
-        addressCountry: "IN",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/services/software-development-kadapa#service",
+        name: "Custom Software Development in Kadapa",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "MOMO IT TECHNOLOGIES",
+          url: "https://www.momoittechnologies.com",
+          telephone: "+91-86398-31132",
+          email: "momoit.technologies@gmail.com",
+          image: "https://www.momoittechnologies.com/logo.svg",
+          priceRange: "₹₹",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
+            addressLocality: "Kadapa",
+            addressRegion: "Andhra Pradesh",
+            postalCode: "516003",
+            addressCountry: "IN",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: "14.4713",
+            longitude: "78.8237",
+          },
+        },
+        areaServed: {
+          "@type": "City",
+          name: "Kadapa",
+        },
+        description:
+          "Enterprise custom software development company in Kadapa offering scalable backend engineering, ERP platforms, billing systems, and cloud databases.",
       },
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Kadapa",
-    },
-    description:
-      "Enterprise custom software development company in Kadapa offering scalable backend engineering, ERP platforms, billing systems, and cloud databases.",
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: f.a,
+          },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.momoittechnologies.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.momoittechnologies.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Software Development Kadapa",
+            item: "https://www.momoittechnologies.com/services/software-development-kadapa",
+          },
+        ],
+      },
+    ],
   };
 
   return (
