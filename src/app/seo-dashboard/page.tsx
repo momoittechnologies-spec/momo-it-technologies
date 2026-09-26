@@ -358,7 +358,7 @@ const PREFLIGHT_CHECKLIST = [
   { id: "c9", title: "FAQPage Structured Data", status: "PASS", note: "Search-snippet ready FAQs embedded on every key silo." },
   { id: "c10", title: "Article Schema on Knowledge Hub", status: "PASS", note: "All 4 local blog guides embed full Article JSON-LD." },
   { id: "c11", title: "Exact NAP Consistency", status: "PASS", note: "MOMO IT TECHNOLOGIES, 4/106 Krishnapuram, Kadapa 516003 across 100% pages." },
-  { id: "c12", title: "MSME Official Credential", status: "PASS", note: "Govt Udyam ID UDYAM-AP-04-0013231 displayed on About & Certificates." },
+  { id: "c12", title: "Enterprise Registration", status: "PASS", note: "Kadapa Headquarters registered entity displayed on About & Certificates." },
   { id: "c13", title: "Static SSR Prerendering", status: "PASS", note: "33/33 routes pre-rendered at build time with raw static HTML." },
   { id: "c14", title: "Mobile Viewport & Touch Targets", status: "PASS", note: "Fluid responsive Tailwind layout, zero horizontal overflow." },
   { id: "c15", title: "AI Crawlability (llms.txt)", status: "PASS", note: "public/llms.txt and llms-full.txt deployed for AI Overviews/Gemini." },
@@ -875,8 +875,7 @@ Landmark: Chowdeswari Temple Lane
 Established: June 2025
 Phone: +91 86398 31132
 Email: momoit.technologies@gmail.com
-Website: https://www.momoittechnologies.com
-MSME Udyam: UDYAM-AP-04-0013231`}
+Website: https://www.momoittechnologies.com`}
                   </pre>
                 </div>
 
@@ -889,7 +888,7 @@ MSME Udyam: UDYAM-AP-04-0013231`}
                     <button
                       onClick={() =>
                         handleCopy(
-                          `MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates. Located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa. Contact +91 86398 31132 or visit https://www.momoittechnologies.com.`,
+                          `MOMO IT TECHNOLOGIES is a registered software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates. Located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa. Contact +91 86398 31132 or visit https://www.momoittechnologies.com.`,
                           "desc"
                         )
                       }
@@ -900,7 +899,7 @@ MSME Udyam: UDYAM-AP-04-0013231`}
                     </button>
                   </div>
                   <pre className="text-xs text-slate-300 font-mono bg-navy-900/60 p-3 rounded-lg overflow-x-auto whitespace-pre-wrap leading-relaxed">
-{`MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates.`}
+{`MOMO IT TECHNOLOGIES is a registered software development company and premier IT training academy based in Kadapa, Andhra Pradesh. We specialize in custom web applications, SaaS development, mobile apps (Flutter), AI software solutions, and QA automation testing pods. Through MOMO Academy, we provide hands-on, job-oriented engineering training in Automation Testing (Selenium 4), Java, Full-Stack Development, and Flutter, with live client internships and verified certificates.`}
                   </pre>
                 </div>
               </div>

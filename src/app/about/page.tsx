@@ -26,14 +26,14 @@ import {
 export const metadata: Metadata = {
   title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
   description:
-    "Learn about MOMO IT Technologies: A registered software engineering company and premier IT Academy based in 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa — 516003. MSME Registered UDYAM-AP-04-0013231.",
+    "Learn about MOMO IT Technologies: A registered software engineering company and premier IT Academy based in 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa — 516003.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/about",
   },
   openGraph: {
     title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
     description:
-      "Kadapa's 4.8★ rated software engineering company and training academy. Discover our mission, MSME credentials, active career openings, and commercial case studies in Rayalaseema.",
+      "Kadapa's 4.8★ rated software engineering company and training academy. Discover our mission, leadership, active career openings, and commercial case studies in Rayalaseema.",
     url: "https://www.momoittechnologies.com/about",
   },
 };
@@ -95,7 +95,7 @@ export default function AboutPage() {
       {
         "@type": "JobPosting",
         "title": "Business Development & Marketing Executive",
-        "description": "MOMO IT TECHNOLOGIES (MSME Registered: UDYAM-AP-04-0013231) is hiring a target-driven Business Development & Marketing Executive at our Krishnapuram, Kadapa office to lead B2B software/website client acquisition and MOMO Academy campus outreach.",
+        "description": "MOMO IT TECHNOLOGIES is hiring a target-driven Business Development & Marketing Executive at our Krishnapuram, Kadapa office to lead B2B software/website client acquisition and MOMO Academy campus outreach.",
         "datePosted": "2026-09-25",
         "validThrough": "2026-12-31T23:59:59Z",
         "employmentType": "FULL_TIME",
@@ -199,8 +199,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs text-center">
               <ShieldCheck className="w-5 h-5 text-brand-600 mx-auto mb-1.5" />
-              <div className="text-lg font-black text-navy-950">MSME Verified</div>
-              <div className="text-xs text-gray-500">UDYAM-AP-04-0013231</div>
+              <div className="text-lg font-black text-navy-950">Est. June 2025</div>
+              <div className="text-xs text-gray-500">Registered Enterprise</div>
             </div>
             <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs text-center">
               <Building2 className="w-5 h-5 text-teal-600 mx-auto mb-1.5" />
@@ -379,23 +379,19 @@ export default function AboutPage() {
           <div className="bg-navy-950 text-white rounded-3xl p-8 sm:p-10 shadow-xl mb-12">
             <div className="flex items-center gap-2 text-teal-400 text-xs font-bold uppercase tracking-wider mb-2">
               <FileCheck className="w-4 h-4" />
-              Official Business Registration &amp; Accreditation
+              Official Business Identity &amp; Heritage
             </div>
             <h3 className="text-2xl font-extrabold mb-4">
-              Registered Legal Entity in Andhra Pradesh
+              Registered Technology Entity in Andhra Pradesh
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed mb-6 max-w-2xl">
-              MOMO IT TECHNOLOGIES operates in full compliance with the Ministry of Micro, Small and Medium Enterprises (MSME), Government of India.
+              MOMO IT TECHNOLOGIES operates as a registered technology company and professional IT academy headquartered in Kadapa, Andhra Pradesh.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Official Registered Name</div>
                 <div className="text-sm font-bold text-white mt-1">MOMO IT TECHNOLOGIES</div>
-              </div>
-              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                <div className="text-gray-400">Udyam Registration Number</div>
-                <div className="text-sm font-bold text-teal-300 mt-1">UDYAM-AP-04-0013231</div>
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Registered Office Address</div>

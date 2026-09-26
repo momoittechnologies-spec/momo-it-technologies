@@ -263,9 +263,9 @@ export default function KadapaLocationPage() {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Legal Accreditation</div>
-                  <div className="text-sm font-bold text-navy-950 mt-0.5">MSME Govt. Registered</div>
-                  <div className="text-xs text-gray-600">Reg: UDYAM-AP-04-0013231</div>
+                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Business Heritage</div>
+                  <div className="text-sm font-bold text-navy-950 mt-0.5">Established June 2025</div>
+                  <div className="text-xs text-gray-600">Registered Enterprise in Kadapa</div>
                 </div>
               </div>
             </div>

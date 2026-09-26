@@ -13,7 +13,6 @@
 - **City / District:** Kadapa (YSR Kadapa District), Andhra Pradesh, India
 - **Postal Pincode:** 516003
 - **Geo Coordinates:** Latitude 14.4713° N, Longitude 78.8237° E
-- **Government MSME Udyam Registration:** UDYAM-AP-04-0013231 (Registered Micro Enterprise, Ministry of MSME, Govt. of India)
 - **Official Website:** https://www.momoittechnologies.com
 - **Official Telephone / WhatsApp:** +91 86398 31132
 - **Official Corporate Email:** momoit.technologies@gmail.com

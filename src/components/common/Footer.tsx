@@ -49,7 +49,7 @@ export default function Footer() {
               </Link>
               <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-gray-300 border border-gray-700">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />
-                MSME Registered
+                Est. June 2025
               </span>
             </div>
           </div>

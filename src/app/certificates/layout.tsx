@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Official Verified Certificates & Internship Credentials | MOMO IT Academy Kadapa",
   description:
-    "Verify official MOMO IT Academy course completion certificates and live client project internship experience letters (MSME Registered: UDYAM-AP-04-0013231) in Kadapa, Andhra Pradesh.",
+    "Verify official MOMO IT Academy course completion certificates and live client project internship experience letters in Kadapa, Andhra Pradesh.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/certificates",
   },
@@ -28,7 +28,7 @@ export default function CertificatesLayout({
         "@id": "https://www.momoittechnologies.com/certificates#credential",
         name: "MOMO IT Academy Verified Course Completion & Internship Credential",
         description:
-          "Official government-registered MSME (UDYAM-AP-04-0013231) software engineering and QA automation training credential and internship experience certificate.",
+          "Official software engineering and QA automation training credential and internship experience certificate from MOMO IT Technologies Kadapa.",
         credentialCategory: "Certificate",
         recognizedBy: {
           "@type": "Organization",

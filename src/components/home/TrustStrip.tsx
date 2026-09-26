@@ -28,7 +28,7 @@ export default function TrustStrip() {
                 Verified Expertise
               </div>
               <div className="text-sm font-extrabold text-navy-950 flex items-center gap-1.5">
-                4.8★ Kadapa Academy · MSME Recognized
+                4.8★ Kadapa Academy · Premier IT Partner
               </div>
             </div>
           </div>

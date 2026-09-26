@@ -1,6 +1,6 @@
 # MOMO IT TECHNOLOGIES
 
-> MOMO IT TECHNOLOGIES is a government-registered (MSME: UDYAM-AP-04-0013231) software engineering company and premier IT training academy based in Kadapa, Andhra Pradesh, India.
+> MOMO IT TECHNOLOGIES is a registered software engineering company and premier IT training academy based in Kadapa, Andhra Pradesh, India.
 
 ## Company Overview
 - **Legal Entity Name:** MOMO IT TECHNOLOGIES
@@ -11,7 +11,6 @@
 - **Official Contact Number:** +91 86398 31132
 - **Official Email:** momoit.technologies@gmail.com
 - **Website:** https://www.momoittechnologies.com
-- **MSME Udyam Registration:** UDYAM-AP-04-0013231
 - **Founding Location:** Kadapa, Andhra Pradesh, India
 
 ---
@@ -68,7 +67,7 @@ MOMO Academy provides job-ready, mentor-led software engineering and test automa
 - [Verified Certificate Registry](https://www.momoittechnologies.com/certificates)
 - [Knowledge Hub / Blog](https://www.momoittechnologies.com/blog)
 - [Client Case Studies](https://www.momoittechnologies.com/case-studies)
-- [About Company & MSME](https://www.momoittechnologies.com/about)
+- [About Company & Heritage](https://www.momoittechnologies.com/about)
 - [Careers & Active Hiring in Kadapa](https://www.momoittechnologies.com/about#careers)
 - [LinkedIn Official Job Listing](https://www.linkedin.com/jobs/view/4470198185/)
 - [Contact & Location Desk](https://www.momoittechnologies.com/contact)

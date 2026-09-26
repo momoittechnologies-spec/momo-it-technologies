@@ -86,9 +86,9 @@ export default function CertificatesPreviewPage() {
 
                 <div className="text-center sm:text-right">
                   <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 inline-block">
-                    ✓ MSME Govt. Registered Institution
+                    ✓ Registered Technical Institution
                   </span>
-                  <div className="text-[11px] text-gray-500 mt-1">Reg: 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa (AP)</div>
+                  <div className="text-[11px] text-gray-500 mt-1">4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa (AP)</div>
                 </div>
               </div>
 
@@ -200,7 +200,7 @@ export default function CertificatesPreviewPage() {
                   Software Engineering &bull; Web &amp; SaaS Products &bull; Quality Engineering
                 </div>
                 <div className="text-xs text-gray-500 mt-1">
-                  MSME Reg. No: UDYAM-AP-04-0013231 | Central B2B Software Services
+                  Kadapa Engineering Centre &bull; Central B2B Software Services
                 </div>
               </div>
 
