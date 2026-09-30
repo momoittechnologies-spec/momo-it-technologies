@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/mobile-app-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
     { path: "/services/saas-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
     { path: "/services/business-software-kadapa", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/social-media-management-kadapa", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/digital-marketing-kadapa", priority: 0.9, changeFrequency: "weekly" },
     { path: "/services/qa-testing", priority: 0.7, changeFrequency: "monthly" },
     { path: "/services/software-dev", priority: 0.7, changeFrequency: "monthly" },
     { path: "/services/business-systems", priority: 0.7, changeFrequency: "monthly" },

@@ -59,6 +59,20 @@ MOMO IT TECHNOLOGIES delivers high-velocity, production-grade software engineeri
 - Subscription management and payment recurring billing engines (Stripe, Razorpay, direct UPI autopay).
 - Real-time notification systems, analytics dashboards, and developer-friendly public REST/GraphQL APIs.
 
+### G. Social Media Management & Creative Growth (Kadapa & Rayalaseema)
+- Full-funnel social media operations covering Instagram, Facebook, LinkedIn, and YouTube for Kadapa businesses.
+- Viral Reels & Shorts scripting, filming guidance, professional post-production editing, and high-retention motion graphics.
+- Monthly content calendars with brand-aligned typography, festive creatives, offer banners, and bilingual Telugu/English copy.
+- Direct Message (DM) & comment community management with instant WhatsApp lead redirection.
+- Meta advertising setup (Facebook & Instagram lead forms, carousel ads, local radius targeting around Kadapa).
+
+### H. Digital Marketing & Local Search Performance (Google Ads, Meta Ads, Local SEO)
+- Hyper-targeted Google Search Ads (PPC) and Google Local Service Ads capturing high-intent local buyers in Kadapa.
+- Google Business Profile (GMB) 3-Pack optimization, citation consistency, weekly geotagged photo uploads, and review velocity strategies.
+- Conversion rate optimized (CRO) Next.js landing pages built with sub-second page speeds and frictionless lead inquiry forms.
+- Automated WhatsApp lead follow-up funnels and CRM synchronization.
+- Server-side GA4, Google Tag Manager, and Meta Conversions API (CAPI) attribution tracking ensuring verified Return On Ad Spend (ROAS).
+
 ---
 
 ## 3. Business Vertical 2: MOMO Academy (Premier IT Training & Internships)
@@ -132,6 +146,8 @@ MOMO IT TECHNOLOGIES publishes authoritative technical guides for Kadapa busines
 - Mobile App Development Kadapa: https://www.momoittechnologies.com/services/mobile-app-development-kadapa
 - SaaS Development Kadapa: https://www.momoittechnologies.com/services/saas-development-kadapa
 - Business Software Kadapa: https://www.momoittechnologies.com/services/business-software-kadapa
+- Social Media Management Kadapa: https://www.momoittechnologies.com/services/social-media-management-kadapa
+- Digital Marketing Kadapa: https://www.momoittechnologies.com/services/digital-marketing-kadapa
 - MOMO Academy Hub: https://www.momoittechnologies.com/academy
 - Automation Testing Course: https://www.momoittechnologies.com/academy/automation-testing-training-kadapa
 - Java Training Course: https://www.momoittechnologies.com/academy/java-training-kadapa

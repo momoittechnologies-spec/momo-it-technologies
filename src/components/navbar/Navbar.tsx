@@ -26,6 +26,8 @@ import {
   Bot,
   RefreshCw,
   MapPin,
+  Share2,
+  Megaphone,
 } from "lucide-react";
 import AnnouncementBar from "./AnnouncementBar";
 
@@ -255,6 +257,48 @@ export default function Navbar() {
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
                             Custom billing, inventory, POS &amp; WhatsApp receipts.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Social Media Management */}
+                      <Link
+                        href="/services/social-media-management-kadapa"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-pink-50 text-pink-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Share2 className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
+                            Social Media Management
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-pink-100 text-pink-800 font-bold">
+                              Growth
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Instagram Reels, viral hooks, posters &amp; DM lead pipelines.
+                          </p>
+                        </div>
+                      </Link>
+
+                      {/* Digital Marketing & SEO */}
+                      <Link
+                        href="/services/digital-marketing-kadapa"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 border border-transparent hover:border-gray-200 transition-all group"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                          <Megaphone className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-navy-950 group-hover:text-brand-700 flex items-center gap-1.5">
+                            Digital Marketing &amp; SEO
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 font-bold">
+                              Ads
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">
+                            Google Ads PPC, Meta Ads, GMB 3-Pack &amp; WhatsApp funnels.
                           </p>
                         </div>
                       </Link>
@@ -659,6 +703,18 @@ export default function Navbar() {
                   className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
                 >
                   💼 Business ERP, POS &amp; Billing Systems
+                </Link>
+                <Link
+                  href="/services/social-media-management-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
+                >
+                  📱 Social Media Management (Reels &amp; Ads)
+                </Link>
+                <Link
+                  href="/services/digital-marketing-kadapa"
+                  className="block px-2.5 py-1.5 rounded-lg bg-white text-gray-700 hover:text-brand-600 border border-gray-100"
+                >
+                  📣 Digital Marketing &amp; Local SEO
                 </Link>
               </div>
             </div>

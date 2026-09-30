@@ -117,6 +117,22 @@ export default function Footer() {
                   Custom ERP &amp; POS Systems
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/services/social-media-management-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  Social Media Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/digital-marketing-kadapa"
+                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
+                >
+                  Digital Marketing &amp; SEO
+                </Link>
+              </li>
             </ul>
           </div>
 

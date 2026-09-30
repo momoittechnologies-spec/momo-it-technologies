@@ -12,6 +12,8 @@ import {
   Zap,
   Bot,
   RefreshCw,
+  Share2,
+  Megaphone,
 } from "lucide-react";
 import { servicesData } from "@/data/services";
 
@@ -34,6 +36,10 @@ export default function ServicesGrid() {
         return <Users className="w-6 h-6 text-indigo-600" />;
       case "Palette":
         return <Palette className="w-6 h-6 text-pink-600" />;
+      case "Share2":
+        return <Share2 className="w-6 h-6 text-rose-600" />;
+      case "Megaphone":
+        return <Megaphone className="w-6 h-6 text-orange-600" />;
       default:
         return <Sparkles className="w-6 h-6 text-brand-600" />;
     }

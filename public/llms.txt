@@ -26,6 +26,8 @@ MOMO IT TECHNOLOGIES designs, builds, and maintains custom digital systems for s
 - **Mobile App Development:** Native performance iOS and Android applications built using Google Flutter.
 - **SaaS Product Engineering:** Multi-tenant cloud software with subscription billing and role-based access control.
 - **Business Software & Retail Systems:** POS billing software, GST invoicing, thermal printing integration, and barcode scanner support.
+- **Social Media Management in Kadapa:** Full-funnel organic brand growth, viral Instagram Reels production, content calendars, multi-platform publishing, and interactive DM community management for Kadapa retail, healthcare, real estate, and dining brands.
+- **Performance Digital Marketing & Local SEO:** Hyper-local Google Ads (PPC), Meta Ads lead gen, Google Business Profile (GMB) 3-Pack rank acceleration, WhatsApp sales funnels, and GA4 ROAS conversion tracking.
 
 ### 2. MOMO Academy (Career Training & Practical Internships)
 MOMO Academy provides job-ready, mentor-led software engineering and test automation training for engineering students, fresh graduates, and career changers:
@@ -57,6 +59,8 @@ MOMO Academy provides job-ready, mentor-led software engineering and test automa
 - [Mobile App Development Kadapa](https://www.momoittechnologies.com/services/mobile-app-development-kadapa)
 - [SaaS Development Kadapa](https://www.momoittechnologies.com/services/saas-development-kadapa)
 - [Business Software Kadapa](https://www.momoittechnologies.com/services/business-software-kadapa)
+- [Social Media Management Kadapa](https://www.momoittechnologies.com/services/social-media-management-kadapa)
+- [Digital Marketing Kadapa](https://www.momoittechnologies.com/services/digital-marketing-kadapa)
 - [MOMO Academy Hub](https://www.momoittechnologies.com/academy)
 - [Automation Testing Training](https://www.momoittechnologies.com/academy/automation-testing-training-kadapa)
 - [Java Training Kadapa](https://www.momoittechnologies.com/academy/java-training-kadapa)

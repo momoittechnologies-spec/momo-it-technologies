@@ -5,16 +5,16 @@ import { servicesData } from "@/data/services";
 import SaaSEstimator from "@/components/services/SaaSEstimator";
 
 export const metadata = {
-  title: "IT & Software Engineering Services in Kadapa | MOMO IT Technologies",
+  title: "Software Engineering & Digital Marketing Services in Kadapa | MOMO IT Technologies",
   description:
-    "Explore our complete suite of software engineering services in Kadapa: Web & SaaS Product Engineering, QA Automation Testing, Flutter Mobile Apps, and AI Solutions.",
+    "Explore our complete suite of software and digital growth services in Kadapa: Web & SaaS Engineering, Social Media Management, Digital Marketing, QA Automation, Mobile Apps, and AI Solutions.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/services",
   },
   openGraph: {
-    title: "IT & Software Engineering Services in Kadapa | MOMO IT Technologies",
+    title: "Software Engineering & Digital Marketing Services in Kadapa | MOMO IT Technologies",
     description:
-      "Web & SaaS development, QA automation pods, Flutter mobile apps, and AI software engineering in Kadapa, Andhra Pradesh.",
+      "Web & SaaS development, Social Media Management, Digital Marketing & SEO, QA automation pods, Flutter mobile apps, and AI software engineering in Kadapa, Andhra Pradesh.",
     url: "https://www.momoittechnologies.com/services",
   },
 };
@@ -68,6 +68,18 @@ export default function ServicesIndexPage() {
             position: 7,
             name: "Business Software & ERP Systems in Kadapa",
             url: "https://www.momoittechnologies.com/services/business-software-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 8,
+            name: "Social Media Management & Brand Growth in Kadapa",
+            url: "https://www.momoittechnologies.com/services/social-media-management-kadapa",
+          },
+          {
+            "@type": "ListItem",
+            position: 9,
+            name: "Digital Marketing & Performance SEO in Kadapa",
+            url: "https://www.momoittechnologies.com/services/digital-marketing-kadapa",
           },
         ],
       },
