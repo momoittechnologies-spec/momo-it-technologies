@@ -14,6 +14,7 @@
 - **Postal Pincode:** 516003
 - **Geo Coordinates:** Latitude 14.4713° N, Longitude 78.8237° E
 - **Official Website:** https://www.momoittechnologies.com
+- **Official Instagram Profile:** https://www.instagram.com/momoit.technologies/ (@momoit.technologies)
 - **Official Telephone / WhatsApp:** +91 86398 31132
 - **Official Corporate Email:** momoit.technologies@gmail.com
 - **Operating Hours:** Monday – Saturday: 08:00 AM – 08:00 PM IST (Sunday: Closed / Scheduled Project Deployments)
@@ -160,6 +161,7 @@ MOMO IT TECHNOLOGIES publishes authoritative technical guides for Kadapa busines
 - RSS Feed: https://www.momoittechnologies.com/feed.xml
 - Client Case Studies: https://www.momoittechnologies.com/case-studies
 - About Company & Careers: https://www.momoittechnologies.com/about
+- Official Instagram: https://www.instagram.com/momoit.technologies/
 - Contact & Map Desk: https://www.momoittechnologies.com/contact
 - Google Review Portal: https://www.momoittechnologies.com/review
 

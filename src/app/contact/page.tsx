@@ -10,6 +10,8 @@ import {
   MessageSquare,
   CheckCircle2,
   Calendar,
+  Instagram,
+  Linkedin,
 } from "lucide-react";
 
 export default function ContactPage() {
@@ -124,11 +126,34 @@ export default function ContactPage() {
                 href="https://wa.me/918639831132"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs shadow-md transition-all"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs shadow-md transition-all mb-3"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>Instant WhatsApp Desk</span>
               </a>
+
+              <div className="grid grid-cols-2 gap-2 pt-1">
+                <a
+                  href="https://www.instagram.com/momoit.technologies/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-navy-900 border border-pink-500/30 text-pink-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-amber-500 hover:border-transparent text-xs font-bold transition-all shadow-sm group"
+                  title="Follow @momoit.technologies on Instagram"
+                >
+                  <Instagram className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                  <span>Instagram</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/momo-it-technologies"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-navy-900 border border-blue-500/30 text-blue-400 hover:text-white hover:bg-[#0A66C2] hover:border-transparent text-xs font-bold transition-all shadow-sm group"
+                  title="Connect on LinkedIn"
+                >
+                  <Linkedin className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
 

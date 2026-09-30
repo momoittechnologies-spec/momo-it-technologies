@@ -160,6 +160,7 @@ export default function KadapaLocationPage() {
           },
         ],
         sameAs: [
+          "https://www.instagram.com/momoit.technologies/",
           "https://www.linkedin.com/company/momo-it-technologies",
           "https://github.com/momoittechnologies-spec",
           "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",

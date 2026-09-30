@@ -11,6 +11,9 @@ import {
   ShieldCheck,
   Star,
   Building2,
+  Instagram,
+  Linkedin,
+  Github,
 } from "lucide-react";
 
 export default function Footer() {
@@ -51,6 +54,44 @@ export default function Footer() {
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />
                 Est. June 2025
               </span>
+            </div>
+
+            {/* Official Social Channels */}
+            <div className="pt-2 flex flex-wrap items-center gap-2.5">
+              <span className="text-xs font-semibold text-gray-400">Connect:</span>
+              <a
+                href="https://www.instagram.com/momoit.technologies/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow MOMO IT Technologies on Instagram"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-pink-500/30 text-pink-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-amber-500 hover:border-transparent text-xs font-bold transition-all shadow-sm group"
+                title="Follow @momoit.technologies on Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/momo-it-technologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Connect with MOMO IT Technologies on LinkedIn"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-blue-500/30 text-blue-400 hover:text-white hover:bg-[#0A66C2] hover:border-transparent text-xs font-bold transition-all shadow-sm group"
+                title="Connect on LinkedIn"
+              >
+                <Linkedin className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/momoittechnologies-spec"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MOMO IT Technologies on GitHub"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-gray-700 text-gray-300 hover:text-white hover:bg-gray-800 hover:border-gray-600 text-xs font-bold transition-all shadow-sm group"
+                title="GitHub Repositories"
+              >
+                <Github className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
 
@@ -277,6 +318,15 @@ export default function Footer() {
             <Link href="/review" className="text-amber-400 hover:text-amber-300 font-medium transition-colors">
               Review Us
             </Link>
+            <a
+              href="https://www.instagram.com/momoit.technologies/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-400 hover:text-pink-300 font-medium transition-colors flex items-center gap-1"
+            >
+              <Instagram className="w-3.5 h-3.5" />
+              <span>Instagram</span>
+            </a>
             <Link href="/contact" className="hover:text-gray-400 transition-colors">
               Contact Us
             </Link>
