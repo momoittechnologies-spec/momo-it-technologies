@@ -29,7 +29,6 @@ import {
   Share2,
   Megaphone,
 } from "lucide-react";
-import AnnouncementBar from "./AnnouncementBar";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +55,6 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <AnnouncementBar />
       <header
         className={`w-full transition-all duration-300 ${
           isScrolled
