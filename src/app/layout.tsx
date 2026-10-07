@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/common/Footer";
 import WhatsAppFloat from "@/components/common/WhatsAppFloat";
+import MobileStickyBar from "@/components/common/MobileStickyBar";
 
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
     "software company in kadapa",
     "top software companies in kadapa",
     "best software company in kadapa",
+    "best it development in kadapa",
+    "custom software development services in kadapa",
     "it companies in kadapa",
     "it company in kadapa",
     "best it company in kadapa",
@@ -251,8 +254,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col font-sans selection:bg-brand-500 selection:text-white">
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow pb-16 md:pb-0">{children}</main>
         <WhatsAppFloat />
+        <MobileStickyBar />
         <Footer />
       </body>
     </html>

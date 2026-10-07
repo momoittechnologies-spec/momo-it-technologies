@@ -14,19 +14,22 @@ import {
   MessageCircle,
   HelpCircle,
   TrendingUp,
+  Phone,
+  MapPin,
+  Star,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Software Development Company in Kadapa | MOMO IT Technologies",
+  title: "Custom Software Development Services in Kadapa | MOMO IT Technologies",
   description:
-    "MOMO IT Technologies is a premier software development company in Kadapa. We engineer custom enterprise software, backend APIs, billing systems, and cloud databases for growing businesses.",
+    "MOMO IT Technologies delivers premier custom software development services in Kadapa. Tailored enterprise ERPs, retail billing software, APIs, and cloud databases for growing businesses.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/services/software-development-kadapa",
   },
   openGraph: {
-    title: "Software Development Company in Kadapa | MOMO IT Technologies",
+    title: "Custom Software Development Services in Kadapa | MOMO IT Technologies",
     description:
-      "Custom software engineering firm in Kadapa, AP. Scalable cloud architectures, Java Spring Boot & Node.js backends, secure multi-tenant databases, and enterprise automation.",
+      "Kadapa's #1 custom software engineering firm. Scalable cloud architectures, Java Spring Boot & Node.js backends, secure multi-tenant databases, and enterprise automation.",
     url: "https://www.momoittechnologies.com/services/software-development-kadapa",
   },
 };
@@ -216,33 +219,58 @@ export default function SoftwareDevelopmentKadapaPage() {
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
                 <Code2 className="w-3.5 h-3.5" />
-                <span>Enterprise Engineering · Kadapa, AP</span>
+                <span>#1 Ranked IT Development · Kadapa, AP</span>
               </div>
               <h1 className="text-3xl sm:text-5xl font-extrabold text-navy-950 tracking-tight leading-tight mb-4">
-                Software Development Company in Kadapa
+                Custom Software Development Services in Kadapa
               </h1>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                MOMO IT TECHNOLOGIES designs, architects, and deploys custom software solutions, high-throughput cloud backends, and business automation platforms built to solve operational bottlenecks for businesses in Kadapa and beyond.
+                MOMO IT TECHNOLOGIES is Kadapa&apos;s leading software engineering firm. We design, architect, and deploy custom business software, cloud billing systems, high-throughput backend APIs, and enterprise operational platforms tailored for businesses across Kadapa and Rayalaseema.
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 mt-8 pt-8 border-t border-gray-100">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all"
+            {/* Quick Trust Strip */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 pt-6 border-t border-gray-100 text-xs text-gray-600">
+              <div className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-brand-600 shrink-0" />
+                <span>4/106, Krishnapuram, Kadapa</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <a href="tel:+918639831132" className="font-bold text-navy-950 hover:text-brand-600">
+                  +91 86398 31132
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Star className="w-4 h-4 text-amber-500 fill-amber-500 shrink-0" />
+                <span className="font-bold text-navy-950">4.8★ Verified Google Rating</span>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4 mt-8 pt-6 border-t border-gray-100">
+              <a
+                href="tel:+918639831132"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm shadow-md transition-all"
               >
-                <span>Consult Our Software Architect</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <Phone className="w-4 h-4" />
+                <span>Call Lead Architect</span>
+              </a>
               <a
                 href="https://wa.me/918639831132?text=Hello%20MOMO%20IT%20Technologies!%20I%20would%20like%20to%20discuss%20custom%20software%20development%20in%20Kadapa."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow-md transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Chat on WhatsApp</span>
+                <span>WhatsApp Inquiry</span>
               </a>
+              <Link
+                href="/kadapa"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-950 font-bold text-sm transition-all"
+              >
+                <span>Kadapa Office Hub</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 

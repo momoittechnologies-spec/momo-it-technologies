@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-2xl shadow-[#25D366]/40 hover:scale-105 hover:-translate-y-1 transition-all group"
+      className="hidden md:flex fixed bottom-6 right-6 z-40 items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-2xl shadow-[#25D366]/40 hover:scale-105 hover:-translate-y-1 transition-all group"
       aria-label="Chat with MOMO IT Technologies on WhatsApp"
     >
       <div className="relative">

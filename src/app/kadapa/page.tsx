@@ -19,16 +19,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "MOMO IT Technologies | Software & IT Services in Kadapa, Andhra Pradesh",
+  title: "#1 Software Company in Kadapa | MOMO IT Technologies",
   description:
-    "Visit MOMO IT Technologies at Krishnapuram, Kadapa. Premier software development company providing custom Web & SaaS engineering, mobile apps, ERP systems, QA automation, and tech talent incubation.",
+    "MOMO IT Technologies is the top software company in Kadapa, Andhra Pradesh. We engineer custom enterprise software, Next.js web applications, retail billing ERPs, and Flutter mobile apps at Krishnapuram, Kadapa.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/kadapa",
   },
   openGraph: {
-    title: "MOMO IT Technologies | Software & IT Services in Kadapa, Andhra Pradesh",
+    title: "#1 Software Company in Kadapa | MOMO IT Technologies",
     description:
-      "Kadapa's registered software engineering company. Discover custom software, web apps, enterprise ERPs, and QA automation at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.",
+      "Kadapa's premier software engineering and IT development firm. Custom software, enterprise billing systems, web portals, and mobile apps at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.",
     url: "https://www.momoittechnologies.com/kadapa",
   },
 };
@@ -129,7 +129,7 @@ export default function KadapaLocationPage() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "EducationalOrganization", "ProfessionalService"],
+        "@type": ["ProfessionalService", "LocalBusiness", "Corporation"],
         "@id": "https://www.momoittechnologies.com/kadapa#localbusiness",
         name: "MOMO IT TECHNOLOGIES",
         url: "https://www.momoittechnologies.com/kadapa",
@@ -227,14 +227,22 @@ export default function KadapaLocationPage() {
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-xs font-bold uppercase tracking-wider mb-4">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>Headquarters &amp; Innovation Lab · Kadapa, AP</span>
+                <span>#1 Rated IT Company · Krishnapuram, Kadapa, AP</span>
               </div>
               <h1 className="text-3xl sm:text-5xl font-extrabold text-navy-950 tracking-tight leading-tight mb-4">
-                Software Development &amp; IT Training in Kadapa
+                #1 Software Company &amp; IT Development in Kadapa
               </h1>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                MOMO IT TECHNOLOGIES is a registered software engineering firm and technical academy rooted in Krishnapuram, Kadapa. We build modern digital products for forward-thinking enterprises while mentoring aspiring engineers with commercial project internships.
+                Looking for top software companies in Kadapa? <strong>MOMO IT TECHNOLOGIES</strong> is the premier software engineering firm rooted in Krishnapuram, Kadapa. We design and build enterprise custom software, Next.js web applications, retail billing ERPs, and Flutter mobile apps with verified commercial excellence.
               </p>
+            </div>
+
+            {/* Local Proximity & Landmark Anchor Bar */}
+            <div className="mt-6 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs text-slate-700 flex flex-wrap items-center gap-2">
+              <span className="font-bold text-navy-950 uppercase tracking-wider text-[11px] flex items-center gap-1">
+                <MapPin className="w-3.5 h-3.5 text-brand-600" /> Serving Kadapa &amp; Rayalaseema:
+              </span>
+              <span>Krishnapuram</span> • <span>Seven Roads Circle</span> • <span>RTC Central Bus Stand</span> • <span>RIMS Road</span> • <span>Nagarajupalle</span> • <span>Yerramukkapalli</span> • <span>Co-operative Colony</span> • <span>Proddatur</span> • <span>Pulivendula</span> • <span>Rajampet</span>
             </div>
 
             {/* Quick Contact & Details Grid */}
@@ -255,9 +263,11 @@ export default function KadapaLocationPage() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Phone &amp; WhatsApp</div>
-                  <div className="text-sm font-bold text-navy-950 mt-0.5">+91 86398 31132</div>
-                  <div className="text-xs text-gray-600">Mon–Sat: 9:00 AM – 7:00 PM</div>
+                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Direct Call &amp; Inquiries</div>
+                  <a href="tel:+918639831132" className="text-sm font-bold text-emerald-600 hover:text-emerald-700 mt-0.5 block">
+                    +91 86398 31132
+                  </a>
+                  <div className="text-xs text-gray-600">Mon–Sat: 8:00 AM – 8:00 PM IST</div>
                 </div>
               </div>
 
@@ -266,8 +276,8 @@ export default function KadapaLocationPage() {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Business Heritage</div>
-                  <div className="text-sm font-bold text-navy-950 mt-0.5">Established June 2025</div>
+                  <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Google Authority</div>
+                  <div className="text-sm font-bold text-navy-950 mt-0.5">4.8★ Verified Google Rating</div>
                   <div className="text-xs text-gray-600">Registered Enterprise in Kadapa</div>
                 </div>
               </div>
@@ -276,21 +286,30 @@ export default function KadapaLocationPage() {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 mt-8">
               <a
-                href="https://wa.me/918639831132?text=Hello%20MOMO%20IT%20Technologies!%20I%20would%20like%20to%20inquire%20about%20your%20services/courses%20in%20Kadapa."
+                href="tel:+918639831132"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm shadow-md transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Now: +91 86398 31132</span>
+              </a>
+              <a
+                href="https://wa.me/918639831132?text=Hello%20MOMO%20IT%20Technologies!%20I%20am%20looking%20for%20software%20development%20/%20IT%20services%20in%20Kadapa."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow-md transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Chat on WhatsApp</span>
+                <span>WhatsApp Inquiry</span>
               </a>
-              <Link
-                href="/contact"
+              <a
+                href="https://www.reviewsmart.online/r/momo-it-technologies"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-gray-300 text-gray-800 hover:bg-gray-50 font-bold text-sm transition-all"
               >
-                <span>Schedule Campus Visit</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+                <span>ReviewSmart Profile</span>
+              </a>
             </div>
           </div>
 

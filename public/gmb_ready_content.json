@@ -1,152 +1,185 @@
 {
-  "generated_at": "2026-10-07T14:06:18.898698",
+  "generated_at": "2026-10-07T16:10:00.000000",
   "company": "MOMO IT TECHNOLOGIES",
-  "location": "Krishnapuram, Kadapa, AP \u2014 516003",
+  "location": "4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP — 516003",
   "phone": "+91 86398 31132",
   "website": "https://www.momoittechnologies.com",
-  "weekly_posts": [
+  "reviewsmart_url": "https://www.reviewsmart.online/r/momo-it-technologies",
+  "gmb_share_url": "https://share.google/qNjfQXuFmxNLyB8tO",
+  "gmb_products": [
     {
-      "week": "Week 1 (Immediate Launch Post)",
-      "type": "What's New / Announcement",
-      "title": "Welcome to MOMO IT TECHNOLOGIES \u2014 Kadapa's Premier Software Development Hub!",
-      "content": "Looking to scale your business with custom software, a high-converting website, or a native mobile app? MOMO IT TECHNOLOGIES is your dedicated technology engineering partner based right here in Krishnapuram, Kadapa!\n\n\ud83d\udcbb Custom Web & SaaS Development (Next.js 15, React 19)\n\ud83d\udcf1 Cross-Platform Mobile Apps (Google Flutter iOS & Android)\n\u26a1 Custom Business ERP & Billing Software\n\ud83d\udee1\ufe0f Enterprise QA & Automated Testing\n\nVisit our office or click below to explore our services and get a free project consultation!",
-      "cta_button": "Learn more",
-      "cta_url": "https://www.momoittechnologies.com/services?utm_source=google_my_business&utm_medium=post_launch",
-      "photo_suggestion": "google-business-banner.jpg",
-      "keywords": [
-        "software company in kadapa",
-        "web development kadapa",
-        "custom software"
-      ]
+      "name": "Custom ERP & Retail Billing Software",
+      "category": "Software company",
+      "price_type": "Fixed or Custom",
+      "description": "Tailor-made cloud billing software, POS systems, ESC/POS thermal printing (58mm/80mm), barcode scanning, customer ledgers, and automated GST invoicing for retail shops, wholesalers, and restaurants in Kadapa. Monitor sales and inventory directly from your smartphone.",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "keywords": ["billing software kadapa", "erp software kadapa", "retail pos kadapa"]
     },
     {
-      "week": "Week 2 (Focus: Custom ERP & Billing)",
+      "name": "Custom Web Application & E-Commerce",
+      "category": "Website designer",
+      "price_type": "Starting from ₹15,000",
+      "description": "Sub-second loading corporate websites and custom web applications engineered with Next.js 15, React 19, and Tailwind CSS. 95+ Core Web Vitals guaranteed with built-in Google Local 3-Pack SEO and Razorpay/Stripe payment gateways.",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "keywords": ["web development company in kadapa", "website design kadapa", "custom web app"]
+    },
+    {
+      "name": "Google Flutter Mobile App Development",
+      "category": "Software company",
+      "price_type": "Custom Quote",
+      "description": "Native-speed iOS and Android mobile apps engineered from a single Dart codebase. Butter-smooth 60 FPS performance, real-time cloud database sync, push notifications, and App Store / Play Store deployment for delivery, booking, and business operations.",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "keywords": ["mobile app development in kadapa", "flutter app kadapa", "ios android app"]
+    },
+    {
+      "name": "QA Automation & Testing Pods",
+      "category": "Software company",
+      "price_type": "Dedicated Pod Monthly / Project",
+      "description": "Dedicated SDET engineering pods delivering automated regression, smoke, and API test suites using Selenium WebDriver 4, Playwright, TestNG, Cucumber BDD, and CI/CD pipelines for zero-defect software releases.",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "keywords": ["qa automation company in kadapa", "software testing services kadapa"]
+    },
+    {
+      "name": "Agentic AI & WhatsApp Business Automation",
+      "category": "Software company",
+      "price_type": "Custom Solution",
+      "description": "Custom autonomous AI agents, WhatsApp Cloud API bots for automatic lead qualification and order booking, RAG document processing, and Google Gemini API integrations built to automate customer conversations 24/7.",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "keywords": ["ai automation kadapa", "whatsapp bot development kadapa"]
+    }
+  ],
+  "weekly_posts": [
+    {
+      "week": "Week 1 (Rank #1 Launch Post)",
+      "type": "What's New / Announcement",
+      "title": "MOMO IT TECHNOLOGIES — Kadapa's #1 Software Development Company",
+      "content": "Looking for the best software companies in Kadapa? MOMO IT TECHNOLOGIES is your premier software engineering partner based right here in Krishnapuram, Kadapa!\n\n💻 Custom Enterprise Software & Cloud ERPs\n🌐 Ultra-Fast Next.js 15 Web Applications\n📱 Flutter Mobile Apps (iOS & Android)\n⚡ Automated Billing & Thermal POS Systems\n🛡️ QA Test Automation Pods (Selenium 4)\n\nCall our lead engineer today to discuss your project requirements or visit our Krishnapuram campus!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "google-business-banner.jpg",
+      "keywords": ["software companies in kadapa", "best it development in kadapa"]
+    },
+    {
+      "week": "Week 2 (Focus: Custom Billing & ERP)",
       "type": "Product / Offer",
-      "title": "Automate Your Business Billing & Invoicing in Kadapa",
-      "content": "Still managing store inventory, billing, or accounts on manual ledgers or rigid software? MOMO IT Technologies builds custom business ERPs and POS systems tailored to your exact store or distribution workflow.\n\n\u2713 Instant GST & Non-GST Billing\n\u2713 Automated WhatsApp Invoicing & Receipts to Customers\n\u2713 Real-time Inventory & Stock Tracking\n\u2713 Cloud Access \u2014 monitor your sales from your phone anywhere\n\nCall us today to schedule a live demo of our business software at our Krishnapuram office!",
+      "title": "Automate Your Store Billing & Inventory in Kadapa",
+      "content": "Still managing store inventory, billing, or accounts on manual ledgers or rigid desktop software? MOMO IT Technologies builds custom business ERPs and POS systems tailored to your exact store workflow.\n\n✓ Instant GST & Non-GST Billing with 58mm/80mm Thermal Printing\n✓ Automated WhatsApp Invoicing & Receipts to Customers\n✓ Real-time Inventory & Stock Tracking\n✓ Cloud Access — monitor your sales from your phone anywhere\n\nCall us today for a live demo of our business software at our Krishnapuram office!",
       "cta_button": "Call now",
       "cta_url": "tel:+918639831132",
       "photo_suggestion": "Billing software dashboard mockup / Krishnapuram lab",
-      "keywords": [
-        "billing software kadapa",
-        "erp software kadapa",
-        "inventory software"
-      ]
+      "keywords": ["billing software kadapa", "custom software development services in kadapa"]
     },
     {
-      "week": "Week 3 (Focus: Mobile Apps)",
-      "type": "What's New / Showcase",
-      "title": "Launch Your iOS & Android Mobile App with Flutter",
-      "content": "Reach thousands of customers directly on their smartphones. At MOMO IT Technologies, we engineer high-performance cross-platform mobile apps using Google Flutter.\n\n\ud83d\ude80 Single codebase for both Android & Apple iOS\n\u26a1 60 FPS buttery-smooth user experience\n\u2601\ufe0f Cloud database sync & instant push notifications\n\ud83d\udcb3 Integrated UPI, Razorpay & PhonePe payments\n\nWhether you need an e-commerce app, a delivery app, or a service portal, talk to our development team today!",
-      "cta_button": "Learn more",
-      "cta_url": "https://www.momoittechnologies.com/services/mobile-app-development-kadapa?utm_source=google_my_business&utm_medium=post_flutter",
-      "photo_suggestion": "Mobile app UI preview on smartphone frame",
-      "keywords": [
-        "mobile app development in kadapa",
-        "flutter developers kadapa"
-      ]
+      "week": "Week 3 (Case Study: Vijaya's Yummy Food)",
+      "type": "Case Study / Proof",
+      "title": "How Vijaya's Yummy Food Saved ₹30,000/Mo with Custom Software",
+      "content": "Kadapa restaurant and cloud kitchen owners: Tired of paying 25–30% aggregator commissions?\n\nMOMO IT Technologies engineered a direct ordering Progressive Web App (PWA) with multi-terminal Kitchen Display Systems (KDS) and thermal receipt printing for Vijaya's Yummy Food.\n\nResult: 40% reduction in kitchen ticket delays and ₹30,000+ saved every month in commission fees!\n\nWant custom software for your restaurant or store? Call our engineering desk today!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "Restaurant KDS terminal photo / PWA ordering app",
+      "keywords": ["software development company in kadapa", "custom software kadapa"]
     },
     {
-      "week": "Week 4 (Focus: Web & SaaS Scaling)",
-      "type": "What's New / Engineering Excellence",
-      "title": "Sub-Second Speed: Why Kadapa Businesses Trust Next.js 15",
-      "content": "Slow websites lose customers and rank poorly on Google Search. At MOMO IT Technologies, our web applications load in under 1 second using Next.js 15 and modern cloud architecture.\n\n\u2728 95+ Google PageSpeed Score guaranteed\n\u2728 Mobile-first responsive UX that converts visitors into leads\n\u2728 Built-in local SEO to dominate Google Maps 3-Pack\n\u2728 Zero maintenance headaches with dedicated support\n\nGet a free audit of your existing website or request a quote for a new web platform!",
-      "cta_button": "Get offer",
-      "cta_url": "https://www.momoittechnologies.com/contact?utm_source=google_my_business&utm_medium=post_speed",
+      "week": "Week 4 (Focus: Next.js Web Development)",
+      "type": "Engineering Excellence",
+      "title": "Sub-Second Speed: Why Kadapa Businesses Need Modern Web Apps",
+      "content": "Slow websites lose customers and rank poorly on Google Search. At MOMO IT Technologies, our web applications load in under 1 second using Next.js 15, React 19, and Tailwind CSS.\n\n✨ 95+ Google PageSpeed Score guaranteed\n✨ Mobile-first responsive UX that converts visitors into leads\n✨ Built-in local SEO to dominate Google Maps 3-Pack\n✨ Integrated payment gateways (Razorpay, UPI)\n\nCall us today to upgrade your business website!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
       "photo_suggestion": "PageSpeed 100/100 score badge + Next.js code visual",
-      "keywords": [
-        "best website design company in kadapa",
-        "web developers in kadapa"
-      ]
+      "keywords": ["web development company in kadapa", "best web design in kadapa"]
+    },
+    {
+      "week": "Week 5 (Focus: Mobile Apps)",
+      "type": "What's New / Mobile",
+      "title": "Launch Your iOS & Android Mobile App with Flutter in Kadapa",
+      "content": "Reach thousands of customers directly on their smartphones with native performance.\n\nMOMO IT Technologies develops cross-platform mobile apps using Google Flutter:\n\n🚀 Single codebase for both Android & Apple iOS\n⚡ 60 FPS buttery-smooth user experience\n☁️ Cloud database sync & instant push notifications\n💳 Integrated UPI, PhonePe & Razorpay payments\n\nCall our mobile engineering team in Krishnapuram, Kadapa for an architectural estimate!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "Flutter mobile app mockup on smartphone",
+      "keywords": ["mobile app development in kadapa", "flutter developers kadapa"]
+    },
+    {
+      "week": "Week 6 (Case Study: MANA Tours & Travels)",
+      "type": "Case Study / Proof",
+      "title": "Automating Outstation Taxi Bookings with Custom Software",
+      "content": "MANA Tours & Travels in Kadapa relied exclusively on manual phone calls for outstation bookings. MOMO IT Technologies engineered an automated web reservation portal with dynamic distance fare calculation and automated WhatsApp confirmations.\n\nResult: 3x increase in direct online taxi bookings and a 5.0★ Google rating across 50+ reviews!\n\nNeed custom automation for your logistics or travel business? Call us today!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "Taxi booking portal UI mockup / Kadapa road transport",
+      "keywords": ["custom software development services in kadapa", "best it development in kadapa"]
+    },
+    {
+      "week": "Week 7 (Focus: QA Automation & Software Testing)",
+      "type": "SDET Services",
+      "title": "Dedicated QA Automation Pods for Startups & Enterprises",
+      "content": "Eliminate critical software bugs before your users find them. MOMO IT Technologies provides dedicated QA Automation pods equipped with Selenium 4, Playwright, TestNG, and CI/CD pipelines.\n\n🛡️ Cross-browser & cross-device automated regression\n⚡ REST API testing with RestAssured\n📊 Automated daily test execution reports\n\nCall our quality engineering lead to discuss testing outsourcing for your platform!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "Selenium 4 / automated test report dashboard",
+      "keywords": ["software companies in kadapa", "qa testing company kadapa"]
+    },
+    {
+      "week": "Week 8 (Focus: WhatsApp & AI Bots)",
+      "type": "AI Innovation",
+      "title": "Never Miss a Customer Lead with 24/7 WhatsApp AI Automation",
+      "content": "Are your customers inquiring on WhatsApp after business hours? MOMO IT Technologies builds intelligent WhatsApp Business Cloud API bots that automatically qualify leads, answer pricing questions, and take orders around the clock.\n\n🤖 Instant responses in under 2 seconds\n📋 Dynamic catalog browsing & order booking\n🔗 Direct synchronization with your billing database\n\nCall us today to see a live demo on your smartphone!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "WhatsApp bot conversation preview on phone",
+      "keywords": ["best it development in kadapa", "ai automation kadapa"]
+    },
+    {
+      "week": "Week 9 (Focus: E-Commerce Storefronts)",
+      "type": "E-Commerce",
+      "title": "Sell Online Directly with Zero Third-Party Marketplace Fees",
+      "content": "Take your Kadapa retail store online with your own branded e-commerce store! MOMO IT Technologies designs custom online shops with lightning-fast catalog search, automated inventory sync, and seamless UPI checkout.\n\n🛍️ Multi-category product catalog with image optimization\n📦 Automatic dispatch tracking & customer SMS alerts\n💳 100% direct payments to your bank account\n\nCall our e-commerce specialists in Krishnapuram, Kadapa today!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "E-Commerce shop UI preview on laptop & phone",
+      "keywords": ["web development company in kadapa", "ecommerce website kadapa"]
+    },
+    {
+      "week": "Week 10 (Local Trust & Review Request)",
+      "type": "Community & Reputation",
+      "title": "Proudly Powering Businesses Across Kadapa & Rayalaseema",
+      "content": "From Krishnapuram to Seven Roads and across Rayalaseema, MOMO IT TECHNOLOGIES is committed to engineering enterprise-grade software right from Kadapa.\n\n⭐ 4.8★ Verified Google Rating\n🏢 Physical campus at 4/106, Chowdeswari Temple Lane\n📞 Direct Engineer Access: +91 86398 31132\n\nVisit our office or call us today to turn your digital vision into working software!",
+      "cta_button": "Call now",
+      "cta_url": "tel:+918639831132",
+      "photo_suggestion": "Office campus photo with MOMO IT Technologies branding",
+      "keywords": ["software companies in kadapa", "best it company in kadapa"]
     }
   ],
-  "review_templates": [
+  "reviewsmart_outreach_templates": [
     {
-      "scenario": "5-Star Review with No Comment (Rating Only)",
-      "recommended_reply": "Thank you so much for the 5-star rating! We are delighted to have you as a valued partner. At MOMO IT Technologies, our team remains committed to delivering world-class software engineering, web applications, and digital solutions right here in Kadapa. Feel free to connect with us whenever you need technical support!"
+      "client_type": "Restaurant / FoodTech Client (e.g. Vijaya's Yummy Food)",
+      "suggested_review": "MOMO IT Technologies is hands down the best software company in Kadapa! They built our custom restaurant cloud ordering and billing system with thermal printing. Highly professional team in Krishnapuram, Kadapa.",
+      "whatsapp_message": "Hello Sir/Madam! Thank you for partnering with MOMO IT Technologies for your software development. Could you take 30 seconds to share your experience with our team on our verified review portal? It helps other local businesses find us: https://www.reviewsmart.online/r/momo-it-technologies Thank you so much!"
     },
     {
-      "scenario": "5-Star Review Praising Software / Web Development",
-      "recommended_reply": "Thank you for your fantastic review and kind words! It was an absolute pleasure developing your project. Our engineering team takes immense pride in delivering clean code, fast loading speeds, and robust functionality. We look forward to supporting your business as it continues to grow!"
+      "client_type": "Logistics & Fleet Client (e.g. MANA Tours & Travels)",
+      "suggested_review": "Exceptional custom software development services in Kadapa. They automated our taxi booking platform with WhatsApp integration. Truly the best IT development team in Kadapa!",
+      "whatsapp_message": "Hello Sir! We are thrilled to see your taxi booking platform running smoothly. Would you mind leaving a quick 5-star review about our software engineering work here? https://www.reviewsmart.online/r/momo-it-technologies Your feedback means the world to our team!"
     },
     {
-      "scenario": "5-Star Review Praising Communication & Technical Support",
-      "recommended_reply": "Thank you for sharing your positive experience! Clear communication, transparent delivery timelines, and dependable ongoing support are the foundations of how we work at MOMO IT Technologies. We are always just a call or WhatsApp message away."
+      "client_type": "Retail Store / Wholesale Billing Client",
+      "suggested_review": "We got our custom retail billing ERP software built by MOMO IT Technologies in Kadapa. The barcode scanner and GST billing are super fast. Best IT company in Kadapa for business software.",
+      "whatsapp_message": "Namaste Sir! We hope your billing and inventory software is making operations seamless. Could you please spare a minute to post a review on our portal? https://www.reviewsmart.online/r/momo-it-technologies Thank you for supporting local software innovation!"
     },
     {
-      "scenario": "5-Star Review from Student / Trainee (MOMO Academy)",
-      "recommended_reply": "Congratulations on your achievements with MOMO Academy! We are proud to see your growth in automation testing and software development. Our goal has always been to provide genuine, live-project experience from our Kadapa campus. Wishing you a stellar career in the IT industry!"
+      "client_type": "Website & E-Commerce Client",
+      "suggested_review": "Top web development company in Kadapa. MOMO IT Technologies designed our business website with ultra-fast speed and great mobile design. Very responsive team at Krishnapuram.",
+      "whatsapp_message": "Hello! We loved working on your business website. If you're happy with the results, please drop us a quick review on ReviewSmart: https://www.reviewsmart.online/r/momo-it-technologies It helps us tremendously!"
     },
     {
-      "scenario": "Constructive / Feedback Review (3 or 4 Stars)",
-      "recommended_reply": "Thank you for taking the time to share your feedback. We continuously strive for 100% client satisfaction across every software build. We would love to understand how we can make your experience even better. Please reach out to Mohan Damerla directly at +91 86398 31132 so we can assist you right away."
-    }
-  ],
-  "strategic_qas": [
-    {
-      "question": "What software development services does MOMO IT Technologies provide in Kadapa?",
-      "answer": "MOMO IT Technologies provides end-to-end software engineering including custom Web & SaaS applications (Next.js 15, React 19), cross-platform mobile app development (Google Flutter for iOS & Android), custom business ERP & billing software, enterprise QA automation testing (Selenium 4), and cloud solutions. We are located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa."
-    },
-    {
-      "question": "Can you build custom billing and inventory software for shops and businesses in Kadapa?",
-      "answer": "Yes! We build custom ERP, POS, and billing software tailored to retail stores, wholesalers, cloud kitchens, and service providers. Our systems feature instant GST invoicing, automated customer WhatsApp receipts, stock tracking, and mobile owner dashboards."
-    },
-    {
-      "question": "How can I get a quote or discuss a new website or app project?",
-      "answer": "You can call or WhatsApp our team directly at +91 86398 31132, visit our website at www.momoittechnologies.com, or walk into our Kadapa office at Krishnapuram (Mon-Sat, 8:00 AM - 8:00 PM) for an in-person discovery consultation."
-    },
-    {
-      "question": "Do you provide software testing and QA automation services for external companies?",
-      "answer": "Yes. We offer enterprise QA & test automation services using Selenium 4, Playwright, Cucumber BDD, and TestNG to ensure zero-defect releases for web and mobile products."
-    },
-    {
-      "question": "Does MOMO IT Technologies also offer IT training and internships in Kadapa?",
-      "answer": "Yes. Through MOMO Academy, our in-house engineers conduct specialized, job-oriented career training in Automation Testing, Java, and Full-Stack Development with verified course certificates and live client project internships."
-    }
-  ],
-  "services_catalog": [
-    {
-      "service_name": "Custom Web & SaaS Development",
-      "description": "High-performance web applications and multi-tenant cloud SaaS platforms built on Next.js 15, React 19, Supabase, and Spring Boot with sub-second page loads.",
-      "category": "Software company"
-    },
-    {
-      "service_name": "Mobile App Development",
-      "description": "Cross-platform iOS and Android mobile applications engineered with Google Flutter and Dart. Features cloud database synchronization, offline support, and push notifications.",
-      "category": "Software company"
-    },
-    {
-      "service_name": "Custom Business ERP & Billing Software",
-      "description": "Tailor-made billing software, POS systems, inventory management, and automated WhatsApp invoicing built specifically for growing businesses in Kadapa.",
-      "category": "Software company"
-    },
-    {
-      "service_name": "QA & Automation Testing Services",
-      "description": "Enterprise test automation frameworks built with Selenium 4, Playwright, TestNG, and Cucumber BDD to deliver zero-defect regression test suites and continuous quality.",
-      "category": "Software company"
-    },
-    {
-      "service_name": "Agentic AI & Cloud Automation",
-      "description": "Custom AI agent workflows, Retrieval-Augmented Generation (RAG) systems, vector database integrations, and smart operational automation for modern enterprises.",
-      "category": "Software company"
-    },
-    {
-      "service_name": "Digital Marketing & Local SEO",
-      "description": "Strategic Google Business Profile 3-Pack optimization, Google Ads PPC management, Meta Ads, and social media growth funnels to drive qualified daily customer enquiries.",
-      "category": "Software company"
-    }
-  ],
-  "gmb_live_share_link": "https://share.google/qNjfQXuFmxNLyB8tO",
-  "reviewsmart_link": "https://www.reviewsmart.online/r/momo-it-technologies",
-  "google_knowledge_graph_id": "/g/11zz9w2gyb",
-  "review_request_messages": [
-    {
-      "audience": "Business / Software Client",
-      "message": "Hi [Client Name]! Thank you for partnering with MOMO IT Technologies for your project. If you enjoyed working with our engineering team, could you please take 30 seconds to share your review on our verified portal? It helps us tremendously: https://www.reviewsmart.online/r/momo-it-technologies - Thank you! — Mohan Damerla, MOMO IT Technologies"
-    },
-    {
-      "audience": "Student / Trainee",
-      "message": "Hi [Student Name]! Hope you are doing great. Could you take a moment to leave your honest rating and feedback on our verified portal about your learning experience at MOMO Academy? Here is the direct link: https://www.reviewsmart.online/r/momo-it-technologies - Wishing you great success!"
+      "client_type": "Academy Student / Intern Graduate",
+      "suggested_review": "The best software training and live project internship in Kadapa. I learned Selenium automation testing and Java with real client projects at MOMO Academy. 100% recommended for freshers!",
+      "whatsapp_message": "Hi! Hope your career journey is going strong after completing your training at MOMO Academy. Could you please share your genuine review about our training and live project experience? https://www.reviewsmart.online/r/momo-it-technologies Best wishes!"
     }
   ]
 }
