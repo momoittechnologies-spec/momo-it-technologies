@@ -24,16 +24,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
+  title: "About Us & Careers | MOMO IT Technologies — Software Development Company in Kadapa",
   description:
-    "Learn about MOMO IT Technologies: A registered software engineering company and premier IT Academy based in 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa — 516003.",
+    "Learn about MOMO IT Technologies: A registered software development company in Kadapa engineering custom web applications, SaaS platforms, and mobile apps.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/about",
   },
   openGraph: {
-    title: "About Us & Careers | MOMO IT Technologies — Kadapa Software & IT Academy",
+    title: "About Us & Careers | MOMO IT Technologies — Software Development Company in Kadapa",
     description:
-      "Kadapa's 4.8★ rated software engineering company and training academy. Discover our mission, leadership, active career openings, and commercial case studies in Rayalaseema.",
+      "Kadapa's 4.8★ rated software engineering company. Discover our mission, leadership, active career openings, and commercial case studies in Rayalaseema.",
     url: "https://www.momoittechnologies.com/about",
   },
 };

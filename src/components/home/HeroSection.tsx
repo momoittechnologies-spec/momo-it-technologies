@@ -15,13 +15,14 @@ import {
   Users,
   Layers,
   MessageCircle,
+  Smartphone,
 } from "lucide-react";
 
 const rotatingWords = [
   "Scalable Web & SaaS Products",
   "Cross-Platform Mobile Apps",
   "Enterprise QA Automation",
-  "Industry-Ready Software Engineers",
+  "Custom Business ERPs",
 ];
 
 export default function HeroSection() {
@@ -60,16 +61,16 @@ export default function HeroSection() {
           <span className="block text-base sm:text-xl font-bold text-brand-700 tracking-normal mb-3">
             IT Company &amp; Software Development in Kadapa
           </span>
-          Engineering Scalable Software &amp; Training{" "}
+          Engineering Scalable Custom Software &amp;{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-emerald-600 to-teal-700">
-            Tomorrow&apos;s Tech Leaders.
+            Modern Cloud Solutions.
           </span>
         </h1>
 
         {/* Dynamic Subheading */}
         <div className="h-9 flex items-center justify-center mb-6">
           <span className="text-base sm:text-xl font-medium text-gray-600">
-            Building &amp; mentoring with{" "}
+            Architecting &amp; delivering{" "}
             <span className="font-bold text-navy-950 border-b-2 border-brand-500 transition-all duration-300">
               {rotatingWords[currentWordIndex]}
             </span>
@@ -78,7 +79,7 @@ export default function HeroSection() {
 
         {/* Clear Value Proposition */}
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10">
-          Kadapa&apos;s premier 4.8★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, and Flutter mobile apps for growing businesses, while training job-ready software engineers through <strong>MOMO Academy</strong> at our Krishnapuram campus.
+          Kadapa&apos;s premier 4.8★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, enterprise ERPs, and Flutter mobile apps for growing businesses, backed by rigorous QA testing and dedicated technical support.
         </p>
 
         {/* Action Buttons */}
@@ -92,15 +93,15 @@ export default function HeroSection() {
           </Link>
 
           <Link
-            href="/academy"
+            href="/services"
             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-sm shadow-md transition-all"
           >
-            <GraduationCap className="w-4 h-4 text-brand-400" />
-            <span>Join MOMO Academy</span>
+            <Layers className="w-4 h-4 text-brand-400" />
+            <span>Explore All Services</span>
           </Link>
 
           <a
-            href="https://wa.me/918639831132?text=Hi%20MOMO%20IT,%20I%20would%20like%20to%20know%20more%20about%20your%20services%20and%20courses."
+            href="https://wa.me/918639831132?text=Hi%20MOMO%20IT,%20I%20would%20like%20to%20discuss%20a%20software%20development%20project%20for%20my%20business."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white hover:bg-gray-50 text-navy-950 font-bold text-sm border border-gray-200 shadow-sm hover:border-brand-300 transition-all"
@@ -126,17 +127,17 @@ export default function HeroSection() {
           </div>
 
           <div className="p-4 rounded-2xl bg-white/80 border border-gray-100 shadow-xs">
-            <div className="text-2xl font-extrabold text-brand-600">Hybrid</div>
-            <div className="text-xs text-gray-500 mt-0.5">Online &amp; Kadapa Lab</div>
+            <div className="text-2xl font-extrabold text-brand-600">Modern</div>
+            <div className="text-xs text-gray-500 mt-0.5">Next.js 15, Flutter &amp; Cloud</div>
           </div>
 
           <div className="p-4 rounded-2xl bg-white/80 border border-gray-100 shadow-xs">
             <div className="text-2xl font-extrabold text-navy-950">100%</div>
-            <div className="text-xs text-gray-500 mt-0.5">Live Code Practice</div>
+            <div className="text-xs text-gray-500 mt-0.5">Dedicated Code Ownership</div>
           </div>
         </div>
 
-        {/* 4 Core Pillars Cards */}
+        {/* 4 Core Pillars Cards - Software Focused */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12 text-left">
           <div className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:border-brand-300 hover:shadow-md transition-all group">
             <div className="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
@@ -159,22 +160,22 @@ export default function HeroSection() {
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:border-brand-300 hover:shadow-md transition-all group">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
-              <GraduationCap className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+              <Smartphone className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-navy-950 mb-1">MOMO Academy</h2>
+            <h2 className="text-base font-bold text-navy-950 mb-1">Mobile App Development</h2>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Software testing, mobile dev &amp; marketing courses with certificates &amp; real client internships.
+              Cross-platform Flutter iOS &amp; Android native apps with cloud sync, offline support &amp; notifications.
             </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:border-brand-300 hover:shadow-md transition-all group">
-            <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
-              <Users className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+              <Layers className="w-5 h-5" />
             </div>
-            <h2 className="text-base font-bold text-navy-950 mb-1">Staff Augmentation</h2>
+            <h2 className="text-base font-bold text-navy-950 mb-1">Business &amp; ERP Systems</h2>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Hire pre-vetted, trained QA engineers and full-stack developers on flexible monthly retainers.
+              Custom billing, inventory, POS, and automated WhatsApp receipts tailored to local businesses.
             </p>
           </div>
         </div>

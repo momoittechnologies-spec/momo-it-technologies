@@ -82,7 +82,7 @@ export default function Navbar() {
                   </span>
                 </span>
                 <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
-                  Technologies - IT Academy
+                  Technologies · Software Company
                 </span>
               </div>
             </Link>
@@ -328,15 +328,14 @@ export default function Navbar() {
               >
                 <Link
                   href="/academy"
-                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-semibold rounded-lg transition-all cursor-pointer ${
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition-all cursor-pointer ${
                     pathname.startsWith("/academy")
                       ? "text-brand-700 bg-brand-50/90 font-bold"
-                      : "text-gray-800 hover:text-brand-700 hover:bg-brand-50/50"
+                      : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
                   }`}
                 >
                   <GraduationCap className="w-4 h-4 text-brand-600" />
                   <span>Academy</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
                       academyDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
@@ -622,10 +621,10 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <div className="flex items-center gap-2 lg:hidden">
               <Link
-                href="/academy"
-                className="px-2.5 py-1 text-xs font-bold rounded-lg bg-brand-100 text-brand-800 border border-brand-200"
+                href="/contact"
+                className="px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-xs"
               >
-                Academy
+                Get Quote
               </Link>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

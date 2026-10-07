@@ -29,10 +29,7 @@ export const metadata: Metadata = {
 };
 
 export default function ReviewPage() {
-  const googleReviewUrl =
-    "https://search.google.com/local/writereview?placeid=ChIJw2w9gG1HwzsRz79_oGv6K0A"; // Target Google review link
-  const googleSearchReview =
-    "https://www.google.com/search?q=MOMO+IT+TECHNOLOGIES+Kadapa+reviews";
+  const googleReviewUrl = "https://share.google/qNjfQXuFmxNLyB8tO";
 
   return (
     <div className="pt-32 sm:pt-36 pb-20 bg-surface-light min-h-screen">
@@ -69,7 +66,7 @@ export default function ReviewPage() {
           {/* Primary Action Button */}
           <div className="mb-10">
             <a
-              href={googleSearchReview}
+              href={googleReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 hover:shadow-xl transition-all hover:-translate-y-0.5"

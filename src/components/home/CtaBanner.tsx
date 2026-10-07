@@ -4,7 +4,7 @@ import { ArrowRight, PhoneCall, MessageSquare, Calendar } from "lucide-react";
 
 export default function CtaBanner() {
   const whatsappUrl = `https://wa.me/918639831132?text=${encodeURIComponent(
-    "Hello MOMO IT Technologies! I would like to schedule a consultation / inquire about services."
+    "Hello MOMO IT Technologies! I would like to discuss a custom software / web development project."
   )}`;
 
   return (
@@ -21,11 +21,11 @@ export default function CtaBanner() {
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
-              Have a Project in Mind or Want to Upgrade Your Tech Skills?
+              Have a Software Project or Digital Growth Goal?
             </h2>
 
             <p className="text-sm sm:text-base text-brand-50 leading-relaxed mb-8">
-              Whether you need a dedicated QA testing pod, a custom business portal, or want to enroll in MOMO Academy&apos;s upcoming batch—our team in Kadapa is ready to assist you.
+              Whether you need a custom SaaS platform, a mobile application, business billing software, or enterprise QA automation—our Kadapa engineering team is ready to build it.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5">

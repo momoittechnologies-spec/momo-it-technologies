@@ -21,14 +21,14 @@ import {
 export const metadata: Metadata = {
   title: "MOMO IT Technologies | Software & IT Services in Kadapa, Andhra Pradesh",
   description:
-    "Visit MOMO IT Technologies at Krishnapuram, Kadapa. Premier software development company and IT training academy providing Web & SaaS engineering, QA automation, and career courses.",
+    "Visit MOMO IT Technologies at Krishnapuram, Kadapa. Premier software development company providing custom Web & SaaS engineering, mobile apps, ERP systems, QA automation, and tech talent incubation.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/kadapa",
   },
   openGraph: {
     title: "MOMO IT Technologies | Software & IT Services in Kadapa, Andhra Pradesh",
     description:
-      "Kadapa's registered software engineering company and training academy. Discover custom software, web apps, QA automation, and live training programs at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.",
+      "Kadapa's registered software engineering company. Discover custom software, web apps, enterprise ERPs, and QA automation at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.",
     url: "https://www.momoittechnologies.com/kadapa",
   },
 };

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOMO IT Technologies — Google Business Profile AI Agent Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: #060D1E;
+      color: #F8FAFC;
+      padding: 40px 24px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #0B1B3D 0%, #0F2960 100%);
+      border: 1.5px solid rgba(0, 237, 135, 0.3);
+      border-radius: 20px;
+      padding: 32px 40px;
+      margin-bottom: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .header-title h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #FFFFFF;
+    }
+    .header-title h1 span { color: #00ED87; }
+    .header-title p {
+      font-size: 14px;
+      color: #94A3B8;
+      margin-top: 6px;
+    }
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 10px 20px;
+      border-radius: 12px;
+      background: #0B1938;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #CBD5E1;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: #00ED87;
+      color: #060D1E;
+      border-color: #00ED87;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .card {
+      background: #0B1938;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-emerald { background: rgba(0, 237, 135, 0.15); color: #00ED87; }
+    .badge-purple { background: rgba(168, 85, 247, 0.15); color: #C084FC; }
+    .badge-blue { background: rgba(56, 189, 248, 0.15); color: #38BDF8; }
+    .badge-type { font-size: 12px; color: #94A3B8; font-weight: 600; }
+    .post-title { font-size: 20px; font-weight: 800; color: #FFFFFF; margin-bottom: 8px; }
+    .post-meta { font-size: 13px; color: #94A3B8; display: flex; gap: 18px; margin-bottom: 14px; }
+    .post-meta a { color: #38BDF8; text-decoration: none; }
+    pre {
+      background: #060D1E;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px;
+      font-family: inherit;
+      white-space: pre-wrap;
+      font-size: 13.5px;
+      color: #E2E8F0;
+      line-height: 1.6;
+    }
+    .card-actions {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #00ED87;
+      color: #060D1E;
+    }
+    .btn-primary:hover { background: #00BA66; }
+    .btn-secondary {
+      background: #38BDF8;
+      color: #060D1E;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+    }
+    .photo-hint { font-size: 12px; color: #64748B; }
+    .qa-q { font-size: 16px; color: #38BDF8; margin-bottom: 8px; }
+    .qa-a { font-size: 14px; color: #E2E8F0; background: #060D1E; padding: 14px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-title">
+        <h1>MOMO <span>IT TECHNOLOGIES</span> — GMB AI Manager</h1>
+        <p>Live Profile: <a href="https://share.google/qNjfQXuFmxNLyB8tO" target="_blank" style="color: #00ED87; text-decoration: underline;">https://share.google/qNjfQXuFmxNLyB8tO</a></p>
+      </div>
+      <div class="header-actions">
+        <a href="https://share.google/qNjfQXuFmxNLyB8tO" target="_blank" class="btn btn-secondary" style="text-decoration: none; display: inline-block;">
+          View Live Profile ↗
+        </a>
+        <a href="https://business.google.com" target="_blank" class="btn btn-primary" style="text-decoration: none; display: inline-block;">
+          Open GMB Dashboard ↗
+        </a>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('posts', this)">📅 Weekly Posts (4)</button>
+      <button class="tab-btn" onclick="showTab('collect', this)">⭐ Collect Reviews (WhatsApp Links)</button>
+      <button class="tab-btn" onclick="showTab('reviews', this)">💬 ReviewSmart Replies (5)</button>
+      <button class="tab-btn" onclick="showTab('qas', this)">❓ Strategic Q&amp;A (5)</button>
+      <button class="tab-btn" onclick="showTab('services', this)">🛠️ Service Catalog (6)</button>
+    </div>
+
+    <!-- Posts Section -->
+    <div id="posts" class="section active">
+      
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-emerald">Week 1 (Immediate Launch Post)</span>
+        <span class="badge-type">What's New / Announcement</span>
+      </div>
+      <h3 class="post-title">Welcome to MOMO IT TECHNOLOGIES — Kadapa's Premier Software Development Hub!</h3>
+      <div class="post-meta">
+        <span>🔘 Button: <strong>Learn more</strong></span>
+        <span>🔗 Destination: <a href="https://www.momoittechnologies.com/services?utm_source=google_my_business&utm_medium=post_launch" target="_blank">https://www.momoittechnologies.com/services?u...</a></span>
+      </div>
+      <div class="post-body">
+        <pre id="post-0">Looking to scale your business with custom software, a high-converting website, or a native mobile app? MOMO IT TECHNOLOGIES is your dedicated technology engineering partner based right here in Krishnapuram, Kadapa!
+
+💻 Custom Web & SaaS Development (Next.js 15, React 19)
+📱 Cross-Platform Mobile Apps (Google Flutter iOS & Android)
+⚡ Custom Business ERP & Billing Software
+🛡️ Enterprise QA & Automated Testing
+
+Visit our office or click below to explore our services and get a free project consultation!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('post-0', this)">📋 Copy Post Text</button>
+        <span class="photo-hint">📷 Recommended Image: <code>google-business-banner.jpg</code></span>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-emerald">Week 2 (Focus: Custom ERP & Billing)</span>
+        <span class="badge-type">Product / Offer</span>
+      </div>
+      <h3 class="post-title">Automate Your Business Billing & Invoicing in Kadapa</h3>
+      <div class="post-meta">
+        <span>🔘 Button: <strong>Call now</strong></span>
+        <span>🔗 Destination: <a href="tel:+918639831132" target="_blank">tel:+918639831132...</a></span>
+      </div>
+      <div class="post-body">
+        <pre id="post-1">Still managing store inventory, billing, or accounts on manual ledgers or rigid software? MOMO IT Technologies builds custom business ERPs and POS systems tailored to your exact store or distribution workflow.
+
+✓ Instant GST & Non-GST Billing
+✓ Automated WhatsApp Invoicing & Receipts to Customers
+✓ Real-time Inventory & Stock Tracking
+✓ Cloud Access — monitor your sales from your phone anywhere
+
+Call us today to schedule a live demo of our business software at our Krishnapuram office!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('post-1', this)">📋 Copy Post Text</button>
+        <span class="photo-hint">📷 Recommended Image: <code>Billing software dashboard mockup / Krishnapuram lab</code></span>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-emerald">Week 3 (Focus: Mobile Apps)</span>
+        <span class="badge-type">What's New / Showcase</span>
+      </div>
+      <h3 class="post-title">Launch Your iOS & Android Mobile App with Flutter</h3>
+      <div class="post-meta">
+        <span>🔘 Button: <strong>Learn more</strong></span>
+        <span>🔗 Destination: <a href="https://www.momoittechnologies.com/services/mobile-app-development-kadapa?utm_source=google_my_business&utm_medium=post_flutter" target="_blank">https://www.momoittechnologies.com/services/m...</a></span>
+      </div>
+      <div class="post-body">
+        <pre id="post-2">Reach thousands of customers directly on their smartphones. At MOMO IT Technologies, we engineer high-performance cross-platform mobile apps using Google Flutter.
+
+🚀 Single codebase for both Android & Apple iOS
+⚡ 60 FPS buttery-smooth user experience
+☁️ Cloud database sync & instant push notifications
+💳 Integrated UPI, Razorpay & PhonePe payments
+
+Whether you need an e-commerce app, a delivery app, or a service portal, talk to our development team today!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('post-2', this)">📋 Copy Post Text</button>
+        <span class="photo-hint">📷 Recommended Image: <code>Mobile app UI preview on smartphone frame</code></span>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-emerald">Week 4 (Focus: Web & SaaS Scaling)</span>
+        <span class="badge-type">What's New / Engineering Excellence</span>
+      </div>
+      <h3 class="post-title">Sub-Second Speed: Why Kadapa Businesses Trust Next.js 15</h3>
+      <div class="post-meta">
+        <span>🔘 Button: <strong>Get offer</strong></span>
+        <span>🔗 Destination: <a href="https://www.momoittechnologies.com/contact?utm_source=google_my_business&utm_medium=post_speed" target="_blank">https://www.momoittechnologies.com/contact?ut...</a></span>
+      </div>
+      <div class="post-body">
+        <pre id="post-3">Slow websites lose customers and rank poorly on Google Search. At MOMO IT Technologies, our web applications load in under 1 second using Next.js 15 and modern cloud architecture.
+
+✨ 95+ Google PageSpeed Score guaranteed
+✨ Mobile-first responsive UX that converts visitors into leads
+✨ Built-in local SEO to dominate Google Maps 3-Pack
+✨ Zero maintenance headaches with dedicated support
+
+Get a free audit of your existing website or request a quote for a new web platform!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('post-3', this)">📋 Copy Post Text</button>
+        <span class="photo-hint">📷 Recommended Image: <code>PageSpeed 100/100 score badge + Next.js code visual</code></span>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Collect Reviews Section -->
+    <div id="collect" class="section">
+      
+<div class="card" style="border: 1.5px solid rgba(0, 237, 135, 0.4); background: rgba(0, 237, 135, 0.05);">
+  <div class="card-header">
+    <span class="badge badge-emerald">Official Live Profile Link</span>
+  </div>
+  <h3 class="post-title" style="color: #00ED87;">https://share.google/qNjfQXuFmxNLyB8tO</h3>
+  <p style="font-size: 14px; color: #CBD5E1; margin-top: 6px;">
+    This is your permanent Google Knowledge Graph share link for MOMO IT Technologies. Anyone clicking it will open your live profile directly on Google Maps / Search.
+  </p>
+  <div class="card-actions" style="margin-top: 14px;">
+    <button class="btn btn-primary" onclick="copyRawText('https://share.google/qNjfQXuFmxNLyB8tO', this)">🔗 Copy Live Profile Link</button>
+    <a href="https://share.google/qNjfQXuFmxNLyB8tO" target="_blank" class="btn btn-outline" style="text-decoration: none;">View Live on Google ↗</a>
+  </div>
+</div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-blue">WhatsApp Request: Business / Software Client</span>
+      </div>
+      <div class="post-body">
+        <pre id="req-msg-0">Hi [Client Name]! Thank you for partnering with MOMO IT Technologies for your project. If you enjoyed working with our engineering team, could you please take 30 seconds to share your review on our official Google profile? It helps us tremendously: https://share.google/qNjfQXuFmxNLyB8tO - Thank you! — Mohan Damerla, MOMO IT Technologies</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('req-msg-0', this)">📋 Copy WhatsApp Message</button>
+        <a href="https://wa.me/?text=Hi%20[Client%20Name]!%20Thank%20you%20for%20partnering%20with%20MOMO%20IT%20Technologies%20for%20your%20project.%20If%20you%20enjoyed%20working%20with%20our%20engineering%20team,%20could%20you%20please%20take%2030%20seconds%20to%20share%20your%20review%20on%20our%20official%20Google%20profile?%20It%20helps%20us%20tremendously:%20https://share.google/qNjfQXuFmxNLyB8tO%20-%20Thank%20you!%20—%20Mohan%20Damerla,%20MOMO%20IT%20Technologies" target="_blank" class="btn btn-secondary" style="text-decoration: none;">📲 Open in WhatsApp</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-blue">WhatsApp Request: Student / Trainee</span>
+      </div>
+      <div class="post-body">
+        <pre id="req-msg-1">Hi [Student Name]! Hope you are doing great. Could you take a moment to leave your honest rating and feedback on our Google profile about your learning experience at MOMO Academy? Here is the direct link: https://share.google/qNjfQXuFmxNLyB8tO - Wishing you great success!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('req-msg-1', this)">📋 Copy WhatsApp Message</button>
+        <a href="https://wa.me/?text=Hi%20[Student%20Name]!%20Hope%20you%20are%20doing%20great.%20Could%20you%20take%20a%20moment%20to%20leave%20your%20honest%20rating%20and%20feedback%20on%20our%20Google%20profile%20about%20your%20learning%20experience%20at%20MOMO%20Academy?%20Here%20is%20the%20direct%20link:%20https://share.google/qNjfQXuFmxNLyB8tO%20-%20Wishing%20you%20great%20success!" target="_blank" class="btn btn-secondary" style="text-decoration: none;">📲 Open in WhatsApp</a>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Reviews Section -->
+    <div id="reviews" class="section">
+      
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-purple">5-Star Review with No Comment (Rating Only)</span>
+      </div>
+      <div class="post-body">
+        <pre id="review-0">Thank you so much for the 5-star rating! We are delighted to have you as a valued partner. At MOMO IT Technologies, our team remains committed to delivering world-class software engineering, web applications, and digital solutions right here in Kadapa. Feel free to connect with us whenever you need technical support!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" onclick="copyText('review-0', this)">📋 Copy Response</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-purple">5-Star Review Praising Software / Web Development</span>
+      </div>
+      <div class="post-body">
+        <pre id="review-1">Thank you for your fantastic review and kind words! It was an absolute pleasure developing your project. Our engineering team takes immense pride in delivering clean code, fast loading speeds, and robust functionality. We look forward to supporting your business as it continues to grow!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" onclick="copyText('review-1', this)">📋 Copy Response</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-purple">5-Star Review Praising Communication & Technical Support</span>
+      </div>
+      <div class="post-body">
+        <pre id="review-2">Thank you for sharing your positive experience! Clear communication, transparent delivery timelines, and dependable ongoing support are the foundations of how we work at MOMO IT Technologies. We are always just a call or WhatsApp message away.</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" onclick="copyText('review-2', this)">📋 Copy Response</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-purple">5-Star Review from Student / Trainee (MOMO Academy)</span>
+      </div>
+      <div class="post-body">
+        <pre id="review-3">Congratulations on your achievements with MOMO Academy! We are proud to see your growth in automation testing and software development. Our goal has always been to provide genuine, live-project experience from our Kadapa campus. Wishing you a stellar career in the IT industry!</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" onclick="copyText('review-3', this)">📋 Copy Response</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <span class="badge badge-purple">Constructive / Feedback Review (3 or 4 Stars)</span>
+      </div>
+      <div class="post-body">
+        <pre id="review-4">Thank you for taking the time to share your feedback. We continuously strive for 100% client satisfaction across every software build. We would love to understand how we can make your experience even better. Please reach out to Mohan Damerla directly at +91 86398 31132 so we can assist you right away.</pre>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-secondary" onclick="copyText('review-4', this)">📋 Copy Response</button>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Q&A Section -->
+    <div id="qas" class="section">
+      
+    <div class="card">
+      <div class="qa-q">❓ <strong>Question:</strong> What software development services does MOMO IT Technologies provide in Kadapa?</div>
+      <div class="qa-a">
+        <p id="qa-ans-0"><strong>Answer:</strong> MOMO IT Technologies provides end-to-end software engineering including custom Web & SaaS applications (Next.js 15, React 19), cross-platform mobile app development (Google Flutter for iOS & Android), custom business ERP & billing software, enterprise QA automation testing (Selenium 4), and cloud solutions. We are located at 4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa.</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="copyRawText('What software development services does MOMO IT Technologies provide in Kadapa?', this)">Copy Question</button>
+        <button class="btn btn-secondary" onclick="copyText('qa-ans-0', this)">Copy Answer</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="qa-q">❓ <strong>Question:</strong> Can you build custom billing and inventory software for shops and businesses in Kadapa?</div>
+      <div class="qa-a">
+        <p id="qa-ans-1"><strong>Answer:</strong> Yes! We build custom ERP, POS, and billing software tailored to retail stores, wholesalers, cloud kitchens, and service providers. Our systems feature instant GST invoicing, automated customer WhatsApp receipts, stock tracking, and mobile owner dashboards.</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="copyRawText('Can you build custom billing and inventory software for shops and businesses in Kadapa?', this)">Copy Question</button>
+        <button class="btn btn-secondary" onclick="copyText('qa-ans-1', this)">Copy Answer</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="qa-q">❓ <strong>Question:</strong> How can I get a quote or discuss a new website or app project?</div>
+      <div class="qa-a">
+        <p id="qa-ans-2"><strong>Answer:</strong> You can call or WhatsApp our team directly at +91 86398 31132, visit our website at www.momoittechnologies.com, or walk into our Kadapa office at Krishnapuram (Mon-Sat, 8:00 AM - 8:00 PM) for an in-person discovery consultation.</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="copyRawText('How can I get a quote or discuss a new website or app project?', this)">Copy Question</button>
+        <button class="btn btn-secondary" onclick="copyText('qa-ans-2', this)">Copy Answer</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="qa-q">❓ <strong>Question:</strong> Do you provide software testing and QA automation services for external companies?</div>
+      <div class="qa-a">
+        <p id="qa-ans-3"><strong>Answer:</strong> Yes. We offer enterprise QA & test automation services using Selenium 4, Playwright, Cucumber BDD, and TestNG to ensure zero-defect releases for web and mobile products.</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="copyRawText('Do you provide software testing and QA automation services for external companies?', this)">Copy Question</button>
+        <button class="btn btn-secondary" onclick="copyText('qa-ans-3', this)">Copy Answer</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="qa-q">❓ <strong>Question:</strong> Does MOMO IT Technologies also offer IT training and internships in Kadapa?</div>
+      <div class="qa-a">
+        <p id="qa-ans-4"><strong>Answer:</strong> Yes. Through MOMO Academy, our in-house engineers conduct specialized, job-oriented career training in Automation Testing, Java, and Full-Stack Development with verified course certificates and live client project internships.</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-outline" onclick="copyRawText('Does MOMO IT Technologies also offer IT training and internships in Kadapa?', this)">Copy Question</button>
+        <button class="btn btn-secondary" onclick="copyText('qa-ans-4', this)">Copy Answer</button>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section">
+      
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">Custom Web & SaaS Development</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-0" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">High-performance web applications and multi-tenant cloud SaaS platforms built on Next.js 15, React 19, Supabase, and Spring Boot with sub-second page loads.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-0', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">Mobile App Development</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-1" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">Cross-platform iOS and Android mobile applications engineered with Google Flutter and Dart. Features cloud database synchronization, offline support, and push notifications.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-1', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">Custom Business ERP & Billing Software</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-2" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">Tailor-made billing software, POS systems, inventory management, and automated WhatsApp invoicing built specifically for growing businesses in Kadapa.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-2', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">QA & Automation Testing Services</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-3" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">Enterprise test automation frameworks built with Selenium 4, Playwright, TestNG, and Cucumber BDD to deliver zero-defect regression test suites and continuous quality.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-3', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">Agentic AI & Cloud Automation</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-4" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">Custom AI agent workflows, Retrieval-Augmented Generation (RAG) systems, vector database integrations, and smart operational automation for modern enterprises.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-4', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <h4 style="font-size: 16px; font-weight: 800; color: #FFFFFF;">Digital Marketing & Local SEO</h4>
+        <span class="badge badge-blue">Max 300 chars</span>
+      </div>
+      <p id="serv-5" style="font-size: 14px; color: #CBD5E1; margin: 10px 0; line-height: 1.5;">Strategic Google Business Profile 3-Pack optimization, Google Ads PPC management, Meta Ads, and social media growth funnels to drive qualified daily customer enquiries.</p>
+      <div class="card-actions">
+        <button class="btn btn-primary" onclick="copyText('serv-5', this)">📋 Copy Service Description</button>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId, btn) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    function copyText(elemId, btn) {
+      const text = document.getElementById(elemId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.innerText;
+        btn.innerText = "✓ Copied to Clipboard!";
+        btn.style.background = "#22FFA1";
+        btn.style.color = "#0B1B3D";
+        setTimeout(() => {
+          btn.innerText = original;
+          btn.style.background = "";
+          btn.style.color = "";
+        }, 2000);
+      });
+    }
+
+    function copyRawText(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.innerText;
+        btn.innerText = "✓ Copied!";
+        setTimeout(() => { btn.innerText = original; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

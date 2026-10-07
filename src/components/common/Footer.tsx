@@ -33,13 +33,13 @@ export default function Footer() {
                   MOMO <span className="text-brand-400">IT TECHNOLOGIES</span>
                 </span>
                 <span className="text-[10px] text-gray-400 uppercase tracking-widest">
-                  Software Engineering &amp; Academy — Kadapa
+                  Software Company &amp; Cloud Solutions — Kadapa
                 </span>
               </div>
             </div>
 
             <p className="text-sm text-gray-400 leading-relaxed max-w-md">
-              From Kadapa, Andhra Pradesh to global businesses worldwide. We design, engineer, and rigorously test high-impact software, SaaS platforms, and mobile apps while grooming Andhra Pradesh&apos;s next generation of top-tier software and automation engineers.
+              From Kadapa, Andhra Pradesh to global businesses worldwide. We design, engineer, and rigorously test high-impact software, SaaS platforms, custom ERPs, and mobile apps with automated QA testing and long-term technical support.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
