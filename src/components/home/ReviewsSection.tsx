@@ -41,13 +41,13 @@ export default function ReviewsSection() {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://maps.google.com"
+              href="https://www.reviewsmart.online/r/momo-it-technologies"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white border border-gray-200 text-xs font-bold text-navy-950 hover:border-brand-400 transition-colors shadow-sm"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-all shadow-sm shadow-brand-500/20 hover:-translate-y-0.5"
             >
-              <span>View Google Reviews</span>
-              <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
+              <span>Review on ReviewSmart</span>
+              <ExternalLink className="w-3.5 h-3.5 text-white/80" />
             </a>
           </div>
         </div>

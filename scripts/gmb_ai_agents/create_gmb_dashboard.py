@@ -10,6 +10,7 @@ with open(JSON_PATH, "r") as f:
     data = json.load(f)
 
 LIVE_LINK = data.get("gmb_live_share_link", "https://share.google/qNjfQXuFmxNLyB8tO")
+REVIEWSMART_LINK = data.get("reviewsmart_link", "https://www.reviewsmart.online/r/momo-it-technologies")
 
 weekly_posts_html = ""
 for i, p in enumerate(data["weekly_posts"]):
@@ -52,16 +53,29 @@ for i, r in enumerate(data["review_templates"]):
 
 # Review request WhatsApp messages
 request_reviews_html = f"""
+<div class="card" style="border: 1.5px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.05); margin-bottom: 20px;">
+  <div class="card-header">
+    <span class="badge badge-blue">Official ReviewSmart Portal</span>
+  </div>
+  <h3 class="post-title" style="color: #60A5FA;">{REVIEWSMART_LINK}</h3>
+  <p style="font-size: 14px; color: #CBD5E1; margin-top: 6px;">
+    Use this link for automated review collection. Clients submit their ratings here, and positive reviews are routed to your Google Profile!
+  </p>
+  <div class="card-actions" style="margin-top: 14px;">
+    <button class="btn btn-primary" onclick="copyRawText('{REVIEWSMART_LINK}', this)">🔗 Copy ReviewSmart Link</button>
+    <a href="{REVIEWSMART_LINK}" target="_blank" class="btn btn-outline" style="text-decoration: none;">Open ReviewSmart Portal ↗</a>
+  </div>
+</div>
 <div class="card" style="border: 1.5px solid rgba(0, 237, 135, 0.4); background: rgba(0, 237, 135, 0.05);">
   <div class="card-header">
-    <span class="badge badge-emerald">Official Live Profile Link</span>
+    <span class="badge badge-emerald">Google Business Live Share Link</span>
   </div>
   <h3 class="post-title" style="color: #00ED87;">{LIVE_LINK}</h3>
   <p style="font-size: 14px; color: #CBD5E1; margin-top: 6px;">
-    This is your permanent Google Knowledge Graph share link for MOMO IT Technologies. Anyone clicking it will open your live profile directly on Google Maps / Search.
+    This is your permanent Google Knowledge Graph share link for MOMO IT Technologies.
   </p>
   <div class="card-actions" style="margin-top: 14px;">
-    <button class="btn btn-primary" onclick="copyRawText('{LIVE_LINK}', this)">🔗 Copy Live Profile Link</button>
+    <button class="btn btn-primary" onclick="copyRawText('{LIVE_LINK}', this)">🔗 Copy Google Profile Link</button>
     <a href="{LIVE_LINK}" target="_blank" class="btn btn-outline" style="text-decoration: none;">View Live on Google ↗</a>
   </div>
 </div>

@@ -14,14 +14,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Review Us on Google | MOMO IT Technologies Kadapa",
+  title: "Share Your Review | MOMO IT Technologies Kadapa",
   description:
-    "Have you worked with MOMO IT Technologies or studied at MOMO Academy in Kadapa? Share your honest feedback on our verified Google Business Profile.",
+    "Have you worked with MOMO IT Technologies or studied at MOMO Academy in Kadapa? Share your authentic feedback through our verified ReviewSmart portal.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/review",
   },
   openGraph: {
-    title: "Review Us on Google | MOMO IT Technologies Kadapa",
+    title: "Share Your Review | MOMO IT Technologies Kadapa",
     description:
       "Share your authentic experience with MOMO IT Technologies. Help local Kadapa businesses and aspiring engineers make informed decisions.",
     url: "https://www.momoittechnologies.com/review",
@@ -29,6 +29,7 @@ export const metadata: Metadata = {
 };
 
 export default function ReviewPage() {
+  const reviewSmartUrl = "https://www.reviewsmart.online/r/momo-it-technologies";
   const googleReviewUrl = "https://share.google/qNjfQXuFmxNLyB8tO";
 
   return (
@@ -52,28 +53,38 @@ export default function ReviewPage() {
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-gray-200/80 shadow-card text-center relative overflow-hidden">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold uppercase tracking-wider mb-6">
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            Your Honest Feedback Matters
+            Verified Feedback Portal
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold text-navy-950 tracking-tight leading-tight mb-4">
-            Review MOMO IT Technologies on Google
+            Review MOMO IT Technologies
           </h1>
 
           <p className="text-sm sm:text-base text-gray-600 max-w-xl mx-auto leading-relaxed mb-8">
             Whether you partnered with our engineering team to build custom software, or learned test automation and coding at MOMO Academy—your honest review helps Kadapa businesses and students make informed choices.
           </p>
 
-          {/* Primary Action Button */}
-          <div className="mb-10">
+          {/* Primary Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+            <a
+              href={reviewSmartUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 hover:shadow-xl transition-all hover:-translate-y-0.5"
+            >
+              <Star className="w-5 h-5 fill-amber-300 text-amber-300" />
+              <span>Leave a Review on ReviewSmart</span>
+              <ExternalLink className="w-4 h-4 ml-1" />
+            </a>
+
             <a
               href={googleReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 hover:shadow-xl transition-all hover:-translate-y-0.5"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-navy-950 font-semibold text-xs sm:text-sm border border-gray-200 transition-colors"
             >
-              <Star className="w-5 h-5 fill-amber-300 text-amber-300" />
-              <span>Leave an Honest Google Review</span>
-              <ExternalLink className="w-4 h-4 ml-1" />
+              <span>Direct Google Profile</span>
+              <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
 
