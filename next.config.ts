@@ -21,6 +21,21 @@ const nextConfig: NextConfig = {
         destination: "/services",
         permanent: true,
       },
+      {
+        source: "/services/software-dev",
+        destination: "/services/software-development",
+        permanent: true,
+      },
+      {
+        source: "/services/qa-testing",
+        destination: "/services/qa-automation",
+        permanent: true,
+      },
+      {
+        source: "/services/business-systems",
+        destination: "/services/business-software",
+        permanent: true,
+      },
     ];
   },
   async headers() {

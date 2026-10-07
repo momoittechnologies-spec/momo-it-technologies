@@ -8,20 +8,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1.0, changeFrequency: "daily" },
     { path: "/kadapa", priority: 0.95, changeFrequency: "daily" },
 
-    // Core Services & Kadapa Local Silos
-    { path: "/services", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/web-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/software-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/qa-automation-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/ai-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/mobile-app-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/saas-development-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/business-software-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/social-media-management-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/digital-marketing-kadapa", priority: 0.9, changeFrequency: "weekly" },
-    { path: "/services/qa-testing", priority: 0.7, changeFrequency: "monthly" },
-    { path: "/services/software-dev", priority: 0.7, changeFrequency: "monthly" },
-    { path: "/services/business-systems", priority: 0.7, changeFrequency: "monthly" },
+    // Core Services & National Engineering Pillars
+    { path: "/services", priority: 0.95, changeFrequency: "daily" },
+    { path: "/services/web-development", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/software-development", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/mobile-app-development", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/qa-automation", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/ai-automation", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/local-seo", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/ecommerce-development", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/web-design", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/business-software", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/services/digital-marketing", priority: 0.9, changeFrequency: "weekly" },
+
+    // Regional Kadapa Local Silos
+    { path: "/services/web-development-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/software-development-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/qa-automation-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/ai-development-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/mobile-app-development-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/saas-development-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/business-software-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/social-media-management-kadapa", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/services/digital-marketing-kadapa", priority: 0.85, changeFrequency: "weekly" },
 
     // MOMO Academy & Kadapa Training Silos
     { path: "/academy", priority: 0.9, changeFrequency: "weekly" },

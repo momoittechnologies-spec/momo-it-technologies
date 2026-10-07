@@ -89,7 +89,15 @@ export default function AboutPage() {
             "@type": "GeoCoordinates",
             "latitude": 14.4713,
             "longitude": 78.8237
-          }
+          },
+          "hasMap": "https://share.google/qNjfQXuFmxNLyB8tO",
+          "sameAs": [
+            "https://share.google/qNjfQXuFmxNLyB8tO",
+            "https://www.reviewsmart.online/r/momo-it-technologies",
+            "https://www.linkedin.com/company/momo-it-technologies",
+            "https://www.instagram.com/momoit.technologies/",
+            "https://github.com/momoittechnologies-spec"
+          ]
         }
       },
       {

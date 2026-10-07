@@ -159,11 +159,13 @@ export default function KadapaLocationPage() {
             closes: "20:00",
           },
         ],
+        hasMap: "https://share.google/qNjfQXuFmxNLyB8tO",
         sameAs: [
-          "https://www.instagram.com/momoit.technologies/",
+          "https://share.google/qNjfQXuFmxNLyB8tO",
+          "https://www.reviewsmart.online/r/momo-it-technologies",
           "https://www.linkedin.com/company/momo-it-technologies",
+          "https://www.instagram.com/momoit.technologies/",
           "https://github.com/momoittechnologies-spec",
-          "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
         ],
       },
       {

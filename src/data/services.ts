@@ -30,7 +30,7 @@ export const servicesData: ServiceItem[] = [
       "AI Safety Guardrails, Token Cost Optimization & Low-Latency Caching",
     ],
     techStack: ["Python", "LangChain", "LangGraph", "Gemini 2.0", "OpenAI", "pgvector", "FastAPI"],
-    href: "/services/software-dev",
+    href: "/services/ai-automation",
   },
   {
     id: "legacy-modernisation",
@@ -50,7 +50,7 @@ export const servicesData: ServiceItem[] = [
       "Automated CI/CD Pipelines & High-Reliability Regression Testing",
     ],
     techStack: ["Next.js", "Spring Boot", "PostgreSQL", "Docker", "AWS / GCP", "Playwright"],
-    href: "/services/software-dev",
+    href: "/services/software-development",
   },
   {
     id: "web-development",
@@ -68,7 +68,7 @@ export const servicesData: ServiceItem[] = [
       "SEO Optimization & Sub-Second Core Web Vitals",
     ],
     techStack: ["Next.js", "React", "TypeScript", "Spring Boot", "Supabase", "PostgreSQL"],
-    href: "/services/software-dev",
+    href: "/services/web-development",
   },
   {
     id: "qa-testing",
@@ -86,7 +86,7 @@ export const servicesData: ServiceItem[] = [
       "Continuous CI/CD Integration & Test Reporting",
     ],
     techStack: ["Playwright", "Selenium", "Java", "RestAssured", "Postman", "GitHub Actions"],
-    href: "/services/qa-testing",
+    href: "/services/qa-automation",
   },
   {
     id: "custom-business-systems",
@@ -104,7 +104,7 @@ export const servicesData: ServiceItem[] = [
       "Automated WhatsApp & SMS Notifications",
     ],
     techStack: ["React", "PostgreSQL", "Tailwind CSS", "RESTful APIs", "Cloudflare"],
-    href: "/services/business-systems",
+    href: "/services/business-software",
   },
   {
     id: "mobile-development",
@@ -121,7 +121,7 @@ export const servicesData: ServiceItem[] = [
       "Play Store & App Store Deployment",
     ],
     techStack: ["Flutter", "Dart", "Firebase", "REST APIs"],
-    href: "/services/software-dev",
+    href: "/services/mobile-app-development",
   },
   {
     id: "ui-ux-design",
@@ -138,7 +138,45 @@ export const servicesData: ServiceItem[] = [
       "Usability Testing & Design Handoff",
     ],
     techStack: ["Figma", "Design Systems", "Tailwind UI", "Prototyping"],
-    href: "/services/software-dev",
+    href: "/services/web-design",
+  },
+  {
+    id: "ecommerce-development",
+    title: "E-Commerce Website Development",
+    category: "COMMERCE & RETAIL",
+    shortDesc: "High-speed custom Next.js storefronts, UPI QR checkouts, and automated inventory sync.",
+    description:
+      "Sell directly to customers with zero aggregator commissions. We build conversion-optimized online stores with sub-second speeds, automated GST invoicing, and real-time WhatsApp order tracking.",
+    icon: "ShoppingCart",
+    badge: "Direct Sales Engine",
+    features: [
+      "High-Speed Headless Next.js Storefronts",
+      "Instant UPI Dynamic QR & Razorpay Integration",
+      "Real-Time Multi-Store Inventory Synchronization",
+      "Automated WhatsApp Order Alerts & Invoicing",
+      "Thermal POS Printer Integration for Warehouse Dispatch",
+    ],
+    techStack: ["Next.js 15", "TypeScript", "Razorpay", "Tailwind CSS", "PostgreSQL", "ESC/POS"],
+    href: "/services/ecommerce-development",
+  },
+  {
+    id: "local-seo",
+    title: "Local SEO & Google Business Profile Management",
+    category: "LOCAL DOMINANCE",
+    shortDesc: "Rank #1 in Google Maps Local 3-Pack, build local citations, and accelerate review velocity.",
+    description:
+      "Dominate local searches in your target service radius. We optimize your Google Business Profile, correct NAP citation inconsistencies, and deploy ReviewSmart review funnels.",
+    icon: "MapPin",
+    badge: "Local 3-Pack Domination",
+    features: [
+      "Google Business Profile (GBP) 3-Pack Optimization",
+      "ReviewSmart Review Velocity & Reputation Funnel",
+      "NAP Citation Consistency across 40+ Directories",
+      "Geo-Tagged Photo Uploads & Local Keyword Seeding",
+      "Weekly GBP Posts & AI Q&A Management",
+    ],
+    techStack: ["Google Business Profile", "ReviewSmart", "Schema.org", "Google Maps", "GA4"],
+    href: "/services/local-seo",
   },
   {
     id: "social-media-management",
@@ -178,6 +216,6 @@ export const servicesData: ServiceItem[] = [
       "Full-Funnel Analytics, Lead Attribution & Conversion Tracking",
     ],
     techStack: ["Google Ads", "Google Analytics 4", "Google Search Console", "Semrush", "WhatsApp API", "Meta Ads"],
-    href: "/services/digital-marketing-kadapa",
+    href: "/services/digital-marketing",
   },
 ];

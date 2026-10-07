@@ -89,14 +89,17 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@type": ["Organization", "Corporation", "ProfessionalService", "LocalBusiness"],
         "@id": "https://www.momoittechnologies.com/#organization",
         name: "MOMO IT TECHNOLOGIES",
+        legalName: "MOMO IT TECHNOLOGIES",
         description:
-          "Leading software company in Kadapa, Andhra Pradesh specializing in Web & SaaS product engineering, Flutter mobile apps, custom business ERPs, QA automation, and tech talent incubation.",
+          "Premier software company and technology partner based in Kadapa, Andhra Pradesh, engineering scalable Web & SaaS applications, Flutter mobile apps, enterprise ERPs, QA automation, and AI business solutions.",
         telephone: "+91-86398-31132",
         url: "https://www.momoittechnologies.com",
         email: "momoit.technologies@gmail.com",
+        logo: "https://www.momoittechnologies.com/logo.svg",
+        image: "https://www.momoittechnologies.com/og-image.png",
         address: {
           "@type": "PostalAddress",
           streetAddress: "4/106, Chowdeswari Temple Lane, Krishnapuram",
@@ -111,14 +114,15 @@ export default function RootLayout({
           latitude: "14.4713",
           longitude: "78.8237",
         },
-        hasMap: "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
+        hasMap: "https://share.google/qNjfQXuFmxNLyB8tO",
         currenciesAccepted: "INR",
         paymentAccepted: "Cash, Credit Card, UPI, Net Banking",
+        priceRange: "₹₹",
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+91-86398-31132",
           contactType: "customer service",
-          areaServed: "IN",
+          areaServed: ["IN"],
           availableLanguage: ["en", "te"],
         },
         aggregateRating: {
@@ -136,67 +140,103 @@ export default function RootLayout({
             closes: "20:00",
           },
         ],
-        priceRange: "₹₹",
+        areaServed: [
+          { "@type": "City", name: "Kadapa" },
+          { "@type": "State", name: "Andhra Pradesh" },
+          { "@type": "Country", name: "India" },
+        ],
+        knowsAbout: [
+          "Custom Software Development",
+          "Web Application Development",
+          "SaaS Engineering",
+          "QA Automation & Testing",
+          "Flutter Mobile App Development",
+          "Enterprise ERP & Billing Software",
+          "AI Business Automation",
+          "Local SEO & Digital Marketing",
+        ],
         sameAs: [
-          "https://www.instagram.com/momoit.technologies/",
+          "https://share.google/qNjfQXuFmxNLyB8tO",
+          "https://www.reviewsmart.online/r/momo-it-technologies",
           "https://www.linkedin.com/company/momo-it-technologies",
-          "https://www.linkedin.com/jobs/view/4470198185/",
+          "https://www.instagram.com/momoit.technologies/",
           "https://github.com/momoittechnologies-spec",
-          "https://maps.google.com/?q=MOMO+IT+TECHNOLOGIES+Kadapa",
         ],
       },
       {
-        "@type": "Course",
-        name: "Mastering Automation Testing with Java & Selenium",
-        description:
-          "Kadapa's premier test automation program. Master Core Java, Selenium WebDriver 4, TestNG, Cucumber BDD, and CI/CD with guaranteed course completion certificate and client project internship.",
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/#service-web-development",
+        name: "Custom Web & SaaS Product Development",
+        serviceType: "Web Development",
         provider: {
-          "@type": "Organization",
-          name: "MOMO Academy — MOMO IT Technologies",
-          sameAs: "https://momoittechnologies.com",
+          "@id": "https://www.momoittechnologies.com/#organization",
         },
-        timeRequired: "P12W",
-        educationalCredentialAwarded: "Verified Course Completion Certificate",
-        occupationalCredentialAwarded: "QA Automation Engineer Internship Experience",
+        areaServed: {
+          "@type": "Country",
+          name: "India",
+        },
+        description:
+          "Production-grade Web Applications, scalable multi-tenant SaaS platforms, and modern frontends built with Next.js 15, React 19, and Spring Boot 3.",
       },
       {
-        "@type": "Course",
-        name: "Full-Stack Software Development (Java + Spring Boot 3 + React 19)",
-        description:
-          "End-to-end commercial web and enterprise application engineering with React 19, Next.js, Spring Boot 3, and PostgreSQL.",
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/#service-software-development",
+        name: "Custom Software & Business ERP Systems",
+        serviceType: "Software Development",
         provider: {
-          "@type": "Organization",
-          name: "MOMO Academy — MOMO IT Technologies",
-          sameAs: "https://momoittechnologies.com",
+          "@id": "https://www.momoittechnologies.com/#organization",
         },
-        timeRequired: "P16W",
-        educationalCredentialAwarded: "Verified Course Completion Certificate",
+        areaServed: {
+          "@type": "Country",
+          name: "India",
+        },
+        description:
+          "Bespoke enterprise software, POS billing engines, thermal printing integration, inventory management, and business process automation.",
       },
       {
-        "@type": "Course",
-        name: "Cross-Platform Mobile App Development (Flutter & React Native for Android & iOS)",
-        description:
-          "Single-codebase mobile application engineering with Dart, Flutter, Supabase, Firebase, and publishing to Google Play and Apple App Store.",
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/#service-qa-automation",
+        name: "QA Automation & Software Testing",
+        serviceType: "Software Testing",
         provider: {
-          "@type": "Organization",
-          name: "MOMO Academy — MOMO IT Technologies",
-          sameAs: "https://momoittechnologies.com",
+          "@id": "https://www.momoittechnologies.com/#organization",
         },
-        timeRequired: "P10W",
-        educationalCredentialAwarded: "Verified Course Completion Certificate",
+        areaServed: {
+          "@type": "Country",
+          name: "India",
+        },
+        description:
+          "Enterprise test automation frameworks using Selenium WebDriver 4, Playwright, TestNG, Cucumber BDD, and CI/CD quality engineering.",
       },
       {
-        "@type": "Course",
-        name: "Advanced Digital Marketing & AI Growth Masterclass",
-        description:
-          "Tailored for Kadapa business owners, freelancers, and marketers. Master Google Ads, Meta Ads, Local SEO, and Generative AI marketing funnels.",
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/#service-ai-solutions",
+        name: "AI Solutions & Business Automation",
+        serviceType: "Artificial Intelligence Development",
         provider: {
-          "@type": "Organization",
-          name: "MOMO Academy — MOMO IT Technologies",
-          sameAs: "https://momoittechnologies.com",
+          "@id": "https://www.momoittechnologies.com/#organization",
         },
-        timeRequired: "P8W",
-        educationalCredentialAwarded: "Verified Course Completion Certificate",
+        areaServed: {
+          "@type": "Country",
+          name: "India",
+        },
+        description:
+          "Autonomous agentic workflows, WhatsApp business AI bots, enterprise RAG search systems, and predictive operations automation.",
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.momoittechnologies.com/#service-mobile-apps",
+        name: "Cross-Platform Mobile App Development",
+        serviceType: "Mobile Application Development",
+        provider: {
+          "@id": "https://www.momoittechnologies.com/#organization",
+        },
+        areaServed: {
+          "@type": "Country",
+          name: "India",
+        },
+        description:
+          "High-performance native iOS and Android mobile apps engineered from a single clean Dart codebase using Google Flutter and Firebase.",
       },
     ],
   };
