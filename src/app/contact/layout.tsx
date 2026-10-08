@@ -48,9 +48,9 @@ export default function ContactLayout({
             "latitude": 14.4713,
             "longitude": 78.8237
           },
-          "hasMap": "https://share.google/qNjfQXuFmxNLyB8tO",
+          "hasMap": "https://share.google/ar7YZvarRrJtzXq70",
           "sameAs": [
-            "https://share.google/qNjfQXuFmxNLyB8tO",
+            "https://share.google/ar7YZvarRrJtzXq70",
             "https://www.reviewsmart.online/r/momo-it-technologies",
             "https://www.linkedin.com/company/momo-it-technologies",
             "https://www.instagram.com/momoit.technologies/",

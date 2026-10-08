@@ -21,7 +21,7 @@ To rank in the Google Local 3-Pack, Name, Address, and Phone (NAP) must be **100
 | **Canonical Website** | `https://www.momoittechnologies.com` |
 | **Local Kadapa URL** | `https://www.momoittechnologies.com/kadapa` |
 | **Custom Software URL** | `https://www.momoittechnologies.com/services/software-development-kadapa` |
-| **GMB Live Profile** | `https://share.google/qNjfQXuFmxNLyB8tO` (KGID: `/g/11zz9w2gyb`) |
+| **GMB Live Profile** | `https://share.google/ar7YZvarRrJtzXq70` |
 | **ReviewSmart Portal** | `https://www.reviewsmart.online/r/momo-it-technologies` |
 
 ---

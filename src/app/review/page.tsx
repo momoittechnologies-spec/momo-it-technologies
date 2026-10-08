@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function ReviewPage() {
   const reviewSmartUrl = "https://www.reviewsmart.online/r/momo-it-technologies";
-  const googleReviewUrl = "https://share.google/qNjfQXuFmxNLyB8tO";
+  const googleReviewUrl = "https://share.google/ar7YZvarRrJtzXq70";
 
   return (
     <div className="pt-32 sm:pt-36 pb-20 bg-surface-light min-h-screen">

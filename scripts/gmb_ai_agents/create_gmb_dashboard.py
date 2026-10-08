@@ -9,7 +9,7 @@ DOWNLOADS_HTML = "/Users/momope/Downloads/MOMO_IT_GMB_Manager.html"
 with open(JSON_PATH, "r") as f:
     data = json.load(f)
 
-LIVE_LINK = data.get("gmb_live_share_link", "https://share.google/qNjfQXuFmxNLyB8tO")
+LIVE_LINK = data.get("gmb_live_share_link", "https://share.google/ar7YZvarRrJtzXq70")
 REVIEWSMART_LINK = data.get("reviewsmart_link", "https://www.reviewsmart.online/r/momo-it-technologies")
 
 weekly_posts_html = ""

@@ -117,7 +117,7 @@ export default function RootLayout({
           latitude: "14.4713",
           longitude: "78.8237",
         },
-        hasMap: "https://share.google/qNjfQXuFmxNLyB8tO",
+        hasMap: "https://share.google/ar7YZvarRrJtzXq70",
         currenciesAccepted: "INR",
         paymentAccepted: "Cash, Credit Card, UPI, Net Banking",
         priceRange: "₹₹",
@@ -131,7 +131,7 @@ export default function RootLayout({
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "5.0",
-          reviewCount: "16",
+          reviewCount: "2",
           bestRating: "5",
           worstRating: "1",
         },
@@ -159,7 +159,7 @@ export default function RootLayout({
           "Local SEO & Digital Marketing",
         ],
         sameAs: [
-          "https://share.google/qNjfQXuFmxNLyB8tO",
+          "https://share.google/ar7YZvarRrJtzXq70",
           "https://www.reviewsmart.online/r/momo-it-technologies",
           "https://www.linkedin.com/company/momo-it-technologies",
           "https://www.instagram.com/momoit.technologies/",
