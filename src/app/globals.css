@@ -41,3 +41,106 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* 3D Perspective & Spatial Utilities */
+.perspective-800 {
+  perspective: 800px;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Cyber Grid Spatial Backgrounds */
+.bg-cyber-grid {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 237, 135, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(226, 232, 240, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.5) 1px, transparent 1px);
+  background-size: 24px 24px, 48px 48px, 48px 48px;
+  background-position: 0 0, 0 0, 0 0;
+}
+
+.bg-cyber-grid-dark {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 237, 135, 0.15) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px, 56px 56px, 56px 56px;
+  background-position: 0 0, 0 0, 0 0;
+}
+
+.bg-radial-mesh {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 237, 135, 0.15) 0%, rgba(56, 189, 248, 0.08) 40%, transparent 70%);
+}
+
+.bg-radial-mesh-dark {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 237, 135, 0.2) 0%, rgba(14, 30, 56, 0.8) 50%, #071127 100%);
+}
+
+/* Glassmorphic 3D Panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 20px 40px -15px rgba(11, 27, 61, 0.07),
+    0 1px 3px 0 rgba(0, 0, 0, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 27, 61, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.glass-panel-emerald {
+  background: linear-gradient(135deg, rgba(0, 237, 135, 0.1) 0%, rgba(11, 27, 61, 0.85) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 237, 135, 0.25);
+  box-shadow: 
+    0 20px 40px -10px rgba(0, 237, 135, 0.15),
+    inset 0 1px 0 rgba(0, 237, 135, 0.3);
+}
+
+/* Interactive 3D Card Hover Lift & Tilt */
+.card-3d-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-3d-lift:hover {
+  transform: translateY(-8px) translateZ(10px);
+  box-shadow: 
+    0 25px 50px -12px rgba(11, 27, 61, 0.15),
+    0 0 0 1px rgba(0, 237, 135, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Infinite Marquee hover pause */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
