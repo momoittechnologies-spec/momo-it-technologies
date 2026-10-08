@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MOMO IT TECHNOLOGIES — Custom Software, Web & SaaS Engineering in Kadapa",
     description:
-      "Kadapa's premier 4.8★ rated software company and technology partner. Engineering scalable Web & SaaS products, mobile apps, and enterprise software systems.",
+      "Kadapa's premier 5.0★ rated software company and technology partner. Engineering scalable Web & SaaS products, mobile apps, and enterprise software systems.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -130,7 +130,7 @@ export default function RootLayout({
         },
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.8",
+          ratingValue: "5.0",
           reviewCount: "16",
           bestRating: "5",
           worstRating: "1",

@@ -27,7 +27,7 @@ import CourseCurriculumAccordion from "@/components/academy/CourseCurriculumAcco
 export const metadata = {
   title: "MOMO Academy — Best IT Training & Live Project Internships in Kadapa",
   description:
-    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Agentic AI with MOMO Academy Kadapa. 4.8★ Google Rated. Verified certificates & guaranteed live internships.",
+    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Agentic AI with MOMO Academy Kadapa. 5.0★ Google Rated. Verified certificates & guaranteed live internships.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/academy",
   },
@@ -137,14 +137,14 @@ export default function AcademyPage() {
             </span>
           </h1>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-            Rated 4.8★ on Google. We don&apos;t just teach textbook theory—we build live enterprise automation frameworks and full-stack applications with you step by step.
+            Rated 5.0★ on Google. We don&apos;t just teach textbook theory—we build live enterprise automation frameworks and full-stack applications with you step by step.
           </p>
 
           {/* Key Trust Signals */}
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs font-semibold text-gray-700">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-gray-200 shadow-sm">
               <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-              4.8★ Google Rating in Kadapa
+              5.0★ Google Rating in Kadapa
             </span>
             <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-white border border-gray-200 shadow-sm">
               <Video className="w-4 h-4 text-brand-600" />

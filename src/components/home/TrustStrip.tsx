@@ -30,7 +30,7 @@ export default function TrustStrip() {
                 Enterprise Production Stack
               </div>
               <div className="text-sm font-extrabold text-navy-950 flex items-center gap-1.5">
-                4.8★ Google Rated · Battle-Tested Engineering Standards
+                5.0★ Google Rated · Battle-Tested Engineering Standards
               </div>
             </div>
           </div>

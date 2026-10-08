@@ -351,7 +351,7 @@ export default function Navbar() {
                           MOMO Academy Curriculum
                         </span>
                         <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200 flex items-center gap-1">
-                          <Star className="w-3 h-3 fill-amber-400 text-amber-400" /> 4.8★ Google Rated
+                          <Star className="w-3 h-3 fill-amber-400 text-amber-400" /> 5.0★ Google Rated
                         </span>
                       </div>
                       <Link
@@ -733,7 +733,7 @@ export default function Navbar() {
                   MOMO Academy
                 </span>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
-                  4.8★ Kadapa Lab
+                  5.0★ Kadapa Lab
                 </span>
               </div>
               <div className="space-y-1.5 pt-1 text-sm">

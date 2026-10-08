@@ -14,7 +14,7 @@ export default function ReviewsSection() {
             Trusted by Learners &amp; Business Clients
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600">
-            Rated 4.8★ on Google in Kadapa for software testing and technology delivery. Here is what our learners and client partners say.
+            Rated 5.0★ on Google in Kadapa for software testing and technology delivery. Here is what our learners and client partners say.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function ReviewsSection() {
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-500 via-amber-400 to-emerald-500" />
           <div className="flex items-center gap-5">
             <div className="w-16 h-16 rounded-2xl bg-white shadow-md border border-brand-200 flex flex-col items-center justify-center shrink-0">
-              <span className="text-2xl font-black text-navy-950">4.8</span>
+              <span className="text-2xl font-black text-navy-950">5.0</span>
               <div className="flex text-amber-400">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-2.5 h-2.5 fill-current" />

@@ -243,7 +243,7 @@ export default function SoftwareDevelopmentKadapaPage() {
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-amber-500 fill-amber-500 shrink-0" />
-                <span className="font-bold text-navy-950">4.8★ Verified Google Rating</span>
+                <span className="font-bold text-navy-950">5.0★ Verified Google Rating</span>
               </div>
             </div>
 

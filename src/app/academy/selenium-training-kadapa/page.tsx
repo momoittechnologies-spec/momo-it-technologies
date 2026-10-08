@@ -222,7 +222,7 @@ export default function SeleniumTrainingKadapaPage() {
               </span>
               <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold">
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                4.8★ Google Rated
+                5.0★ Google Rated
               </span>
               <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold">
                 <Award className="w-3.5 h-3.5" />

@@ -277,7 +277,7 @@ export default function KadapaLocationPage() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">Google Authority</div>
-                  <div className="text-sm font-bold text-navy-950 mt-0.5">4.8★ Verified Google Rating</div>
+                  <div className="text-sm font-bold text-navy-950 mt-0.5">5.0★ Verified Google Rating</div>
                   <div className="text-xs text-gray-600">Registered Enterprise in Kadapa</div>
                 </div>
               </div>

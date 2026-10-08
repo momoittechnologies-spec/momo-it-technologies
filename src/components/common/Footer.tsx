@@ -50,7 +50,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-brand-300 border border-brand-500/20 hover:border-brand-500/50 transition-colors"
               >
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                4.8★ Google Rated in Kadapa
+                5.0★ Google Rated in Kadapa
               </Link>
               <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-gray-300 border border-gray-700">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />

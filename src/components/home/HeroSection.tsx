@@ -58,7 +58,7 @@ export default function HeroSection() {
                 MOMO IT TECHNOLOGIES · Kadapa, AP
               </span>
               <span className="text-[11px] sm:text-xs text-brand-700 font-semibold border-l border-brand-200 pl-2">
-                4.8★ Google Rated
+                5.0★ Google Rated
               </span>
             </div>
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
 
             {/* Clear Value Proposition */}
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
-              Kadapa&apos;s premier 4.8★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, enterprise ERPs, and Flutter mobile apps for growing businesses, backed by rigorous QA testing and dedicated technical support.
+              Kadapa&apos;s premier 5.0★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, enterprise ERPs, and Flutter mobile apps for growing businesses, backed by rigorous QA testing and dedicated technical support.
             </p>
 
             {/* Action Buttons */}
@@ -121,7 +121,7 @@ export default function HeroSection() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-gray-200/60 max-w-2xl mx-auto lg:mx-0">
               <div className="p-3 rounded-2xl bg-white/90 border border-gray-100 shadow-xs text-center lg:text-left">
                 <div className="text-xl sm:text-2xl font-extrabold text-navy-950 flex items-center justify-center lg:justify-start gap-1">
-                  <span>4.8</span>
+                  <span>5.0</span>
                   <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
                 </div>
                 <div className="text-[11px] text-gray-500 mt-0.5">Google Rating</div>

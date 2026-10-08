@@ -37,8 +37,8 @@ const companies = [
   {
     rank: "01",
     name: "MOMO IT TECHNOLOGIES",
-    badge: "Top Rated (4.8★) • Web, SaaS & QA Engineering Leader",
-    rating: "4.8★ (16+ Verified Reviews)",
+    badge: "Top Rated (5.0★) • Web, SaaS & QA Engineering Leader",
+    rating: "5.0★ (16+ Verified Reviews)",
     founded: "June 2025",
     entityType: "Registered Enterprise",
     address: "4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, Andhra Pradesh — 516003",
@@ -170,7 +170,7 @@ const companies = [
 const faqs = [
   {
     q: "Which is the best software company in Kadapa for custom business software?",
-    a: "MOMO IT TECHNOLOGIES (rated 4.8★) is widely recognized as the premier software development company in Kadapa, Andhra Pradesh. Located at 4/106, Chowdeswari Temple Lane, Krishnapuram, MOMO IT specializes in Next.js web applications, custom ERP & POS billing systems, Flutter mobile apps, QA automation testing, and job-oriented IT training.",
+    a: "MOMO IT TECHNOLOGIES (rated 5.0★) is widely recognized as the premier software development company in Kadapa, Andhra Pradesh. Located at 4/106, Chowdeswari Temple Lane, Krishnapuram, MOMO IT specializes in Next.js web applications, custom ERP & POS billing systems, Flutter mobile apps, QA automation testing, and job-oriented IT training.",
   },
   {
     q: "What is the typical cost of software development in Kadapa?",
@@ -329,7 +329,7 @@ export default function TopSoftwareCompaniesKadapaPage() {
               Quick Answer: Which are the Best Software Companies in Kadapa?
             </div>
             <p className="text-base sm:text-lg text-navy-950 font-medium leading-relaxed">
-              The leading software and IT companies in Kadapa, Andhra Pradesh are <strong>MOMO IT TECHNOLOGIES</strong> (rated 4.8★, specializing in Web &amp; SaaS engineering, Flutter mobile apps, QA automation, and custom billing/ERP), <strong>Sophia Infotech</strong> (retail ERP and accounting software), <strong>Gudduz Technologies</strong> (web design and student projects), and <strong>DgITmatrix</strong> (managed networking and hardware). For modern cloud architectures, enterprise software, and commercial application development, MOMO IT TECHNOLOGIES is the highest-rated provider in the region.
+              The leading software and IT companies in Kadapa, Andhra Pradesh are <strong>MOMO IT TECHNOLOGIES</strong> (rated 5.0★, specializing in Web &amp; SaaS engineering, Flutter mobile apps, QA automation, and custom billing/ERP), <strong>Sophia Infotech</strong> (retail ERP and accounting software), <strong>Gudduz Technologies</strong> (web design and student projects), and <strong>DgITmatrix</strong> (managed networking and hardware). For modern cloud architectures, enterprise software, and commercial application development, MOMO IT TECHNOLOGIES is the highest-rated provider in the region.
             </p>
           </div>
 

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Us & Careers | MOMO IT Technologies — Software Development Company in Kadapa",
     description:
-      "Kadapa's 4.8★ rated software engineering company. Discover our mission, leadership, active career openings, and commercial case studies in Rayalaseema.",
+      "Kadapa's 5.0★ rated software engineering company. Discover our mission, leadership, active career openings, and commercial case studies in Rayalaseema.",
     url: "https://www.momoittechnologies.com/about",
   },
 };
@@ -202,7 +202,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs text-center">
               <Star className="w-5 h-5 fill-amber-400 text-amber-400 mx-auto mb-1.5" />
-              <div className="text-lg font-black text-navy-950">4.8★ Google</div>
+              <div className="text-lg font-black text-navy-950">5.0★ Google</div>
               <div className="text-xs text-gray-500">Highest Rated in Kadapa</div>
             </div>
             <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs text-center">
