@@ -40,6 +40,8 @@ export default function Hero3DCanvas() {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      role="region"
+      aria-label="MOMO IT Technologies System Architecture Terminal"
       className="relative w-full max-w-xl mx-auto perspective-1500 select-none py-4 px-2"
     >
       {/* Dynamic 3D Perspective Tilt Container */}
@@ -58,7 +60,7 @@ export default function Hero3DCanvas() {
           {/* Terminal Window Header Bar */}
           <div className="px-4 py-3 bg-navy-900/90 border-b border-white/10 flex items-center justify-between">
             {/* macOS Window Controls */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2" aria-hidden="true">
               <span className="w-3 h-3 rounded-full bg-[#ff5f56] inline-block shadow-xs" />
               <span className="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block shadow-xs" />
               <span className="w-3 h-3 rounded-full bg-[#27c93f] inline-block shadow-xs" />
@@ -68,6 +70,8 @@ export default function Hero3DCanvas() {
             <div className="flex items-center gap-1.5 bg-navy-950/80 px-2 py-1 rounded-lg border border-white/5 text-[11px] font-mono">
               <button
                 onClick={() => setActiveTab("code")}
+                aria-pressed={activeTab === "code"}
+                aria-label="View architecture code"
                 className={`px-2.5 py-0.5 rounded transition-all cursor-pointer flex items-center gap-1.5 ${
                   activeTab === "code"
                     ? "bg-brand-500/20 text-brand-300 font-bold border border-brand-500/30"
@@ -79,6 +83,8 @@ export default function Hero3DCanvas() {
               </button>
               <button
                 onClick={() => setActiveTab("telemetry")}
+                aria-pressed={activeTab === "telemetry"}
+                aria-label="View live telemetry log"
                 className={`px-2.5 py-0.5 rounded transition-all cursor-pointer flex items-center gap-1.5 ${
                   activeTab === "telemetry"
                     ? "bg-brand-500/20 text-brand-300 font-bold border border-brand-500/30"

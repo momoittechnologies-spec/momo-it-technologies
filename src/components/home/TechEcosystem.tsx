@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import {
   Code2,
   Server,
@@ -12,6 +13,7 @@ import {
   CheckCircle2,
   Cpu,
   Layers,
+  ArrowRight,
 } from "lucide-react";
 
 const techCategories = [
@@ -20,6 +22,7 @@ const techCategories = [
     category: "Frontend & Web Architecture",
     icon: Code2,
     color: "from-brand-500 to-emerald-500",
+    href: "/services/web-development",
     description: "Next-generation reactive architectures engineered for sub-second TTFB, edge caching, and perfect 95+ Core Web Vitals.",
     technologies: [
       { name: "Next.js 15 App Router", role: "SSR & Static Edge Caching", badge: "Edge Ready" },
@@ -33,6 +36,7 @@ const techCategories = [
     category: "Enterprise Backend & APIs",
     icon: Server,
     color: "from-blue-500 to-indigo-600",
+    href: "/services/software-development",
     description: "High-concurrency microservices, ACID transactional databases, and resilient REST & GraphQL APIs.",
     technologies: [
       { name: "Java 21 & Spring Boot 3", role: "High-Concurrency Microservices", badge: "Enterprise" },
@@ -46,6 +50,7 @@ const techCategories = [
     category: "Mobile & Quality Automation",
     icon: Smartphone,
     color: "from-purple-500 to-pink-600",
+    href: "/services/mobile-app-development",
     description: "Cross-platform iOS and Android apps alongside automated continuous regression suites eliminating regression bugs.",
     technologies: [
       { name: "Google Flutter & Dart", role: "Cross-Platform iOS & Android", badge: "60 FPS Native" },
@@ -59,6 +64,7 @@ const techCategories = [
     category: "AI & Business Operations",
     icon: Bot,
     color: "from-emerald-500 to-teal-600",
+    href: "/services/ai-automation",
     description: "Frontier multimodal LLM agents, LangGraph orchestration, real-time WhatsApp bots, and hardware thermal printing.",
     technologies: [
       { name: "Google Gemini API & OpenAI", role: "Frontier Multimodal LLMs", badge: "Frontier AI" },
@@ -166,10 +172,16 @@ export default function TechEcosystem() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400 font-mono">
-                <span>Production Verified</span>
+              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-[11px] font-mono">
+                <Link
+                  href={cat.href}
+                  className="text-brand-700 hover:text-brand-800 font-bold font-sans flex items-center gap-1 group/link transition-colors"
+                >
+                  <span>Explore {cat.category.split(" ")[0]} Pillar</span>
+                  <ArrowRight className="w-3 h-3 text-brand-600 group-hover/link:translate-x-0.5 transition-transform" />
+                </Link>
                 <span className="text-emerald-600 font-bold flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> 100% CI/CD Integrated
+                  <CheckCircle2 className="w-3.5 h-3.5" /> 100% CI/CD Verified
                 </span>
               </div>
             </div>

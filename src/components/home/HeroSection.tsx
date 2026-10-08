@@ -91,7 +91,7 @@ export default function HeroSection() {
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8">
               <Link
-                href="/services/software-dev"
+                href="/services/web-development"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/25 hover:shadow-xl hover:shadow-brand-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
               >
                 <span>Build Web / SaaS Product</span>
@@ -152,7 +152,10 @@ export default function HeroSection() {
 
         {/* 4 Core Pillars Cards - 3D Perspective Lift & Glow */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-16 text-left">
-          <div className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group">
+          <Link
+            href="/services/web-development"
+            className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group block"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-brand-500/10 rounded-full blur-xl pointer-events-none group-hover:bg-brand-500/20 transition-all" />
             <div className="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all">
               <Code2 className="w-5 h-5" />
@@ -164,9 +167,12 @@ export default function HeroSection() {
             <p className="text-xs text-gray-600 leading-relaxed">
               Our core service: Next.js 15, React 19, Supabase &amp; Spring Boot apps built for speed and scale.
             </p>
-          </div>
+          </Link>
 
-          <div className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group">
+          <Link
+            href="/services/qa-automation"
+            className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group block"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl pointer-events-none group-hover:bg-emerald-500/20 transition-all" />
             <div className="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all">
               <TestTube2 className="w-5 h-5" />
@@ -178,9 +184,12 @@ export default function HeroSection() {
             <p className="text-xs text-gray-600 leading-relaxed">
               Selenium, Playwright, REST Assured, and CI/CD automated test suites with zero flakiness.
             </p>
-          </div>
+          </Link>
 
-          <div className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group">
+          <Link
+            href="/services/mobile-app-development"
+            className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group block"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-xl pointer-events-none group-hover:bg-purple-500/20 transition-all" />
             <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all">
               <Smartphone className="w-5 h-5" />
@@ -192,9 +201,12 @@ export default function HeroSection() {
             <p className="text-xs text-gray-600 leading-relaxed">
               Cross-platform Flutter iOS &amp; Android native apps with cloud sync, offline support &amp; notifications.
             </p>
-          </div>
+          </Link>
 
-          <div className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group">
+          <Link
+            href="/services/business-software"
+            className="p-6 rounded-2xl bg-white/95 border border-gray-200/80 shadow-3d-card card-3d-lift relative overflow-hidden group block"
+          >
             <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-xl pointer-events-none group-hover:bg-amber-500/20 transition-all" />
             <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all">
               <Layers className="w-5 h-5" />
@@ -206,7 +218,7 @@ export default function HeroSection() {
             <p className="text-xs text-gray-600 leading-relaxed">
               Custom billing, inventory, POS, and automated WhatsApp receipts tailored to local businesses.
             </p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
