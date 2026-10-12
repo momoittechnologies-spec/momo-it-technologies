@@ -161,7 +161,7 @@ Billing WhatsApp: ${vendorConfig.whatsappPhone}`;
                   <option value="PLATFORM_FEE">Platform Fee / Commission Settlement (₹5/order)</option>
                   <option value="TECH_FLOAT">Prepaid Tech Float Credit (Rapido Model)</option>
                   <option value="SUBSCRIPTION">Monthly Cloud Infrastructure &amp; Maintenance</option>
-                  <option value="SETUP">Onboarding &amp; Software Engineering Retainer</option>
+                  <option value="SETUP">Software Project Milestone / Initial Architecture</option>
                 </select>
               </div>
 

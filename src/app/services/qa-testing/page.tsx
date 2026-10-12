@@ -115,10 +115,10 @@ export default function QaTestingServicePage() {
               The MOMO Advantage
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-3">
-              Why Global &amp; Indian Startups Choose Our QA Pods
+              Why Global &amp; Indian Startups Choose Our QA Frameworks
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-              We combine elite technical depth with rural operational efficiency: you get world-class automation engineers at a fraction of metro agency costs.
+              We combine elite technical depth with rigorous engineering discipline: you get world-class test automation frameworks and zero-defect software quality.
             </p>
           </div>
 
@@ -132,13 +132,13 @@ export default function QaTestingServicePage() {
             <div>
               <div className="text-2xl font-extrabold text-brand-400">48 Hours</div>
               <div className="text-xs text-gray-300 font-medium mt-1">
-                Fast onboarding of dedicated QA pods
+                Rapid automated test framework setup
               </div>
             </div>
             <div>
-              <div className="text-2xl font-extrabold text-brand-400">Zero Lock-In</div>
+              <div className="text-2xl font-extrabold text-brand-400">Zero Defect</div>
               <div className="text-xs text-gray-300 font-medium mt-1">
-                Flexible monthly retainers with 1-week trial
+                CI/CD quality gates on every GitHub pull request
               </div>
             </div>
           </div>

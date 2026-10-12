@@ -25,7 +25,7 @@ export const homeFaqs = [
   },
   {
     q: "How does MOMO Academy relate to MOMO IT Technologies?",
-    a: "MOMO Academy is our specialized internal talent incubation lab. We train aspiring software engineers and SDETs in Core Java, Selenium Automation, and Full-Stack development. Top learners work on real client codebases, giving our software development clients access to vetted, highly trained talent pods.",
+    a: "MOMO Academy is our specialized internal talent incubation lab. We train aspiring software engineers and SDETs in Core Java, Selenium Automation, and Full-Stack development under the direct mentorship of Mohan Damerla, ensuring our engineering teams build software with rigorous testing standards and modern architectures.",
   },
   {
     q: "How can I get an accurate cost estimate for my project?",

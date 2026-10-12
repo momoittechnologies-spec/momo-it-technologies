@@ -122,11 +122,11 @@ export default function DualVerticals() {
               <div className="space-y-3 mb-6 bg-gray-50/80 p-4 sm:p-5 rounded-2xl border border-gray-200/70">
                 <div className="flex items-start gap-2.5 text-xs text-navy-950 font-medium">
                   <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0 mt-0.5" />
-                  <span><strong>Dedicated Developer Pods:</strong> Pre-vetted engineers ready to staff client projects quickly.</span>
+                  <span><strong>Agile Engineering Delivery:</strong> Full-lifecycle product pods driving feature builds and sprint milestones.</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-navy-950 font-medium">
                   <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0 mt-0.5" />
-                  <span><strong>High Code Quality:</strong> Every developer is grounded in clean architecture, CI/CD, and automated testing.</span>
+                  <span><strong>High Code Quality:</strong> Every feature is grounded in clean architecture, CI/CD, and automated testing.</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-navy-950 font-medium">
                   <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0 mt-0.5" />

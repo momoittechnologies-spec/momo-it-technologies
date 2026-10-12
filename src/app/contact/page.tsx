@@ -56,7 +56,7 @@ export default function ContactPage() {
             Let&apos;s Discuss Your Project or Career Goals
           </h1>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Whether you are looking to hire a dedicated QA pod, build custom software, or enroll in MOMO Academy—we respond within hours.
+            Whether you are looking to build custom software, engineer automated QA test suites, or enroll in MOMO Academy—we respond within hours.
           </p>
         </div>
 
@@ -276,8 +276,8 @@ export default function ContactPage() {
                       <option value="Business Management ERP / Billing">
                         Business Management ERP / Billing System
                       </option>
-                      <option value="Hire Dedicated Developers">
-                        Hire Dedicated Developers (Monthly Retainer)
+                      <option value="Custom AI & WhatsApp Automation">
+                        Custom AI &amp; WhatsApp Automation Workflows
                       </option>
                     </optgroup>
                     <optgroup label="MOMO Academy Courses">

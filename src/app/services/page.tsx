@@ -124,7 +124,7 @@ export default function ServicesIndexPage() {
             End-to-End Technology &amp; Quality Engineering
           </h1>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            From test automation and custom web platforms to dedicated developer staffing.
+            From test automation and custom web platforms to cloud ERPs and mobile applications.
           </p>
         </div>
 

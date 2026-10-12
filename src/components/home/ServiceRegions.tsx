@@ -20,7 +20,7 @@ const regions = [
   {
     name: "Hyderabad & Bengaluru Technology Hubs",
     badge: "Cloud & Remote Delivery",
-    desc: "Delivering high-concurrency cloud microservices, SaaS platforms, and QA automation outsourcing pods for startups and tech enterprises.",
+    desc: "Delivering high-concurrency cloud microservices, SaaS platforms, and automated QA testing frameworks for startups and tech enterprises.",
     link: "/services/web-development",
     linkText: "Explore SaaS & Web Architecture",
   },

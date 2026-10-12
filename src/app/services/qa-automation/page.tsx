@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "QA Automation & Software Testing Services | MOMO IT Technologies",
   description:
-    "MOMO IT Technologies provides enterprise QA automation testing pods, SDET outsourcing, Selenium 4, Playwright, API verification, and CI/CD testing frameworks.",
+    "MOMO IT Technologies provides enterprise QA automation testing services, test framework engineering, Selenium 4, Playwright, API verification, and CI/CD testing pipelines.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/services/qa-automation",
   },
@@ -60,8 +60,8 @@ const qaServices = [
   },
   {
     icon: CheckCircle2,
-    title: "Dedicated SDET Pod Outsourcing",
-    desc: "Augment your software development squads with specialized QA automation engineers who write production-grade test code alongside your developers.",
+    title: "End-to-End Test Automation Architecture",
+    desc: "Custom, production-grade test automation frameworks tailored to your tech stack, integrated directly into your CI/CD deployment pipelines.",
   },
 ];
 
@@ -75,8 +75,8 @@ const faqs = [
     a: "We engineer resilient frameworks using Selenium WebDriver 4 with Java, Playwright with TypeScript, TestNG, Cucumber BDD, RestAssured for APIs, and Appium for mobile applications.",
   },
   {
-    q: "How does engagement with a QA automation pod work?",
-    a: "You can hire dedicated SDET pods on a monthly sprint basis or engage us for a fixed-price project audit where we deliver a complete, turn-key automated test suite for your existing application.",
+    q: "How does engagement for QA test automation work?",
+    a: "We engage on a dedicated project-sprint basis or through fixed-price framework milestones, delivering a complete, turn-key automated test suite and CI/CD pipeline integrated directly into your repositories.",
   },
 ];
 
@@ -169,7 +169,7 @@ export default function QaAutomationPage() {
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-navy-950 tracking-tight leading-[1.15] mb-6">
             Enterprise QA Automation &amp;{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-700">
-              SDET Pod Outsourcing
+              Software Quality Engineering
             </span>
           </h1>
           <p className="text-base sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">

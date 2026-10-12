@@ -69,8 +69,8 @@ const qaServices = [
   },
   {
     icon: ShieldCheck,
-    title: "Dedicated SDET Pods on Demand",
-    desc: "Senior test architects and automation engineers seamlessly integrated into your sprint ceremonies to achieve 90%+ regression test coverage.",
+    title: "End-to-End Test Suite Delivery",
+    desc: "Custom test automation framework architecture and comprehensive regression suites designed to achieve 90%+ test coverage with zero defect leakage.",
   },
 ];
 
@@ -93,7 +93,7 @@ const processSteps = [
 
 const faqs = [
   {
-    q: "Why should a software company hire MOMO IT Technologies for QA automation?",
+    q: "Why should a software company choose MOMO IT Technologies for QA automation?",
     a: "We are led by senior SDET architects with extensive MNC delivery experience. We build maintainable, enterprise-grade hybrid frameworks that achieve 90%+ automation coverage, slashing regression cycles from days to minutes.",
   },
   {
@@ -177,7 +177,7 @@ export default function QaAutomationKadapaPage() {
                 QA &amp; Automation Testing Company in Kadapa
               </h1>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                Led by veteran SDET architects, MOMO IT TECHNOLOGIES delivers high-coverage test automation frameworks, REST API validation, and dedicated QA pods that guarantee zero-defect production releases.
+                Led by veteran SDET architects, MOMO IT TECHNOLOGIES delivers high-coverage test automation frameworks, REST API validation, and automated testing pipelines that guarantee zero-defect production releases.
               </p>
             </div>
 
@@ -186,7 +186,7 @@ export default function QaAutomationKadapaPage() {
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all"
               >
-                <span>Hire QA Automation Pod</span>
+                <span>Start QA Automation Project</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
