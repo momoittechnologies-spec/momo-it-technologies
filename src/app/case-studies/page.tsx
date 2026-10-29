@@ -15,24 +15,41 @@ import {
   Smartphone,
   Utensils,
   Car,
+  Wrench,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Client Case Studies & Live Deployments | MOMO IT Technologies",
   description:
-    "Explore real-world software engineering case studies from MOMO IT Technologies: cloud kitchen enterprise PWAs, thermal printing engines, and fleet booking automation built for real clients.",
+    "Explore real-world software engineering case studies from MOMO IT Technologies: multi-city appliance service platforms, cloud kitchen enterprise PWAs, and fleet booking automation built for real clients.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/case-studies",
   },
   openGraph: {
     title: "Client Case Studies & Live Deployments | MOMO IT Technologies",
     description:
-      "Real-world enterprise systems engineered by MOMO IT Technologies in Kadapa, AP. Featuring Vijaya's Yummy Food Cloud Kitchen and MANA Tours & Travels.",
+      "Real-world enterprise systems engineered by MOMO IT Technologies in Kadapa, AP. Featuring AS REFRIGERATIONS, Vijaya's Yummy Food Cloud Kitchen, and MANA Tours & Travels.",
     url: "https://www.momoittechnologies.com/case-studies",
   },
 };
 
 const caseStudies = [
+  {
+    slug: "as-refrigerations",
+    client: "AS REFRIGERATIONS",
+    category: "Home Services & Field Ops Tech",
+    tagline: "Multi-city dual-hub appliance service booking portal, dynamic 0% fee NPCI UPI QR payments, and dual-app mobile shells.",
+    location: "Kadapa HQ & Bangalore Hub",
+    status: "Live Production System",
+    impact: [
+      "Zero payment gateway commissions via direct NPCI dynamic UPI QR generation",
+      "Seamless multi-city dual branch switching covering 19 Kadapa wards & 25 Bangalore localities",
+      "Zero-SMS authentication eliminating recurring OTP gateway costs with 4-digit PIN access",
+      "Urban Company-standard mobile native app shells with 6-stage doorstep service tracking",
+    ],
+    techStack: ["React 19", "Vite", "TypeScript", "Tailwind CSS v4", "Capacitor Mobile", "NPCI UPI Engine", "Firestore"],
+    href: "/case-studies/as-refrigerations",
+  },
   {
     slug: "vijayas-yummy-food",
     client: "Vijaya's Yummy Food",

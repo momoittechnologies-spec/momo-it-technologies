@@ -526,6 +526,13 @@ export default function Navbar() {
                 {caseStudiesDropdownOpen && (
                   <div className="absolute top-full left-0 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 space-y-1 transition-all duration-200 animate-in fade-in slide-in-from-top-2">
                     <Link
+                href="/case-studies/as-refrigerations"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                ❄️ AS REFRIGERATIONS (Multi-City Service &amp; Dynamic UPI)
+              </Link>
+
+                    <Link
                       href="/case-studies/vijayas-yummy-food"
                       className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
                     >
@@ -781,6 +788,13 @@ export default function Navbar() {
 
             {/* Case Studies & Other links */}
             <div className="space-y-1 pt-1">
+              <Link
+                href="/case-studies/as-refrigerations"
+                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
+              >
+                ❄️ AS REFRIGERATIONS (Multi-City Service &amp; Dynamic UPI)
+              </Link>
+
               <Link
                 href="/case-studies/vijayas-yummy-food"
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"

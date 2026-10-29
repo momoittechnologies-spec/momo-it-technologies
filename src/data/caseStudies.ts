@@ -23,6 +23,47 @@ export interface CaseStudy {
 
 export const caseStudiesData: CaseStudy[] = [
   {
+    id: "as-refrigerations",
+    slug: "as-refrigerations",
+    title: "AS REFRIGERATIONS — Multi-City Appliance Service & Dispatch Platform",
+    subtitle: "Dual-hub field operations platform across Kadapa Flagship HQ & Bangalore East Hub with 0% gateway commission NPCI UPI QR billing.",
+    client: "AS REFRIGERATIONS (Kadapa & Bengaluru)",
+    category: "Home Services & Field Ops Tech",
+    industry: "Appliance Servicing & Field Logistics",
+    url: "https://asrefrigerations.com",
+    rating: "5.0 ★",
+    ratingSource: "Verified Client Deployment",
+    description:
+      "AS REFRIGERATIONS is a premier multi-city appliance repair and HVAC servicing enterprise operating across Kadapa (Flagship HQ) and Bangalore East (Branch Hub). MOMO IT TECHNOLOGIES engineered their complete digital ecosystem—including a multi-city customer booking engine, zero-commission dynamic NPCI UPI QR payments, Urban Company-grade mobile app shells (Customer & Technician), and Sameer-First Priority 1 automated job dispatch.",
+    challenge:
+      "Managing cross-city field technicians across 19 Kadapa municipal wards and 25 Bangalore localities was hindered by third-party aggregator commissions (20-30%), recurring SMS OTP costs, and manual job dispatch via phone calls.",
+    solution:
+      "We architected a high-performance, mobile-first platform using React 19, Vite, TypeScript, and Tailwind CSS v4 with Capacitor native app shells. The system features a 2-step doorstep pricing workflow with ₹0 advance deposit, dynamic on-the-fly NPCI UPI QR code generation eliminating gateway cuts, a zero-SMS 4-digit PIN authentication model, and automated 5-star Google Review funnels via ReviewSmart AI.",
+    results: [
+      "0% payment gateway fees via on-the-fly NPCI UPI QR generation directly into client account",
+      "Multi-city dual branch switching covering 19 Kadapa wards & 25 Bangalore localities",
+      "Zero-SMS recurring authentication costs with secure 4-digit PIN verification",
+      "Urban Company-style dual mobile app shells for customers and field technicians",
+      "Automated 5-star Google review funnel with ReviewSmart AI integration",
+    ],
+    techStack: ["React 19", "Vite", "TypeScript", "Tailwind CSS v4", "Capacitor Mobile", "NPCI UPI Engine", "Firestore"],
+    highlights: [
+      { label: "Client Status", value: "Fully Delivered & Live" },
+      { label: "Coverage", value: "Kadapa & Bangalore" },
+      { label: "Payment Model", value: "0% Commission NPCI UPI" },
+      { label: "App Architecture", value: "Customer & Partner Shells" },
+    ],
+    features: [
+      "Multi-City Dual Branch Selector (Kadapa 19 Wards & Bangalore 25 Localities)",
+      "Two-Step Doorstep Pricing Workflow with ₹0 Advance Booking",
+      "Dynamic NPCI UPI QR Code Generation for 0% Gateway Commissions",
+      "Sameer-First Priority 1 Audio Dispatch & Overflow Technician Routing",
+      "Zero-SMS 4-Digit Local Storage PIN Authentication",
+      "Urban Company UX Dual Native App Shells (Customer Stepper & Partner GPS Navigation)",
+      "Automated 5-Star ReviewSmart AI Google Review Gateway",
+    ],
+  },
+  {
     id: "vijayas-yummy-food",
     slug: "vijayas-yummy-food",
     title: "Vijaya's Yummy Food — Direct Food Ordering & Cloud Kitchen PWA",

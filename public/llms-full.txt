@@ -121,13 +121,13 @@ MOMO Academy operates as Kadapa's premier hands-on IT training institute, bridgi
 - **Solution:** Direct ordering Progressive Web App (PWA) with Kitchen Display System (KDS) and ESC/POS thermal printing.
 - **Outcome:** ₹30,000+/month saved in commission fees; order-to-kitchen transmission time cut to under 2 seconds.
 
-### 2. MANA Tours & Travels (Kadapa, Andhra Pradesh)
+### 3. MANA Tours & Travels (Kadapa, Andhra Pradesh)
 - **Industry:** Fleet Mobility & Outstation Taxi Booking
 - **Problem:** Manual phone bookings caused missed nocturnal customer requests and dispatch errors.
 - **Solution:** Online booking portal with dynamic distance fare calculation and automated WhatsApp confirmations.
 - **Outcome:** 3x growth in direct online reservations; 5.0★ rating across 50+ verified customer reviews.
 
-### 3. MomoPe Retail & Merchant Ecosystem
+### 4. MomoPe Retail & Merchant Ecosystem
 - **Industry:** Regional FinTech & Digital Loyalty
 - **Solution:** Proprietary micro-merchant payments and loyalty ledger application empowering Rayalaseema small retail stores.
 

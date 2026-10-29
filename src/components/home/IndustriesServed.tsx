@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import {
+  Wrench,
   Utensils,
   Car,
   ShoppingBag,
@@ -11,6 +12,13 @@ import {
 } from "lucide-react";
 
 const industries = [
+  {
+    icon: Wrench,
+    title: "Field Services & HVAC",
+    desc: "Multi-city technician dispatch, 0% commission dynamic NPCI UPI QR payments, and dual native app shells.",
+    example: "AS REFRIGERATIONS (Kadapa & Bangalore)",
+    href: "/case-studies/as-refrigerations",
+  },
   {
     icon: Utensils,
     title: "Dining & Cloud Kitchens",
@@ -46,13 +54,6 @@ const industries = [
     example: "MOMO Academy & Local Institutes",
     href: "/academy",
   },
-  {
-    icon: Building2,
-    title: "Real Estate & Construction",
-    desc: "Property listing portals, 3D interactive layout walkthroughs, lead qualification funnels, and CRM pipeline tracking.",
-    example: "Regional Property Portals",
-    href: "/services/web-development",
-  },
 ];
 
 export default function IndustriesServed() {
@@ -74,7 +75,7 @@ export default function IndustriesServed() {
         {/* 3D Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((ind, i) => {
-            const isFeatured = i === 0 || i === 1;
+            const isFeatured = i === 0 || i === 1 || i === 2;
             return (
               <div
                 key={i}
@@ -106,14 +107,14 @@ export default function IndustriesServed() {
                 </div>
 
                 <div className="pt-4 border-t border-gray-100 flex items-center justify-between relative z-10">
-                  <span className="text-[11px] font-semibold text-gray-400 font-mono">
-                    System: <span className="text-navy-950 font-bold">{ind.example}</span>
+                  <span className="text-[11px] font-bold text-gray-500 font-mono">
+                    {ind.example}
                   </span>
                   <Link
                     href={ind.href}
-                    className="text-xs font-bold text-brand-700 hover:text-brand-800 inline-flex items-center gap-1 group-hover:translate-x-1 transition-all"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-brand-600 hover:text-brand-800 transition-colors"
                   >
-                    <span>Explore</span>
+                    <span>{isFeatured ? "View Case Study" : "Explore"}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
