@@ -13,7 +13,6 @@ import {
   Cpu,
   Database,
   Smartphone,
-  Utensils,
   Car,
   Wrench,
 } from "lucide-react";
@@ -21,14 +20,14 @@ import {
 export const metadata: Metadata = {
   title: "Client Case Studies & Live Deployments | MOMO IT Technologies",
   description:
-    "Explore real-world software engineering case studies from MOMO IT Technologies: multi-city appliance service platforms, cloud kitchen enterprise PWAs, and fleet booking automation built for real clients.",
+    "Explore real-world software engineering case studies from MOMO IT Technologies: multi-city appliance service platforms and fleet booking automation built for real clients.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/case-studies",
   },
   openGraph: {
     title: "Client Case Studies & Live Deployments | MOMO IT Technologies",
     description:
-      "Real-world enterprise systems engineered by MOMO IT Technologies in Kadapa, AP. Featuring AS REFRIGERATIONS, Vijaya's Yummy Food Cloud Kitchen, and MANA Tours & Travels.",
+      "Real-world enterprise systems engineered by MOMO IT Technologies in Kadapa, AP. Featuring AS REFRIGERATIONS and MANA Tours & Travels.",
     url: "https://www.momoittechnologies.com/case-studies",
   },
 };
@@ -49,22 +48,6 @@ const caseStudies = [
     ],
     techStack: ["React 19", "Vite", "TypeScript", "Tailwind CSS v4", "Capacitor Mobile", "NPCI UPI Engine", "Firestore"],
     href: "/case-studies/as-refrigerations",
-  },
-  {
-    slug: "vijayas-yummy-food",
-    client: "Vijaya's Yummy Food",
-    category: "Cloud Kitchen & Restaurant Tech",
-    tagline: "Direct ordering PWA, multi-terminal Kitchen Display System (KDS), thermal printing engine & automated UPI billing.",
-    location: "Kadapa, Andhra Pradesh",
-    status: "Live Production System",
-    impact: [
-      "Zero 30% aggregator commission on direct customer orders",
-      "Instant 2-second order transmission to kitchen display terminal",
-      "Automated monthly UPI billing cron with dynamic QR codes",
-      "Thermal printer ESC/POS integration for instant billing receipts",
-    ],
-    techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "WebSockets / Realtime", "ESC/POS Thermal Engine", "UPI Autopay Cron"],
-    href: "/case-studies/vijayas-yummy-food",
   },
   {
     slug: "mana-tours",

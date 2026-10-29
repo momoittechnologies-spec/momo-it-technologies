@@ -4,52 +4,39 @@ import React, { useState } from "react";
 import { Check, Copy, Terminal, Play, CheckCircle2 } from "lucide-react";
 
 export default function HeroCodeTerminal() {
-  const [activeTab, setActiveTab] = useState<"food" | "qa" | "mobility">("food");
+  const [activeTab, setActiveTab] = useState<"fieldOps" | "qa" | "mobility">("fieldOps");
   const [copied, setCopied] = useState(false);
 
   const snippets = {
-    food: {
-      file: "OrderCheckout.ts",
+    fieldOps: {
+      file: "DynamicUpiQr.ts",
       lang: "typescript",
-      code: `// Vijaya's Yummy Food — Realtime Supabase Order Pipeline
-export async function createDirectOrder(cart: CartItem[], customer: Customer) {
-  const { data: order, error } = await supabase
-    .from('orders')
-    .insert({
-      customer_phone: customer.phone,
-      delivery_address: customer.address,
-      items: cart,
-      status: 'RECEIVED',
-      commission_saved: calculateSavings(cart)
-    })
-    .select()
-    .single();
-
-  // Instant WhatsApp Notification to Kitchen Dispatch
-  await notifyKitchenDispatch(order.id);
-  return { success: true, orderId: order.id };
+      code: `// AS REFRIGERATIONS — Zero-Commission NPCI Dynamic UPI Engine
+export function generateDoorstepUpiQr(invoice: Invoice, merchantVpa: string) {
+  const payload = \`upi://pay?pa=\${merchantVpa}&pn=AS+REFRIGERATIONS&am=\${invoice.total}&cu=INR\`;
+  return generateQrSvg(payload);
 }`,
-      badge: "FoodTech PWA Logic",
+      badge: "Field Ops & UPI Logic",
     },
     qa: {
       file: "SeleniumTest.java",
       lang: "java",
       code: `@Test(priority = 1)
-public void testFoodOrderCheckoutFlow() {
+public void testDoorstepBookingFlow() {
     WebDriver driver = new ChromeDriver();
-    OrderPortal portal = new OrderPortal(driver);
+    ServicePortal portal = new ServicePortal(driver);
     
-    // 1. Select Authentic Rayalaseema Biryani
-    portal.addToCart("Rayalaseema Chicken Biryani", 2);
+    // 1. Select AC Deep Jet Servicing in Kadapa
+    portal.selectService("AC Jet Cleaning", "Kadapa-Urban");
     
-    // 2. Automated Delivery Radius Verification
-    boolean inRadius = portal.verifyDeliveryZone("560067");
-    Assert.assertTrue(inRadius, "Delivery location verified within 5km");
+    // 2. Automated Ward & Local Pin Verification
+    boolean inRadius = portal.verifyWard("516001");
+    Assert.assertTrue(inRadius, "Location verified in 19 Kadapa wards");
     
-    // 3. Automated Assertion for 0% Flakiness
-    portal.proceedToCheckout("+91 86398 31132");
-    Assert.assertEquals(portal.getOrderStatus(), "RECEIVED");
-    System.out.println("✓ 100% Automated QA Test Passed in 1.2s");
+    // 3. Automated Assertion for 0% Commission UPI Flow
+    portal.proceedToBooking("+91 86398 31132");
+    Assert.assertEquals(portal.getStatus(), "CONFIRMED");
+    System.out.println("✓ 100% Automated QA Test Passed in 1.1s");
 }`,
       badge: "Automation Test Suite",
     },
@@ -59,17 +46,17 @@ public void testFoodOrderCheckoutFlow() {
       code: `export async function dispatchManaToursTrip(bookingId: string) {
   const trip = await db.trips.findUnique({ where: { id: bookingId } });
   
-  // Trigger WhatsApp dispatch confirmation
-  await dispatchWhatsAppNotification({
-    passengerPhone: trip.customerPhone,
-    pickupLocation: trip.pickupArea, // Kadapa Seven Roads
-    destination: "Tirupati Sacred Darshan",
-    driverAssigned: "Pavan (+91 99083 00718)"
+  // 1. Direct WhatsApp Dispatch to Driver & Passenger
+  await sendWhatsAppAlert({
+    driverPhone: trip.driver.phone,
+    passengerPhone: trip.customer.phone,
+    route: \`\${trip.origin} → \${trip.destination}\`,
+    fare: trip.totalAmount
   });
   
-  return { status: "DISPATCHED", eta: "12 mins" };
+  return { status: "DISPATCHED", etaMinutes: 15 };
 }`,
-      badge: "Mana Tours Mobility Engine",
+      badge: "Mobility Dispatch Logic",
     },
   };
 
@@ -82,20 +69,20 @@ public void testFoodOrderCheckoutFlow() {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto rounded-2xl bg-navy-950/95 border border-navy-700/80 shadow-2xl shadow-navy-950/50 backdrop-blur-xl overflow-hidden text-left text-xs font-mono">
-      {/* Terminal Title Bar */}
+    <div className="rounded-2xl border border-navy-800 bg-navy-950/90 shadow-2xl overflow-hidden backdrop-blur-md">
+      {/* Mac-like Header */}
       <div className="flex items-center justify-between px-4 py-3 bg-navy-900/90 border-b border-navy-800">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500/80" />
-          <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-          <div className="w-3 h-3 rounded-full bg-green-500/80" />
-          <span className="ml-2 text-gray-400 text-[11px] font-medium hidden sm:inline">
-            momo-engineering-lab ~/production
+          <div className="w-3 h-3 rounded-full bg-amber-500/80" />
+          <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+          <span className="text-xs text-gray-400 font-mono ml-2 font-medium">
+            {current.file}
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5">
-          <span className="text-[10px] text-brand-400 font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-brand-500/10 border border-brand-500/20">
+        <div className="flex items-center gap-3">
+          <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-500/20 text-brand-300 border border-brand-500/30">
             {current.badge}
           </span>
           <button
@@ -111,15 +98,15 @@ public void testFoodOrderCheckoutFlow() {
       {/* Tabs */}
       <div className="flex border-b border-navy-800 bg-navy-950/60 px-2 pt-2 gap-1 overflow-x-auto">
         <button
-          onClick={() => setActiveTab("food")}
+          onClick={() => setActiveTab("fieldOps")}
           className={`flex items-center gap-2 px-3 py-2 rounded-t-lg text-xs font-medium transition-all ${
-            activeTab === "food"
+            activeTab === "fieldOps"
               ? "bg-navy-900 text-brand-400 border-t-2 border-brand-500 shadow"
               : "text-gray-400 hover:text-gray-200 hover:bg-navy-900/40"
           }`}
         >
           <Play className="w-3 h-3" />
-          Vijaya&apos;s Food Order
+          AS Refrigeration UPI
         </button>
 
         <button

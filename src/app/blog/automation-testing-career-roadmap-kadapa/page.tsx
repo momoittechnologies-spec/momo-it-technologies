@@ -79,7 +79,7 @@ const roadmapPhases = [
       "JSON Schema validation & deserialization with Jackson / Gson",
       "Git version control, feature branches, Pull Requests & Code Reviews",
       "GitHub Actions & Jenkins automated CI/CD build triggers",
-      "Writing real test suites for commercial client projects (Vijaya's Yummy Food & MANA Tours)",
+      "Writing real test suites for commercial client projects (AS REFRIGERATIONS & MANA Tours)",
     ],
   },
 ];
@@ -332,7 +332,7 @@ export default function AutomationTestingRoadmapPage() {
                     <Briefcase className="w-4 h-4 text-emerald-600" />
                     <span>Live Client Project Internship</span>
                   </div>
-                  <div>Automate real commercial web applications like Vijaya&apos;s Yummy Food and earn a verified company experience letter.</div>
+                  <div>Automate real commercial web applications like AS REFRIGERATIONS and earn a verified company experience letter.</div>
                 </div>
               </div>
             </div>

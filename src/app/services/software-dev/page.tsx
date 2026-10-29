@@ -118,7 +118,7 @@ export default function SoftwareDevPage() {
               Real-World Reference
             </span>
             <h3 className="text-xl font-extrabold text-navy-950">
-              See how we built Vijaya&apos;s Yummy Food and MANA Tours &amp; Travels
+              See how we built AS REFRIGERATIONS and MANA Tours &amp; Travels
             </h3>
             <p className="text-xs sm:text-sm text-gray-600 mt-1">
               Explore our architecture decisions, performance benchmarks, and user experience workflows.
@@ -127,10 +127,10 @@ export default function SoftwareDevPage() {
 
           <div className="flex items-center gap-3 shrink-0">
             <Link
-              href="/case-studies/vijayas-yummy-food"
+              href="/case-studies/as-refrigerations"
               className="px-4 py-2.5 rounded-xl bg-gray-50 hover:bg-gray-100 border border-gray-200 text-xs font-bold text-navy-950 transition-colors"
             >
-              Vijaya&apos;s Food Details
+              AS REFRIGERATIONS Details
             </Link>
             <Link
               href="/case-studies/mana-tours"

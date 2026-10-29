@@ -410,7 +410,7 @@ export default function SaasDevelopmentKadapaPage() {
               </p>
             </div>
             <Link
-              href="/case-studies/vijayas-yummy-food"
+              href="/case-studies/as-refrigerations"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-xs sm:text-sm shrink-0 transition-all shadow-md"
             >
               <span>Read Case Study</span>

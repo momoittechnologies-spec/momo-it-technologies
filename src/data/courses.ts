@@ -111,7 +111,7 @@ export const coursesData: CourseItem[] = [
       "Kadapa's #1 premier test automation program designed by senior SDET architects. Master Core Java, Selenium WebDriver 4, TestNG, Cucumber BDD, REST Assured API validation, and Jenkins CI/CD. 100% practical, framework-building code delivered inside our Kadapa lab and interactive online batches.",
     highlights: [
       "🎓 Verified Course Completion Certificate with Credential ID",
-      "💼 Hands-on Internship on Live Client Projects (Vijaya's Yummy Food & Mana Tours)",
+      "💼 Hands-on Internship on Live Client Projects (AS REFRIGERATIONS & MANA Tours)",
       "Core Java Fundamentals & OOPs Architecture (Collections, Streams, Exceptions)",
       "Selenium 4 WebDriver, Dynamic Locators, Waits & Cross-Browser Grids",
       "TestNG & Cucumber BDD Hybrid Framework with ExtentReports",
@@ -296,7 +296,7 @@ export const coursesData: CourseItem[] = [
       {
         module: "Module 4: Commercial Capstone & App Store Publishing",
         topics: [
-          "Building a Live Delivery & Food Ordering App (Vijaya's Food model)",
+          "Building a Multi-City Doorstep Booking App (AS REFRIGERATIONS model)",
           "Payment Gateway Integration: UPI, Razorpay & Stripe In-App Billing",
           "App Performance Profiling, Memory Optimization & Battery Efficiency",
           "App Store & Google Play Store Assets, App Signing, and Release Deployments",

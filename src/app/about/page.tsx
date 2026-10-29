@@ -240,12 +240,7 @@ export default function AboutPage() {
               <li className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-light border border-gray-100">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-navy-950">Vijaya&apos;s Yummy Food Cloud PWA:</strong>
-                  <span className="text-sm text-gray-600 block mt-0.5">
-                    A multi-terminal online ordering and POS system that eliminated 30% aggregator marketplace commissions, integrated kitchen display systems (KDS), and automated Bluetooth thermal billing in Kadapa.
-                  </span>
-                </div>
-              </li>
+                  <strong className="text-navy-950">AS REFRIGERATIONS (www.asrefrigerations.com):</strong><span className="text-sm text-gray-600 block mt-0.5">A multi-city appliance service &amp; HVAC dispatch platform across Kadapa and Bangalore with zero-commission dynamic NPCI UPI QR payments and dual native app shells.</span></div></li>
               <li className="flex items-start gap-3 p-3.5 rounded-xl bg-surface-light border border-gray-100">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
                 <div>

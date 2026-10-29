@@ -374,14 +374,14 @@ export default function WebDevelopmentPage() {
               Verified Production Case Study
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight mt-4 mb-4">
-              Vijaya&apos;s Yummy Food: Custom PWA &amp; Real-Time POS Engine
+              AS REFRIGERATIONS: Multi-City Dual Hub &amp; Dynamic NPCI UPI Engine
             </h2>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
               We engineered a direct ordering web platform and thermal POS printing system that bypassed 30% third-party aggregator commissions and reduced order turnaround to under 2 seconds.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href="/case-studies/vijayas-yummy-food"
+                href="/case-studies/as-refrigerations"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-navy-950 font-bold text-xs sm:text-sm transition-all"
               >
                 <span>Read Full Case Study</span>

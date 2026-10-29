@@ -9,7 +9,7 @@
 ---
 
 ## 🎯 ABOUT THE PROGRAM
-MOMO Academy's curriculum is architected by senior test automation architects and full-stack software engineers. Unlike traditional institutes that teach dry slide decks, **100% of our training is live, hands-on code development** inside our Kadapa lab and interactive Google Meet sessions. Students build and test commercial systems modeled directly on live platforms (including Vijaya's Yummy Food and MANA Tours & Travels).
+MOMO Academy's curriculum is architected by senior test automation architects and full-stack software engineers. Unlike traditional institutes that teach dry slide decks, **100% of our training is live, hands-on code development** inside our Kadapa lab and interactive Google Meet sessions. Students build and test commercial systems modeled directly on live platforms (including AS REFRIGERATIONS and MANA Tours & Travels).
 
 ---
 
@@ -90,7 +90,7 @@ MOMO Academy's curriculum is architected by senior test automation architects an
 
 ## 🏆 CAPSTONE PROJECTS (COMMERCIAL GRADE)
 Every student delivers 2 live production capstones before graduation:
-1. **FoodTech Online Ordering & Delivery Platform (modeled on Vijaya's Yummy Food)**:
+1. **FoodTech Online Ordering & Delivery Platform (modeled on AS REFRIGERATIONS)**:
    - Full automated regression test suite covering Cart, Realtime Checkout, 5km Delivery Verification, and Supabase REST APIs.
 2. **Mobility & Cab Dispatch Web Portal (modeled on MANA Tours & Travels)**:
    - Dynamic booking flow automation, cross-browser validation, and automated WhatsApp alert verification.

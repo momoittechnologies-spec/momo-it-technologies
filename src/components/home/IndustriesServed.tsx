@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import {
   Wrench,
-  Utensils,
   Car,
+  Utensils,
   ShoppingBag,
   Building2,
   Stethoscope,
@@ -20,18 +20,18 @@ const industries = [
     href: "/case-studies/as-refrigerations",
   },
   {
-    icon: Utensils,
-    title: "Dining & Cloud Kitchens",
-    desc: "Direct online ordering PWAs, Kitchen Display Systems (KDS), and thermal POS printing bypassing 30% aggregator fees.",
-    example: "Vijaya's Yummy Food Kadapa",
-    href: "/case-studies/vijayas-yummy-food",
-  },
-  {
     icon: Car,
     title: "Logistics, Fleets & Travel",
     desc: "Automated booking portals, real-time driver dispatch, route calculators, and instant WhatsApp ticketing.",
     example: "MANA Tours & Travels",
     href: "/case-studies/mana-tours",
+  },
+  {
+    icon: Utensils,
+    title: "Dining & Cloud Kitchens",
+    desc: "Direct online ordering PWAs, Kitchen Display Systems (KDS), and thermal POS printing bypassing 30% aggregator fees.",
+    example: "Restaurant POS & Ordering Systems",
+    href: "/services/business-software",
   },
   {
     icon: ShoppingBag,
@@ -75,7 +75,7 @@ export default function IndustriesServed() {
         {/* 3D Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((ind, i) => {
-            const isFeatured = i === 0 || i === 1 || i === 2;
+            const isFeatured = i === 0 || i === 1;
             return (
               <div
                 key={i}

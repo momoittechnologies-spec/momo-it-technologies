@@ -97,7 +97,7 @@ const faqs = [
   },
   {
     q: "Will I get an opportunity to work on a live project?",
-    a: "Yes. Every student automates real web applications such as Vijaya's Yummy Food Cloud PWA and MANA Tours reservation portals. You receive a verified Live Project Internship certificate along with your course certificate.",
+    a: "Yes. Every student automates real web applications such as AS REFRIGERATIONS Multi-City Platform and MANA Tours reservation portals. You receive a verified Live Project Internship certificate along with your course certificate.",
   },
   {
     q: "Where is the classroom training conducted in Kadapa?",

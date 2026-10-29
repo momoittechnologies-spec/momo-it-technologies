@@ -152,7 +152,7 @@ public class LoginPage {
 Feature: Order Placement on FoodTech Portal
 
   Scenario Outline: Successful food ordering with valid phone
-    Given the user navigates to "https://vijayasfood.in"
+    Given the user navigates to "https://asrefrigerations.com"
     When the user selects item "<item_name>" and proceeds to checkout
     And enters WhatsApp number "<phone>"
     Then the order confirmation screen should display "<status>"

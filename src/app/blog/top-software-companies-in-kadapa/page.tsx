@@ -46,7 +46,7 @@ const companies = [
     specialization: "Custom Web & SaaS Engineering, Flutter Mobile Apps, QA Automation Pods, Custom ERP & POS, IT Career Academy",
     keyTech: "Next.js 15, React 19, TypeScript, Java 21, Spring Boot 3, Flutter, PostgreSQL, Selenium 4",
     highlights: [
-      "Engineered Vijaya's Yummy Food Cloud PWA (POS & thermal printing engine)",
+      "Engineered AS REFRIGERATIONS Multi-City Platform (dynamic NPCI UPI & dispatch)",
       "Engineered MANA Tours & Travels 5.0★ online fleet booking & AI voice system",
       "Premier MOMO Academy with verified student credentials and guaranteed live internships",
       "Full on-site physical engineering campus in Krishnapuram, Kadapa",
@@ -482,7 +482,7 @@ export default function TopSoftwareCompaniesKadapaPage() {
                   2. Proven Production Case Studies in the Region
                 </strong>
                 <p>
-                  Ask for live deployed systems built for real businesses. Inspect operational apps (e.g. Vijaya&apos;s Yummy Food Cloud POS or MANA Tours &amp; Travels booking portal) to verify that the team understands hardware integrations, database reliability, and sub-second performance.
+                  Ask for live deployed systems built for real businesses. Inspect operational apps (e.g. AS REFRIGERATIONS Platform or MANA Tours &amp; Travels booking portal) to verify that the team understands hardware integrations, database reliability, and sub-second performance.
                 </p>
               </div>
 

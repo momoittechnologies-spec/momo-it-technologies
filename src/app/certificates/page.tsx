@@ -235,7 +235,7 @@ export default function CertificatesPreviewPage() {
               </p>
 
               <p>
-                During this tenure, they were actively embedded into our client delivery engineering pod and contributed directly to our production commercial client system: <strong>Vijaya&apos;s Yummy Food (Cloud Kitchen Online Ordering &amp; Kitchen Display System PWA)</strong>.
+                During this tenure, they were actively embedded into our client delivery engineering pod and contributed directly to our production commercial client system: <strong>AS REFRIGERATIONS (Cloud Kitchen Online Ordering &amp; Kitchen Display System PWA)</strong>.
               </p>
 
               <div className="bg-slate-50 border-l-4 border-brand-600 p-4 rounded-r-xl my-4 text-xs space-y-2">

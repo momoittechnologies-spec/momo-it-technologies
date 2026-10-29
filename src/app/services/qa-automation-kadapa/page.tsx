@@ -295,13 +295,13 @@ export default function QaAutomationKadapaPage() {
           <div className="bg-gradient-to-r from-emerald-50 via-white to-brand-50 border border-gray-200/80 rounded-3xl p-8 sm:p-10 mb-14 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <div className="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-1">Live Automation in Production</div>
-              <h3 className="text-2xl font-extrabold text-navy-950">350+ Automated Test Cases for Vijaya&apos;s Yummy Food</h3>
+              <h3 className="text-2xl font-extrabold text-navy-950">350+ Automated Test Cases for AS REFRIGERATIONS</h3>
               <p className="text-sm text-gray-600 mt-2 max-w-xl">
                 We engineered an end-to-end regression test suite covering order state transitions, thermal ESC/POS print payload validations, and automated monthly UPI cron executions.
               </p>
             </div>
             <Link
-              href="/case-studies/vijayas-yummy-food"
+              href="/case-studies/as-refrigerations"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-xs sm:text-sm shrink-0 transition-all shadow-md"
             >
               <span>View Case Study</span>

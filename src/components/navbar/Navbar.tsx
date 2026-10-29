@@ -533,23 +533,6 @@ export default function Navbar() {
               </Link>
 
                     <Link
-                      href="/case-studies/vijayas-yummy-food"
-                      className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
-                    >
-                      <div className="w-9 h-9 rounded-lg bg-orange-100 text-orange-700 flex items-center justify-center shrink-0 font-bold text-sm">
-                        🍲
-                      </div>
-                      <div>
-                        <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-700">
-                          Vijaya&apos;s Yummy Food
-                        </div>
-                        <span className="text-xs text-gray-500 block">
-                          FoodTech &amp; Cloud Kitchen PWA
-                        </span>
-                      </div>
-                    </Link>
-
-                    <Link
                       href="/case-studies/mana-tours"
                       className="flex items-start gap-3 p-3 rounded-xl hover:bg-brand-50/60 transition-colors group"
                     >
@@ -795,12 +778,6 @@ export default function Navbar() {
                 ❄️ AS REFRIGERATIONS (Multi-City Service &amp; Dynamic UPI)
               </Link>
 
-              <Link
-                href="/case-studies/vijayas-yummy-food"
-                className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"
-              >
-                🍲 Vijaya&apos;s Yummy Food (Client PWA)
-              </Link>
               <Link
                 href="/case-studies/mana-tours"
                 className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-brand-600 rounded-lg hover:bg-gray-50"

@@ -307,7 +307,7 @@ const KEYWORD_DATABASE: KeywordItem[] = [
   {
     id: "k-27",
     query: "restaurant billing software with qr ordering kadapa",
-    targetUrl: "/case-studies/vijayas-yummy-food",
+    targetUrl: "/case-studies/as-refrigerations",
     tier: "Long-Tail",
     intent: "Commercial",
     modifier: "Kadapa",

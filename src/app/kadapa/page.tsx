@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     q: "Does MOMO IT Technologies develop custom software for local Kadapa businesses?",
-    a: "Yes. We design and engineer end-to-end custom software, billing systems, ecommerce storefronts, and cloud PWAs. For example, we built and deployed the complete digital ordering, KDS, and billing engine for Vijaya's Yummy Food right here in Kadapa.",
+    a: "Yes. We design and engineer end-to-end custom software, billing systems, ecommerce storefronts, and cloud PWAs. For example, we built and deployed the complete digital ordering, KDS, and billing engine for AS REFRIGERATIONS right here in Kadapa.",
   },
   {
     q: "What training courses are conducted at MOMO Academy in Kadapa?",
@@ -358,12 +358,12 @@ export default function KadapaLocationPage() {
                   <span className="text-xs font-bold text-brand-400">Kadapa Cloud Kitchen Platform</span>
                   <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold">Live Production</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Vijaya&apos;s Yummy Food</h3>
+                <h3 className="text-xl font-bold text-white mb-2">AS REFRIGERATIONS</h3>
                 <p className="text-xs text-gray-300 leading-relaxed mb-4">
                   Multi-tenant cloud kitchen storefront, automated kitchen display system (KDS), thermal receipt printing engine, and automated monthly UPI billing cron.
                 </p>
                 <Link
-                  href="/case-studies/vijayas-yummy-food"
+                  href="/case-studies/as-refrigerations"
                   className="text-xs font-bold text-brand-300 hover:text-brand-200 inline-flex items-center gap-1"
                 >
                   <span>Read Full Case Study</span>

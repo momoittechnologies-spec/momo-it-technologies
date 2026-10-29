@@ -84,7 +84,7 @@ const curriculumModules = [
 const faqs = [
   {
     q: "Why is MOMO Academy the best institute for Automation Testing training in Kadapa?",
-    a: "Unlike typical theory coaching institutes where trainers just dictate PowerPoint slides, MOMO Academy is the education arm of MOMO IT Technologies—an active software engineering company in Kadapa. You learn directly from working SDET leads, write production automation code every day, and gain real experience on our live client systems like Vijaya's Yummy Food and MANA Tours.",
+    a: "Unlike typical theory coaching institutes where trainers just dictate PowerPoint slides, MOMO Academy is the education arm of MOMO IT Technologies—an active software engineering company in Kadapa. You learn directly from working SDET leads, write production automation code every day, and gain real experience on our live client systems like AS REFRIGERATIONS Platform and MANA Tours.",
   },
   {
     q: "Do I need prior coding knowledge or a Computer Science degree to join?",
@@ -318,7 +318,7 @@ export default function AutomationTestingTrainingKadapaPage() {
                 </div>
                 <h4 className="text-base font-bold text-navy-950 mb-2">Live Client Project Internship</h4>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  Write automated test suites for live commercial products (like Vijaya&apos;s Yummy Food PWA) and earn a verified work experience letter.
+                  Write automated test suites for live commercial products (like AS REFRIGERATIONS Platform) and earn a verified work experience letter.
                 </p>
               </div>
             </div>

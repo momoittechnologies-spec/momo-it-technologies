@@ -27,7 +27,7 @@ Results-driven Software Quality Assurance Automation Engineer with hands-on expe
 **MOMO IT Technologies Engineering Lab** · Kadapa, AP  
 *July 2025 – Present*
 
-- **Automated Regression Suite (Vijaya's Yummy Food — FoodTech PWA):**
+- **Automated Regression Suite (AS REFRIGERATIONS — FoodTech PWA):**
   - Architected a modular **Page Object Model (POM)** test automation framework from scratch using **Java, Selenium WebDriver, and TestNG**.
   - Automated 120+ end-to-end critical user journeys including food cart additions, 5km delivery radius verification, and direct order checkout, reducing manual regression testing time by **50%**.
   - Integrated **REST Assured** test scripts to validate Supabase backend REST APIs, verifying HTTP status codes, payload structures, and response SLAs (< 250ms).

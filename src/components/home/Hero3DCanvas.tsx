@@ -161,7 +161,7 @@ export default function Hero3DCanvas() {
                   <span className="text-emerald-400">✓ 23:44:01</span> [AUTH] Zero-Trust Session Initialized
                 </div>
                 <div className="text-gray-300">
-                  <span className="text-cyan-400">✓ 23:44:02</span> [PWA] Vijaya&apos;s Yummy Food Cache Hit: 14ms
+                  <span className="text-cyan-400">✓ 23:44:02</span> [UPI] AS REFRIGERATIONS Dynamic QR Engine: 0% Fee OK
                 </div>
                 <div className="text-gray-300">
                   <span className="text-purple-400">✓ 23:44:03</span> [FLEET] MANA Tours Dispatch Engine OK

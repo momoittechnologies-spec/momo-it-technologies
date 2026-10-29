@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export default function ClientPayPage() {
-  const [selectedClient, setSelectedClient] = useState("Vijaya's Yummy Food");
+  const [selectedClient, setSelectedClient] = useState("AS REFRIGERATIONS");
   const [customClientName, setCustomClientName] = useState("");
   const [feeCategory, setFeeCategory] = useState("PLATFORM_FEE");
   const [amount, setAmount] = useState<number>(500);
@@ -128,7 +128,7 @@ Billing WhatsApp: ${vendorConfig.whatsappPhone}`;
                   onChange={(e) => setSelectedClient(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold bg-gray-50 focus:outline-none focus:border-brand-500"
                 >
-                  <option value="Vijaya's Yummy Food">Vijaya&apos;s Yummy Food (Cloud Kitchen, Kadugodi)</option>
+                  <option value="AS REFRIGERATIONS">AS REFRIGERATIONS (Kadapa HQ &amp; Bangalore)</option>
                   <option value="Mana Tours & Travels">Mana Tours &amp; Travels</option>
                   <option value="OTHER">Other Restaurant / Client Partner...</option>
                 </select>

@@ -75,7 +75,7 @@ const curriculumModules = [
   {
     title: "Module 4: Live Commercial App Capstone & App Store Publishing",
     topics: [
-      "Building a Commercial Food Delivery & Order Tracking App (Vijaya's Yummy Food)",
+      "Building a Multi-City Service Booking & Dispatch App (AS REFRIGERATIONS)",
       "App Performance Profiling, Memory Optimization & Battery Consumption Auditing",
       "Google Play Console Setup, App Signing (AAB format), and Play Store Publishing",
       "Apple App Store Submission Guidelines & TestFlight Beta Distribution",

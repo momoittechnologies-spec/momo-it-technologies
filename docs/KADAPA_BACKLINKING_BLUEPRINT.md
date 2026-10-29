@@ -88,7 +88,7 @@ Google prioritizes software companies that possess authoritative backlinks from 
 - **Company Name:** `MOMO IT Technologies`
 - **Service Focus:** 40% Custom Software Development, 30% Web Development, 20% Mobile App Development, 10% QA Automation.
 - **Location:** Kadapa, Andhra Pradesh, India.
-- **Client Testimonials:** Vijaya's Yummy Food, MANA Tours & Travels.
+- **Client Testimonials:** AS REFRIGERATIONS, MANA Tours & Travels.
 
 ### 3. Crunchbase Organization Profile (DA 91)
 - **URL:** `https://www.crunchbase.com/add-new`
@@ -102,7 +102,7 @@ Google prioritizes software companies that possess authoritative backlinks from 
 
 ### 4. Dev.to & Hashnode Engineering Publications (DA 85+)
 Publish technical case studies showing real commercial engineering work:
-- **Article 1 Title:** *How We Engineered a Sub-Second PWA POS with Thermal Printing for Vijaya's Yummy Food in Kadapa*
+- **Article 1 Title:** *How We Engineered a Sub-Second PWA POS with Thermal Printing for AS REFRIGERATIONS in Kadapa*
   - **Anchor 1:** `custom software development services in Kadapa` ➔ `https://www.momoittechnologies.com/services/software-development-kadapa`
   - **Anchor 2:** `software companies in Kadapa` ➔ `https://www.momoittechnologies.com/kadapa`
 - **Article 2 Title:** *Architecting an Automated Outstation Taxi Dispatch Engine with Next.js & WhatsApp API*
@@ -121,7 +121,7 @@ MOMO IT Technologies Pioneers Custom Enterprise Software and QA Automation Pods 
 
 KADAPA, ANDHRA PRADESH — October 2026 — MOMO IT TECHNOLOGIES, a premier technology engineering firm and career development academy, today announced the expansion of its enterprise software development, cloud ERP, and mobile application engineering services from its headquarters in Krishnapuram, Kadapa.
 
-Founded in June 2025, MOMO IT Technologies has established itself as the leading software development company in Kadapa, engineering mission-critical digital systems for regional enterprises, retail chains, and startups across South India. Among its recent commercial deployments are Vijaya's Yummy Food—a cloud-based multi-terminal POS and Kitchen Display System that reduced order processing delays by 40%—and MANA Tours & Travels, an automated outstation fleet reservation portal that tripled online bookings.
+Founded in June 2025, MOMO IT Technologies has established itself as the leading software development company in Kadapa, engineering mission-critical digital systems for regional enterprises, retail chains, and startups across South India. Among its recent commercial deployments are AS REFRIGERATIONS—a cloud-based multi-terminal POS and Kitchen Display System that reduced order processing delays by 40%—and MANA Tours & Travels, an automated outstation fleet reservation portal that tripled online bookings.
 
 "Our mission is to prove that world-class, sub-second software engineering and dedicated QA testing pods can be architected right here in Rayalaseema," said Mohan Damerla, Founder of MOMO IT Technologies. "Whether a Kadapa retailer needs custom billing software or an overseas startup requires dedicated Selenium 4 QA pods, our team delivers production-ready systems with zero technical debt."
 

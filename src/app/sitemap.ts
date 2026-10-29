@@ -53,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Case Studies & Proof
         { path: "/case-studies", priority: 0.85, changeFrequency: "weekly" },
     { path: "/case-studies/as-refrigerations", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/case-studies/vijayas-yummy-food", priority: 0.8, changeFrequency: "monthly" },
     { path: "/case-studies/mana-tours", priority: 0.8, changeFrequency: "monthly" },
 
     // Company, Review & Contact

@@ -48,7 +48,6 @@ Bridging the gap between university education and commercial software engineerin
 ---
 
 ## Real Client Case Studies
-- **Vijaya's Yummy Food (Kadapa & Bengaluru):** Engineered a direct ordering Progressive Web App (PWA) with a Kitchen Display System (KDS), saving ₹30,000+/mo in third-party aggregator commissions.
 - **MANA Tours & Travels (Kadapa, Andhra Pradesh):** Automated outstation taxi booking and dispatch portal with dynamic pricing, delivering a 3x increase in direct reservations.
 - **MomoPe:** Proprietary retail merchant payments, QR billing, and customer rewards ledger platform.
 
