@@ -85,10 +85,11 @@ export default function AboutPage() {
             "@id": "https://www.momoittechnologies.com/about#founder",
             "name": "Mohan Damerla"
           },
+          "identifier": "UDYAM-AP-05-0090352",
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 14.4713,
-            "longitude": 78.8237
+            "latitude": 14.4676915,
+            "longitude": 78.7875340
           },
           "hasMap": "https://share.google/ar7YZvarRrJtzXq70",
           "sameAs": [
@@ -391,19 +392,23 @@ export default function AboutPage() {
               MOMO IT TECHNOLOGIES operates as a registered technology company and professional IT academy headquartered in Kadapa, Andhra Pradesh.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Official Registered Name</div>
                 <div className="text-sm font-bold text-white mt-1">MOMO IT TECHNOLOGIES</div>
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                <div className="text-gray-400">Registered Office Address</div>
-                <div className="text-sm font-bold text-white mt-1">4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa - 516003</div>
+                <div className="text-gray-400">Govt. MSME / Udyam Reg.</div>
+                <div className="text-sm font-bold text-emerald-400 mt-1">UDYAM-AP-05-0090352</div>
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                <div className="text-gray-400">Year of Establishment</div>
-                <div className="text-sm font-bold text-teal-300 mt-1">June 2025</div>
+                <div className="text-gray-400">Registered Facility</div>
+                <div className="text-sm font-bold text-white mt-1">Damerla Pavan Nilayam, 4/106, Kadapa</div>
               </div>
+              <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div className="text-gray-400">Incorporation Date</div>
+                <div className="text-sm font-bold text-teal-300 mt-1">12/04/2025</div>
+            </div>
             </div>
           </div>
 
