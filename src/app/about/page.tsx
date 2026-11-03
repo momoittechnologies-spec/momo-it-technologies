@@ -218,8 +218,8 @@ export default function AboutPage() {
             </div>
             <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs text-center">
               <Code2 className="w-5 h-5 text-indigo-600 mx-auto mb-1.5" />
-              <div className="text-lg font-black text-navy-950">Dual Vertical</div>
-              <div className="text-xs text-gray-500">Tech Services &amp; Academy</div>
+              <div className="text-lg font-black text-navy-950">Talent Lab</div>
+              <div className="text-xs text-gray-500">In-House R&amp;D Incubator</div>
             </div>
           </div>
 

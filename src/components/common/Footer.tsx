@@ -35,7 +35,7 @@ export default function Footer() {
                   MOMO <span className="text-brand-400">IT TECHNOLOGIES</span>
                 </span>
                 <span className="text-[10px] text-gray-400 uppercase tracking-widest">
-                  Software Company &amp; Cloud Solutions — Kadapa
+                  Enterprise Software Engineering &amp; AI Systems — Kadapa HQ
                 </span>
               </div>
             </div>

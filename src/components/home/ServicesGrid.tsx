@@ -53,13 +53,13 @@ export default function ServicesGrid() {
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200/80 shadow-xs">
-            Comprehensive Offerings
+            Engineering Disciplines
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 tracking-tight mt-3">
-            Tailored Engineering &amp; Technology Services
+            Organized Across 4 Specialized Delivery Pillars
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600">
-            From automated QA testing pods to multi-platform business software, we provide flexible, high-precision delivery models.
+            We operate as dedicated software engineering pods rather than generalized ticket-takers. Every system is architected for scalability, strict type safety, and automated test coverage.
           </p>
         </div>
 

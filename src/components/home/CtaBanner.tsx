@@ -19,11 +19,11 @@ export default function CtaBanner() {
           <div className="relative z-10 max-w-2xl mx-auto">
             <span className="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-full bg-white/10 text-brand-300 border border-white/15 backdrop-blur-md mb-6 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-brand-400 animate-beacon-pulse" />
-              <span>Let&apos;s Build Together · Kadapa &amp; Global Delivery</span>
+              <span>Sovereign Code · Enterprise Reliability · Kadapa HQ</span>
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 text-white">
-              Have a Software Project or Digital Growth Goal?
+              Ready to Engineer Your Next Platform?
             </h2>
 
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-8">
@@ -46,7 +46,7 @@ export default function CtaBanner() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
               >
                 <Calendar className="w-4 h-4 text-white" />
-                <span>Book Free Discovery Call</span>
+                <span>Schedule Architecture Consultation</span>
               </Link>
 
               <a

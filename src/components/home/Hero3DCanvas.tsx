@@ -128,7 +128,7 @@ export default function Hero3DCanvas() {
             {/* Live Operational Status Beacon */}
             <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-mono text-emerald-400 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-beacon-pulse" />
-              <span className="font-semibold">99.98% SLA</span>
+              <span className="font-semibold">ACTIVE EDGE RUNTIME</span>
             </div>
           </div>
 

@@ -24,10 +24,10 @@ import {
 import Hero3DCanvas from "./Hero3DCanvas";
 
 const rotatingWords = [
-  "Scalable Web & SaaS Products",
-  "Cross-Platform Mobile Apps",
-  "Enterprise QA Automation",
-  "Custom Business ERPs",
+  "High-Concurrency Cloud SaaS Platforms",
+  "Autonomous AI & Agentic Workflows",
+  "Automated QA Regression Suites",
+  "Custom Business ERPs & 60 FPS Mobile",
 ];
 
 export default function HeroSection() {
@@ -57,7 +57,7 @@ export default function HeroSection() {
 
       <div className="hidden 2xl:flex items-center gap-2 absolute top-36 right-6 text-[11px] font-mono text-gray-400 bg-white/70 backdrop-blur-md px-3 py-1.5 rounded-full border border-gray-200/60 shadow-xs pointer-events-none">
         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-beacon-pulse" />
-        <span>ACTIVE RUNTIME · 99.98% SLA</span>
+        <span>ACTIVE RUNTIME · EDGE VERIFIED</span>
       </div>
 
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
@@ -69,21 +69,21 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-brand-200 shadow-sm shadow-brand-500/10 mb-5 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-brand-500 animate-beacon-pulse" />
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-navy-950">
-                MOMO IT TECHNOLOGIES · Kadapa, AP
+                MOMO IT TECHNOLOGIES · Enterprise Software &amp; AI Systems
               </span>
               <span className="text-[11px] sm:text-xs text-brand-700 font-semibold border-l border-brand-200 pl-2">
-                5.0★ Google Rated
+                Kadapa HQ · 5.0★ Google
               </span>
             </div>
 
             {/* Grand Headline */}
             <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl 2xl:text-[64px] font-extrabold text-navy-950 tracking-tight leading-[1.1] mb-4">
               <span className="block text-base sm:text-lg 2xl:text-xl font-bold text-brand-700 tracking-normal mb-1.5">
-                Premier IT Company &amp; Software Development in Kadapa
+                Full-Lifecycle Software Engineering &amp; AI Solutions
               </span>
-              Engineering Scalable Custom Software &amp;{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-emerald-600 to-teal-700">
-                Modern Cloud Solutions.
+              Engineering Mission-Critical Software &amp;{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-brand-600 to-teal-700">
+                Scalable Enterprise Platforms.
               </span>
             </h1>
 
@@ -99,25 +99,25 @@ export default function HeroSection() {
 
             {/* Clear Value Proposition */}
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-2xl 2xl:max-w-3xl mx-auto lg:mx-0 mb-6">
-              Kadapa&apos;s premier 5.0★ rated <strong>software company</strong> and technology partner. We engineer scalable <strong>custom software, Web &amp; SaaS products</strong>, enterprise ERPs, and Flutter mobile apps for growing businesses, backed by rigorous QA testing and dedicated technical support.
+              We design, build, and deploy high-concurrency SaaS platforms, autonomous AI workflows, and resilient business applications. Backed by automated QA verification, 100% intellectual property transfer, and dedicated technical stewardship from Kadapa to global markets.
             </p>
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-3.5 mb-5">
               <Link
-                href="/services/web-development"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white font-bold text-sm shadow-lg shadow-brand-500/25 hover:shadow-xl hover:shadow-brand-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
               >
-                <span>Build Web / SaaS Product</span>
+                <span>Schedule Architecture Consultation</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
               <Link
-                href="/services"
+                href="/case-studies"
                 className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-xl bg-navy-950 hover:bg-navy-900 text-white font-bold text-sm shadow-md hover:-translate-y-0.5 transition-all"
               >
                 <Layers className="w-4 h-4 text-brand-400" />
-                <span>Explore Services</span>
+                <span>View Commercial Deployments</span>
               </Link>
 
               <a
@@ -172,13 +172,13 @@ export default function HeroSection() {
               </div>
 
               <div className="p-2.5 2xl:p-3 rounded-2xl bg-white/90 border border-gray-100 shadow-xs text-center lg:text-left">
-                <div className="text-lg sm:text-xl font-extrabold text-brand-600">&lt; 300ms</div>
-                <div className="text-[10px] text-gray-500 mt-0.5">Sub-Second SSR Edge</div>
+                <div className="text-lg sm:text-xl font-extrabold text-brand-600">&lt; 800ms</div>
+                <div className="text-[10px] text-gray-500 mt-0.5">Edge SSR TTFB</div>
               </div>
 
               <div className="p-2.5 2xl:p-3 rounded-2xl bg-white/90 border border-gray-100 shadow-xs text-center lg:text-left">
-                <div className="text-lg sm:text-xl font-extrabold text-navy-950">Zero-Bug</div>
-                <div className="text-[10px] text-gray-500 mt-0.5">Automated QA Pods</div>
+                <div className="text-lg sm:text-xl font-extrabold text-navy-950">Auto QA</div>
+                <div className="text-[10px] text-gray-500 mt-0.5">Selenium 4 CI/CD</div>
               </div>
 
               <div className="p-2.5 2xl:p-3 rounded-2xl bg-white/90 border border-gray-100 shadow-xs text-center lg:text-left col-span-2 sm:col-span-1">

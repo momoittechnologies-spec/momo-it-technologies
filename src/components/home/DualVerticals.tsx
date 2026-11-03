@@ -71,7 +71,7 @@ export default function DualVerticals() {
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-200">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span><strong>Enterprise QA Automation:</strong> Selenium 4, Playwright &amp; zero-defect regression suites</span>
+                  <span><strong>Enterprise QA Automation:</strong> Selenium 4, Playwright &amp; continuous regression test suites</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-gray-200">
                   <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />

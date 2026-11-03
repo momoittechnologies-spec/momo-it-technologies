@@ -76,13 +76,13 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight text-navy-950 flex items-center gap-1.5 leading-none">
-                  MOMO <span className="text-brand-600">IT</span>
+                  MOMO <span className="text-brand-600">IT</span> TECHNOLOGIES
                   <span className="text-[10px] px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 font-bold border border-brand-200/60">
-                    Kadapa
+                    Govt. MSME
                   </span>
                 </span>
                 <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
-                  Technologies · Software Company
+                  Enterprise Software &amp; AI Systems · Kadapa HQ
                 </span>
               </div>
             </Link>
@@ -113,7 +113,7 @@ export default function Navbar() {
                       : "text-gray-700 hover:text-brand-600 hover:bg-gray-50"
                   }`}
                 >
-                  <span>Services</span>
+                  <span>Solutions</span>
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
                       servicesDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
@@ -335,7 +335,7 @@ export default function Navbar() {
                   }`}
                 >
                   <GraduationCap className="w-4 h-4 text-brand-600" />
-                  <span>Academy</span>
+                  <span>Talent Lab</span>
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
                       academyDropdownOpen ? "rotate-180 text-brand-600" : "text-gray-400"
@@ -545,7 +545,7 @@ export default function Navbar() {
                           <span className="text-[10px] text-amber-600 font-bold">5.0★</span>
                         </div>
                         <span className="text-xs text-gray-500 block">
-                          Kadapa Travel &amp; AI Voice Booking
+                          Govt. MSME Travel &amp; AI Voice Booking
                         </span>
                       </div>
                     </Link>
@@ -612,7 +612,7 @@ export default function Navbar() {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-600 hover:to-brand-700 text-white text-xs font-bold shadow-md shadow-brand-500/25 hover:shadow-lg hover:shadow-brand-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
               >
-                <span>Get Free Quote</span>
+                <span>Schedule Consultation</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -623,7 +623,7 @@ export default function Navbar() {
                 href="/contact"
                 className="px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-brand-500 to-brand-600 text-white shadow-xs"
               >
-                Get Quote
+                Consultation
               </Link>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
