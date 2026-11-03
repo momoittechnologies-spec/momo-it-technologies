@@ -33,8 +33,8 @@ export default function ReviewPage() {
   const googleReviewUrl = "https://share.google/ar7YZvarRrJtzXq70";
 
   return (
-    <div className="pt-32 sm:pt-36 pb-20 bg-surface-light min-h-screen">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-26 sm:pt-28 md:pt-32 pb-20 bg-surface-light min-h-screen">
+      <div className="max-w-3xl 2xl:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         
         {/* Breadcrumbs */}
         <nav aria-label="Breadcrumb" className="mb-6">

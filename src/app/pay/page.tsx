@@ -78,8 +78,8 @@ Billing WhatsApp: ${vendorConfig.whatsappPhone}`;
   );
 
   return (
-    <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="pt-28 sm:pt-32 md:pt-36 pb-20 bg-surface-light min-h-screen">
+      <div className="max-w-4xl 2xl:max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         {/* Navigation */}
         <div className="mb-6 flex items-center justify-between">
           <Link

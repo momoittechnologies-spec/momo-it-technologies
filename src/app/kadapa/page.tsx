@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     q: "Does MOMO IT Technologies develop custom software for local Kadapa businesses?",
-    a: "Yes. We design and engineer end-to-end custom software, billing systems, ecommerce storefronts, and cloud PWAs. For example, we built and deployed the complete digital ordering, KDS, and billing engine for AS REFRIGERATIONS right here in Kadapa.",
+    a: "Yes. We design and engineer end-to-end custom software, billing systems, ecommerce storefronts, and cloud PWAs. For example, we built and deployed the multi-city appliance service booking platform and 0% UPI payment engine for AS REFRIGERATIONS right here in Kadapa.",
   },
   {
     q: "What training courses are conducted at MOMO Academy in Kadapa?",
@@ -206,8 +206,8 @@ export default function KadapaLocationPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="pt-36 sm:pt-40 md:pt-44 pb-20 bg-surface-light min-h-screen">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="pt-28 sm:pt-32 md:pt-36 pb-20 bg-surface-light min-h-screen">
+        <div className="max-w-6xl 2xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
           
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="mb-6">

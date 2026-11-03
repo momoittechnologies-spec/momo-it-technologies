@@ -36,7 +36,7 @@ const regions = [
 export default function ServiceRegions() {
   return (
     <section className="py-20 bg-surface-light border-t border-gray-200/60">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200/60">
             Geographic Coverage
@@ -49,7 +49,7 @@ export default function ServiceRegions() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 2xl:gap-8">
           {regions.map((reg, i) => (
             <div
               key={i}

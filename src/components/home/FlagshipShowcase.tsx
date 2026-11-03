@@ -19,7 +19,7 @@ export default function FlagshipShowcase() {
 
   return (
     <section className="py-20 lg:py-28 bg-surface-light border-b border-gray-100 relative bg-cyber-grid">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-800 text-xs font-bold uppercase tracking-wider mb-3 border border-brand-200/80 shadow-xs">
@@ -38,7 +38,7 @@ export default function FlagshipShowcase() {
         </div>
 
         {/* Client Deployments Grid - 2 Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 2xl:gap-12">
           
           {/* Card 1: AS REFRIGERATIONS (Multi-City Field Service) */}
           <div className="bg-white/95 rounded-3xl border border-gray-200/90 shadow-3d-card card-3d-lift flex flex-col justify-between overflow-hidden group relative">

@@ -49,7 +49,7 @@ export default function MasterclassBanner() {
 
   return (
     <section className="py-12 bg-gradient-to-b from-white via-brand-50/50 to-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 text-white shadow-2xl border border-brand-500/30 overflow-hidden">
           {/* Decorative Glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>

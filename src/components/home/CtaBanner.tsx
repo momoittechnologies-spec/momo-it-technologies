@@ -9,8 +9,8 @@ export default function CtaBanner() {
 
   return (
     <section className="py-20 lg:py-28 bg-white relative overflow-hidden bg-cyber-grid">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl p-8 sm:p-14 lg:p-16 bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 text-white shadow-3d-floating border border-white/15 overflow-hidden text-center max-w-5xl mx-auto">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
+        <div className="relative rounded-3xl p-8 sm:p-14 lg:p-16 bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 text-white shadow-3d-floating border border-white/15 overflow-hidden text-center max-w-5xl 2xl:max-w-6xl mx-auto">
           {/* Luminous glow spotlights */}
           <div className="absolute -top-32 -left-32 w-80 h-80 bg-brand-500/20 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none" />

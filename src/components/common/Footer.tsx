@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="bg-navy-950 text-gray-300 border-t border-white/10 pt-16 pb-12 bg-cyber-grid-dark relative overflow-hidden">
       {/* Specular top border highlight */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-500 via-emerald-400 to-cyan-500 opacity-70" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-navy-800/80">
           {/* Brand & Overview */}
           <div className="lg:col-span-2 space-y-5">

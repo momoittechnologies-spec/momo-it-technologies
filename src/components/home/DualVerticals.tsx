@@ -19,7 +19,7 @@ export default function DualVerticals() {
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-[550px] bg-brand-300/10 rounded-full blur-[150px] pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200/80 shadow-xs">
             Dual Delivery Engine
@@ -32,7 +32,7 @@ export default function DualVerticals() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 2xl:gap-10 items-stretch">
           {/* Main Showcase: Core Software Engineering (7 Cols) */}
           <div className="lg:col-span-7 relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 text-white shadow-3d-card-dark border border-white/10 card-3d-lift overflow-hidden flex flex-col justify-between group">
             {/* Luminous Glow Spotlights */}
