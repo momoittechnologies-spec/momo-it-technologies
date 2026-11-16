@@ -365,16 +365,16 @@ export default function Hero3DCanvas() {
           <span className="text-[11px] font-mono text-cyan-200">Flutter 60 FPS Native iOS &amp; Android</span>
         </div>
 
-        {/* Floating Badge 5: Center-Right (Govt. MSME Verification) */}
+        {/* Floating Badge 5: Center-Right (Edge SLA & High Availability) */}
         <div
           style={{
             transform: `translate3d(${mousePos.x * 18 + 22}px, ${mousePos.y * 18}px, 50px)`,
             transition: "transform 0.22s ease-out",
           }}
-          className="absolute top-1/2 -right-4 sm:-right-8 -translate-y-1/2 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-amber-500/10 text-amber-300 shadow-lg border border-amber-400/30 backdrop-blur-md animate-float-slow z-20"
+          className="absolute top-1/2 -right-4 sm:-right-8 -translate-y-1/2 hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-cyan-500/10 text-cyan-300 shadow-lg border border-cyan-400/30 backdrop-blur-md animate-float-slow z-20"
         >
-          <Award className="w-3.5 h-3.5 text-amber-400" />
-          <span className="text-[10px] font-mono text-amber-200 font-bold">UDYAM-AP-05-0090352</span>
+          <Zap className="w-3.5 h-3.5 text-cyan-400" />
+          <span className="text-[10px] font-mono text-cyan-200 font-bold">99.98% SLA · Zero-Trust</span>
         </div>
       </div>
     </div>

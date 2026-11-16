@@ -153,7 +153,10 @@ export default function HeroSection() {
                 <span className="text-[10px] text-gray-400 font-mono">(Fleet Dispatch)</span>
               </Link>
               <span className="text-gray-300">·</span>
-              <span className="text-amber-800 font-mono text-[11px] font-semibold">UDYAM-AP-05-0090352</span>
+              <span className="inline-flex items-center gap-1 text-emerald-700 font-mono text-[11px] font-semibold">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-beacon-pulse" />
+                <span>99.98% Edge SLA</span>
+              </span>
             </div>
 
             {/* Trust Badges Strip (5 Metric Badges) */}

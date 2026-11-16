@@ -78,20 +78,21 @@ export default function TrustStrip() {
             </div>
           </Link>
 
-          {/* Card 3: MSME Govt. Registered */}
-          <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-amber-50/60 border border-amber-200/70">
-            <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
-              <Award className="w-5 h-5" />
+          {/* Card 3: Enterprise QA & Automated CI/CD */}
+          <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-50/80 hover:bg-emerald-50/60 border border-gray-200/70 hover:border-emerald-300 transition-all group">
+            <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <div className="text-[11px] font-mono uppercase tracking-wider text-amber-800 font-semibold">
-                Govt. Registered Enterprise
+              <div className="text-[11px] font-mono uppercase tracking-wider text-gray-500 flex items-center gap-1">
+                <span>QA Engineering Pod</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-beacon-pulse" />
               </div>
-              <div className="text-sm font-bold text-navy-950 truncate">
-                MSME Ministry of India
+              <div className="text-sm font-bold text-navy-950 truncate group-hover:text-emerald-700 transition-colors">
+                Selenium 4 &amp; Playwright
               </div>
-              <div className="text-[11px] font-mono text-amber-900 font-semibold truncate">
-                UDYAM-AP-05-0090352
+              <div className="text-[11px] text-gray-500 truncate">
+                Automated Regression Suites
               </div>
             </div>
           </div>

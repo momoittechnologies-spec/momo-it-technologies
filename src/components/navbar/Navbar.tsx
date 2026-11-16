@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CommandPalette from "@/components/common/CommandPalette";
 import {
   Menu,
   X,
@@ -117,8 +118,9 @@ export default function Navbar() {
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight text-navy-950 flex items-center gap-1.5 leading-none font-heading">
                   MOMO <span className="text-electric-500">IT</span> TECHNOLOGIES
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-bold border border-emerald-200/80">
-                    Govt. MSME
+                  <span className="hidden sm:inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold border border-emerald-200/80 font-mono">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-beacon-pulse" />
+                    <span>Edge Verified</span>
                   </span>
                 </span>
                 <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
@@ -480,7 +482,9 @@ export default function Navbar() {
             </nav>
 
             {/* Right Action Buttons */}
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-2.5">
+              <CommandPalette />
+
               <a
                 href="tel:+918639831132"
                 className="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-navy-950 hover:text-electric-700 bg-gray-50/90 border border-gray-200/80 hover:border-electric-300 transition-all hover:bg-white"

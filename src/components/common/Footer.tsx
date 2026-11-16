@@ -53,9 +53,9 @@ export default function Footer() {
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                 5.0★ Google Rated (Kadapa)
               </Link>
-              <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-emerald-950/60 text-emerald-300 border border-emerald-500/40 font-mono text-[11px]">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                Govt. MSME: UDYAM-AP-05-0090352
+              <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-900 text-cyan-300 border border-cyan-500/40 font-mono text-[11px]">
+                <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
+                SLA 99.98% · 100% Client IP
               </span>
             </div>
 
@@ -253,7 +253,7 @@ export default function Footer() {
         {/* Bottom Strip */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>
-            © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved. Registered MSME: UDYAM-AP-05-0090352.
+            © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved. Engineering Digital Products &amp; Scalable Cloud Platforms.
           </p>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <Link href="/kadapa" className="text-gray-400 hover:text-white transition-colors">

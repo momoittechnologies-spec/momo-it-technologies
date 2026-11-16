@@ -85,7 +85,6 @@ export default function AboutPage() {
             "@id": "https://www.momoittechnologies.com/about#founder",
             "name": "Mohan Damerla"
           },
-          "identifier": "UDYAM-AP-05-0090352",
           "geo": {
             "@type": "GeoCoordinates",
             "latitude": 14.4676915,
@@ -398,8 +397,8 @@ export default function AboutPage() {
                 <div className="text-sm font-bold text-white mt-1">MOMO IT TECHNOLOGIES</div>
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                <div className="text-gray-400">Govt. MSME / Udyam Reg.</div>
-                <div className="text-sm font-bold text-emerald-400 mt-1">UDYAM-AP-05-0090352</div>
+                <div className="text-gray-400">Production Reliability SLA</div>
+                <div className="text-sm font-bold text-emerald-400 mt-1">99.98% High Availability</div>
               </div>
               <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-gray-400">Registered Facility</div>
