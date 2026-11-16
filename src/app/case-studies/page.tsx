@@ -137,8 +137,8 @@ export default function CaseStudiesIndexPage() {
               </div>
 
               {/* Key Impact & Tech Breakdown */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-8">
-                <div>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8">
+                <div className="lg:col-span-5">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">
                     Key Deliverables &amp; Business Impact
                   </h3>
@@ -150,25 +150,70 @@ export default function CaseStudiesIndexPage() {
                       </li>
                     ))}
                   </ul>
+
+                  <div className="mt-6">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">
+                      Production Technology Stack
+                    </h3>
+                    <div className="flex flex-wrap gap-1.5">
+                      {cs.techStack.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-gray-50 text-navy-950 border border-gray-200"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">
-                    Production Technology Stack
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {cs.techStack.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-gray-50 text-navy-950 border border-gray-200"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                {/* Visual Interface Preview */}
+                <div className="lg:col-span-7">
+                  {cs.slug === "as-refrigerations" ? (
+                    <div className="bg-slate-900 rounded-2xl p-2 shadow-lg border border-slate-800">
+                      <div className="flex items-center justify-between px-3 py-1.5 bg-slate-800/80 rounded-t-xl text-[11px] font-mono text-gray-400">
+                        <span className="text-gray-300 font-sans text-xs">Live System Interface · asrefrigerations.com</span>
+                        <span className="text-emerald-400">0% Gateway Commission</span>
+                      </div>
+                      <div className="overflow-hidden rounded-b-xl bg-slate-950 max-h-56">
+                        <img
+                          src="/clients/as-refrigerations/as-refrigerations-hero-desktop.png"
+                          alt="AS REFRIGERATIONS Platform"
+                          className="w-full h-auto object-cover object-top hover:scale-[1.01] transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="bg-slate-900 rounded-2xl p-4 text-white border border-slate-800 shadow-lg">
+                      <div className="flex items-center justify-between pb-2 mb-3 border-b border-slate-800 text-xs">
+                        <span className="font-mono text-cyan-300 font-bold">Fleet Routing &amp; Dispatch Matrix</span>
+                        <span className="text-emerald-400 font-mono text-[11px]">Real-Time Quotations</span>
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 text-xs">
+                        <div className="p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60">
+                          <div className="text-[10px] text-gray-400 font-mono">Tirupati Airport &amp; Darshan</div>
+                          <div className="text-sm font-bold text-white mt-0.5">₹3,200 Sedan</div>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60">
+                          <div className="text-[10px] text-gray-400 font-mono">Bangalore Airport (BLR)</div>
+                          <div className="text-sm font-bold text-white mt-0.5">₹5,800 Sedan</div>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60">
+                          <div className="text-[10px] text-gray-400 font-mono">Hyderabad Corridor (RGI)</div>
+                          <div className="text-sm font-bold text-white mt-0.5">₹6,500 SUV</div>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60">
+                          <div className="text-[10px] text-gray-400 font-mono">Gandikota Day Tour</div>
+                          <div className="text-sm font-bold text-white mt-0.5">₹3,500 Full Day</div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
-                  <div className="mt-6 p-4 rounded-xl bg-brand-50/50 border border-brand-100 text-xs text-brand-900 leading-relaxed">
-                    <strong>Internship Practical Attachment:</strong> Candidates at MOMO IT Academy work directly on features, test suites, and regression passes for this live production codebase.
+                  <div className="mt-4 p-3.5 rounded-xl bg-brand-50/50 border border-brand-100 text-xs text-brand-900 leading-relaxed">
+                    <strong>Practical Attachment:</strong> MOMO IT Academy students inspect and test features on this live codebase under senior SDET supervision.
                   </div>
                 </div>
               </div>

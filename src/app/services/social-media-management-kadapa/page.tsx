@@ -71,7 +71,7 @@ const coreServices = [
   {
     icon: Target,
     title: "Meta Paid Ads (Lead Generation & Sales)",
-    desc: "Precision-targeted Facebook and Instagram ad campaigns. We build Click-to-WhatsApp lead ads, local geographic radius targeting, and custom audience retargeting with guaranteed low cost-per-lead.",
+    desc: "Precision-targeted Facebook and Instagram ad campaigns. We build Click-to-WhatsApp lead ads, local geographic radius targeting, and custom audience retargeting focused on optimizing your cost-per-lead.",
   },
   {
     icon: Users,

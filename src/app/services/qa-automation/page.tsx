@@ -164,7 +164,7 @@ export default function QaAutomationPage() {
         <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-4 border border-indigo-200/60">
             <ShieldCheck className="w-3.5 h-3.5" />
-            Zero-Defect Quality Engineering
+            Defect-Prevention Quality Engineering
           </div>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-navy-950 tracking-tight leading-[1.15] mb-6">
             Enterprise QA Automation &amp;{" "}

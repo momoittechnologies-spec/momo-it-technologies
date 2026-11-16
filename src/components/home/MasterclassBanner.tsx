@@ -35,7 +35,7 @@ export default function MasterclassBanner() {
     if (cleanDigits.length < 10) return;
 
     const formattedPhone = `+91 ${cleanDigits}`;
-    const text = `Hi MOMO Academy! I want to register for the Free Saturday Masterclass (Automation Testing & Java). My WhatsApp Number is: ${formattedPhone}`;
+    const text = `Hi MOMO Academy! I want to register for the Free Weekend Masterclass (Automation Testing & Java). My WhatsApp Number is: ${formattedPhone}`;
     const url = `https://wa.me/918639831132?text=${encodeURIComponent(text)}`;
 
     if (typeof window !== "undefined") {
@@ -59,7 +59,7 @@ export default function MasterclassBanner() {
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold border border-brand-500/40">
                 <Sparkles className="w-3.5 h-3.5" />
-                UPCOMING SATURDAY DEMO CLASS
+                UPCOMING WEEKEND DEMO WORKSHOP
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
@@ -78,7 +78,7 @@ export default function MasterclassBanner() {
                     <Calendar className="w-3.5 h-3.5" />
                     Date &amp; Time
                   </div>
-                  <div className="text-xs text-white font-semibold">This Saturday</div>
+                  <div className="text-xs text-white font-semibold">Weekend Cohort</div>
                   <div className="text-[11px] text-gray-400">6:30 PM - 8:30 PM IST</div>
                 </div>
 
@@ -94,9 +94,9 @@ export default function MasterclassBanner() {
                 <div className="p-3 rounded-xl bg-navy-900/90 border border-navy-800 col-span-2 sm:col-span-1">
                   <div className="flex items-center gap-1.5 text-brand-400 text-xs font-bold mb-1">
                     <Users className="w-3.5 h-3.5" />
-                    Batch Starts
+                    Batch Schedule
                   </div>
-                  <div className="text-xs text-white font-semibold">This Monday</div>
+                  <div className="text-xs text-white font-semibold">Enrolling Monthly</div>
                   <div className="text-[11px] text-gray-400">Limited to 15 Seats</div>
                 </div>
               </div>

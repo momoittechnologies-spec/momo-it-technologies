@@ -24,7 +24,7 @@ const comparisonRows: ComparisonRow[] = [
   {
     dimension: "Quality Assurance & Testing",
     legacy: "Manual 'click-around' QA only; regression bugs break production on updates",
-    momo: "Automated Playwright, Selenium 4 & REST Assured CI/CD test suites with zero flakiness",
+    momo: "Automated Playwright, Selenium 4 & REST Assured CI/CD test suites with stable regression pipelines",
     momoHighlight: true,
   },
   {

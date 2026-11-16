@@ -1,26 +1,35 @@
-import React from "react";
-import { Star, MessageSquareQuote, CheckCircle, ExternalLink, Sparkles } from "lucide-react";
+"use client";
+
+import React, { useState } from "react";
+import { Star, CheckCircle, ExternalLink, Sparkles, Building2, GraduationCap } from "lucide-react";
 import { reviewsData } from "@/data/reviews";
 
 export default function ReviewsSection() {
+  const [filter, setFilter] = useState<"all" | "commercial" | "academy">("all");
+
+  const filteredReviews =
+    filter === "all"
+      ? reviewsData
+      : reviewsData.filter((r) => r.type === filter);
+
   return (
     <section id="reviews" className="py-20 lg:py-28 bg-slate-50/60 bg-cyber-grid relative overflow-hidden">
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3 border border-blue-200/80 shadow-xs">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Verified Reputation</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-950 tracking-tight">
-            Trusted by Commercial Clients &amp; Engineers
+            Client &amp; Engineering Testimonials
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600">
-            Rated 5.0★ on Google in Kadapa for custom software delivery, automation testing, and technical mentorship. Here is what our commercial partners and engineers say.
+            Rated 5.0★ on Google in Kadapa for custom software delivery, automation testing, and technical mentorship.
           </p>
         </div>
 
         {/* 3D Glassmorphic Rating Summary Banner */}
-        <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-blue-200/80 shadow-3d-card mb-12 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden bg-white">
+        <div className="rounded-3xl p-6 sm:p-8 border border-blue-200/80 shadow-3d-card mb-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden bg-white">
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-amber-400 to-emerald-500" />
           <div className="flex items-center gap-5">
             <div className="w-16 h-16 rounded-2xl bg-white shadow-md border border-blue-200 flex flex-col items-center justify-center shrink-0">
@@ -54,12 +63,50 @@ export default function ReviewsSection() {
           </div>
         </div>
 
-        {/* 3D Review Cards Grid */}
+        {/* Category Filter Tabs: Commercial Clients vs. Academy Learners */}
+        <div className="flex items-center justify-center gap-2 mb-8">
+          <button
+            onClick={() => setFilter("all")}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              filter === "all"
+                ? "bg-navy-950 text-white shadow-md"
+                : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+            }`}
+          >
+            All Feedback ({reviewsData.length})
+          </button>
+          <button
+            onClick={() => setFilter("commercial")}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+              filter === "commercial"
+                ? "bg-navy-950 text-white shadow-md"
+                : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+            }`}
+          >
+            <Building2 className="w-3.5 h-3.5 text-cyan-500" />
+            <span>Commercial Clients ({reviewsData.filter((r) => r.type === "commercial").length})</span>
+          </button>
+          <button
+            onClick={() => setFilter("academy")}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+              filter === "academy"
+                ? "bg-navy-950 text-white shadow-md"
+                : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+            }`}
+          >
+            <GraduationCap className="w-3.5 h-3.5 text-indigo-500" />
+            <span>MOMO Academy Learners ({reviewsData.filter((r) => r.type === "academy").length})</span>
+          </button>
+        </div>
+
+        {/* Review Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:gap-8">
-          {reviewsData.map((rev) => (
+          {filteredReviews.map((rev) => (
             <div
               key={rev.id}
-              className="bg-white rounded-3xl p-7 sm:p-8 border border-gray-200/90 shadow-3d-card card-3d-lift flex flex-col justify-between relative overflow-hidden group"
+              className={`bg-white rounded-3xl p-7 sm:p-8 border shadow-3d-card card-3d-lift flex flex-col justify-between relative overflow-hidden group transition-all ${
+                rev.type === "commercial" ? "border-blue-300/80" : "border-gray-200/90"
+              }`}
             >
               <div className="absolute -top-10 -right-10 w-28 h-28 bg-blue-400/10 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-400/20 transition-all" />
 
@@ -70,8 +117,14 @@ export default function ReviewsSection() {
                       <Star key={i} className="w-4 h-4 fill-current" />
                     ))}
                   </div>
-                  <span className="text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-gray-700 border border-gray-200">
-                    {rev.source}
+                  <span
+                    className={`text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-full border ${
+                      rev.type === "commercial"
+                        ? "bg-cyan-50 text-cyan-800 border-cyan-200"
+                        : "bg-slate-100 text-gray-700 border-gray-200"
+                    }`}
+                  >
+                    {rev.type === "commercial" ? "Commercial Partner" : "Academy Alum"}
                   </span>
                 </div>
 

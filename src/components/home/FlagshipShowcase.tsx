@@ -80,9 +80,23 @@ export default function FlagshipShowcase() {
                   Multi-City Service &amp; Field Dispatch Platform
                 </p>
 
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                <p className="text-sm text-gray-600 leading-relaxed mb-5">
                   {asRef.description}
                 </p>
+
+                {/* Real Live Screenshot Preview */}
+                <div className="mb-5 overflow-hidden rounded-xl border border-gray-200 bg-slate-950 max-h-48 group-hover:border-cyan-400/50 transition-colors shadow-sm">
+                  <div className="flex items-center justify-between px-3 py-1 bg-slate-900 border-b border-slate-800 text-[10px] font-mono text-gray-400">
+                    <span className="text-gray-300">asrefrigerations.com</span>
+                    <span className="text-emerald-400">Kadapa &amp; Bangalore East</span>
+                  </div>
+                  <img
+                    src="/clients/as-refrigerations/as-refrigerations-hero-desktop.png"
+                    alt="AS REFRIGERATIONS Platform Interface"
+                    className="w-full h-auto object-cover object-top hover:scale-[1.02] transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
 
                 {/* 3D Simulated Interactive Preview Strip */}
                 <div className="mb-6 p-4 rounded-2xl bg-navy-950 text-white font-mono text-xs border border-white/10 shadow-inner">

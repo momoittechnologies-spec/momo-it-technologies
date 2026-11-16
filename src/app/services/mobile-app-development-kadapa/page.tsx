@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "Does MOMO IT Academy teach Flutter app development in Kadapa?",
-    a: "Yes. MOMO Academy runs a dedicated 3-Month Flutter Mobile App Engineering course in Kadapa with hands-on projects and guaranteed live app store publishing experience.",
+    a: "Yes. MOMO Academy runs a dedicated 3-Month Flutter Mobile App Engineering course in Kadapa with hands-on projects and real-world app store publishing experience.",
   },
 ];
 

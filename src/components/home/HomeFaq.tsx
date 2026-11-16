@@ -18,7 +18,7 @@ export const homeFaqs = [
     a: "We engineer using modern, enterprise-grade stacks: Next.js 15, React 19, and TypeScript on the frontend; Java 21, Spring Boot 3, and Python FastAPI on the backend; and PostgreSQL, Supabase, and Redis for storage. We avoid outdated PHP or monolithic CMS architectures because modern stacks deliver sub-second edge speeds, 99.98% uptime, and long-term maintainability.",
   },
   {
-    q: "How does your QA automation ensure zero-defect deployments?",
+    q: "How does your QA automation prevent production regressions?",
     a: "Our dedicated QA engineering pods integrate Selenium WebDriver 4 and Playwright automated regression suites directly into GitHub Actions CI/CD pipelines. Every code commit runs through hundreds of automated functional, API, and cross-browser assertions before deployment, preventing production downtime.",
   },
   {

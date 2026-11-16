@@ -36,8 +36,8 @@ const architectureNodes: ArchNode[] = [
     category: "Layer 01 · Ingress & CDN",
     icon: Globe,
     tech: "Vercel Edge / Cloudflare Anycast",
-    metric: "12ms Global TTFB",
-    status: "Active · Sub-Second",
+    metric: "Sub-Second Edge TTFB",
+    status: "Active · Low Latency",
     description: "Multi-region edge routing with automated TLS 1.3 encryption, HTTP/3 protocol, and sub-second caching.",
     details: [
       "Anycast DNS routing with DDoS mitigation",
@@ -51,7 +51,7 @@ const architectureNodes: ArchNode[] = [
     category: "Layer 02 · Presentation",
     icon: Layers,
     tech: "Next.js 15 App Router & React 19",
-    metric: "98+ Lighthouse Score",
+    metric: "Core Web Vitals Optimized",
     status: "Strict TypeScript",
     description: "Server-driven component streaming with zero runtime CSS overhead and strict type safety across all user journeys.",
     details: [
@@ -66,8 +66,8 @@ const architectureNodes: ArchNode[] = [
     category: "Layer 03 · Business Logic",
     icon: Server,
     tech: "Spring Boot 3 / Node.js / FastAPI",
-    metric: "10,000+ Concurrent RPS",
-    status: "Zero-Downtime",
+    metric: "High-Throughput Concurrency",
+    status: "Zero-Downtime Releases",
     description: "High-concurrency microservices with automated rate limiting, JWT/OAuth2 session tokens, and gRPC internal channels.",
     details: [
       "Enterprise Java 21 virtual threads & Spring Security",
@@ -111,13 +111,13 @@ const architectureNodes: ArchNode[] = [
     category: "Layer 06 · Verification",
     icon: ShieldCheck,
     tech: "Selenium WebDriver 4 & Playwright",
-    metric: "Zero Flakiness",
+    metric: "Stable Regression Suite",
     status: "CI/CD Gatekeeper",
     description: "Automated regression pipelines executing 400+ cross-browser and mobile assertions prior to production deployment.",
     details: [
       "Headless Chrome / Safari regression runs",
       "Automated API contract verification via RestAssured",
-      "Zero-defect milestone gate before client sign-off",
+      "Automated regression gate before release sign-off",
     ],
   },
 ];
@@ -249,8 +249,8 @@ export default function InteractiveArchitecture() {
                   <span className="text-white font-bold">100% Client Transferred</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Security Audit:</span>
-                  <span className="text-emerald-400 font-bold">Zero Critical CVEs</span>
+                  <span className="text-gray-400">Security Standard:</span>
+                  <span className="text-emerald-400 font-bold">OWASP Top 10 Hardened</span>
                 </div>
               </div>
 

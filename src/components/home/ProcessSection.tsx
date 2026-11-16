@@ -46,7 +46,7 @@ export default function ProcessSection() {
             How We Engineer &amp; Ship Software
           </h2>
           <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-            Transparent milestones, weekly sprint updates, and guaranteed delivery timelines from concept to production.
+            Transparent milestones, weekly sprint updates, and structured delivery schedules from concept to production.
           </p>
         </div>
 

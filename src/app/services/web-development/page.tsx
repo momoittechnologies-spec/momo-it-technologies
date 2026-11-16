@@ -111,7 +111,7 @@ const processSteps = [
   {
     step: "03",
     title: "Sprint Development & QA Testing",
-    desc: "Clean, type-safe development using Next.js and Tailwind CSS backed by rigorous automated test suites (Selenium, Playwright) for zero-defect releases.",
+    desc: "Clean, type-safe development using Next.js and Tailwind CSS backed by rigorous automated test suites (Selenium, Playwright) to prevent regressions and ensure smooth releases.",
   },
   {
     step: "04",

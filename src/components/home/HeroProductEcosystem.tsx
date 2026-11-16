@@ -156,7 +156,7 @@ export default function HeroProductEcosystem() {
                   {activeTab === "asRef" ? "₹14,82,450" : activeTab === "manaTours" ? "648 Trips" : "480 / 480"}
                 </div>
                 <div className="text-[10px] text-cyan-300 font-mono mt-0.5">
-                  {activeTab === "asRef" ? "0% Gateway Fee (Direct UPI)" : activeTab === "manaTours" ? "100% WhatsApp Verified" : "100% Zero-Defect Pass"}
+                  {activeTab === "asRef" ? "Direct UPI (No Intermediary Cuts)" : activeTab === "manaTours" ? "100% WhatsApp Verified" : "CI/CD Regression Pass"}
                 </div>
               </div>
 
@@ -168,7 +168,7 @@ export default function HeroProductEcosystem() {
                   </span>
                 </div>
                 <div className="text-base sm:text-lg font-extrabold text-white font-mono mt-1">
-                  {activeTab === "asRef" ? "32 Technicians" : activeTab === "manaTours" ? "24 Fleets" : "12ms TTFB"}
+                  {activeTab === "asRef" ? "32 Technicians" : activeTab === "manaTours" ? "24 Fleets" : "< 800ms"}
                 </div>
                 <div className="text-[10px] text-gray-400 font-mono mt-0.5 truncate">
                   {activeTab === "asRef" ? "Kadapa (19) · BLR (25)" : activeTab === "manaTours" ? "Kadapa · Tirupati · BLR" : "Vercel Edge Anycast"}
@@ -322,7 +322,7 @@ export default function HeroProductEcosystem() {
                   <div className="text-gray-300">✓ TestSuite: MultiCity_Ward_Boundary_Sanity ... PASS [0.35s]</div>
                   <div className="pt-1 text-gray-400 border-t border-white/10 flex items-center justify-between text-[10px]">
                     <span>Assertions: 480 verified</span>
-                    <span className="text-emerald-400 font-bold">Defects: 0 critical</span>
+                    <span className="text-emerald-400 font-bold">Regression: All Passing</span>
                   </div>
                 </div>
               </div>
@@ -433,10 +433,10 @@ export default function HeroProductEcosystem() {
           <div className="text-left text-xs">
             <div className="font-bold text-white flex items-center gap-1.5">
               <span>Next.js 15 + Edge SSR</span>
-              <span className="text-emerald-400 text-[10px]">● 12ms</span>
+              <span className="text-emerald-400 text-[10px]">● Sub-Second</span>
             </div>
             <div className="text-[10px] text-gray-400">
-              Zero Flakiness · Automated QA Verified
+              Automated CI/CD Test Pipeline Verified
             </div>
           </div>
         </div>

@@ -129,7 +129,7 @@ export default function ManaToursCaseStudy() {
           </p>
 
           {/* Highlights Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 mb-8">
             {manaTours.highlights.map((h, idx) => (
               <div key={idx} className="text-center sm:text-left">
                 <span className="text-[11px] text-gray-500 font-bold uppercase tracking-wider block">
@@ -140,6 +140,96 @@ export default function ManaToursCaseStudy() {
                 </span>
               </div>
             ))}
+          </div>
+
+          {/* Simulated Fleet Booking & Dispatch Interface */}
+          <div className="pt-6 border-t border-gray-100">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-wider font-mono">
+                Booking Engine Architecture · Live on manatoursandtravels.com
+              </span>
+              <span className="text-[11px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">
+                Kadapa Mobility Hub
+              </span>
+            </div>
+
+            <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 text-white border border-slate-800 shadow-xl">
+              <div className="flex flex-wrap items-center justify-between pb-3 mb-4 border-b border-slate-800 text-xs">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="font-mono text-cyan-300 font-bold">MANA Tours Online Dispatch Kernel</span>
+                </div>
+                <div className="font-mono text-gray-400 text-[11px]">
+                  Real-Time Dynamic Pricing Engine
+                </div>
+              </div>
+
+              {/* Corridors Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+                <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                  <div className="text-[11px] text-gray-400 font-mono">Tirupati Airport &amp; Darshan</div>
+                  <div className="text-sm font-bold text-white mt-1">₹3,200 <span className="text-[10px] text-gray-400 font-normal">/ Sedan</span></div>
+                  <div className="text-[10px] text-emerald-400 mt-1">140 km · 3.5 hrs</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                  <div className="text-[11px] text-gray-400 font-mono">Bangalore Airport (BLR)</div>
+                  <div className="text-sm font-bold text-white mt-1">₹5,800 <span className="text-[10px] text-gray-400 font-normal">/ Sedan</span></div>
+                  <div className="text-[10px] text-emerald-400 mt-1">260 km · 5.0 hrs</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                  <div className="text-[11px] text-gray-400 font-mono">Hyderabad Corridor (RGI)</div>
+                  <div className="text-sm font-bold text-white mt-1">₹6,500 <span className="text-[10px] text-gray-400 font-normal">/ SUV</span></div>
+                  <div className="text-[10px] text-emerald-400 mt-1">380 km · 7.5 hrs</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700/80">
+                  <div className="text-[11px] text-gray-400 font-mono">Gandikota &amp; Belum Caves</div>
+                  <div className="text-sm font-bold text-white mt-1">₹3,500 <span className="text-[10px] text-gray-400 font-normal">/ Full Day</span></div>
+                  <div className="text-[10px] text-emerald-400 mt-1">Sightseeing Package</div>
+                </div>
+              </div>
+
+              <div className="p-3 rounded-xl bg-slate-950/60 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <span className="text-gray-400">
+                  Automated WhatsApp dispatch triggers driver allocation and passenger SMS in under 2 seconds.
+                </span>
+                <span className="text-cyan-400 font-mono text-[11px] font-semibold">
+                  Zero Third-Party Commission
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Client Testimonial Spotlight */}
+        <div className="bg-gradient-to-br from-blue-900 via-navy-950 to-navy-900 rounded-3xl p-8 sm:p-10 text-white shadow-xl mb-10 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative z-10">
+            <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-4">
+              <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+              Verified Client Testimonial · 5.0★ Google Rating
+            </div>
+            <blockquote className="text-lg sm:text-xl font-medium leading-relaxed italic mb-6 text-gray-100">
+              &ldquo;MOMO IT TECHNOLOGIES engineered our web portal and WhatsApp reservation engine from scratch. Our passengers now book cabs for Tirupati, Bangalore Airport, and local rentals seamlessly. The speed, reliability, and local support right here in Kadapa have helped us scale our fleet operations with confidence.&rdquo;
+            </blockquote>
+            <div className="flex items-center gap-4 pt-4 border-t border-white/10">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-500 flex items-center justify-center font-bold text-white text-base shadow-md">
+                PK
+              </div>
+              <div>
+                <div className="font-extrabold text-white text-base flex items-center gap-2">
+                  Pavan Kalyan
+                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                    Verified Founder
+                  </span>
+                </div>
+                <div className="text-xs text-gray-300">
+                  Managing Director · MANA Tours &amp; Travels Kadapa
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Automation Testing Training in Kadapa | MOMO Academy",
   description:
-    "Join Kadapa's #1 Automation Testing training program with MOMO Academy. Master Core Java, Selenium 4, TestNG, Cucumber BDD, REST Assured, and CI/CD pipelines with guaranteed live project internships.",
+    "Join Kadapa's premier Automation Testing training program with MOMO Academy. Master Core Java, Selenium 4, TestNG, Cucumber BDD, REST Assured, and CI/CD pipelines with hands-on live project training and internship opportunities.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/academy/automation-testing-training-kadapa",
   },
@@ -252,7 +252,7 @@ export default function AutomationTestingTrainingKadapaPage() {
               </div>
               <div>
                 <div className="text-xs text-gray-400 font-medium">Live Internship</div>
-                <div className="text-sm font-bold text-emerald-600">Guaranteed Experience</div>
+                <div className="text-sm font-bold text-emerald-600">Project Experience</div>
               </div>
               <div>
                 <div className="text-xs text-gray-400 font-medium">Lab Location</div>

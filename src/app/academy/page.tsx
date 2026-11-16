@@ -27,7 +27,7 @@ import CourseCurriculumAccordion from "@/components/academy/CourseCurriculumAcco
 export const metadata = {
   title: "MOMO Academy — Best IT Training & Live Project Internships in Kadapa",
   description:
-    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Agentic AI with MOMO Academy Kadapa. 5.0★ Google Rated. Verified certificates & guaranteed live internships.",
+    "Master Selenium Automation Testing, Full-Stack Development, Flutter Mobile Apps, and Agentic AI with MOMO Academy Kadapa. 5.0★ Google Rated. Verified certificates & practical live project training.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/academy",
   },
@@ -255,7 +255,7 @@ export default function AcademyPage() {
                   {course.overview}
                 </p>
 
-                {/* Guaranteed Certification & Real Internship Perks */}
+                {/* Verified Certification & Practical Internship Perks */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-3.5 mb-5 rounded-2xl bg-gradient-to-r from-emerald-50/80 via-white to-purple-50/80 border border-gray-200/80 text-xs">
                   <div className="flex flex-wrap items-center gap-4">
                     <div className="flex items-center gap-2 text-emerald-950 font-bold">

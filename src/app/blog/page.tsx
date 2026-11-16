@@ -208,7 +208,7 @@ export default function BlogIndexPage() {
                 <div className="text-xs font-bold uppercase tracking-wider text-amber-300 mb-2">For Students &amp; Graduates</div>
                 <h3 className="text-xl font-extrabold mb-2">Ready to Start a 6–12 LPA Software Career from Kadapa?</h3>
                 <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed mb-6">
-                  Join MOMO Academy for 100% practical lab training in Automation Testing, Java, or Full-Stack with guaranteed live project internships.
+                  Join MOMO Academy for 100% practical lab training in Automation Testing, Java, or Full-Stack with hands-on live project training.
                 </p>
               </div>
               <Link

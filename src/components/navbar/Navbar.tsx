@@ -261,15 +261,23 @@ export default function Navbar() {
                     <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500 bg-gray-50/80 p-3 rounded-xl">
                       <div className="flex items-center gap-2">
                         <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                        <span>100% Client Source Code Ownership · Direct IP Transfer</span>
+                        <span>100% Client Code Ownership · Direct IP Transfer</span>
                       </div>
-                      <Link
-                        href="/contact"
-                        className="font-bold text-electric-600 hover:text-electric-700 flex items-center gap-1"
-                      >
-                        <span>Start Discovery</span>
-                        <ArrowRight className="w-3 h-3" />
-                      </Link>
+                      <div className="flex items-center gap-4">
+                        <Link
+                          href="/architecture"
+                          className="font-bold text-gray-700 hover:text-electric-600 flex items-center gap-1"
+                        >
+                          <span>System Architecture</span>
+                        </Link>
+                        <Link
+                          href="/contact"
+                          className="font-bold text-electric-600 hover:text-electric-700 flex items-center gap-1"
+                        >
+                          <span>Start Discovery</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 )}

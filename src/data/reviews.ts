@@ -7,6 +7,7 @@ export interface ReviewItem {
   date: string;
   text: string;
   source: "Google Reviews" | "Learner Testimonial" | "Client Feedback";
+  type: "commercial" | "academy";
 }
 
 export const reviewsData: ReviewItem[] = [
@@ -17,8 +18,9 @@ export const reviewsData: ReviewItem[] = [
     companyOrLocation: "AS Refrigerations (Kadapa & Bangalore)",
     rating: 5,
     date: "Client Review",
-    text: "MOMO IT TECHNOLOGIES engineered our multi-city web & mobile booking platform across Kadapa and Bangalore. Their custom NPCI UPI QR engine eliminated gateway transaction charges completely, and the automated booking dispatch streamlined our entire field technician workflow. True engineering excellence from Kadapa!",
+    text: "MOMO IT TECHNOLOGIES engineered our multi-city web & mobile booking platform across Kadapa and Bangalore. Their custom NPCI UPI QR engine eliminated third-party gateway commissions completely with direct bank settlement, and the automated booking dispatch streamlined our entire field technician workflow. True engineering excellence from Kadapa!",
     source: "Client Feedback",
+    type: "commercial",
   },
   {
     id: "rev-3",
@@ -27,8 +29,9 @@ export const reviewsData: ReviewItem[] = [
     companyOrLocation: "Kadapa",
     rating: 5,
     date: "Client Review",
-    text: "MOMO IT TECHNOLOGIES built our entire online platform for MANA Tours & Travels Kadapa. The booking engine, 24/7 AI Voice integration, and clean mobile responsiveness brought a massive surge in our direct customer bookings. Truly top-tier engineering!",
+    text: "MOMO IT TECHNOLOGIES built our entire online platform for MANA Tours & Travels Kadapa. The booking engine, 24/7 AI Voice integration, and clean mobile responsiveness brought a significant surge in our direct customer bookings. Truly top-tier engineering!",
     source: "Client Feedback",
+    type: "commercial",
   },
   {
     id: "rev-1",
@@ -39,6 +42,7 @@ export const reviewsData: ReviewItem[] = [
     date: "Recent",
     text: "I am very satisfied with the tutor and training methodology at MOMO IT Technologies. The hands-on practice in Automation Testing and Java made all the difference in clearing my technical rounds. Highly recommended institute in Kadapa!",
     source: "Google Reviews",
+    type: "academy",
   },
   {
     id: "rev-2",
@@ -49,6 +53,7 @@ export const reviewsData: ReviewItem[] = [
     date: "Recent",
     text: "I have learnt Automation testing in this training institute. The practical exposure to real projects, Selenium framework building, and continuous support from the instructors helped me gain solid confidence.",
     source: "Google Reviews",
+    type: "academy",
   },
   {
     id: "rev-4",
@@ -59,6 +64,7 @@ export const reviewsData: ReviewItem[] = [
     date: "Recent",
     text: "The best thing about MOMO IT Technologies is their bridge between training and real agency projects. You don't just learn theory; you see how real applications are built and tested. The Google Meet live online sessions were seamless.",
     source: "Learner Testimonial",
+    type: "academy",
   },
   {
     id: "rev-5",
@@ -69,5 +75,6 @@ export const reviewsData: ReviewItem[] = [
     date: "Recent",
     text: "The individual attention and practical debugging sessions in Core Java & Selenium are unmatched. In Kadapa, you won't find a better place for genuine technical skills and interview preparation.",
     source: "Google Reviews",
+    type: "academy",
   },
 ];

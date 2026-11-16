@@ -70,7 +70,7 @@ const qaServices = [
   {
     icon: ShieldCheck,
     title: "End-to-End Test Suite Delivery",
-    desc: "Custom test automation framework architecture and comprehensive regression suites designed to achieve 90%+ test coverage with zero defect leakage.",
+    desc: "Custom test automation framework architecture and comprehensive regression suites designed to achieve high test coverage and prevent regression escapes.",
   },
 ];
 
@@ -88,7 +88,7 @@ const processSteps = [
   { step: "02", title: "Framework Architecture", desc: "We design a scalable Page Object Model (POM) hybrid framework with utilities for reporting, logging, and data-driven inputs." },
   { step: "03", title: "Scripting & BDD Authoring", desc: "Our SDETs write robust, non-flaky automated test scenarios in Cucumber BDD with explicit waits." },
   { step: "04", title: "CI/CD Pipeline Hookup", desc: "Tests are wired into your automated build pipeline to trigger regression suites on every code commit." },
-  { step: "05", title: "Zero-Defect Release Signoff", desc: "Automated execution passes with interactive Allure HTML dashboards, bug logs, and QA signoff certificates." },
+  { step: "05", title: "Quality Release Signoff", desc: "Automated execution passes with interactive Allure HTML dashboards, bug logs, and QA signoff certificates." },
 ];
 
 const faqs = [
@@ -177,7 +177,7 @@ export default function QaAutomationKadapaPage() {
                 QA &amp; Automation Testing Company in Kadapa
               </h1>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                Led by veteran SDET architects, MOMO IT TECHNOLOGIES delivers high-coverage test automation frameworks, REST API validation, and automated testing pipelines that guarantee zero-defect production releases.
+                Led by veteran SDET architects, MOMO IT TECHNOLOGIES delivers high-coverage test automation frameworks, REST API validation, and automated testing pipelines that ensure high software stability and reliable production releases.
               </p>
             </div>
 

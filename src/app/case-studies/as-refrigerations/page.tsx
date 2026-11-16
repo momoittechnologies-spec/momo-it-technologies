@@ -134,7 +134,7 @@ export default function AsRefrigerationsCaseStudy() {
           </p>
 
           {/* Highlights Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 mb-8">
             {asRef.highlights.map((h, idx) => (
               <div key={idx} className="text-center sm:text-left">
                 <span className="text-[11px] text-gray-500 font-bold uppercase tracking-wider block">
@@ -146,23 +146,124 @@ export default function AsRefrigerationsCaseStudy() {
               </div>
             ))}
           </div>
+
+          {/* Genuine Interface Showcase */}
+          <div className="pt-6 border-t border-gray-100">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-wider font-mono">
+                Production Interface Snapshots · Live on asrefrigerations.com
+              </span>
+              <span className="text-[11px] font-mono text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                100% Deployed &amp; Verified
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              {/* Desktop Browser Window Mockup */}
+              <div className="lg:col-span-8 bg-slate-900 rounded-2xl p-2 shadow-xl border border-slate-800">
+                <div className="flex items-center justify-between px-3 py-2 bg-slate-800/80 rounded-t-xl text-[11px] font-mono text-gray-400">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-400 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block" />
+                    <span className="ml-2 text-gray-300 font-sans text-xs">AS REFRIGERATIONS — Customer Booking Hub</span>
+                  </div>
+                  <span className="text-emerald-400">https://asrefrigerations.com</span>
+                </div>
+                <div className="overflow-hidden rounded-b-xl bg-slate-950">
+                  <img
+                    src="/clients/as-refrigerations/as-refrigerations-hero-desktop.png"
+                    alt="AS REFRIGERATIONS Web Portal - Engineered by MOMO IT Technologies"
+                    className="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-3 text-[11px] text-gray-300 flex items-center justify-between">
+                  <span>Desktop Customer &amp; Commercial Air Conditioner Service Hub</span>
+                  <span className="text-cyan-400 font-mono">Kadapa HQ &amp; Bangalore East</span>
+                </div>
+              </div>
+
+              {/* Mobile App Shell & Field Photo Column */}
+              <div className="lg:col-span-4 space-y-6">
+                {/* Mobile Mockup */}
+                <div className="bg-slate-900 rounded-2xl p-2 shadow-xl border border-slate-800">
+                  <div className="flex items-center justify-between px-3 py-1.5 bg-slate-800/80 rounded-t-xl text-[11px] font-mono text-gray-400">
+                    <span className="text-gray-300 text-xs">Mobile App Shell</span>
+                    <span className="text-emerald-400">Capacitor PWA</span>
+                  </div>
+                  <div className="overflow-hidden rounded-b-xl bg-slate-950 max-h-[340px]">
+                    <img
+                      src="/clients/as-refrigerations/as-refrigerations-mobile-app.png"
+                      alt="AS REFRIGERATIONS Mobile App Interface"
+                      className="w-full h-auto object-cover object-top hover:scale-[1.02] transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-2.5 text-[11px] text-gray-300">
+                    <span>Doorstep booking &amp; emergency technician call routing</span>
+                  </div>
+                </div>
+
+                {/* On-site Real Service Photo */}
+                <div className="bg-white rounded-2xl p-2 border border-gray-200 shadow-sm">
+                  <div className="overflow-hidden rounded-xl h-36">
+                    <img
+                      src="/clients/as-refrigerations/appliance-repair.jpg"
+                      alt="AS Refrigerations Doorstep Service Technician"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-2 text-[11px] text-gray-600 font-medium">
+                    Verified on-site appliance repair technicians in Kadapa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Third Interface: Booking Workflow Strip */}
+            <div className="mt-6 bg-slate-900 rounded-2xl p-2 shadow-xl border border-slate-800">
+              <div className="flex items-center justify-between px-3 py-2 bg-slate-800/80 rounded-t-xl text-[11px] font-mono text-gray-400">
+                <span className="text-gray-300 text-xs">Multi-City Booking Engine &amp; Locality Router</span>
+                <span className="text-cyan-400">19 Kadapa Wards · 25 Bangalore Localities</span>
+              </div>
+              <div className="overflow-hidden rounded-b-xl bg-slate-950 max-h-72">
+                <img
+                  src="/clients/as-refrigerations/as-refrigerations-booking-flow.png"
+                  alt="AS Refrigerations Multi-City Booking Flow"
+                  className="w-full h-auto object-cover object-top hover:scale-[1.01] transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Client Testimonial Spotlight */}
         <div className="bg-gradient-to-br from-brand-900 via-navy-950 to-navy-900 rounded-3xl p-8 sm:p-10 text-white shadow-xl mb-10 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
           <div className="relative z-10">
-            <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-4">
-              <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-              Verified Client Testimonial
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+                Verified Client Testimonial
+              </div>
+              <img
+                src="/clients/as-refrigerations/logo.png"
+                alt="AS Refrigerations Official Logo"
+                className="h-7 w-auto object-contain bg-white/10 rounded-lg p-1"
+              />
             </div>
             <blockquote className="text-lg sm:text-xl font-medium leading-relaxed italic mb-6 text-gray-100">
               &ldquo;MOMO IT TECHNOLOGIES engineered our multi-city web &amp; mobile booking platform across Kadapa and Bangalore. Their custom NPCI UPI QR engine eliminated gateway transaction charges completely, and the automated booking dispatch streamlined our entire field technician workflow. True engineering excellence from Kadapa!&rdquo;
             </blockquote>
             <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-500 to-brand-500 flex items-center justify-center font-bold text-white text-base shadow-md">
-                SS
-              </div>
+              <img
+                src="/clients/as-refrigerations/sameer.jpg"
+                alt="Shaik Sameer - Founder, AS Refrigerations"
+                className="w-14 h-14 rounded-full object-cover border-2 border-cyan-400 shadow-md shrink-0"
+              />
               <div>
                 <div className="font-extrabold text-white text-base flex items-center gap-2">
                   Shaik Sameer

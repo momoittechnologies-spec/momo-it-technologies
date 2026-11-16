@@ -39,7 +39,7 @@ export const coursesData: CourseItem[] = [
       "MOMO IT Academy's flagship 2026 AI masterclass designed for developers, architects, and forward-thinking enterprises. Master autonomous Agentic AI workflows, LangChain, LlamaIndex, CrewAI, LangGraph, Vector Databases (Pinecone/Chroma/pgvector), Hybrid Retrieval-Augmented Generation (RAG), and enterprise tool-calling models. Build and deploy real-world multi-agent systems that autonomously execute business operations, document intelligence, and customer automation.",
     highlights: [
       "🎓 Verified Course Completion Certificate with Credential ID",
-      "💼 Guaranteed Live AI Internship Building Production Enterprise Agents",
+      "💼 Live AI Practical Training & Qualifying Project Internship",
       "Autonomous Agent Frameworks: LangGraph, CrewAI, AutoGen & Google Antigravity SDK",
       "Production RAG: Chunking, Dense & Sparse Retrieval, Re-ranking & Vector DBs (pgvector, Pinecone)",
       "Function Calling, Tool Use & Structured Output (OpenAI, Gemini 2.0, Claude 3.5, Ollama)",
@@ -183,7 +183,7 @@ export const coursesData: CourseItem[] = [
       "A comprehensive, ROI-first digital marketing program tailored for business owners, entrepreneurs, freelancers, and aspiring performance marketers across Kadapa and India. Learn how to launch high-converting Meta and Google Ads, dominate Local Google Search & Maps rankings, automate customer WhatsApp funnels, and scale revenue with AI-powered marketing tools.",
     highlights: [
       "🎓 Verified Course Completion Certificate with Credential ID",
-      "💼 Guaranteed Marketing Internship on Live Client Campaigns (E-Commerce & Travel)",
+      "💼 Hands-on Marketing Campaign Training with Practical Internship Opportunities",
       "Meta Ads Mastery: Facebook & Instagram Lead Gen, Advantage+ & Retargeting",
       "Google Search, Performance Max & YouTube Ads with high-intent keyword targeting",
       "Local SEO Dominance: Google Business Profile #1 Map Pack ranking for local businesses",

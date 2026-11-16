@@ -252,7 +252,7 @@ export default function Hero3DCanvas() {
 
                 <div className="pt-2 text-emerald-400/90 flex items-center gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-brand-400 shrink-0" />
-                  <span>480 Automated regression assertions passed in 1.2s · Zero Flakiness</span>
+                  <span>480 Automated regression assertions passed in 1.2s · 100% Pass Rate</span>
                 </div>
               </div>
             )}
@@ -276,7 +276,7 @@ export default function Hero3DCanvas() {
                   <span className="text-amber-400">✓ 23:44:04</span> [TEST] 480 Automated Selenium Suites PASS
                 </div>
                 <div className="text-emerald-400 font-semibold pt-1">
-                  &gt; System Healthy: Zero critical CVE vulnerabilities detected.
+                  &gt; System Healthy: Security scans passed &amp; verified.
                 </div>
               </div>
             )}
@@ -285,15 +285,15 @@ export default function Hero3DCanvas() {
             <div className="mt-3 pt-3 border-t border-white/10 grid grid-cols-3 gap-2 text-center">
               <div className="bg-navy-900/60 p-2 rounded-xl border border-white/5">
                 <div className="text-[10px] text-gray-400 font-mono">Edge Latency</div>
-                <div className="text-xs font-bold text-brand-400 font-mono mt-0.5">12ms TTFB</div>
+                <div className="text-xs font-bold text-brand-400 font-mono mt-0.5">&lt; 800ms TTFB</div>
               </div>
               <div className="bg-navy-900/60 p-2 rounded-xl border border-white/5">
                 <div className="text-[10px] text-gray-400 font-mono">Code Ownership</div>
                 <div className="text-xs font-bold text-white font-mono mt-0.5">100% Client IP</div>
               </div>
               <div className="bg-navy-900/60 p-2 rounded-xl border border-white/5">
-                <div className="text-[10px] text-gray-400 font-mono">Test Defects</div>
-                <div className="text-xs font-bold text-emerald-400 font-mono mt-0.5">0 Zero-Bug</div>
+                <div className="text-[10px] text-gray-400 font-mono">Quality Assurance</div>
+                <div className="text-xs font-bold text-emerald-400 font-mono mt-0.5">Regression-Tested</div>
               </div>
             </div>
           </div>
@@ -349,7 +349,7 @@ export default function Hero3DCanvas() {
             <div className="text-xs font-extrabold text-navy-950 flex items-center gap-1">
               Selenium 4 QA Suite
             </div>
-            <div className="text-[10px] text-emerald-700 font-semibold">100% E2E Automation</div>
+            <div className="text-[10px] text-emerald-700 font-semibold">Automated CI/CD Regression</div>
           </div>
         </div>
 

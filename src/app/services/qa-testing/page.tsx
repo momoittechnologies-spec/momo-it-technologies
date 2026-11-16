@@ -59,7 +59,7 @@ export default function QaTestingServicePage() {
             Enterprise QA &amp; Test Automation Services
           </h1>
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Stop releasing bugs to production. We engineer maintainable, flakiness-free automation suites that slash manual regression time from days to minutes.
+            Stop releasing bugs to production. We engineer resilient, maintainable automation suites that slash manual regression time from days to minutes.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -118,7 +118,7 @@ export default function QaTestingServicePage() {
               Why Global &amp; Indian Startups Choose Our QA Frameworks
             </h2>
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-              We combine elite technical depth with rigorous engineering discipline: you get world-class test automation frameworks and zero-defect software quality.
+              We combine elite technical depth with rigorous engineering discipline: you get world-class test automation frameworks and enterprise-grade software reliability.
             </p>
           </div>
 
@@ -136,9 +136,9 @@ export default function QaTestingServicePage() {
               </div>
             </div>
             <div>
-              <div className="text-2xl font-extrabold text-brand-400">Zero Defect</div>
+              <div className="text-2xl font-extrabold text-brand-400">Strict Gates</div>
               <div className="text-xs text-gray-300 font-medium mt-1">
-                CI/CD quality gates on every GitHub pull request
+                Automated CI/CD regression gates on pull requests
               </div>
             </div>
           </div>

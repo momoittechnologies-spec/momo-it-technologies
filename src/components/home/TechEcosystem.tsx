@@ -102,7 +102,7 @@ const techCategories = [
     description:
       "Automated continuous regression suites, end-to-end browser testing, and API verification eliminating production defects.",
     technologies: [
-      { name: "Selenium WebDriver 4", role: "End-to-End Browser Automation", badge: "Zero Defect" },
+      { name: "Selenium WebDriver 4", role: "End-to-End Browser Automation", badge: "Automated QA" },
       { name: "Playwright", role: "Fast Headless Web Regression", badge: "CI/CD Native" },
       { name: "RestAssured & Postman", role: "API Contract Verification", badge: "Strict Schema" },
       { name: "GitHub Actions CI/CD", role: "Automated Build & Test Runners", badge: "Continuous" },

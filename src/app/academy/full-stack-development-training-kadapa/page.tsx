@@ -30,7 +30,7 @@ import {
 export const metadata: Metadata = {
   title: "Full-Stack Web Development Course in Kadapa | MOMO Academy",
   description:
-    "Master Full-Stack Software Development with Java, Spring Boot 3, React 19, Next.js, and PostgreSQL in Kadapa. 100% practical lab, verified certificate, and guaranteed live internship in Krishnapuram.",
+    "Master Full-Stack Software Development with Java, Spring Boot 3, React 19, Next.js, and PostgreSQL in Kadapa. 100% practical lab, verified certificate, and hands-on live project experience in Krishnapuram.",
   alternates: {
     canonical: "https://www.momoittechnologies.com/academy/full-stack-development-training-kadapa",
   },
@@ -256,7 +256,7 @@ export default function FullStackDevelopmentTrainingKadapaPage() {
               </div>
               <div>
                 <div className="text-xs text-gray-400 font-medium">Live Internship</div>
-                <div className="text-sm font-bold text-emerald-600">Guaranteed Experience</div>
+                <div className="text-sm font-bold text-emerald-600">Project Experience</div>
               </div>
               <div>
                 <div className="text-xs text-gray-400 font-medium">Campus Location</div>

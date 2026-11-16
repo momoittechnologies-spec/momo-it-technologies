@@ -94,6 +94,14 @@ const searchItems: SearchItem[] = [
     icon: Layers,
     description: "Monolith to microservices migration with zero downtime",
   },
+  {
+    id: "sol-architecture",
+    title: "System Architecture Blueprint",
+    category: "Solutions",
+    href: "/architecture",
+    icon: Layers,
+    description: "6-layer enterprise architecture, ingress, ACID databases & telemetry",
+  },
   // Case Studies
   {
     id: "case-as",

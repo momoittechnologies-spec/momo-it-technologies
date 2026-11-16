@@ -97,6 +97,18 @@ const featureOptions: FeatureOption[] = [
     icon: BarChart3,
   },
   {
+    id: "upiqr",
+    name: "0% Commission NPCI Dynamic UPI QR Engine",
+    extraWeeks: 0.5,
+    icon: CreditCard,
+  },
+  {
+    id: "ai-assistant",
+    name: "Bilingual AI Voice / Chatbot Assistant Integration",
+    extraWeeks: 1.0,
+    icon: Sparkles,
+  },
+  {
     id: "qa-testing",
     name: "Automated Playwright/Selenium CI/CD Test Suite",
     extraWeeks: 0.5,
@@ -287,6 +299,9 @@ Please share a detailed architecture proposal and ballpark quote.`;
               <p className="text-[11px] text-gray-400 mt-1">
                 From kickoff to production deployment with full QA verification.
               </p>
+              <div className="text-[10px] text-amber-300/80 font-mono mt-2 pt-2 border-t border-navy-800">
+                * Preliminary Indicative Estimate (Non-Contractual). Final timeline scoped during technical architecture sprint.
+              </div>
             </div>
 
             {/* Recommended Modern Tech Stack */}
