@@ -4,292 +4,246 @@ import {
   MapPin,
   Phone,
   Mail,
-  CheckCircle2,
-  GraduationCap,
-  Globe,
-  ArrowUpRight,
   ShieldCheck,
   Star,
   Building2,
   Instagram,
   Linkedin,
   Github,
+  ArrowRight,
+  ExternalLink,
+  Code2,
 } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-950 text-gray-300 border-t border-white/10 pt-16 pb-12 bg-cyber-grid-dark relative overflow-hidden">
+    <footer className="bg-navy-950 text-gray-300 border-t border-white/10 pt-16 pb-12 relative overflow-hidden font-sans">
       {/* Specular top border highlight */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-500 via-emerald-400 to-cyan-500 opacity-70" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-electric-500 via-emerald-400 to-violetAccent-500 opacity-80" />
+      
       <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-navy-800/80">
-          {/* Brand & Overview */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-navy-800/80">
+          
+          {/* Brand & Overview (Col 1-2) */}
           <div className="lg:col-span-2 space-y-5">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-brand-500/20 flex items-center justify-center bg-navy-900 border border-brand-500/30">
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-electric-500/20 flex items-center justify-center bg-navy-900 border border-electric-500/30 shrink-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logo.svg" alt="MOMO IT Technologies Logo" className="w-full h-full object-contain p-0.5" />
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
-                  MOMO <span className="text-brand-400">IT TECHNOLOGIES</span>
+                <span className="font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5 font-heading">
+                  MOMO <span className="text-electric-400">IT TECHNOLOGIES</span>
                 </span>
                 <span className="text-[10px] text-gray-400 uppercase tracking-widest">
-                  Enterprise Software Engineering &amp; AI Systems — Kadapa HQ
+                  Software Engineering &amp; AI Systems · Kadapa HQ
                 </span>
               </div>
             </div>
 
-            <p className="text-sm text-gray-400 leading-relaxed max-w-md">
-              From Kadapa, Andhra Pradesh to global businesses worldwide. We design, engineer, and rigorously test high-impact software, SaaS platforms, custom ERPs, and mobile apps with automated QA testing and long-term technical support.
+            <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
+              <strong>Engineering Digital Products. Transforming Businesses.</strong> We design, build, and deploy high-concurrency SaaS platforms, mobile applications, and AI-powered business systems for ambitious founders and enterprises.
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
               <Link
                 href="/kadapa"
-                className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-brand-300 border border-brand-500/20 hover:border-brand-500/50 transition-colors"
+                className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-900 text-electric-300 border border-electric-500/30 hover:border-electric-500/60 transition-colors"
               >
                 <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                5.0★ Google Rated in Kadapa
+                5.0★ Google Rated (Kadapa)
               </Link>
-              <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-navy-800 text-gray-300 border border-gray-700">
-                <ShieldCheck className="w-3.5 h-3.5 text-brand-400" />
-                Est. June 2025
+              <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-emerald-950/60 text-emerald-300 border border-emerald-500/40 font-mono text-[11px]">
+                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                Govt. MSME: UDYAM-AP-05-0090352
               </span>
             </div>
 
             {/* Official Social Channels */}
-            <div className="pt-2 flex flex-wrap items-center gap-2.5">
-              <span className="text-xs font-semibold text-gray-400">Connect:</span>
+            <div className="pt-2 flex flex-wrap items-center gap-2.5 text-xs">
+              <span className="font-semibold text-gray-400">Follow:</span>
               <a
                 href="https://www.instagram.com/momoit.technologies/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Follow MOMO IT Technologies on Instagram"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-pink-500/30 text-pink-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-amber-500 hover:border-transparent text-xs font-bold transition-all shadow-sm group"
-                title="Follow @momoit.technologies on Instagram"
+                aria-label="Instagram"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-pink-500/30 text-pink-400 hover:text-white hover:bg-pink-600 transition-all font-bold text-xs"
               >
-                <Instagram className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <Instagram className="w-3.5 h-3.5" />
                 <span>Instagram</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/momo-it-technologies"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Connect with MOMO IT Technologies on LinkedIn"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-blue-500/30 text-blue-400 hover:text-white hover:bg-[#0A66C2] hover:border-transparent text-xs font-bold transition-all shadow-sm group"
-                title="Connect on LinkedIn"
+                aria-label="LinkedIn"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-blue-500/30 text-blue-400 hover:text-white hover:bg-[#0A66C2] transition-all font-bold text-xs"
               >
-                <Linkedin className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <Linkedin className="w-3.5 h-3.5" />
                 <span>LinkedIn</span>
               </a>
               <a
                 href="https://github.com/momoittechnologies-spec"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="MOMO IT Technologies on GitHub"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-gray-700 text-gray-300 hover:text-white hover:bg-gray-800 hover:border-gray-600 text-xs font-bold transition-all shadow-sm group"
-                title="GitHub Repositories"
+                aria-label="GitHub"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-navy-900 border border-gray-700 text-gray-300 hover:text-white hover:bg-gray-800 transition-all font-bold text-xs"
               >
-                <Github className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                <Github className="w-3.5 h-3.5" />
                 <span>GitHub</span>
               </a>
             </div>
           </div>
 
-          {/* Technology Services in Kadapa */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Tech Services (Kadapa)
+          {/* Solutions (Col 3) */}
+          <div className="space-y-3.5 text-xs sm:text-sm">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              Solutions
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
+            <ul className="space-y-2 text-gray-400">
               <li>
-                <Link
-                  href="/services/web-development-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Web Development Kadapa
+                <Link href="/services/web-development" className="hover:text-electric-400 transition-colors">
+                  Software Development
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services/software-development-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Software Development Kadapa
+                <Link href="/services/software-development" className="hover:text-electric-400 transition-colors">
+                  SaaS Development
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services/qa-automation-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  QA Automation Testing Kadapa
+                <Link href="/services/ai-automation" className="hover:text-electric-400 transition-colors">
+                  AI &amp; Workflow Automation
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services/ai-development-kadapa"
-                  className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
-                >
-                  <span>AI &amp; Agentic Systems</span>
-                  <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1 py-0.5 rounded font-bold">2026</span>
+                <Link href="/services/mobile-app-development" className="hover:text-electric-400 transition-colors">
+                  Mobile Applications (Flutter)
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services/mobile-app-development-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Mobile App Development
+                <Link href="/services/qa-automation" className="hover:text-electric-400 transition-colors">
+                  QA Automation &amp; Testing
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/services/saas-development-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  SaaS Product Development
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/business-software-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Custom ERP &amp; POS Systems
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/social-media-management-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Social Media Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/digital-marketing-kadapa"
-                  className="text-gray-300 hover:text-brand-400 font-medium transition-colors"
-                >
-                  Digital Marketing &amp; SEO
+                <Link href="/services/digital-marketing" className="hover:text-electric-400 transition-colors">
+                  Digital Growth &amp; SEO
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* MOMO Academy in Kadapa */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-1.5">
-              <GraduationCap className="w-4 h-4 text-brand-400" />
+          {/* Company & Our Work (Col 4) */}
+          <div className="space-y-3.5 text-xs sm:text-sm">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              Company
+            </h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <Link href="/about" className="hover:text-electric-400 transition-colors">
+                  About Us &amp; Founder
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies" className="hover:text-electric-400 transition-colors">
+                  Our Work &amp; Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies/as-refrigerations" className="hover:text-electric-400 transition-colors flex items-center gap-1">
+                  <span>AS REFRIGERATIONS</span>
+                  <span className="text-[10px] bg-electric-500/20 text-electric-300 px-1 rounded">Live</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies/mana-tours" className="hover:text-electric-400 transition-colors">
+                  MANA Tours &amp; Travels
+                </Link>
+              </li>
+              <li>
+                <Link href="/about#careers" className="hover:text-electric-400 transition-colors flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>Careers (Hiring)</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-electric-400 transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Academy (Talent Lab) (Col 5) */}
+          <div className="space-y-3.5 text-xs sm:text-sm">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
               MOMO Academy
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
+            <ul className="space-y-2 text-gray-400">
               <li>
-                <Link
-                  href="/academy/automation-testing-training-kadapa"
-                  className="text-brand-300 hover:text-brand-200 font-semibold transition-colors"
-                >
-                  Automation Testing Training
+                <Link href="/academy" className="hover:text-electric-400 transition-colors">
+                  Academy Overview
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/academy/java-training-kadapa"
-                  className="text-gray-300 hover:text-brand-400 transition-colors"
-                >
-                  Core &amp; Advanced Java
+                <Link href="/academy/automation-testing-training-kadapa" className="hover:text-electric-400 transition-colors">
+                  Automation Testing (Selenium 4)
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/academy/selenium-training-kadapa"
-                  className="text-gray-300 hover:text-brand-400 transition-colors"
-                >
-                  Selenium 4 WebDriver Lab
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy/full-stack-development-training-kadapa"
-                  className="text-gray-300 hover:text-brand-400 transition-colors"
-                >
-                  Full-Stack Development (Java+React)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy/flutter-training-kadapa"
-                  className="text-gray-300 hover:text-brand-400 transition-colors"
-                >
-                  Flutter App Development
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/academy/ai-training-kadapa"
-                  className="text-teal-300 hover:text-teal-200 font-semibold transition-colors flex items-center gap-1"
-                >
+                <Link href="/academy/ai-training-kadapa" className="hover:text-electric-400 transition-colors flex items-center gap-1">
                   <span>Agentic AI &amp; RAG (2026)</span>
-                  <span className="text-[9px] bg-teal-500/20 text-teal-300 px-1 py-0.5 rounded font-bold">New</span>
+                  <span className="text-[9px] bg-emerald-500/20 text-emerald-300 px-1 py-0.5 rounded font-bold font-mono">New</span>
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/certificates"
-                  className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
-                >
+                <Link href="/academy/full-stack-development-training-kadapa" className="hover:text-electric-400 transition-colors">
+                  Full-Stack Java + React
+                </Link>
+              </li>
+              <li>
+                <Link href="/certificates" className="text-electric-400 hover:text-electric-300 font-medium transition-colors">
                   Verify Certificates Online →
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact & Kadapa Office */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Kadapa Headquarters
+          {/* Contact & Kadapa Office (Col 6) */}
+          <div className="space-y-3.5 text-xs sm:text-sm">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-white font-mono">
+              Contact &amp; Campus
             </h4>
-            <div className="space-y-3 text-xs sm:text-sm text-gray-400">
+            <div className="space-y-3 text-xs text-gray-400">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-brand-400 shrink-0 mt-1" />
-                <Link href="/kadapa" className="hover:text-white transition-colors">
-                  4/106, Damerla Pavan Nilayam, Chowdeswari Temple Lane, Krishnapuram, Kadapa - 516003
+                <MapPin className="w-4 h-4 text-electric-400 shrink-0 mt-0.5" />
+                <Link href="/kadapa" className="hover:text-white transition-colors leading-relaxed">
+                  4/106, Chowdeswari Temple Lane, Krishnapuram, Kadapa, AP — 516003
                 </Link>
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/60 border border-emerald-500/30 text-[11px] text-emerald-300 font-mono">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>Govt. MSME: UDYAM-AP-05-0090352</span>
-              </div>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-brand-400 shrink-0" />
-                <a href="tel:+918639831132" className="hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-electric-400 shrink-0" />
+                <a href="tel:+918639831132" className="hover:text-white transition-colors font-mono">
                   +91 86398 31132
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-brand-400 shrink-0" />
-                <a
-                  href="mailto:momoit.technologies@gmail.com"
-                  className="hover:text-white transition-colors"
-                >
+                <Mail className="w-4 h-4 text-electric-400 shrink-0" />
+                <a href="mailto:momoit.technologies@gmail.com" className="hover:text-white transition-colors">
                   momoit.technologies@gmail.com
                 </a>
               </div>
-              <div className="pt-2">
-                <span className="text-xs text-brand-300 block font-semibold">
-                  Operating Hours:
-                </span>
+              <div className="pt-1">
+                <span className="text-xs text-gray-300 block font-semibold">Hours:</span>
                 <span className="text-xs text-gray-400">Mon - Sat: 8:00 AM - 8:00 PM IST</span>
               </div>
               <div className="pt-2">
                 <Link
-                  href="/kadapa"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brand-600 hover:bg-brand-500 px-3 py-1.5 rounded-lg transition-colors shadow-sm"
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-1.5 w-full text-xs font-bold text-white bg-electric-600 hover:bg-electric-700 px-3.5 py-2 rounded-xl transition-colors shadow-sm"
                 >
-                  <Building2 className="w-3.5 h-3.5" />
-                  <span>Kadapa Office &amp; Lab Hub →</span>
+                  <span>Start a Project Consultation →</span>
                 </Link>
               </div>
             </div>
@@ -299,46 +253,30 @@ export default function Footer() {
         {/* Bottom Strip */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>
-            © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved.
+            © {new Date().getFullYear()} MOMO IT TECHNOLOGIES. All rights reserved. Registered MSME: UDYAM-AP-05-0090352.
           </p>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <Link href="/kadapa" className="text-gray-400 hover:text-white transition-colors">
               Kadapa Office
             </Link>
             <Link href="/services" className="hover:text-gray-400 transition-colors">
-              All Services
+              All Solutions
             </Link>
             <Link href="/case-studies" className="hover:text-gray-400 transition-colors">
-              Case Studies
+              Our Work
             </Link>
             <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-              Blog &amp; Tech Guides
+              Insights &amp; Guides
             </Link>
             <Link href="/academy" className="hover:text-gray-400 transition-colors">
-              MOMO Academy
-            </Link>
-            <Link href="/about#careers" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Careers (Hiring)</span>
+              Academy
             </Link>
             <Link href="/review" className="text-amber-400 hover:text-amber-300 font-medium transition-colors">
               Review Us
             </Link>
-            <a
-              href="https://www.instagram.com/momoit.technologies/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-400 hover:text-pink-300 font-medium transition-colors flex items-center gap-1"
-            >
-              <Instagram className="w-3.5 h-3.5" />
-              <span>Instagram</span>
-            </a>
-            <Link href="/contact" className="hover:text-gray-400 transition-colors">
-              Contact Us
-            </Link>
-            <Link href="/pay" className="text-brand-400 hover:text-brand-300 font-semibold transition-colors flex items-center gap-1">
+            <Link href="/pay" className="text-electric-400 hover:text-electric-300 font-semibold transition-colors flex items-center gap-1">
               <span>Client Pay &amp; Billing</span>
-              <span className="text-[10px] bg-brand-500/20 text-brand-300 px-1.5 py-0.5 rounded font-bold">UPI / SBI</span>
+              <span className="text-[10px] bg-electric-500/20 text-electric-300 px-1.5 py-0.5 rounded font-bold font-mono">UPI / SBI</span>
             </Link>
           </div>
         </div>
