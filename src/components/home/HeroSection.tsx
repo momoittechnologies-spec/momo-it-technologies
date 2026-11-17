@@ -4,30 +4,21 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
-  ShieldCheck,
-  CheckCircle2,
-  Sparkles,
-  Star,
-  Code2,
-  TestTube2,
   Layers,
   MessageCircle,
-  Smartphone,
-  ChevronRight,
-  Zap,
+  Star,
   MapPin,
-  Bot,
-  Cloud,
-  Lock,
+  ShieldCheck,
+  CheckCircle2,
 } from "lucide-react";
-import HeroProductEcosystem from "./HeroProductEcosystem";
+import HeroInfrastructureVisual from "./HeroInfrastructureVisual";
 
 const rotatingWords = [
   "High-Concurrency Cloud SaaS Platforms",
   "Autonomous AI & Agentic Workflows",
   "Cross-Platform Flutter Mobile Apps",
   "Automated QA Regression Suites",
-  "Custom Business ERPs & 60 FPS Mobile",
+  "Custom Enterprise ERPs & Cloud Systems",
 ];
 
 export default function HeroSection() {
@@ -41,12 +32,12 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative pt-24 pb-14 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20 overflow-hidden bg-gradient-to-b from-[#071127] via-navy-950 to-[#071127] text-white bg-cyber-grid">
+    <section className="relative pt-24 pb-14 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20 overflow-hidden bg-gradient-to-b from-[#040816] via-[#071127] to-[#040918] text-white bg-cyber-grid">
       {/* Background Decorative Ambient Mesh */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl 2xl:max-w-[1536px] h-[750px] pointer-events-none overflow-hidden -z-10 opacity-60">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl 2xl:max-w-[1536px] h-[750px] pointer-events-none overflow-hidden -z-10 opacity-70">
         <div className="absolute -top-32 left-1/4 w-[550px] h-[550px] bg-blue-600/15 rounded-full blur-[140px]" />
         <div className="absolute top-20 right-1/4 w-[520px] h-[520px] bg-cyan-500/15 rounded-full blur-[150px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-violet-600/15 rounded-full blur-[160px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-violet-600/10 rounded-full blur-[160px]" />
       </div>
 
       {/* Far Margin Ambient Tech Coordinates */}
@@ -69,7 +60,7 @@ export default function HeroSection() {
           {/* ======================================================== */}
           <div className="lg:col-span-5 text-center lg:text-left">
             {/* Eyebrow Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs text-cyan-300 font-mono mb-5 backdrop-blur-md shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.07] border border-white/15 text-xs text-cyan-300 font-mono mb-5 backdrop-blur-md shadow-xs">
               <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-beacon-pulse" />
               <span className="font-semibold uppercase tracking-wider text-white text-[11px]">
                 MOMO IT TECHNOLOGIES
@@ -80,10 +71,10 @@ export default function HeroSection() {
               </span>
             </div>
 
-            {/* Grand Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-4">
-              <span>Engineering Digital Products.</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-300">
+            {/* Grand Dominant Headline */}
+            <h1 className="text-3xl sm:text-5xl lg:text-[44px] xl:text-[54px] 2xl:text-[62px] font-extrabold text-white tracking-tight leading-[1.08] mb-4 font-heading">
+              <span className="block">Engineering Digital Products.</span>
+              <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-200">
                 Transforming Businesses.
               </span>
             </h1>
@@ -92,7 +83,7 @@ export default function HeroSection() {
             <div className="h-7 sm:h-8 flex items-center justify-center lg:justify-start mb-4">
               <span className="text-xs sm:text-sm font-mono text-gray-300">
                 Engineering &amp; shipping{" "}
-                <span className="font-bold text-cyan-300 border-b border-cyan-400 transition-all duration-300">
+                <span className="font-bold text-cyan-300 border-b border-cyan-400/80 pb-0.5 transition-all duration-300">
                   {rotatingWords[currentWordIndex]}
                 </span>
               </span>
@@ -193,90 +184,11 @@ export default function HeroSection() {
           </div>
 
           {/* ======================================================== */}
-          {/* Right Column: Digital Product Ecosystem (55%)            */}
+          {/* Right Column: 3D Digital Infrastructure Visual (55%)      */}
           {/* ======================================================== */}
           <div className="lg:col-span-7 flex items-center justify-center relative w-full">
-            <HeroProductEcosystem />
+            <HeroInfrastructureVisual />
           </div>
-        </div>
-
-        {/* 4 Core Delivery Pillars Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 2xl:gap-5 mt-12 lg:mt-16 text-left">
-          <Link
-            href="/services/web-development"
-            className="p-5 2xl:p-6 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/50 shadow-lg relative overflow-hidden group block transition-all"
-          >
-            <div className="w-10 h-10 rounded-xl bg-blue-500/20 text-cyan-300 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-              <Code2 className="w-5 h-5" />
-            </div>
-            <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-400 mb-1">
-              Pillar 01
-            </div>
-            <h2 className="text-base font-bold text-white mb-1 flex items-center justify-between">
-              <span>Software &amp; SaaS Platforms</span>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-cyan-300 group-hover:translate-x-1 transition-all" />
-            </h2>
-            <p className="text-xs text-gray-300 leading-relaxed">
-              Next.js 15, React 19, Supabase &amp; Spring Boot cloud platforms built for sub-second speed and scale.
-            </p>
-          </Link>
-
-          <Link
-            href="/services/ai-automation"
-            className="p-5 2xl:p-6 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-indigo-400/50 shadow-lg relative overflow-hidden group block transition-all"
-          >
-            <div className="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-              <Bot className="w-5 h-5" />
-            </div>
-            <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-indigo-400 mb-1">
-              Pillar 02
-            </div>
-            <h2 className="text-base font-bold text-white mb-1 flex items-center justify-between">
-              <span>AI &amp; Intelligent Automation</span>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-indigo-300 group-hover:translate-x-1 transition-all" />
-            </h2>
-            <p className="text-xs text-gray-300 leading-relaxed">
-              Autonomous multi-agent workflows, private RAG pipelines, and conversational WhatsApp systems.
-            </p>
-          </Link>
-
-          <Link
-            href="/services/mobile-app-development"
-            className="p-5 2xl:p-6 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-400/50 shadow-lg relative overflow-hidden group block transition-all"
-          >
-            <div className="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-              <Smartphone className="w-5 h-5" />
-            </div>
-            <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-400 mb-1">
-              Pillar 03
-            </div>
-            <h2 className="text-base font-bold text-white mb-1 flex items-center justify-between">
-              <span>Mobile &amp; QA Engineering</span>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-purple-300 group-hover:translate-x-1 transition-all" />
-            </h2>
-            <p className="text-xs text-gray-300 leading-relaxed">
-              Cross-platform Flutter iOS &amp; Android native apps backed by Selenium 4 &amp; Playwright CI/CD test suites.
-            </p>
-          </Link>
-
-          <Link
-            href="/services/cloud-devops"
-            className="p-5 2xl:p-6 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/50 shadow-lg relative overflow-hidden group block transition-all"
-          >
-            <div className="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-300 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-              <Cloud className="w-5 h-5" />
-            </div>
-            <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-400 mb-1">
-              Pillar 04
-            </div>
-            <h2 className="text-base font-bold text-white mb-1 flex items-center justify-between">
-              <span>Cloud &amp; Digital Growth</span>
-              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-cyan-300 group-hover:translate-x-1 transition-all" />
-            </h2>
-            <p className="text-xs text-gray-300 leading-relaxed">
-              Docker containerization, CI/CD pipelines, SEO technical architecture, and high-conversion business systems.
-            </p>
-          </Link>
         </div>
       </div>
     </section>
