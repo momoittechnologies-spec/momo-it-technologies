@@ -94,13 +94,19 @@ export default function Navbar() {
     }, 150);
   };
 
+  const isDarkTheme = pathname === "/" || pathname === "/architecture";
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <header
         className={`w-full transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-200/80 py-2.5"
-            : "bg-white/90 backdrop-blur-lg border-b border-gray-200/50 py-3.5"
+          isDarkTheme
+            ? isScrolled
+              ? "bg-[#040a18]/95 backdrop-blur-xl shadow-lg border-b border-white/[0.08] py-2.5"
+              : "bg-[#040a18]/85 backdrop-blur-lg border-b border-white/[0.06] py-3.5"
+            : isScrolled
+              ? "bg-white/95 backdrop-blur-xl shadow-sm border-b border-gray-200/80 py-2.5"
+              : "bg-white/90 backdrop-blur-lg border-b border-gray-200/50 py-3.5"
         }`}
       >
         <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12">
@@ -116,15 +122,19 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-xl tracking-tight text-navy-950 flex items-center gap-1.5 leading-none font-heading">
+                <span
+                  className={`font-extrabold text-lg sm:text-xl tracking-tight flex items-center gap-1.5 leading-none font-heading ${
+                    isDarkTheme ? "text-white" : "text-navy-950"
+                  }`}
+                >
                   MOMO <span className="text-electric-500">IT</span> TECHNOLOGIES
-                  <span className="hidden sm:inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-semibold border border-emerald-200/80 font-mono">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-beacon-pulse" />
-                    <span>Edge Verified</span>
-                  </span>
                 </span>
-                <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mt-1">
-                  Engineering Digital Products · Transforming Businesses
+                <span
+                  className={`text-[10px] font-semibold uppercase tracking-widest mt-1 ${
+                    isDarkTheme ? "text-gray-400" : "text-gray-500"
+                  }`}
+                >
+                  Software Engineering &amp; Digital Solutions
                 </span>
               </div>
             </Link>
@@ -135,8 +145,12 @@ export default function Navbar() {
                 href="/"
                 className={`px-3 py-2 rounded-lg transition-colors ${
                   pathname === "/"
-                    ? "text-electric-600 bg-electric-50 font-semibold"
-                    : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                    ? isDarkTheme
+                      ? "text-cyan-400 bg-white/10 font-semibold"
+                      : "text-electric-600 bg-electric-50 font-semibold"
+                    : isDarkTheme
+                      ? "text-gray-300 hover:text-white hover:bg-white/5"
+                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                 }`}
               >
                 Home
@@ -151,15 +165,25 @@ export default function Navbar() {
                 <button
                   className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-colors cursor-pointer ${
                     pathname.startsWith("/services")
-                      ? "text-electric-600 bg-electric-50 font-semibold"
-                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                      ? isDarkTheme
+                        ? "text-cyan-400 bg-white/10 font-semibold"
+                        : "text-electric-600 bg-electric-50 font-semibold"
+                      : isDarkTheme
+                        ? "text-gray-300 hover:text-white hover:bg-white/5"
+                        : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                   }`}
                   aria-expanded={solutionsDropdownOpen}
                 >
                   <span>Solutions</span>
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
-                      solutionsDropdownOpen ? "rotate-180 text-electric-600" : "text-gray-400"
+                      solutionsDropdownOpen
+                        ? isDarkTheme
+                          ? "rotate-180 text-cyan-400"
+                          : "rotate-180 text-electric-600"
+                        : isDarkTheme
+                          ? "text-gray-400"
+                          : "text-gray-400"
                     }`}
                   />
                 </button>
@@ -290,13 +314,21 @@ export default function Navbar() {
                 onMouseLeave={handleIndustriesLeave}
               >
                 <button
-                  className="flex items-center gap-1 px-3 py-2 rounded-lg transition-colors cursor-pointer text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                  className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-colors cursor-pointer ${
+                    isDarkTheme
+                      ? "text-gray-300 hover:text-white hover:bg-white/5"
+                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                  }`}
                   aria-expanded={industriesDropdownOpen}
                 >
                   <span>Industries</span>
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
-                      industriesDropdownOpen ? "rotate-180 text-electric-600" : "text-gray-400"
+                      industriesDropdownOpen
+                        ? isDarkTheme
+                          ? "rotate-180 text-cyan-400"
+                          : "rotate-180 text-electric-600"
+                        : "text-gray-400"
                     }`}
                   />
                 </button>
@@ -397,15 +429,23 @@ export default function Navbar() {
                   href="/case-studies"
                   className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-colors cursor-pointer ${
                     pathname.startsWith("/case-studies")
-                      ? "text-electric-600 bg-electric-50 font-semibold"
-                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                      ? isDarkTheme
+                        ? "text-cyan-400 bg-white/10 font-semibold"
+                        : "text-electric-600 bg-electric-50 font-semibold"
+                      : isDarkTheme
+                        ? "text-gray-300 hover:text-white hover:bg-white/5"
+                        : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                   }`}
                   aria-expanded={workDropdownOpen}
                 >
                   <span>Our Work</span>
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
-                      workDropdownOpen ? "rotate-180 text-electric-600" : "text-gray-400"
+                      workDropdownOpen
+                        ? isDarkTheme
+                          ? "rotate-180 text-cyan-400"
+                          : "rotate-180 text-electric-600"
+                        : "text-gray-400"
                     }`}
                   />
                 </Link>
@@ -456,8 +496,12 @@ export default function Navbar() {
                 href="/academy"
                 className={`flex items-center gap-1.5 px-3 py-2 rounded-lg transition-colors ${
                   pathname.startsWith("/academy")
-                    ? "text-electric-600 bg-electric-50 font-semibold"
-                    : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                    ? isDarkTheme
+                      ? "text-cyan-400 bg-white/10 font-semibold"
+                      : "text-electric-600 bg-electric-50 font-semibold"
+                    : isDarkTheme
+                      ? "text-gray-300 hover:text-white hover:bg-white/5"
+                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                 }`}
               >
                 <GraduationCap className="w-4 h-4 text-electric-600" />
@@ -469,8 +513,12 @@ export default function Navbar() {
                 href="/blog"
                 className={`px-3 py-2 rounded-lg transition-colors ${
                   pathname.startsWith("/blog")
-                    ? "text-electric-600 bg-electric-50 font-semibold"
-                    : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                    ? isDarkTheme
+                      ? "text-cyan-400 bg-white/10 font-semibold"
+                      : "text-electric-600 bg-electric-50 font-semibold"
+                    : isDarkTheme
+                      ? "text-gray-300 hover:text-white hover:bg-white/5"
+                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                 }`}
               >
                 Insights
@@ -481,8 +529,12 @@ export default function Navbar() {
                 href="/about"
                 className={`px-3 py-2 rounded-lg transition-colors ${
                   pathname === "/about"
-                    ? "text-electric-600 bg-electric-50 font-semibold"
-                    : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
+                    ? isDarkTheme
+                      ? "text-cyan-400 bg-white/10 font-semibold"
+                      : "text-electric-600 bg-electric-50 font-semibold"
+                    : isDarkTheme
+                      ? "text-gray-300 hover:text-white hover:bg-white/5"
+                      : "text-gray-700 hover:text-electric-600 hover:bg-gray-50"
                 }`}
               >
                 About
@@ -491,20 +543,24 @@ export default function Navbar() {
 
             {/* Right Action Buttons */}
             <div className="hidden lg:flex items-center gap-2.5">
-              <CommandPalette />
+              <CommandPalette isDark={isDarkTheme} />
 
               <a
                 href="tel:+918639831132"
-                className="hidden xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-navy-950 hover:text-electric-700 bg-gray-50/90 border border-gray-200/80 hover:border-electric-300 transition-all hover:bg-white"
+                className={`hidden xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all ${
+                  isDarkTheme
+                    ? "text-gray-200 hover:text-white bg-white/5 border border-white/10 hover:border-white/25 hover:bg-white/10"
+                    : "text-navy-950 hover:text-electric-700 bg-gray-50/90 border border-gray-200/80 hover:border-electric-300 hover:bg-white"
+                }`}
                 title="Direct Phone Line Kadapa"
               >
-                <PhoneCall className="w-3.5 h-3.5 text-electric-600" />
+                <PhoneCall className="w-3.5 h-3.5 text-electric-500" />
                 <span>086398 31132</span>
               </a>
 
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-electric-600 hover:bg-electric-700 text-white text-xs font-bold shadow-md shadow-electric-500/25 hover:shadow-lg transition-all cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md shadow-blue-600/25 hover:shadow-lg transition-all cursor-pointer"
               >
                 <span>Get a Project Quote</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -515,13 +571,17 @@ export default function Navbar() {
             <div className="flex items-center gap-2 lg:hidden">
               <Link
                 href="/contact"
-                className="px-3 py-1.5 text-xs font-bold rounded-lg bg-electric-600 text-white shadow-xs"
+                className="px-3 py-1.5 text-xs font-bold rounded-lg bg-blue-600 text-white shadow-xs"
               >
                 Get Quote
               </Link>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-lg text-gray-600 hover:text-navy-950 hover:bg-gray-100 focus:outline-none cursor-pointer"
+                className={`p-2 rounded-lg focus:outline-none cursor-pointer transition-colors ${
+                  isDarkTheme
+                    ? "text-gray-300 hover:text-white hover:bg-white/10"
+                    : "text-gray-600 hover:text-navy-950 hover:bg-gray-100"
+                }`}
                 aria-label="Toggle navigation menu"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

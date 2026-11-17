@@ -138,7 +138,7 @@ const searchItems: SearchItem[] = [
   },
 ];
 
-export default function CommandPalette() {
+export default function CommandPalette({ isDark = false }: { isDark?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -179,13 +179,23 @@ export default function CommandPalette() {
       {/* Trigger Button in Navbar */}
       <button
         onClick={() => setIsOpen(true)}
-        className="hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-gray-200 text-xs text-gray-500 font-mono transition-all cursor-pointer"
+        className={`hidden md:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-mono transition-all cursor-pointer ${
+          isDark
+            ? "bg-white/10 hover:bg-white/15 border-white/15 text-gray-300"
+            : "bg-slate-100 hover:bg-slate-200 border-gray-200 text-gray-500"
+        }`}
         aria-label="Open command palette"
       >
-        <Search className="w-3.5 h-3.5 text-gray-400" />
+        <Search className={`w-3.5 h-3.5 ${isDark ? "text-cyan-400" : "text-gray-400"}`} />
         <span className="hidden xl:inline">Search solutions...</span>
         <span className="xl:hidden">Search...</span>
-        <kbd className="px-1.5 py-0.5 rounded bg-white text-[10px] font-semibold text-gray-600 border border-gray-300 shadow-2xs">
+        <kbd
+          className={`px-1.5 py-0.5 rounded text-[10px] font-semibold border ${
+            isDark
+              ? "bg-white/10 text-gray-200 border-white/20"
+              : "bg-white text-gray-600 border-gray-300 shadow-2xs"
+          }`}
+        >
           Ctrl K
         </kbd>
       </button>
