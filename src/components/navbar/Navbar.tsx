@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import CommandPalette from "@/components/common/CommandPalette";
 import {
   Menu,
   X,
@@ -543,8 +542,6 @@ export default function Navbar() {
 
             {/* Right Action Buttons */}
             <div className="hidden lg:flex items-center gap-2.5">
-              <CommandPalette isDark={isDarkTheme} />
-
               <a
                 href="tel:+918639831132"
                 className={`hidden xl:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all ${

@@ -8,7 +8,6 @@ import {
   Sparkles,
   Calendar,
   User,
-  Search,
   CheckCircle2,
   Building2,
   GraduationCap,
